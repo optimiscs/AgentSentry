@@ -1,0 +1,142 @@
+{
+  "created_at": "2026-09-12T09:54:36.121068+00:00",
+  "git_state": "uncommitted_source_archive",
+  "source_archive_sha256": "3a03d612d9dd8f6c4045a6d96d85ba2d6166bd416cabea72c3d8bef360135aab",
+  "source_files": {
+    "benchmarks/acceptance.py": "c7305572fde35a729d2c9c74a72d0fc78f516f60d124c227e7c0997d607d02ee",
+    "benchmarks/local_model.py": "bbaed6ca841fd508d0aeabf6d98b1103a60ec0e9ae400fb7a6f5256c78bdf22a",
+    "benchmarks/native_protocol.py": "edae8d4b0f034bef14800c893d2cd8fd170a99bdecc61ba3ff5e0174e4d8cc17",
+    "benchmarks/prepare_annotation_packet.py": "7c5ecaa950437aa7cee4567a08a7f2683206a2e80f8c9db27179cbe8df5c1322",
+    "benchmarks/run_agentdojo.py": "498e59838bc6100fa585739646dc50b60f1f09ecd8c529db94b538d687593e5a",
+    "benchmarks/run_injecagent.py": "52d252ba2d2d619265e704712ad92ec9bcaa05f9bb7e091a609afa699416ad73",
+    "policies/default.aspolicy": "122869e0d6eca6a660f32861386d8a96bae4e46329215fd8d3d695aa6572d5d7",
+    "scripts/doctor.py": "74d8df42d70c76c083857e8dbd61bcd92bbabf635f2ae5c3f2faa2cfa874ae1d",
+    "scripts/eval_smoke.py": "adadb45bd310e89870479ca8cfa867d9f222e7879cb63d0e7e653abef0dddbe0",
+    "scripts/export_contracts.py": "69ed201257156ecab286c6f89bd413cc72636622274a85206f534b3556ebb778",
+    "scripts/fetch_benchmark_sources.py": "3fd2db858aea3e0902f483539bc53f2bff431bc3ddecf133433a4e396856b07e",
+    "scripts/freeze_benchmark_environment.py": "367cfc4dbcf5ede4e9fc76f5b0e8f6320838ab37fd86b1cd34d5dd9121fe8ae0",
+    "scripts/hook_client.py": "c4d275afd5c40bf3ee2198e30280dd1ff98d7d375d97c6fddabe0bdbe3329ce3",
+    "scripts/import_benchmark.py": "9d835cd8e61dc44bb4bd2d6cd15f1f65855324a706280b3dd1ea0984f570ee56",
+    "scripts/perf_cpu.py": "84a2b87a5d6865ed5278a9a7da5fc04e5f0d6197392322d05f12fbdc90d46099",
+    "scripts/prepare_client_hooks.py": "65945a12f407c4f7461ebec3cd1d0674af470425bb5b00747796c190e39f8527",
+    "scripts/pull_evidence.py": "34f8ca193d3991bb9cf58c9138115e8af9e29f9794dbcc0d8d40c14f0ca14fb3",
+    "scripts/snapshot.py": "a662417264c6dca08fc030c3567a4ad9f2e79a15d271d895b7cf5a472d0e409d",
+    "scripts/spike_codex_local.py": "dd1a2eaef34f1494b8358f3c6b9c02151e0806d3f8fbdcc02e51f954bc507570",
+    "scripts/sync_server.py": "c17d56aa2e93d10e0e8109e34ea85e578abe7349d1542c3edb6ef4fa35ee3d8f",
+    "scripts/update_progress.py": "22d20ad69e5b65d83933215105be519cbf34a7ad60dc113b348a2088e3b933df",
+    "scripts/validate_docs.py": "6ffdbd66a1afe4279ca88bf20c0df7a92eeb7fd38d75b95157c41a1183a76dd7",
+    "scripts/verify_live.py": "23d08834f2a9a209afb809c269d68e6c2c297ec33063dc0928cfbce4167adfd9",
+    "scripts/verify_live_hooks.py": "4c878757d8c27af65ef300e4e96194c7b3a38b6ae734f9291d159dfe79011907",
+    "src/agentsentry/__init__.py": "79f5cc2de9ea3cd38e96447556c5ffae91d8ec303cc4de4cde8debbd189a8389",
+    "src/agentsentry/adapters/__init__.py": "b6e8dcdc09772cddd2bb5d802a0a387eb0d106ae6db6ed9d02931fed7bb2edb7",
+    "src/agentsentry/adapters/filesystem.py": "a511c58685888638f4411e4ff4d2f4c8b665db2041d696e95efb3c2aa6fffadc",
+    "src/agentsentry/adapters/mcp_client.py": "96bc6946241856bc5397c8f5fe95b22dc3359291579f9efbb051fef554bcdee3",
+    "src/agentsentry/adapters/network.py": "1b9b2585c14aa9966e1da844f4eb196c4238e32394541b88bb473d13e6d34308",
+    "src/agentsentry/adapters/registry.py": "c7100afa83733b324b02184761d3af67d994f563d366605b5a1c4fd09abb5405",
+    "src/agentsentry/adapters/sandbox.py": "ccb17d44b0cda9eb248c67b78517915c809fb759aa8ce9eac1380ce9a6987d49",
+    "src/agentsentry/adapters/sandbox_worker.py": "9ea7ed8cddf3f077eb8638df839fdf2af5d8691c92744692bafea4a5f121daea",
+    "src/agentsentry/api/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "src/agentsentry/api/app.py": "9f9db245430d4d7c562c97967ef119e2229cfbfba61a3b28529348a76876e39e",
+    "src/agentsentry/cli.py": "022341edac697e4b444a80c1f4a4af603e6b70eb9e94c6de5aa3cbfebb2402a2",
+    "src/agentsentry/config.py": "30936a5f905b0779c6a9b2e5b7d82eecb3967ca28584f5a6d9a1246dda25a161",
+    "src/agentsentry/context/__init__.py": "403cc454fa75fe7937d3bb1664b750f09c7f68efd99778a858aecb3de419c365",
+    "src/agentsentry/context/scanner.py": "741b11ed9e19db202b04ae2b13264432372d9df68e5c609f5358dbf1ccff87e5",
+    "src/agentsentry/demo.py": "4de31e807b2f93cebc2bea14c03ce909c68da6abb5ce9106c580997127c2c1f4",
+    "src/agentsentry/evaluation.py": "e712020379b782ba87beb456492dd5a7ef4477b08a4067db7fac6f3fbeb4b9fc",
+    "src/agentsentry/gateway/__init__.py": "1c3d16ef06e300d11b2e72ea2a8274ba02d45aa8659c1c7a1de9e4066e762271",
+    "src/agentsentry/gateway/mcp_server.py": "a3cedd8b7aa2a8c8094e9cf34ea509f9fdb46fb8e2e883f13b66c7d44985a58e",
+    "src/agentsentry/gateway/native_hooks.py": "b6f92308bb848ad158dd9b0085410d30f1eb7ca204c92a2bf24f1d31f0578993",
+    "src/agentsentry/gateway/runtime.py": "5e22ac5ec782880bcc9145c66b19dbe00ea96f5be801372a64f0c999b2ded1f8",
+    "src/agentsentry/intent/__init__.py": "0c86f21107929e4106a3b6021a9f94b1c2bc4caa8111be0792547fabd2341911",
+    "src/agentsentry/intent/contracts.py": "ca8ebe16a6fc1d51d809c453c85a121a1480076b4138062bfdc82e9b4c98d481",
+    "src/agentsentry/policy/__init__.py": "5c784be0354e02f4a797c514b59abbab19ab30ea3728f17515cf89cd62686657",
+    "src/agentsentry/policy/dsl.py": "878e8dfc94c611419bf36c12d897cbe8a56d00418b64007ef0937b1fd1f471bc",
+    "src/agentsentry/policy/engine.py": "2c85edce55e62514833e50e94a0f7862e329b76203235a2dc863c85e511dddd4",
+    "src/agentsentry/schemas/__init__.py": "c7a5746ac4519ef52c85b62f9346a0537f39db8604ee732237f08cd2055bc8f1",
+    "src/agentsentry/schemas/models.py": "4c8ec2e2fb7e41f462e1083223758c3b6833311219c24b9e3ba8bcc973714a57",
+    "src/agentsentry/trace/__init__.py": "995831b7a03eded1df23b87dbc7516ea050e2651fa7b2ada26c33b296ace0d67",
+    "src/agentsentry/trace/logging.py": "e12031dfa9399a06485e21df4d6ec6a8284bb285844e330d09fd7b684d550c99",
+    "src/agentsentry/trace/store.py": "2feb670734980d1ac8ca0e62c772c654f348735a196eadf3c43ff08672f0734f",
+    "tests/conftest.py": "d1ae4f2a1e13a59d180486e94c1e891b8aaf57df973e35c50a6fc2ac468aa662",
+    "tests/mcp_fixture_server.py": "25f12cdf2c1828287f9291cbd09d3c84fb2c8c47f12a12e68d67c0401abb82a2",
+    "tests/test_api_sandbox.py": "a7c0399e5b11e827379855c21e5742196b9547a419bd251ceab5fc3364188264",
+    "tests/test_benchmark_acceptance.py": "6809b27d3eabbe519026cec7d45e5e5cc36d6ea538a44854186d7ffad96d5d12",
+    "tests/test_benchmark_protocol.py": "7187d2749a56fffa5664b39b845b30da72f720055e7037899368cd4a083d00e0",
+    "tests/test_components.py": "08eb7cec9a8289694865dbd795b977506103aa327c9b354fc71b31ea8f751d51",
+    "tests/test_evaluation.py": "9b15695041e3349071935880bfa6b4416f481b21511d1aea57b1b9629ea7560d",
+    "tests/test_gateway.py": "1c54d0a53631d9698f87f3f77fc5d0d64ca65eb3e605fc77ececbbd05ef8c7a6",
+    "tests/test_mcp.py": "ed4459b72f4d9d23c5d3790697591ac61a98e25bfc6a3bd4ce4e39ed4ebe1797",
+    "tests/test_native_hooks.py": "f977e2ed85296f9156084b2e3679b109cfb6169ac8392ff8c6f7ed5357eaca61",
+    "tests/test_snapshot.py": "100be3d5c33bf2ee55ae2b8a22dcb342e7d24df438ed568dd0171a8bf920336d",
+    "tests/test_task_destinations.py": "984e983e64c92fa772dceafd6e98b30a9457a72aedf05738005cc387f951dd9f"
+  },
+  "model_path": "/root/autodl-tmp/T3/verl/models/Qwen/Qwen2.5-7B-Instruct",
+  "model_files": {
+    "LICENSE": {
+      "bytes": 11343,
+      "sha256": "832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e"
+    },
+    "README.md": {
+      "bytes": 6240,
+      "sha256": "f366f33bbf6bcadbb7d87f0a21a7b65584a56b8d58b0743c77c88bee625b93a6"
+    },
+    "config.json": {
+      "bytes": 663,
+      "sha256": "7463bb0ea78315365e6c6b74de4e73bbcc8359dfb0c5a737584e077d42c0b03c"
+    },
+    "generation_config.json": {
+      "bytes": 243,
+      "sha256": "3a8f9087e486054c8a4a08dae2e5a3ba62e23da212b5b8c08bc42cb983c3459f"
+    },
+    "model-00001-of-00004.safetensors": {
+      "bytes": 3945441440,
+      "sha256": "a1333e6293854747c481288ea83b348226af178dd565c49b6f9495ba1966aba7"
+    },
+    "model-00002-of-00004.safetensors": {
+      "bytes": 3864726352,
+      "sha256": "f5d25a2772cb825164a2a2c0fb6d51a87e282abf21e4dd75bc5cfb3cd0ea6185"
+    },
+    "model-00003-of-00004.safetensors": {
+      "bytes": 3864726424,
+      "sha256": "8efdec4c1bc12317ae1a38dc42b595ce777738a64deea3fcb8a0a91381bcdfd5"
+    },
+    "model-00004-of-00004.safetensors": {
+      "bytes": 3556377672,
+      "sha256": "1a72d403cdf0c1ec3cb7f289f17b394a01e64394c2e9b3c0f94dbce3faf879bd"
+    },
+    "model.safetensors.index.json": {
+      "bytes": 27752,
+      "sha256": "624bf7c47cd12468fdc16e38a47cf4f19e0415b859a223ba3c027eed2f0e1028"
+    },
+    "tokenizer.json": {
+      "bytes": 7031645,
+      "sha256": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539"
+    },
+    "tokenizer_config.json": {
+      "bytes": 7305,
+      "sha256": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583"
+    },
+    "vocab.json": {
+      "bytes": 2776833,
+      "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+    }
+  },
+  "python": "3.12.3",
+  "platform": "Linux-5.15.0-119-generic-x86_64-with-glibc2.35",
+  "cpu_affinity_count": 208,
+  "gpu": "NVIDIA GeForce RTX 5090, 32607 MiB, 595.71.05",
+  "serving": {
+    "model": "agentsentry-local-qwen",
+    "vllm": "0.27.1",
+    "max_model_len": 32768,
+    "max_num_seqs": 8,
+    "gpu_memory_utilization": 0.75,
+    "tool_call_parser": "hermes",
+    "enforce_eager": true,
+    "flashinfer_sampler": false,
+    "network": "loopback_only",
+    "external_api_calls": false
+  },
+  "model_packages_sha256": "5ae29e9837183d3d97f1c17da7dee35d4f67a85aa19924bb02c0a8bd2071228f",
+  "benchmark_packages_sha256": "0e701d9bd6e2d860987459792c20a18fb0c40f18047cdd7d9936dd65a5280048"
+}

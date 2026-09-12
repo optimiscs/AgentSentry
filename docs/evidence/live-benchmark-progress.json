@@ -1,0 +1,43 @@
+{
+  "updated_at": "2026-09-12T16:55:23.152151+00:00",
+  "overall": "NOT_ACCEPTED",
+  "batch_stopped": true,
+  "runs": [
+    {
+      "run": "artifacts/benchmarks/agentdojo/qwen27b-v4-benign-baseline-s0",
+      "status": "RECORDED_NOT_ACCEPTED",
+      "planned": 97,
+      "recorded": 97,
+      "valid": 97,
+      "invalid_or_error": 0,
+      "partial_line_pending": false
+    },
+    {
+      "run": "artifacts/benchmarks/agentdojo/qwen27b-v4-benign-full-s0",
+      "status": "RECORDED_NOT_ACCEPTED",
+      "planned": 97,
+      "recorded": 97,
+      "valid": 89,
+      "invalid_or_error": 8,
+      "partial_line_pending": false
+    },
+    {
+      "run": "artifacts/benchmarks/injecagent/qwen27b-v4-base-baseline-s0",
+      "status": "RECORDED_NOT_ACCEPTED",
+      "planned": 1054,
+      "recorded": 1054,
+      "valid": 996,
+      "invalid_or_error": 58,
+      "partial_line_pending": false
+    },
+    {
+      "run": "artifacts/benchmarks/injecagent/qwen27b-v4-base-full-s0",
+      "status": "RECORDED_NOT_ACCEPTED",
+      "planned": 1054,
+      "recorded": 1054,
+      "valid": 1002,
+      "invalid_or_error": 52,
+      "partial_line_pending": false
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+# Hard rules cannot be overridden by a user approval.
+rule invalid_resource severity critical overridable false {
+ when resource.scope_valid == false
+ then BLOCK("OUTSIDE_STATIC_BOUNDARY")
+}
+rule credential_read severity critical overridable false {
+ when action.effect == FILE_READ and resource.class == CREDENTIAL and intent.sensitive_access != ALLOW
+ then BLOCK("CREDENTIAL_ACCESS_NOT_AUTHORIZED")
+}
+rule sensitive_write severity critical overridable false {
+ when action.effect == FILE_WRITE and (resource.class == CREDENTIAL or resource.class == SYSTEM)
+ then BLOCK("SENSITIVE_WRITE")
+}
+rule secret_egress severity critical overridable false {
+ when (action.effect == NET_EGRESS or action.effect == DELEGATE) and flow.has("SECRET")
+ then BLOCK("SECRET_EGRESS")
+}
+rule unknown_tool severity critical overridable false {
+ when action.effect == OTHER
+ then BLOCK("UNKNOWN_TOOL")
+}
+rule excessive_delegation severity high overridable false {
+ when action.effect == DELEGATE and agent.depth >= 3
+ then BLOCK("DELEGATION_DEPTH_EXCEEDED")
+}
+rule memory_poisoning severity high overridable false {
+ when action.effect == MEMORY_WRITE and source.trust != TRUSTED and flow.has("INJECTION_RISK")
+ then BLOCK("MEMORY_QUARANTINED")
+}
+rule push_approval severity high overridable true {
+ when action.effect == GIT_PUSH and not intent.allows("GIT_PUSH")
+ then ASK("GIT_PUSH_REQUIRES_APPROVAL")
+}
+rule unknown_destination severity high overridable true {
+ when action.effect == NET_EGRESS and destination.trust != TRUSTED and not intent.destination_matches("destination")
+ then ASK("DESTINATION_REQUIRES_APPROVAL")
+}
+rule scoped_write severity medium overridable true {
+ when action.effect == FILE_WRITE and not intent.scope_contains("resource")
+ then ASK("SCOPE_CHANGE_REQUIRES_APPROVAL")
+}
+rule repo_read severity low overridable true {
+ when action.effect == FILE_READ and resource.class == REPO and resource.matches("*") and intent.allows("FILE_READ")
+ then ALLOW("REPOSITORY_READ")
+}
+rule approved_action severity medium overridable true {
+ when approval.valid == true and action.server == builtin and action.tool != unknown
+ then ALLOW("SCOPED_APPROVAL")
+}
+rule source_observed severity low overridable true {
+ when source.type == MCP_RESPONSE and source.trust == UNTRUSTED and destination.domain == ""
+ then ALLOW("SOURCE_REMAINS_UNTRUSTED")
+}

@@ -1,0 +1,11 @@
+{
+  "tested_at": "2026-09-12T09:10:22.905531+00:00",
+  "transports": {
+    "stdio": "PASS",
+    "streamable_http": "PASS"
+  },
+  "gateway": "http://127.0.0.1:8080",
+  "execution_count_delta": 1,
+  "blocked_forward_count": 0,
+  "trace_id": "tr_798b36b99f714979b5add5c7a03a4f64"
+}

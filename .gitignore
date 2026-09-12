@@ -1,0 +1,18 @@
+# Credentials and local state
+.env
+.env.*
+!.env.example
+.venv/
+.cache/
+__pycache__/
+*.pyc
+node_modules/
+dist/
+artifacts/
+models/
+datasets/
+runtime-data/
+*.db
+*.db-wal
+*.db-shm
+.DS_Store

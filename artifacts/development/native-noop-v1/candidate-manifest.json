@@ -1,0 +1,19 @@
+{
+  "status": "FROZEN_ISOLATED_OVERLAY_NOT_IN_ACTIVE_OR_QUEUED_RUNS",
+  "candidate_path": "artifacts/development/native-noop-v1",
+  "tests": {
+    "protocol_unittest_passed": 6,
+    "replay_total": 1054,
+    "previous_valid_unchanged": 996,
+    "noop_compatibility_recovered": 12,
+    "remaining_invalid_or_error": 46
+  },
+  "files": {
+    "check_protocol.py": "90c425c97700822fa817adfa23500e71081fc660f39f4510219e033b802e8bf7",
+    "native_protocol.patch": "b87013514174d1525c76498bc51a340d665b55abadd46842c6a822df32c36a8b",
+    "native_protocol.py": "0be2ea1c14b6b3b85e61237cd3ab35f57e911a404d25b55ff9521806098e51e1",
+    "origin.json": "250ef1ecdb0a1ab8a08c2fa38a743d998a2d465dd044419c3030369df3ff9a01",
+    "replay-report.json": "701264f6bcc47b376066bc0d35b3319fa02015d3e50e6bf9356a3fb3a8387298",
+    "replay.py": "263ef348fb46966817d9aded1c2751516ee2acf50b70709c98157ae4b5e42df1"
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "name": "CPU 网关性能实测",
+  "kind": "local_gateway_benchmark",
+  "generated_at": "2026-09-12T10:07:03.984471+00:00",
+  "summary": {
+    "cpu_affinity": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "address_space_limit_gib": 8,
+    "gpu_used": false,
+    "configurations": [
+      {
+        "input_bytes": 1024,
+        "concurrency": 1,
+        "n": 1000,
+        "warmup": 200,
+        "p50_ms": 6.136020179837942,
+        "p95_ms": 10.542364791035652,
+        "p99_ms": 13.553972356021404,
+        "max_ms": 65.16842823475599,
+        "errors": 0,
+        "queue_included": true,
+        "pass": true
+      },
+      {
+        "input_bytes": 1024,
+        "concurrency": 4,
+        "n": 1000,
+        "warmup": 200,
+        "p50_ms": 27.248249389231205,
+        "p95_ms": 77.64380145817995,
+        "p99_ms": 101.99648700654507,
+        "max_ms": 173.75357169657946,
+        "errors": 0,
+        "queue_included": true,
+        "pass": true
+      },
+      {
+        "input_bytes": 8192,
+        "concurrency": 1,
+        "n": 1000,
+        "warmup": 200,
+        "p50_ms": 11.63196424022317,
+        "p95_ms": 17.297253012657166,
+        "p99_ms": 20.024677738547325,
+        "max_ms": 34.11651402711868,
+        "errors": 0,
+        "queue_included": true,
+        "pass": true
+      },
+      {
+        "input_bytes": 8192,
+        "concurrency": 4,
+        "n": 1000,
+        "warmup": 200,
+        "p50_ms": 126.13931810483336,
+        "p95_ms": 172.84388281404972,
+        "p99_ms": 188.79988230764866,
+        "max_ms": 203.14624067395926,
+        "errors": 0,
+        "queue_included": true,
+        "pass": true
+      }
+    ],
+    "pass": true
+  },
+  "limits": [
+    "包含扫描、归一化、策略、SQLite 审计和本地文件执行；不含网络 HTTP 传输与上游 Agent 生成。",
+    "CPU affinity 与虚拟地址空间上限用于本次隔离；共享主机存在其他任务，非独占物理 4 核/8 GiB。",
+    "排队为每批并发 1/4 的线程锁等待；不代表无界请求队列或生产容量。"
+  ]
+}

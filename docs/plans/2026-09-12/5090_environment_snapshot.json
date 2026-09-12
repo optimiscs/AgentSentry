@@ -1,0 +1,46 @@
+{
+  "ssh_alias": "5090",
+  "hostname": "autodl-container-8ac3478431-74a3c5de",
+  "user": "root",
+  "/sys/fs/cgroup/cpu.max": "50000 100000",
+  "/sys/fs/cgroup/memory.max": "2147483648",
+  "/sys/fs/cgroup/memory.current": "329314304",
+  "nvidia_devices": [],
+  "tools": {
+    "python3": "/usr/bin/python3",
+    "node": "/usr/bin/node",
+    "git": "/usr/bin/git",
+    "docker": null,
+    "podman": null,
+    "nerdctl": null,
+    "uv": null,
+    "nvidia-smi": "/usr/bin/nvidia-smi"
+  },
+  "disk": {
+    "/": {
+      "total": 32212254720,
+      "used": 30433378304,
+      "free": 1778876416
+    },
+    "/root/autodl-tmp": {
+      "total": 450971566080,
+      "used": 353183322112,
+      "free": 97788243968
+    },
+    "/root/autodl-fs": {
+      "total": 214748364800,
+      "used": 7441842176,
+      "free": 207306522624
+    }
+  },
+  "versions": {
+    "python3": "Python 3.10.12",
+    "node": "v12.22.9",
+    "git": "git version 2.34.1"
+  },
+  "gpu_probe": {
+    "error": "[Errno 8] Exec format error: 'nvidia-smi'"
+  },
+  "observed_at": "2026-09-12T11:13:09.478733+08:00",
+  "scope_note": "Read-only snapshot of the current SSH container; host-wide RAM and CPU are not container allocations. No runtime or model was installed."
+}

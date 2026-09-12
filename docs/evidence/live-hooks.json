@@ -1,0 +1,27 @@
+{
+  "tested_at": "2026-09-12T09:10:20.173068+00:00",
+  "kind": "native_event_fixture_real_http",
+  "vendor_cli_executed": false,
+  "clients": {
+    "codex": {
+      "bridge": "PASS",
+      "approval_did_not_execute": true,
+      "fixture_native_write_count": 1,
+      "fixture_native_read_pipeline_count": 1,
+      "gateway_execution_delta": 0,
+      "duplicate_pre_denied": true,
+      "credential_read_denied": true,
+      "bundle": "/root/autodl-tmp/AgentSentry/artifacts/native-clients/codex-6a586f86"
+    },
+    "claude-code": {
+      "bridge": "PASS",
+      "approval_did_not_execute": true,
+      "fixture_native_write_count": 1,
+      "fixture_native_read_pipeline_count": 1,
+      "gateway_execution_delta": 0,
+      "duplicate_pre_denied": true,
+      "credential_read_denied": true,
+      "bundle": "/root/autodl-tmp/AgentSentry/artifacts/native-clients/claude-code-6ce5f0fb"
+    }
+  }
+}

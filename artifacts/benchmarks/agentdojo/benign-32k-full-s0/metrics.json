@@ -1,0 +1,21 @@
+{
+  "planned_cases": 97,
+  "recorded_cases": 97,
+  "completed_cases": 90,
+  "incomplete_or_error": 7,
+  "valid_rate": 0.9278350515463918,
+  "attack_cases": 0,
+  "attack_valid_cases": 0,
+  "native_asr_all": null,
+  "native_asr_valid": null,
+  "strict_asr_upper_bound": null,
+  "benign_cases": 97,
+  "benign_valid_cases": 90,
+  "benign_utility_all": 0.20618556701030927,
+  "benign_cases_with_block": 5,
+  "benign_cases_with_ask": 50,
+  "attack_utility_all": null,
+  "tool_calls": 683,
+  "all_planned_records_present": true,
+  "all_cases_evaluated": false
+}

@@ -1,0 +1,238 @@
+{
+  "status": "FROZEN_READY_FOR_EXECUTION_SEE_LIVE_REPORT",
+  "created_at": "2026-09-12T12:51:00.185873+00:00",
+  "base_command_sha256": "48c8bfd1abb77eaa56924956b394a192ae3c81834ea56a540515d3d9f04bf82a",
+  "required_dependencies": [
+    {
+      "pid": 478046,
+      "start_ticks": "441643884",
+      "description": "v4 four-job paired benchmark"
+    },
+    {
+      "pid": 613869,
+      "start_ticks": "442357392",
+      "description": "frozen task-plan-v1 paired pilot"
+    }
+  ],
+  "current_model_process": {
+    "pid": 463180,
+    "start_ticks": "441583081",
+    "pgrp": 463180
+  },
+  "current_observation": {
+    "vllm": "0.27.1",
+    "max_model_len": 32768,
+    "max_num_seqs": 2,
+    "max_num_batched_tokens": 2048,
+    "enforce_eager": true,
+    "enable_prefix_caching": false,
+    "enable_chunked_prefill": true,
+    "generation_throughput_recent_total_tokens_per_second": [
+      30.6,
+      32.6
+    ],
+    "throughput_kind": "rolling server logs, not a controlled benchmark"
+  },
+  "trials": [
+    {
+      "id": "eager-s2",
+      "argv": [
+        "/root/autodl-tmp/conda-envs/qwen3-vl-vllm/bin/python",
+        "-m",
+        "vllm.entrypoints.openai.api_server",
+        "--model",
+        "/root/autodl-tmp/.cache/huggingface/models--Inferact--Qwen3.8-27B-NVFP4/snapshots/6128240ebaf4eaa7bad2b3d1c72c37d677c5f462",
+        "--host",
+        "127.0.0.1",
+        "--port",
+        "18080",
+        "--served-model-name",
+        "agentsentry-local-qwen27b-nvfp4-eager-s2",
+        "--gpu-memory-utilization",
+        "0.92",
+        "--max-model-len",
+        "32768",
+        "--max-num-seqs",
+        "2",
+        "--max-num-batched-tokens",
+        "2048",
+        "--enable-auto-tool-choice",
+        "--tool-call-parser",
+        "qwen3_coder",
+        "--reasoning-parser",
+        "qwen3",
+        "--language-model-only",
+        "--kernel-config",
+        "{\"linear_backend\":\"cutlass\"}",
+        "--default-chat-template-kwargs",
+        "{\"enable_thinking\":false}",
+        "--enforce-eager"
+      ],
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "graph-s2",
+      "argv": [
+        "/root/autodl-tmp/conda-envs/qwen3-vl-vllm/bin/python",
+        "-m",
+        "vllm.entrypoints.openai.api_server",
+        "--model",
+        "/root/autodl-tmp/.cache/huggingface/models--Inferact--Qwen3.8-27B-NVFP4/snapshots/6128240ebaf4eaa7bad2b3d1c72c37d677c5f462",
+        "--host",
+        "127.0.0.1",
+        "--port",
+        "18080",
+        "--served-model-name",
+        "agentsentry-local-qwen27b-nvfp4-graph-s2",
+        "--gpu-memory-utilization",
+        "0.92",
+        "--max-model-len",
+        "32768",
+        "--max-num-seqs",
+        "2",
+        "--max-num-batched-tokens",
+        "2048",
+        "--enable-auto-tool-choice",
+        "--tool-call-parser",
+        "qwen3_coder",
+        "--reasoning-parser",
+        "qwen3",
+        "--language-model-only",
+        "--kernel-config",
+        "{\"linear_backend\":\"cutlass\"}",
+        "--default-chat-template-kwargs",
+        "{\"enable_thinking\":false}"
+      ],
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "graph-apc-s2",
+      "argv": [
+        "/root/autodl-tmp/conda-envs/qwen3-vl-vllm/bin/python",
+        "-m",
+        "vllm.entrypoints.openai.api_server",
+        "--model",
+        "/root/autodl-tmp/.cache/huggingface/models--Inferact--Qwen3.8-27B-NVFP4/snapshots/6128240ebaf4eaa7bad2b3d1c72c37d677c5f462",
+        "--host",
+        "127.0.0.1",
+        "--port",
+        "18080",
+        "--served-model-name",
+        "agentsentry-local-qwen27b-nvfp4-graph-apc-s2",
+        "--gpu-memory-utilization",
+        "0.92",
+        "--max-model-len",
+        "32768",
+        "--max-num-seqs",
+        "2",
+        "--max-num-batched-tokens",
+        "2048",
+        "--enable-auto-tool-choice",
+        "--tool-call-parser",
+        "qwen3_coder",
+        "--reasoning-parser",
+        "qwen3",
+        "--language-model-only",
+        "--kernel-config",
+        "{\"linear_backend\":\"cutlass\"}",
+        "--default-chat-template-kwargs",
+        "{\"enable_thinking\":false}",
+        "--enable-prefix-caching"
+      ],
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "graph-apc-s4",
+      "argv": [
+        "/root/autodl-tmp/conda-envs/qwen3-vl-vllm/bin/python",
+        "-m",
+        "vllm.entrypoints.openai.api_server",
+        "--model",
+        "/root/autodl-tmp/.cache/huggingface/models--Inferact--Qwen3.8-27B-NVFP4/snapshots/6128240ebaf4eaa7bad2b3d1c72c37d677c5f462",
+        "--host",
+        "127.0.0.1",
+        "--port",
+        "18080",
+        "--served-model-name",
+        "agentsentry-local-qwen27b-nvfp4-graph-apc-s4",
+        "--gpu-memory-utilization",
+        "0.92",
+        "--max-model-len",
+        "32768",
+        "--max-num-seqs",
+        "4",
+        "--max-num-batched-tokens",
+        "4096",
+        "--enable-auto-tool-choice",
+        "--tool-call-parser",
+        "qwen3_coder",
+        "--reasoning-parser",
+        "qwen3",
+        "--language-model-only",
+        "--kernel-config",
+        "{\"linear_backend\":\"cutlass\"}",
+        "--default-chat-template-kwargs",
+        "{\"enable_thinking\":false}",
+        "--enable-prefix-caching"
+      ],
+      "status": "NOT_RUN"
+    }
+  ],
+  "workload": {
+    "backend": "openai",
+    "endpoint": "/v1/completions",
+    "dataset": "random",
+    "seed": 0,
+    "input_tokens": 1024,
+    "output_tokens": 256,
+    "num_prompts": 16,
+    "ignore_eos": true,
+    "client_concurrencies": [
+      2,
+      4
+    ],
+    "cache_states": [
+      "first_run",
+      "repeat_identical_prompts"
+    ],
+    "measurements": [
+      "output_token_throughput",
+      "TTFT",
+      "TPOT",
+      "end_to_end_P95",
+      "errors",
+      "VRAM_peak",
+      "startup_seconds"
+    ],
+    "seeds_by_client_concurrency": {
+      "2": 0,
+      "4": 1
+    },
+    "cache_note": "First use of each seeded random workload and its identical replay, after five distinct correctness/warmup prompts. No assertion of completely empty prefix cache; separate concurrency workloads use different seeds.",
+    "num_warmups": 0,
+    "endpoint_ready_test_requests": 0
+  },
+  "correctness_checks": [
+    "fixed short answer",
+    "JSON output validity and expected values",
+    "forced tool-call name and complete arguments",
+    "different suffixes after shared prefixes produce respective expected values"
+  ],
+  "promotion_rule": "No speedup claim until actual paired measurements. Restore current serving command on failure; serving changes require new benchmark manifests and full quality reruns. No metrics from different configurations may be combined.",
+  "source_links": [
+    "https://docs.vllm.ai/en/latest/configuration/optimization/",
+    "https://docs.vllm.ai/en/latest/features/automatic_prefix_caching/"
+  ],
+  "hybrid_model_note": "Installed vLLM arg_utils.py explicitly makes hybrid-model prefix caching opt-in while it matures; compatibility must be measured.",
+  "executor_sha256": "1c2ef72aefd6f24e4cefe510838d80b50362e953f8a90139ad808cf324710183",
+  "offline_checks": {
+    "passed": 11,
+    "environments": [
+      "local Python 3.9",
+      "5090 Python 3.12"
+    ],
+    "check_file_sha256": "53f689f24cb0a1cdb88990377c5481c8f3fc501d8313643fcbcd2517cadb01bf",
+    "model_calls": 0,
+    "signals_to_live_services": 0
+  }
+}

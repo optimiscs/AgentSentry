@@ -1,0 +1,1551 @@
+{
+  "status": "TUNING_FINISHED_REVIEW_REQUIRED",
+  "pid": 684948,
+  "trials": [
+    {
+      "id": "eager-s2",
+      "argv": [
+        "/root/autodl-tmp/conda-envs/qwen3-vl-vllm/bin/python",
+        "-m",
+        "vllm.entrypoints.openai.api_server",
+        "--model",
+        "/root/autodl-tmp/.cache/huggingface/models--Inferact--Qwen3.8-27B-NVFP4/snapshots/6128240ebaf4eaa7bad2b3d1c72c37d677c5f462",
+        "--host",
+        "127.0.0.1",
+        "--port",
+        "18080",
+        "--served-model-name",
+        "agentsentry-local-qwen27b-nvfp4-eager-s2",
+        "--gpu-memory-utilization",
+        "0.92",
+        "--max-model-len",
+        "32768",
+        "--max-num-seqs",
+        "2",
+        "--max-num-batched-tokens",
+        "2048",
+        "--enable-auto-tool-choice",
+        "--tool-call-parser",
+        "qwen3_coder",
+        "--reasoning-parser",
+        "qwen3",
+        "--language-model-only",
+        "--kernel-config",
+        "{\"linear_backend\":\"cutlass\"}",
+        "--default-chat-template-kwargs",
+        "{\"enable_thinking\":false}",
+        "--enforce-eager"
+      ],
+      "status": "FAILED_REVIEW_REQUIRED",
+      "measurements": [],
+      "server_identity": {
+        "pid": 870117,
+        "start_ticks": "444043749",
+        "pgrp": 870117,
+        "session": 870117
+      },
+      "startup_seconds": 35.052942326292396,
+      "checks": [
+        {
+          "name": "short",
+          "passed": true,
+          "request": {
+            "model": "agentsentry-local-qwen27b-nvfp4-eager-s2",
+            "temperature": 0,
+            "seed": 0,
+            "max_tokens": 128,
+            "messages": [
+              {
+                "role": "user",
+                "content": "Reply with exactly READY and no other text."
+              }
+            ]
+          },
+          "response": {
+            "id": "chatcmpl-9772d9124c427d50",
+            "object": "chat.completion",
+            "created": 1789232449,
+            "model": "agentsentry-local-qwen27b-nvfp4-eager-s2",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "READY",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "reasoning": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null,
+                "routed_experts": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": "vllm-0.27.1-6053290a",
+            "usage": {
+              "prompt_tokens": 21,
+              "total_tokens": 23,
+              "completion_tokens": 2,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "prompt_text": null,
+            "kv_transfer_params": null,
+            "ec_transfer_params": null,
+            "metrics": null
+          },
+          "seconds": 0.46099436189979315
+        },
+        {
+          "name": "json",
+          "passed": true,
+          "request": {
+            "model": "agentsentry-local-qwen27b-nvfp4-eager-s2",
+            "temperature": 0,
+            "seed": 0,
+            "max_tokens": 128,
+            "messages": [
+              {
+                "role": "user",
+                "content": "Return a JSON object with value 37 and unit \"test\". No other fields."
+              }
+            ],
+            "response_format": {
+              "type": "json_object"
+            }
+          },
+          "response": {
+            "id": "chatcmpl-9115f950e96a9156",
+            "object": "chat.completion",
+            "created": 1789232449,
+            "model": "agentsentry-local-qwen27b-nvfp4-eager-s2",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "{\"value\": 37, \"unit\": \"test\"}",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "reasoning": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null,
+                "routed_experts": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": "vllm-0.27.1-6053290a",
+            "usage": {
+              "prompt_tokens": 30,
+              "total_tokens": 44,
+              "completion_tokens": 14,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "prompt_text": null,
+            "kv_transfer_params": null,
+            "ec_transfer_params": null,
+            "metrics": null
+          },
+          "seconds": 1.7549062091857195
+        },
+        {
+          "name": "prefix_a",
+          "passed": true,
+          "request": {
+            "model": "agentsentry-local-qwen27b-nvfp4-eager-s2",
+            "temperature": 0,
+            "seed": 0,
+            "max_tokens": 128,
+            "messages": [
+              {
+                "role": "system",
+                "content": "This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. "
+              },
+              {
+                "role": "user",
+                "content": "Reply with exactly ALPHA17 and nothing else."
+              }
+            ]
+          },
+          "response": {
+            "id": "chatcmpl-bc48cda422490227",
+            "object": "chat.completion",
+            "created": 1789232451,
+            "model": "agentsentry-local-qwen27b-nvfp4-eager-s2",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "ALPHA17",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "reasoning": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null,
+                "routed_experts": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": "vllm-0.27.1-6053290a",
+            "usage": {
+              "prompt_tokens": 795,
+              "total_tokens": 800,
+              "completion_tokens": 5,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "prompt_text": null,
+            "kv_transfer_params": null,
+            "ec_transfer_params": null,
+            "metrics": null
+          },
+          "seconds": 0.421592952683568
+        },
+        {
+          "name": "prefix_b",
+          "passed": true,
+          "request": {
+            "model": "agentsentry-local-qwen27b-nvfp4-eager-s2",
+            "temperature": 0,
+            "seed": 0,
+            "max_tokens": 128,
+            "messages": [
+              {
+                "role": "system",
+                "content": "This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. "
+              },
+              {
+                "role": "user",
+                "content": "Reply with exactly BETA29 and nothing else."
+              }
+            ]
+          },
+          "response": {
+            "id": "chatcmpl-97fb1af0a1c3ed04",
+            "object": "chat.completion",
+            "created": 1789232452,
+            "model": "agentsentry-local-qwen27b-nvfp4-eager-s2",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "BETA29",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "reasoning": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null,
+                "routed_experts": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": "vllm-0.27.1-6053290a",
+            "usage": {
+              "prompt_tokens": 796,
+              "total_tokens": 801,
+              "completion_tokens": 5,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "prompt_text": null,
+            "kv_transfer_params": null,
+            "ec_transfer_params": null,
+            "metrics": null
+          },
+          "seconds": 0.4195972252637148
+        },
+        {
+          "name": "tool",
+          "passed": true,
+          "request": {
+            "model": "agentsentry-local-qwen27b-nvfp4-eager-s2",
+            "temperature": 0,
+            "seed": 0,
+            "max_tokens": 128,
+            "messages": [
+              {
+                "role": "user",
+                "content": "Call record_value with value 37 and label \"check\"."
+              }
+            ],
+            "tools": [
+              {
+                "type": "function",
+                "function": {
+                  "name": "record_value",
+                  "description": "Record a synthetic value.",
+                  "parameters": {
+                    "type": "object",
+                    "properties": {
+                      "value": {
+                        "type": "integer"
+                      },
+                      "label": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "value",
+                      "label"
+                    ],
+                    "additionalProperties": false
+                  }
+                }
+              }
+            ],
+            "tool_choice": {
+              "type": "function",
+              "function": {
+                "name": "record_value"
+              }
+            }
+          },
+          "response": {
+            "id": "chatcmpl-afe7b70eb8ca9c33",
+            "object": "chat.completion",
+            "created": 1789232452,
+            "model": "agentsentry-local-qwen27b-nvfp4-eager-s2",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [
+                    {
+                      "id": "chatcmpl-tool-b0a0ca22a8b49e07",
+                      "type": "function",
+                      "function": {
+                        "name": "record_value",
+                        "arguments": "{\"value\": 37, \"label\": \"check\"}"
+                      }
+                    }
+                  ],
+                  "reasoning": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null,
+                "routed_experts": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": "vllm-0.27.1-6053290a",
+            "usage": {
+              "prompt_tokens": 298,
+              "total_tokens": 336,
+              "completion_tokens": 38,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "prompt_text": null,
+            "kv_transfer_params": null,
+            "ec_transfer_params": null,
+            "metrics": null
+          },
+          "seconds": 2.5290727065876126
+        }
+      ],
+      "error": "RuntimeError:PERFORMANCE_WORKLOAD_FAILED:1"
+    },
+    {
+      "id": "graph-s2",
+      "argv": [
+        "/root/autodl-tmp/conda-envs/qwen3-vl-vllm/bin/python",
+        "-m",
+        "vllm.entrypoints.openai.api_server",
+        "--model",
+        "/root/autodl-tmp/.cache/huggingface/models--Inferact--Qwen3.8-27B-NVFP4/snapshots/6128240ebaf4eaa7bad2b3d1c72c37d677c5f462",
+        "--host",
+        "127.0.0.1",
+        "--port",
+        "18080",
+        "--served-model-name",
+        "agentsentry-local-qwen27b-nvfp4-graph-s2",
+        "--gpu-memory-utilization",
+        "0.92",
+        "--max-model-len",
+        "32768",
+        "--max-num-seqs",
+        "2",
+        "--max-num-batched-tokens",
+        "2048",
+        "--enable-auto-tool-choice",
+        "--tool-call-parser",
+        "qwen3_coder",
+        "--reasoning-parser",
+        "qwen3",
+        "--language-model-only",
+        "--kernel-config",
+        "{\"linear_backend\":\"cutlass\"}",
+        "--default-chat-template-kwargs",
+        "{\"enable_thinking\":false}"
+      ],
+      "status": "FAILED_REVIEW_REQUIRED",
+      "measurements": [],
+      "server_identity": {
+        "pid": 872492,
+        "start_ticks": "444048871",
+        "pgrp": 872492,
+        "session": 872492
+      },
+      "startup_seconds": 160.2018260229379,
+      "checks": [
+        {
+          "name": "short",
+          "passed": true,
+          "request": {
+            "model": "agentsentry-local-qwen27b-nvfp4-graph-s2",
+            "temperature": 0,
+            "seed": 0,
+            "max_tokens": 128,
+            "messages": [
+              {
+                "role": "user",
+                "content": "Reply with exactly READY and no other text."
+              }
+            ]
+          },
+          "response": {
+            "id": "chatcmpl-b11a2909a95e0846",
+            "object": "chat.completion",
+            "created": 1789232625,
+            "model": "agentsentry-local-qwen27b-nvfp4-graph-s2",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "READY",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "reasoning": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null,
+                "routed_experts": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": "vllm-0.27.1-286fae98",
+            "usage": {
+              "prompt_tokens": 21,
+              "total_tokens": 23,
+              "completion_tokens": 2,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "prompt_text": null,
+            "kv_transfer_params": null,
+            "ec_transfer_params": null,
+            "metrics": null
+          },
+          "seconds": 0.22303684428334236
+        },
+        {
+          "name": "json",
+          "passed": true,
+          "request": {
+            "model": "agentsentry-local-qwen27b-nvfp4-graph-s2",
+            "temperature": 0,
+            "seed": 0,
+            "max_tokens": 128,
+            "messages": [
+              {
+                "role": "user",
+                "content": "Return a JSON object with value 37 and unit \"test\". No other fields."
+              }
+            ],
+            "response_format": {
+              "type": "json_object"
+            }
+          },
+          "response": {
+            "id": "chatcmpl-8bceff7be8b9d9d1",
+            "object": "chat.completion",
+            "created": 1789232626,
+            "model": "agentsentry-local-qwen27b-nvfp4-graph-s2",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "{\"value\": 37, \"unit\": \"test\"}",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "reasoning": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null,
+                "routed_experts": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": "vllm-0.27.1-286fae98",
+            "usage": {
+              "prompt_tokens": 30,
+              "total_tokens": 44,
+              "completion_tokens": 14,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "prompt_text": null,
+            "kv_transfer_params": null,
+            "ec_transfer_params": null,
+            "metrics": null
+          },
+          "seconds": 1.2598992213606834
+        },
+        {
+          "name": "prefix_a",
+          "passed": true,
+          "request": {
+            "model": "agentsentry-local-qwen27b-nvfp4-graph-s2",
+            "temperature": 0,
+            "seed": 0,
+            "max_tokens": 128,
+            "messages": [
+              {
+                "role": "system",
+                "content": "This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. "
+              },
+              {
+                "role": "user",
+                "content": "Reply with exactly ALPHA17 and nothing else."
+              }
+            ]
+          },
+          "response": {
+            "id": "chatcmpl-bdc99411021d46f8",
+            "object": "chat.completion",
+            "created": 1789232627,
+            "model": "agentsentry-local-qwen27b-nvfp4-graph-s2",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "ALPHA17",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "reasoning": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null,
+                "routed_experts": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": "vllm-0.27.1-286fae98",
+            "usage": {
+              "prompt_tokens": 795,
+              "total_tokens": 800,
+              "completion_tokens": 5,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "prompt_text": null,
+            "kv_transfer_params": null,
+            "ec_transfer_params": null,
+            "metrics": null
+          },
+          "seconds": 0.18363883066922426
+        },
+        {
+          "name": "prefix_b",
+          "passed": true,
+          "request": {
+            "model": "agentsentry-local-qwen27b-nvfp4-graph-s2",
+            "temperature": 0,
+            "seed": 0,
+            "max_tokens": 128,
+            "messages": [
+              {
+                "role": "system",
+                "content": "This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. "
+              },
+              {
+                "role": "user",
+                "content": "Reply with exactly BETA29 and nothing else."
+              }
+            ]
+          },
+          "response": {
+            "id": "chatcmpl-ab987cbf5cfd9b21",
+            "object": "chat.completion",
+            "created": 1789232627,
+            "model": "agentsentry-local-qwen27b-nvfp4-graph-s2",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "BETA29",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "reasoning": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null,
+                "routed_experts": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": "vllm-0.27.1-286fae98",
+            "usage": {
+              "prompt_tokens": 796,
+              "total_tokens": 801,
+              "completion_tokens": 5,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "prompt_text": null,
+            "kv_transfer_params": null,
+            "ec_transfer_params": null,
+            "metrics": null
+          },
+          "seconds": 0.22533869836479425
+        },
+        {
+          "name": "tool",
+          "passed": true,
+          "request": {
+            "model": "agentsentry-local-qwen27b-nvfp4-graph-s2",
+            "temperature": 0,
+            "seed": 0,
+            "max_tokens": 128,
+            "messages": [
+              {
+                "role": "user",
+                "content": "Call record_value with value 37 and label \"check\"."
+              }
+            ],
+            "tools": [
+              {
+                "type": "function",
+                "function": {
+                  "name": "record_value",
+                  "description": "Record a synthetic value.",
+                  "parameters": {
+                    "type": "object",
+                    "properties": {
+                      "value": {
+                        "type": "integer"
+                      },
+                      "label": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "value",
+                      "label"
+                    ],
+                    "additionalProperties": false
+                  }
+                }
+              }
+            ],
+            "tool_choice": {
+              "type": "function",
+              "function": {
+                "name": "record_value"
+              }
+            }
+          },
+          "response": {
+            "id": "chatcmpl-941603ce2fa7b6ce",
+            "object": "chat.completion",
+            "created": 1789232627,
+            "model": "agentsentry-local-qwen27b-nvfp4-graph-s2",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [
+                    {
+                      "id": "chatcmpl-tool-a9010f4e0b01eb02",
+                      "type": "function",
+                      "function": {
+                        "name": "record_value",
+                        "arguments": "{\"value\": 37, \"label\": \"check\"}"
+                      }
+                    }
+                  ],
+                  "reasoning": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null,
+                "routed_experts": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": "vllm-0.27.1-286fae98",
+            "usage": {
+              "prompt_tokens": 298,
+              "total_tokens": 336,
+              "completion_tokens": 38,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "prompt_text": null,
+            "kv_transfer_params": null,
+            "ec_transfer_params": null,
+            "metrics": null
+          },
+          "seconds": 1.0187232848256826
+        }
+      ],
+      "error": "RuntimeError:PERFORMANCE_WORKLOAD_FAILED:1"
+    },
+    {
+      "id": "graph-apc-s2",
+      "argv": [
+        "/root/autodl-tmp/conda-envs/qwen3-vl-vllm/bin/python",
+        "-m",
+        "vllm.entrypoints.openai.api_server",
+        "--model",
+        "/root/autodl-tmp/.cache/huggingface/models--Inferact--Qwen3.8-27B-NVFP4/snapshots/6128240ebaf4eaa7bad2b3d1c72c37d677c5f462",
+        "--host",
+        "127.0.0.1",
+        "--port",
+        "18080",
+        "--served-model-name",
+        "agentsentry-local-qwen27b-nvfp4-graph-apc-s2",
+        "--gpu-memory-utilization",
+        "0.92",
+        "--max-model-len",
+        "32768",
+        "--max-num-seqs",
+        "2",
+        "--max-num-batched-tokens",
+        "2048",
+        "--enable-auto-tool-choice",
+        "--tool-call-parser",
+        "qwen3_coder",
+        "--reasoning-parser",
+        "qwen3",
+        "--language-model-only",
+        "--kernel-config",
+        "{\"linear_backend\":\"cutlass\"}",
+        "--default-chat-template-kwargs",
+        "{\"enable_thinking\":false}",
+        "--enable-prefix-caching"
+      ],
+      "status": "FAILED_REVIEW_REQUIRED",
+      "measurements": [],
+      "server_identity": {
+        "pid": 877778,
+        "start_ticks": "444066369",
+        "pgrp": 877778,
+        "session": 877778
+      },
+      "startup_seconds": 160.2054210966453,
+      "checks": [
+        {
+          "name": "short",
+          "passed": true,
+          "request": {
+            "model": "agentsentry-local-qwen27b-nvfp4-graph-apc-s2",
+            "temperature": 0,
+            "seed": 0,
+            "max_tokens": 128,
+            "messages": [
+              {
+                "role": "user",
+                "content": "Reply with exactly READY and no other text."
+              }
+            ]
+          },
+          "response": {
+            "id": "chatcmpl-afa6ed23bb39d645",
+            "object": "chat.completion",
+            "created": 1789232800,
+            "model": "agentsentry-local-qwen27b-nvfp4-graph-apc-s2",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "READY",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "reasoning": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null,
+                "routed_experts": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": "vllm-0.27.1-ea937b2d",
+            "usage": {
+              "prompt_tokens": 21,
+              "total_tokens": 23,
+              "completion_tokens": 2,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "prompt_text": null,
+            "kv_transfer_params": null,
+            "ec_transfer_params": null,
+            "metrics": null
+          },
+          "seconds": 0.21352278627455235
+        },
+        {
+          "name": "json",
+          "passed": true,
+          "request": {
+            "model": "agentsentry-local-qwen27b-nvfp4-graph-apc-s2",
+            "temperature": 0,
+            "seed": 0,
+            "max_tokens": 128,
+            "messages": [
+              {
+                "role": "user",
+                "content": "Return a JSON object with value 37 and unit \"test\". No other fields."
+              }
+            ],
+            "response_format": {
+              "type": "json_object"
+            }
+          },
+          "response": {
+            "id": "chatcmpl-84962a63db0b424a",
+            "object": "chat.completion",
+            "created": 1789232801,
+            "model": "agentsentry-local-qwen27b-nvfp4-graph-apc-s2",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "{\"value\": 37, \"unit\": \"test\"}",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "reasoning": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null,
+                "routed_experts": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": "vllm-0.27.1-ea937b2d",
+            "usage": {
+              "prompt_tokens": 30,
+              "total_tokens": 44,
+              "completion_tokens": 14,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "prompt_text": null,
+            "kv_transfer_params": null,
+            "ec_transfer_params": null,
+            "metrics": null
+          },
+          "seconds": 1.1988630713894963
+        },
+        {
+          "name": "prefix_a",
+          "passed": true,
+          "request": {
+            "model": "agentsentry-local-qwen27b-nvfp4-graph-apc-s2",
+            "temperature": 0,
+            "seed": 0,
+            "max_tokens": 128,
+            "messages": [
+              {
+                "role": "system",
+                "content": "This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. "
+              },
+              {
+                "role": "user",
+                "content": "Reply with exactly ALPHA17 and nothing else."
+              }
+            ]
+          },
+          "response": {
+            "id": "chatcmpl-ba77fa93996fbae5",
+            "object": "chat.completion",
+            "created": 1789232802,
+            "model": "agentsentry-local-qwen27b-nvfp4-graph-apc-s2",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "ALPHA17",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "reasoning": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null,
+                "routed_experts": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": "vllm-0.27.1-ea937b2d",
+            "usage": {
+              "prompt_tokens": 795,
+              "total_tokens": 800,
+              "completion_tokens": 5,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "prompt_text": null,
+            "kv_transfer_params": null,
+            "ec_transfer_params": null,
+            "metrics": null
+          },
+          "seconds": 0.39486716967076063
+        },
+        {
+          "name": "prefix_b",
+          "passed": true,
+          "request": {
+            "model": "agentsentry-local-qwen27b-nvfp4-graph-apc-s2",
+            "temperature": 0,
+            "seed": 0,
+            "max_tokens": 128,
+            "messages": [
+              {
+                "role": "system",
+                "content": "This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. "
+              },
+              {
+                "role": "user",
+                "content": "Reply with exactly BETA29 and nothing else."
+              }
+            ]
+          },
+          "response": {
+            "id": "chatcmpl-84c6ac958b5066ec",
+            "object": "chat.completion",
+            "created": 1789232802,
+            "model": "agentsentry-local-qwen27b-nvfp4-graph-apc-s2",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "BETA29",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "reasoning": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null,
+                "routed_experts": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": "vllm-0.27.1-ea937b2d",
+            "usage": {
+              "prompt_tokens": 796,
+              "total_tokens": 801,
+              "completion_tokens": 5,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "prompt_text": null,
+            "kv_transfer_params": null,
+            "ec_transfer_params": null,
+            "metrics": null
+          },
+          "seconds": 0.24414462130516768
+        },
+        {
+          "name": "tool",
+          "passed": true,
+          "request": {
+            "model": "agentsentry-local-qwen27b-nvfp4-graph-apc-s2",
+            "temperature": 0,
+            "seed": 0,
+            "max_tokens": 128,
+            "messages": [
+              {
+                "role": "user",
+                "content": "Call record_value with value 37 and label \"check\"."
+              }
+            ],
+            "tools": [
+              {
+                "type": "function",
+                "function": {
+                  "name": "record_value",
+                  "description": "Record a synthetic value.",
+                  "parameters": {
+                    "type": "object",
+                    "properties": {
+                      "value": {
+                        "type": "integer"
+                      },
+                      "label": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "value",
+                      "label"
+                    ],
+                    "additionalProperties": false
+                  }
+                }
+              }
+            ],
+            "tool_choice": {
+              "type": "function",
+              "function": {
+                "name": "record_value"
+              }
+            }
+          },
+          "response": {
+            "id": "chatcmpl-8b0f52dc5f81af0c",
+            "object": "chat.completion",
+            "created": 1789232802,
+            "model": "agentsentry-local-qwen27b-nvfp4-graph-apc-s2",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [
+                    {
+                      "id": "chatcmpl-tool-96f746e56254b357",
+                      "type": "function",
+                      "function": {
+                        "name": "record_value",
+                        "arguments": "{\"value\": 37, \"label\": \"check\"}"
+                      }
+                    }
+                  ],
+                  "reasoning": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null,
+                "routed_experts": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": "vllm-0.27.1-ea937b2d",
+            "usage": {
+              "prompt_tokens": 298,
+              "total_tokens": 336,
+              "completion_tokens": 38,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "prompt_text": null,
+            "kv_transfer_params": null,
+            "ec_transfer_params": null,
+            "metrics": null
+          },
+          "seconds": 0.9897044450044632
+        }
+      ],
+      "error": "RuntimeError:PERFORMANCE_WORKLOAD_FAILED:1"
+    },
+    {
+      "id": "graph-apc-s4",
+      "argv": [
+        "/root/autodl-tmp/conda-envs/qwen3-vl-vllm/bin/python",
+        "-m",
+        "vllm.entrypoints.openai.api_server",
+        "--model",
+        "/root/autodl-tmp/.cache/huggingface/models--Inferact--Qwen3.8-27B-NVFP4/snapshots/6128240ebaf4eaa7bad2b3d1c72c37d677c5f462",
+        "--host",
+        "127.0.0.1",
+        "--port",
+        "18080",
+        "--served-model-name",
+        "agentsentry-local-qwen27b-nvfp4-graph-apc-s4",
+        "--gpu-memory-utilization",
+        "0.92",
+        "--max-model-len",
+        "32768",
+        "--max-num-seqs",
+        "4",
+        "--max-num-batched-tokens",
+        "4096",
+        "--enable-auto-tool-choice",
+        "--tool-call-parser",
+        "qwen3_coder",
+        "--reasoning-parser",
+        "qwen3",
+        "--language-model-only",
+        "--kernel-config",
+        "{\"linear_backend\":\"cutlass\"}",
+        "--default-chat-template-kwargs",
+        "{\"enable_thinking\":false}",
+        "--enable-prefix-caching"
+      ],
+      "status": "FAILED_REVIEW_REQUIRED",
+      "measurements": [],
+      "server_identity": {
+        "pid": 883324,
+        "start_ticks": "444083900",
+        "pgrp": 883324,
+        "session": 883324
+      },
+      "startup_seconds": 160.19366112165153,
+      "checks": [
+        {
+          "name": "short",
+          "passed": true,
+          "request": {
+            "model": "agentsentry-local-qwen27b-nvfp4-graph-apc-s4",
+            "temperature": 0,
+            "seed": 0,
+            "max_tokens": 128,
+            "messages": [
+              {
+                "role": "user",
+                "content": "Reply with exactly READY and no other text."
+              }
+            ]
+          },
+          "response": {
+            "id": "chatcmpl-9996db3b49809868",
+            "object": "chat.completion",
+            "created": 1789232976,
+            "model": "agentsentry-local-qwen27b-nvfp4-graph-apc-s4",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "READY",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "reasoning": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null,
+                "routed_experts": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": "vllm-0.27.1-77f45820",
+            "usage": {
+              "prompt_tokens": 21,
+              "total_tokens": 23,
+              "completion_tokens": 2,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "prompt_text": null,
+            "kv_transfer_params": null,
+            "ec_transfer_params": null,
+            "metrics": null
+          },
+          "seconds": 0.23896887991577387
+        },
+        {
+          "name": "json",
+          "passed": true,
+          "request": {
+            "model": "agentsentry-local-qwen27b-nvfp4-graph-apc-s4",
+            "temperature": 0,
+            "seed": 0,
+            "max_tokens": 128,
+            "messages": [
+              {
+                "role": "user",
+                "content": "Return a JSON object with value 37 and unit \"test\". No other fields."
+              }
+            ],
+            "response_format": {
+              "type": "json_object"
+            }
+          },
+          "response": {
+            "id": "chatcmpl-a581c4f41fd9f1a3",
+            "object": "chat.completion",
+            "created": 1789232976,
+            "model": "agentsentry-local-qwen27b-nvfp4-graph-apc-s4",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "{\"value\": 37, \"unit\": \"test\"}",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "reasoning": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null,
+                "routed_experts": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": "vllm-0.27.1-77f45820",
+            "usage": {
+              "prompt_tokens": 30,
+              "total_tokens": 44,
+              "completion_tokens": 14,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "prompt_text": null,
+            "kv_transfer_params": null,
+            "ec_transfer_params": null,
+            "metrics": null
+          },
+          "seconds": 1.207118520513177
+        },
+        {
+          "name": "prefix_a",
+          "passed": true,
+          "request": {
+            "model": "agentsentry-local-qwen27b-nvfp4-graph-apc-s4",
+            "temperature": 0,
+            "seed": 0,
+            "max_tokens": 128,
+            "messages": [
+              {
+                "role": "system",
+                "content": "This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. "
+              },
+              {
+                "role": "user",
+                "content": "Reply with exactly ALPHA17 and nothing else."
+              }
+            ]
+          },
+          "response": {
+            "id": "chatcmpl-8882f115960c28cb",
+            "object": "chat.completion",
+            "created": 1789232977,
+            "model": "agentsentry-local-qwen27b-nvfp4-graph-apc-s4",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "ALPHA17",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "reasoning": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null,
+                "routed_experts": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": "vllm-0.27.1-77f45820",
+            "usage": {
+              "prompt_tokens": 795,
+              "total_tokens": 800,
+              "completion_tokens": 5,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "prompt_text": null,
+            "kv_transfer_params": null,
+            "ec_transfer_params": null,
+            "metrics": null
+          },
+          "seconds": 0.3795434273779392
+        },
+        {
+          "name": "prefix_b",
+          "passed": true,
+          "request": {
+            "model": "agentsentry-local-qwen27b-nvfp4-graph-apc-s4",
+            "temperature": 0,
+            "seed": 0,
+            "max_tokens": 128,
+            "messages": [
+              {
+                "role": "system",
+                "content": "This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. This is a synthetic cache consistency test with no external tools. "
+              },
+              {
+                "role": "user",
+                "content": "Reply with exactly BETA29 and nothing else."
+              }
+            ]
+          },
+          "response": {
+            "id": "chatcmpl-b3f035b5df2a68cd",
+            "object": "chat.completion",
+            "created": 1789232978,
+            "model": "agentsentry-local-qwen27b-nvfp4-graph-apc-s4",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "BETA29",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "reasoning": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null,
+                "routed_experts": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": "vllm-0.27.1-77f45820",
+            "usage": {
+              "prompt_tokens": 796,
+              "total_tokens": 801,
+              "completion_tokens": 5,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "prompt_text": null,
+            "kv_transfer_params": null,
+            "ec_transfer_params": null,
+            "metrics": null
+          },
+          "seconds": 0.29580220580101013
+        },
+        {
+          "name": "tool",
+          "passed": true,
+          "request": {
+            "model": "agentsentry-local-qwen27b-nvfp4-graph-apc-s4",
+            "temperature": 0,
+            "seed": 0,
+            "max_tokens": 128,
+            "messages": [
+              {
+                "role": "user",
+                "content": "Call record_value with value 37 and label \"check\"."
+              }
+            ],
+            "tools": [
+              {
+                "type": "function",
+                "function": {
+                  "name": "record_value",
+                  "description": "Record a synthetic value.",
+                  "parameters": {
+                    "type": "object",
+                    "properties": {
+                      "value": {
+                        "type": "integer"
+                      },
+                      "label": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "value",
+                      "label"
+                    ],
+                    "additionalProperties": false
+                  }
+                }
+              }
+            ],
+            "tool_choice": {
+              "type": "function",
+              "function": {
+                "name": "record_value"
+              }
+            }
+          },
+          "response": {
+            "id": "chatcmpl-9115664a48aee07e",
+            "object": "chat.completion",
+            "created": 1789232978,
+            "model": "agentsentry-local-qwen27b-nvfp4-graph-apc-s4",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [
+                    {
+                      "id": "chatcmpl-tool-84131ca002b6a007",
+                      "type": "function",
+                      "function": {
+                        "name": "record_value",
+                        "arguments": "{\"value\": 37, \"label\": \"check\"}"
+                      }
+                    }
+                  ],
+                  "reasoning": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null,
+                "routed_experts": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": "vllm-0.27.1-77f45820",
+            "usage": {
+              "prompt_tokens": 298,
+              "total_tokens": 336,
+              "completion_tokens": 38,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "prompt_text": null,
+            "kv_transfer_params": null,
+            "ec_transfer_params": null,
+            "metrics": null
+          },
+          "seconds": 0.9979229308664799
+        }
+      ],
+      "error": "RuntimeError:PERFORMANCE_WORKLOAD_FAILED:1"
+    }
+  ],
+  "plan_sha256": "ea8975fee697cda7d64ff410c2f47768f139d7b72b0a9e051ac0c55b57f7d18e",
+  "executor_sha256": "1c2ef72aefd6f24e4cefe510838d80b50362e953f8a90139ad808cf324710183",
+  "required_dependencies": [
+    {
+      "pid": 478046,
+      "start_ticks": "441643884",
+      "description": "v4 four-job paired benchmark"
+    },
+    {
+      "pid": 613869,
+      "start_ticks": "442357392",
+      "description": "frozen task-plan-v1 paired pilot"
+    }
+  ],
+  "owned_server": {
+    "pid": 888672,
+    "start_ticks": "444101410",
+    "pgrp": 888672,
+    "session": 888672
+  },
+  "restored": true,
+  "quality_acceptance": "NOT_ACCEPTED",
+  "updated_at": "2026-09-12T17:10:26.125823+00:00",
+  "restored_server": {
+    "pid": 888672,
+    "start_ticks": "444101410",
+    "pgrp": 888672,
+    "session": 888672
+  },
+  "restoration_startup_seconds": 35.05197562370449
+}

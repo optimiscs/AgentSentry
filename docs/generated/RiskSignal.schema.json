@@ -1,0 +1,103 @@
+{
+  "$defs": {
+    "SourceType": {
+      "enum": [
+        "USER",
+        "WEB",
+        "DOCUMENT",
+        "ISSUE",
+        "MCP_DESCRIPTION",
+        "MCP_RESPONSE",
+        "MEMORY",
+        "SUB_AGENT"
+      ],
+      "title": "SourceType",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0",
+      "default": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "chunk_id": {
+      "title": "Chunk Id",
+      "type": "string"
+    },
+    "risk": {
+      "enum": [
+        "LOW",
+        "MEDIUM",
+        "HIGH",
+        "CRITICAL"
+      ],
+      "title": "Risk",
+      "type": "string"
+    },
+    "score": {
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Score",
+      "type": "number"
+    },
+    "attack_types": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Attack Types",
+      "type": "array"
+    },
+    "evidence": {
+      "items": {
+        "additionalProperties": true,
+        "type": "object"
+      },
+      "title": "Evidence",
+      "type": "array"
+    },
+    "labels": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Labels",
+      "type": "array"
+    },
+    "source_type": {
+      "$ref": "#/$defs/SourceType"
+    },
+    "model_version": {
+      "default": "rules-1.0",
+      "title": "Model Version",
+      "type": "string"
+    },
+    "normalizer_version": {
+      "default": "unicode-1.0",
+      "title": "Normalizer Version",
+      "type": "string"
+    },
+    "scanned_characters": {
+      "title": "Scanned Characters",
+      "type": "integer"
+    },
+    "latency_ms": {
+      "title": "Latency Ms",
+      "type": "number"
+    }
+  },
+  "required": [
+    "chunk_id",
+    "risk",
+    "score",
+    "attack_types",
+    "evidence",
+    "labels",
+    "source_type",
+    "scanned_characters",
+    "latency_ms"
+  ],
+  "title": "RiskSignal",
+  "type": "object"
+}

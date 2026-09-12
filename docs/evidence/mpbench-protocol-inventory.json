@@ -1,0 +1,109 @@
+{
+  "status": "DATA_PREPARED_NOT_A_MEMORY_BENCHMARK_RUN",
+  "created_at": "2026-09-12T13:20:01.672787+00:00",
+  "source": {
+    "benchmark": "MPBench",
+    "repository": "https://github.com/Digital-Trust-Lab/mp-bench",
+    "commit": "6886880a7c29625e0109e0ad91d0e095029f1577",
+    "archive_url": "https://codeload.github.com/Digital-Trust-Lab/mp-bench/tar.gz/6886880a7c29625e0109e0ad91d0e095029f1577",
+    "archive_sha256": "63d6f551f39de46647a02064927e553a5c510ff223261e9f96b6290410ad5b69",
+    "source_dir": "artifacts/upstream/MPBench-6886880a7c29",
+    "executed": false
+  },
+  "source_files": {
+    "adversarial_data.jsonl.jsonl": "f2d23a5a2d483889eb2fdd9a2a082f0759603bc0a17664814a7caafbd318f90d",
+    "benign_data.jsonl.jsonl": "707ef7e311e147d9818a8a9e04293296fc6bf3390241e4cac23c8145765b62d5"
+  },
+  "preparation_script_sha256": "6e154a40caa190624a8985ebc1658f51648b90ef14bd4d4532e7aea4f4bc9c7f",
+  "artifacts": {
+    "inputs.jsonl": "aa8c89997f4afb442bb592e4ed7f0f36f1bdda8ceb1f29f4bd9299e88a458ea6",
+    "evaluator.jsonl": "a30b1201bec561736e8c5c79a3161b4398f67e3de32547d48e34830630ec06d7",
+    "duplicate-context-groups.jsonl": "f2a6c05537de6908b26ff0d33ab3feb13b687d3cf48c25106077b38fed00954e"
+  },
+  "partitions": {
+    "adversarial": {
+      "records": 3241,
+      "physical_nonempty_lines": 3240,
+      "record_boundaries_without_newline": [
+        1080
+      ],
+      "categories_as_published": {
+        "attack_type": {
+          "repetition_injection": 540,
+          "explicit_keyword_injection": 824,
+          "delayed_conditional_injection_injection": 567,
+          "fact_injection": 601,
+          "experience_injection": 600,
+          "repetition_based_injection": 57,
+          "delayed_conditional_injection": 33,
+          "explicit_keyword": 16,
+          "repetition": 3
+        },
+        "attack_signal": {
+          "weak": 959,
+          "moderate": 1068,
+          "strong": 1084,
+          "subtle": 130
+        },
+        "domain": {
+          "workspace_email": 550,
+          "file_and_doc": 551,
+          "script_execution": 597,
+          "calendar_and_scheduling": 450,
+          "slack": 450,
+          "web_browsing": 450,
+          "email_analysis_and_reply": 53,
+          "web_search_result_analysis": 44,
+          "file_and_document_handling": 62,
+          "travel_assistance": 34
+        }
+      },
+      "missing_or_empty_fields": {
+        "expected_memory": 2,
+        "retrieval_query": 242
+      },
+      "skill_md_records": 240
+    },
+    "benign": {
+      "records": 2999,
+      "physical_nonempty_lines": 2999,
+      "record_boundaries_without_newline": [],
+      "categories_as_published": {
+        "attack_type": {
+          "benign": 2999
+        },
+        "attack_signal": {
+          "weak": 1020,
+          "moderate": 989,
+          "strong": 990
+        },
+        "domain": {
+          "workspace_email": 540,
+          "file_and_doc": 540,
+          "script_execution": 540,
+          "calendar_and_scheduling": 480,
+          "slack": 450,
+          "web_browsing": 449
+        }
+      },
+      "missing_or_empty_fields": {
+        "expected_memory": 143,
+        "retrieval_query": 2
+      },
+      "skill_md_records": 0
+    }
+  },
+  "input_records": 6240,
+  "unique_contexts": 5940,
+  "duplicate_context_excess_records": 300,
+  "cross_partition_identical_context_groups": 0,
+  "limitations": [
+    "Published categories and partition labels are preserved; no silent mapping to the paper's six-class taxonomy.",
+    "Adjacent JSON objects are decoded without skipping bytes; the original file remains unchanged.",
+    "Blank benign expected_memory may intentionally represent no memory write; no target is invented.",
+    "Missing retrieval_query is unresolved for persistence evaluation; agent_question is not silently substituted.",
+    "No native harness, judge implementation, agent configuration or official train/test split was included in this source snapshot.",
+    "Input-only detection cannot establish memory-write ASR, retrieval RSR, benign task utility or independent three-state F1.",
+    "Duplicate contexts are retained and indexed; no unverified claim of task/template independence."
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "$defs": {
+    "AlignmentResult": {
+      "additionalProperties": false,
+      "properties": {
+        "schema_version": {
+          "const": "1.0",
+          "default": "1.0",
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "aligned": {
+          "title": "Aligned",
+          "type": "boolean"
+        },
+        "deviation_types": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Deviation Types",
+          "type": "array"
+        },
+        "explanation": {
+          "title": "Explanation",
+          "type": "string"
+        }
+      },
+      "required": [
+        "aligned",
+        "deviation_types",
+        "explanation"
+      ],
+      "title": "AlignmentResult",
+      "type": "object"
+    },
+    "Verdict": {
+      "enum": [
+        "ALLOW",
+        "ASK",
+        "BLOCK"
+      ],
+      "title": "Verdict",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0",
+      "default": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "decision_id": {
+      "title": "Decision Id",
+      "type": "string"
+    },
+    "action_id": {
+      "title": "Action Id",
+      "type": "string"
+    },
+    "decision": {
+      "$ref": "#/$defs/Verdict"
+    },
+    "risk_level": {
+      "title": "Risk Level",
+      "type": "string"
+    },
+    "reason_codes": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Reason Codes",
+      "type": "array"
+    },
+    "matched_policies": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Matched Policies",
+      "type": "array"
+    },
+    "policy_version": {
+      "title": "Policy Version",
+      "type": "string"
+    },
+    "intent_version": {
+      "title": "Intent Version",
+      "type": "integer"
+    },
+    "alignment": {
+      "$ref": "#/$defs/AlignmentResult"
+    },
+    "latency_ms": {
+      "default": 0,
+      "title": "Latency Ms",
+      "type": "number"
+    },
+    "approval_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Approval Id"
+    },
+    "expires_at": {
+      "title": "Expires At",
+      "type": "number"
+    }
+  },
+  "required": [
+    "action_id",
+    "decision",
+    "risk_level",
+    "reason_codes",
+    "matched_policies",
+    "policy_version",
+    "intent_version",
+    "alignment"
+  ],
+  "title": "Decision",
+  "type": "object"
+}

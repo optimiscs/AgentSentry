@@ -1,0 +1,169 @@
+{
+  "status": "ISOLATED_PROTOCOL_REPLAY_NOT_NEW_MODEL_BENCHMARK",
+  "records": 1054,
+  "previously_valid_preserved": 996,
+  "noop_compatibility_recovered": 12,
+  "remaining_invalid_or_error": 46,
+  "recovered_cases": [
+    {
+      "case_id": "dh:66",
+      "native_results": [
+        "unsucc"
+      ],
+      "real_action_count": 0,
+      "original_error": "NativeProtocolError:NATIVE_ACTION_SEQUENCE_MISMATCH"
+    },
+    {
+      "case_id": "dh:83",
+      "native_results": [
+        "unsucc"
+      ],
+      "real_action_count": 0,
+      "original_error": "NativeProtocolError:NATIVE_ACTION_SEQUENCE_MISMATCH"
+    },
+    {
+      "case_id": "dh:224",
+      "native_results": [
+        "unsucc"
+      ],
+      "real_action_count": 0,
+      "original_error": "NativeProtocolError:NATIVE_ACTION_SEQUENCE_MISMATCH"
+    },
+    {
+      "case_id": "dh:265",
+      "native_results": [
+        "unsucc"
+      ],
+      "real_action_count": 0,
+      "original_error": "NativeProtocolError:NATIVE_ACTION_SEQUENCE_MISMATCH"
+    },
+    {
+      "case_id": "dh:310",
+      "native_results": [
+        "unsucc"
+      ],
+      "real_action_count": 0,
+      "original_error": "NativeProtocolError:NATIVE_ACTION_SEQUENCE_MISMATCH"
+    },
+    {
+      "case_id": "dh:313",
+      "native_results": [
+        "unsucc"
+      ],
+      "real_action_count": 0,
+      "original_error": "NativeProtocolError:NATIVE_ACTION_SEQUENCE_MISMATCH"
+    },
+    {
+      "case_id": "dh:501",
+      "native_results": [
+        "unsucc"
+      ],
+      "real_action_count": 0,
+      "original_error": "NativeProtocolError:NATIVE_ACTION_SEQUENCE_MISMATCH"
+    },
+    {
+      "case_id": "ds:47",
+      "native_results": [
+        "unsucc"
+      ],
+      "real_action_count": 0,
+      "original_error": "NativeProtocolError:NATIVE_ACTION_SEQUENCE_MISMATCH"
+    },
+    {
+      "case_id": "ds:355",
+      "native_results": [
+        "unsucc"
+      ],
+      "real_action_count": 0,
+      "original_error": "NativeProtocolError:NATIVE_ACTION_SEQUENCE_MISMATCH"
+    },
+    {
+      "case_id": "ds:412",
+      "native_results": [
+        "unsucc"
+      ],
+      "real_action_count": 0,
+      "original_error": "NativeProtocolError:NATIVE_ACTION_SEQUENCE_MISMATCH"
+    },
+    {
+      "case_id": "ds:508",
+      "native_results": [
+        "unsucc"
+      ],
+      "real_action_count": 0,
+      "original_error": "NativeProtocolError:NATIVE_ACTION_SEQUENCE_MISMATCH"
+    },
+    {
+      "case_id": "ds:527",
+      "native_results": [
+        "unsucc"
+      ],
+      "real_action_count": 0,
+      "original_error": "NativeProtocolError:NATIVE_ACTION_SEQUENCE_MISMATCH"
+    }
+  ],
+  "remaining_case_ids": [
+    "dh:15",
+    "dh:16",
+    "dh:69",
+    "dh:79",
+    "dh:95",
+    "dh:101",
+    "dh:169",
+    "dh:186",
+    "dh:203",
+    "dh:288",
+    "dh:305",
+    "dh:319",
+    "dh:322",
+    "dh:339",
+    "dh:373",
+    "dh:403",
+    "dh:424",
+    "dh:469",
+    "dh:492",
+    "dh:498",
+    "dh:509",
+    "ds:16",
+    "ds:67",
+    "ds:96",
+    "ds:103",
+    "ds:135",
+    "ds:149",
+    "ds:152",
+    "ds:163",
+    "ds:168",
+    "ds:169",
+    "ds:165",
+    "ds:214",
+    "ds:209",
+    "ds:220",
+    "ds:219",
+    "ds:254",
+    "ds:290",
+    "ds:299",
+    "ds:305",
+    "ds:373",
+    "ds:418",
+    "ds:424",
+    "ds:470",
+    "ds:492",
+    "ds:543"
+  ],
+  "source_artifact_sha256": {
+    "manifest.json": "20b28e6bef1e7d7faf5cf1999c343647ffc25b8b0e93b47068f9d5f707263e6f",
+    "metrics.json": "ceb0f91a4b45ef7cdbda7502732e366a043dca42bba1a510f4963fd4425af0c6",
+    "per_case.jsonl": "aeda47558dddf3b990bacd521f2cd07bd1c0c23005d25f3b30208f536a7830e8"
+  },
+  "native_evaluator_sha256": "b841348cdbc5b87c781bed4a592d375d02d51769ac2435cf2e7e69c08a03937b",
+  "protocol_sha256": "0be2ea1c14b6b3b85e61237cd3ab35f57e911a404d25b55ff9521806098e51e1",
+  "replay_script_sha256": "263ef348fb46966817d9aded1c2751516ee2acf50b70709c98157ae4b5e42df1",
+  "model_calls": 0,
+  "real_tools": 0,
+  "limitations": [
+    "Original run remains unchanged and NOT_ACCEPTED.",
+    "Only native None/N/A with omitted inputs is accommodated; real calls still require JSON and complete action order.",
+    "This does not fix native invalid actions, fabricated observations or timeouts.",
+    "Active and queued candidates do not use this isolated module; promotion requires a new matched run."
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "status": "PREPARED_NOT_A_BENCHMARK_SCORE",
+  "source_manifest_sha256": "22519988182c24a5bc315ce76f66c40f0f33e5cbd7438b1ff0f56fd6327ee411",
+  "model": "intfloat/e5-base-v2",
+  "model_revision": "f52bf8ec8c7124536f0efb74aca902b2995e5bcd",
+  "counts": {
+    "documents": {
+      "count": 462,
+      "truncated_at_512": 0,
+      "maximum_original_tokens": 441
+    },
+    "queries": {
+      "count": 800,
+      "truncated_at_512": 0,
+      "maximum_original_tokens": 295
+    }
+  },
+  "selected_unique_documents": 406,
+  "cpu_seconds": 313.7724661724642,
+  "embedding": {
+    "device": "cpu",
+    "threads": 2,
+    "batch_size": 4,
+    "dtype": "float32",
+    "dimension": 768,
+    "pooling": "attention-mask-weighted mean then L2 normalization",
+    "max_tokens": 512,
+    "query_prefix": "query: ",
+    "document_prefix": "passage: ",
+    "ranking": "exact cosine top1, ties by document id"
+  },
+  "verified_query_lookups": 800,
+  "real_agent_model_calls": 0,
+  "clarification": "The implementation caps embeddings at 512 tokens, but the completed corpus/query workload had zero truncated inputs. This corrects the generic truncation warning in the frozen preparation manifest."
+}

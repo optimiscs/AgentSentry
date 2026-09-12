@@ -1,0 +1,64 @@
+{
+  "observed_at": "2026-09-12T07:15:34.207260+00:00",
+  "scope": "read_only_environment_probe",
+  "repository": "/root/autodl-tmp/AgentSentry",
+  "cpu_affinity_count": 208,
+  "cgroup": {
+    "cpu.max": "2500000 100000",
+    "memory.max": "96636764160",
+    "memory.current": "2280673280"
+  },
+  "tools": {
+    "python3": "/usr/bin/python3",
+    "node": "/usr/bin/node",
+    "git": "/usr/bin/git",
+    "docker": null,
+    "uv": null,
+    "nvidia-smi": "/usr/bin/nvidia-smi"
+  },
+  "versions": {
+    "python3": {
+      "returncode": 0,
+      "stdout": "Python 3.10.12",
+      "stderr": ""
+    },
+    "node": {
+      "returncode": 0,
+      "stdout": "v12.22.9",
+      "stderr": ""
+    },
+    "git": {
+      "returncode": 0,
+      "stdout": "git version 2.34.1",
+      "stderr": ""
+    }
+  },
+  "gpu": {
+    "returncode": 0,
+    "stdout": "NVIDIA GeForce RTX 5090, 32607 MiB, 2 MiB, 595.71.05",
+    "stderr": ""
+  },
+  "disks": {
+    "/root/autodl-tmp/AgentSentry": {
+      "total_bytes": 450971566080,
+      "used_bytes": 353285877760,
+      "free_bytes": 97685688320
+    },
+    "/root/autodl-tmp": {
+      "total_bytes": 450971566080,
+      "used_bytes": 353285877760,
+      "free_bytes": 97685688320
+    },
+    "/root/autodl-fs": {
+      "total_bytes": 214748364800,
+      "used_bytes": 7441842176,
+      "free_bytes": 207306522624
+    }
+  },
+  "limitations": [
+    "GPU visibility does not validate the model inference stack.",
+    "Docker PATH discovery does not validate daemon or Compose capability.",
+    "Host CPU count is not the cgroup allocation.",
+    "No business service, model or benchmark was executed."
+  ]
+}

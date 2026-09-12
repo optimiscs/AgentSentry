@@ -1,0 +1,3711 @@
+{
+  "status": "PUBLISHED_TRAINING_DATA_AUDIT_NOT_CHECKPOINT_MEMBERSHIP_PROOF",
+  "generated_at": "2026-09-12T14:09:31.064075+00:00",
+  "source": {
+    "benchmark": "PIGuard",
+    "repository": "https://github.com/leolee99/PIGuard",
+    "commit": "1b5751e88bf7475acbedfc8eda795ce060307c84",
+    "archive_url": "https://codeload.github.com/leolee99/PIGuard/tar.gz/1b5751e88bf7475acbedfc8eda795ce060307c84",
+    "archive_sha256": "8ddc800d593309343728a05a8e91f1a2d330f49796822bc5fb89299a1dd52f53",
+    "source_dir": "artifacts/upstream/PIGuard-1b5751e88bf7",
+    "executed": false
+  },
+  "data_file_sha256": {
+    "BIPIA_code.json": "892545c5aaec0645b1ded65dc7816b3d70e9ef4eadcba2301a7a3db93676b6e0",
+    "BIPIA_text.json": "75750e7b4e8b34e8f9d88d89b357aeaaf02bd07f9e493ccd37eda74a0cd7c7f8",
+    "NotInject_one.json": "69b535596d95102424e9c5946944feb4f2d596687eb8213f2ecad75478e5ffdd",
+    "NotInject_three.json": "ef01eff0d761d2e34571b3fdbcec08c30cd93efe8d0e1a2eb5c2baeb1873b070",
+    "NotInject_two.json": "6043d94e75b48d8e7682d25dc79eaf45359e1e561ce520e3b8fd5625a91060c6",
+    "train.json": "806ded8bd85782a53d34faffe4fd92b3f2e0b3b431c43578ce77faea6b9ed911",
+    "valid.json": "fdf0f1f83b3e4017a71867e010f8345dc6aa706ef8628fa6a77f23f0f0a6d87b",
+    "wildguard.json": "d884fc834a5a8081a423c49effb7aeb7977e991c1e3e7fb58e0285630d550bad"
+  },
+  "native_evaluator_sha256": "7c676fc726fc7b73b190f6bd31c54357751987218a7b865adbc7bbf63defda18",
+  "audit_script_sha256": "a02797e043944c0f6501971a8e0c6dc071a4565dd6569592383a2ed56c94e9c1",
+  "parser_helper_sha256": "6e154a40caa190624a8985ebc1658f51648b90ef14bd4d4532e7aea4f4bc9c7f",
+  "partition_labels": {
+    "BIPIA_code": {
+      "1": 50
+    },
+    "BIPIA_text": {
+      "1": 75
+    },
+    "NotInject_one": {
+      "0": 113
+    },
+    "NotInject_three": {
+      "0": 113
+    },
+    "NotInject_two": {
+      "0": 113
+    },
+    "train": {
+      "0": 61069,
+      "1": 15666
+    },
+    "valid": {
+      "0": 96,
+      "1": 48
+    },
+    "wildguard": {
+      "0": 971
+    }
+  },
+  "training_sources": {
+    "prompt-injections": 546,
+    "jailbreak-classification": 1044,
+    "safe-guard-prompt-injection": 8236,
+    "TaskTracker": 14702,
+    "BIPIA": 1116,
+    "Question Set": 2286,
+    "over-defense": 762,
+    "StruQ": 20,
+    "InjecAgent": 111,
+    "LLM Augmented set": 435,
+    "Prompt-Injection-Mixed-Techniques": 1174,
+    "ChatGPT-Jailbreak-Prompts": 79,
+    "vigil-jailbreak-ada-002": 104,
+    "hackaprompt-dataset": 5000,
+    "Alpaca": 4000,
+    "chatbot_instruction_prompts": 16000,
+    "open-instruct": 12000,
+    "xtest-v2-copy": 450,
+    "grok-conversation-harmless": 4000,
+    "no_robots": 1500,
+    "awesome-chatgpt-prompts": 170,
+    "ultrachat_200k": 3000
+  },
+  "validation_sources": {
+    "WildGuard": 24,
+    "PINT_chat": 8,
+    "PINT_documents": 8,
+    "PINT_hard_negatives": 8,
+    "BIPIA_text": 12,
+    "BIPIA_code": 12,
+    "PINT_public_prompt_injection": 8,
+    "PINT_internal_prompt_injection": 8,
+    "PINT_jailbreak": 8,
+    "NotInject_one": 16,
+    "NotInject_two": 16,
+    "NotInject_three": 16
+  },
+  "splits": [
+    {
+      "mode": "exact",
+      "splits": {
+        "BIPIA_code": {
+          "records": 50,
+          "unique_texts": 50,
+          "duplicate_excess_records": 0,
+          "conflicting_label_groups": 0,
+          "empty_prompt_rows": [],
+          "label_conflicts": []
+        },
+        "BIPIA_text": {
+          "records": 75,
+          "unique_texts": 75,
+          "duplicate_excess_records": 0,
+          "conflicting_label_groups": 0,
+          "empty_prompt_rows": [],
+          "label_conflicts": []
+        },
+        "NotInject_one": {
+          "records": 113,
+          "unique_texts": 113,
+          "duplicate_excess_records": 0,
+          "conflicting_label_groups": 0,
+          "empty_prompt_rows": [],
+          "label_conflicts": []
+        },
+        "NotInject_three": {
+          "records": 113,
+          "unique_texts": 113,
+          "duplicate_excess_records": 0,
+          "conflicting_label_groups": 0,
+          "empty_prompt_rows": [],
+          "label_conflicts": []
+        },
+        "NotInject_two": {
+          "records": 113,
+          "unique_texts": 113,
+          "duplicate_excess_records": 0,
+          "conflicting_label_groups": 0,
+          "empty_prompt_rows": [],
+          "label_conflicts": []
+        },
+        "train": {
+          "records": 76735,
+          "unique_texts": 73843,
+          "duplicate_excess_records": 2892,
+          "conflicting_label_groups": 5,
+          "empty_prompt_rows": [
+            33340,
+            38173,
+            44553
+          ],
+          "label_conflicts": [
+            {
+              "text_sha256": "8b551daa8a221a2c1ebd95218eb7c3a1d274b560c6a0d6ac000b72af3ad7b8d1",
+              "rows": [
+                {
+                  "row": 1117,
+                  "label": 1
+                },
+                {
+                  "row": 1568,
+                  "label": 1
+                },
+                {
+                  "row": 3798,
+                  "label": 0
+                },
+                {
+                  "row": 5413,
+                  "label": 1
+                },
+                {
+                  "row": 5862,
+                  "label": 1
+                },
+                {
+                  "row": 73716,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "949798469fd89d80afd846179d549d83f34439a8ded109091bb427768f969cba",
+              "rows": [
+                {
+                  "row": 158,
+                  "label": 1
+                },
+                {
+                  "row": 6190,
+                  "label": 0
+                },
+                {
+                  "row": 73568,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "ade15f194d7f52320aa82d350915046c87eae755d2b20360c7d53844b9eaa631",
+              "rows": [
+                {
+                  "row": 696,
+                  "label": 1
+                },
+                {
+                  "row": 4542,
+                  "label": 0
+                },
+                {
+                  "row": 5115,
+                  "label": 1
+                },
+                {
+                  "row": 73626,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "d83f1922752ebaa19be74e9cc18aa00ccace195c967429210b761462b43232f8",
+              "rows": [
+                {
+                  "row": 78,
+                  "label": 1
+                },
+                {
+                  "row": 7541,
+                  "label": 0
+                },
+                {
+                  "row": 73567,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "e53dea9c396156f0bb2765548ff6f740814129c556d7b70b00cd0f3a5ca13c22",
+              "rows": [
+                {
+                  "row": 42,
+                  "label": 1
+                },
+                {
+                  "row": 9750,
+                  "label": 0
+                },
+                {
+                  "row": 73583,
+                  "label": 0
+                }
+              ]
+            }
+          ]
+        },
+        "valid": {
+          "records": 144,
+          "unique_texts": 144,
+          "duplicate_excess_records": 0,
+          "conflicting_label_groups": 0,
+          "empty_prompt_rows": [],
+          "label_conflicts": []
+        },
+        "wildguard": {
+          "records": 971,
+          "unique_texts": 971,
+          "duplicate_excess_records": 0,
+          "conflicting_label_groups": 0,
+          "empty_prompt_rows": [],
+          "label_conflicts": []
+        }
+      },
+      "overlaps": [
+        {
+          "left": "train",
+          "right": "BIPIA_code",
+          "shared_texts": 0,
+          "left_records": 0,
+          "right_records": 0,
+          "conflicting_label_groups": 0,
+          "matches": []
+        },
+        {
+          "left": "train",
+          "right": "BIPIA_text",
+          "shared_texts": 0,
+          "left_records": 0,
+          "right_records": 0,
+          "conflicting_label_groups": 0,
+          "matches": []
+        },
+        {
+          "left": "train",
+          "right": "NotInject_one",
+          "shared_texts": 0,
+          "left_records": 0,
+          "right_records": 0,
+          "conflicting_label_groups": 0,
+          "matches": []
+        },
+        {
+          "left": "train",
+          "right": "NotInject_three",
+          "shared_texts": 0,
+          "left_records": 0,
+          "right_records": 0,
+          "conflicting_label_groups": 0,
+          "matches": []
+        },
+        {
+          "left": "train",
+          "right": "NotInject_two",
+          "shared_texts": 0,
+          "left_records": 0,
+          "right_records": 0,
+          "conflicting_label_groups": 0,
+          "matches": []
+        },
+        {
+          "left": "train",
+          "right": "valid",
+          "shared_texts": 3,
+          "left_records": 3,
+          "right_records": 3,
+          "conflicting_label_groups": 0,
+          "matches": [
+            {
+              "text_sha256": "f141c2a506c6c30666afcab83ed3da36467e572a17154bce53f04294eff47f56",
+              "left": [
+                {
+                  "row": 375,
+                  "label": 1
+                }
+              ],
+              "right": [
+                {
+                  "row": 79,
+                  "label": 1
+                }
+              ]
+            },
+            {
+              "text_sha256": "f26326a69f45646d60f1eaa26221d767dae5895f824e4080317ae6b46a3a6e93",
+              "left": [
+                {
+                  "row": 86,
+                  "label": 1
+                }
+              ],
+              "right": [
+                {
+                  "row": 75,
+                  "label": 1
+                }
+              ]
+            },
+            {
+              "text_sha256": "f61ff5a6102b100974c120f8b986e88beccf884668238fc8a4b60ebfae685b98",
+              "left": [
+                {
+                  "row": 168,
+                  "label": 1
+                }
+              ],
+              "right": [
+                {
+                  "row": 74,
+                  "label": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "left": "train",
+          "right": "wildguard",
+          "shared_texts": 0,
+          "left_records": 0,
+          "right_records": 0,
+          "conflicting_label_groups": 0,
+          "matches": []
+        },
+        {
+          "left": "valid",
+          "right": "BIPIA_code",
+          "shared_texts": 12,
+          "left_records": 12,
+          "right_records": 12,
+          "conflicting_label_groups": 0,
+          "matches": [
+            {
+              "text_sha256": "1798b1af963851eb4b8b91ea2b5e164a3a2b2e65e91b2bc10b769fce85c44733",
+              "left": [
+                {
+                  "row": 64,
+                  "label": 1
+                }
+              ],
+              "right": [
+                {
+                  "row": 41,
+                  "label": 1
+                }
+              ]
+            },
+            {
+              "text_sha256": "22cc677420b25e5c1979bab0a2a1af10fdc2e240cfaeb2f440e0f0efed913b56",
+              "left": [
+                {
+                  "row": 70,
+                  "label": 1
+                }
+              ],
+              "right": [
+                {
+                  "row": 48,
+                  "label": 1
+                }
+              ]
+            },
+            {
+              "text_sha256": "23db3d7fcb80fccdff50c14d2617a7a6e97c599c9acf80bbf10856444dffc64e",
+              "left": [
+                {
+                  "row": 71,
+                  "label": 1
+                }
+              ],
+              "right": [
+                {
+                  "row": 5,
+                  "label": 1
+                }
+              ]
+            },
+            {
+              "text_sha256": "28e9eb8804c68fd8af5576c2f3ffffe4d84dddbfe795aea6ac50ba75252e5b6c",
+              "left": [
+                {
+                  "row": 67,
+                  "label": 1
+                }
+              ],
+              "right": [
+                {
+                  "row": 28,
+                  "label": 1
+                }
+              ]
+            },
+            {
+              "text_sha256": "2f1500054f2344d91e9d80deb1aec1e4bd8c0d073a6634d747ee4d8e0e9c13e0",
+              "left": [
+                {
+                  "row": 68,
+                  "label": 1
+                }
+              ],
+              "right": [
+                {
+                  "row": 34,
+                  "label": 1
+                }
+              ]
+            },
+            {
+              "text_sha256": "52074bc2816c32e3d9c06827be1eb499dace578132b95dc4d22cf7246b527faa",
+              "left": [
+                {
+                  "row": 65,
+                  "label": 1
+                }
+              ],
+              "right": [
+                {
+                  "row": 4,
+                  "label": 1
+                }
+              ]
+            },
+            {
+              "text_sha256": "67d19fca4c3312e798dc41a960c46b007da62ece445d93169119d3061255ae49",
+              "left": [
+                {
+                  "row": 69,
+                  "label": 1
+                }
+              ],
+              "right": [
+                {
+                  "row": 46,
+                  "label": 1
+                }
+              ]
+            },
+            {
+              "text_sha256": "82e38a4ca3e9fe5eeba4230ca2cf887507b634529e7af831c60a75887dd37b54",
+              "left": [
+                {
+                  "row": 62,
+                  "label": 1
+                }
+              ],
+              "right": [
+                {
+                  "row": 9,
+                  "label": 1
+                }
+              ]
+            },
+            {
+              "text_sha256": "954c5a456db8f9b971da8e87ffa68aea0bf2d1aff8f287d47766bf6da896a3df",
+              "left": [
+                {
+                  "row": 60,
+                  "label": 1
+                }
+              ],
+              "right": [
+                {
+                  "row": 13,
+                  "label": 1
+                }
+              ]
+            },
+            {
+              "text_sha256": "c55d533700d651cbd152ecd0a47c2079e10cdca1d299402f8c1cb889cb46cbd1",
+              "left": [
+                {
+                  "row": 61,
+                  "label": 1
+                }
+              ],
+              "right": [
+                {
+                  "row": 29,
+                  "label": 1
+                }
+              ]
+            },
+            {
+              "text_sha256": "dc4edb73e95bab79f1573e3c4c396ad647c8e45f29c4f60c0e17bce7e60dd9d1",
+              "left": [
+                {
+                  "row": 63,
+                  "label": 1
+                }
+              ],
+              "right": [
+                {
+                  "row": 12,
+                  "label": 1
+                }
+              ]
+            },
+            {
+              "text_sha256": "fc7c951f48e4778cfba7c15bf5ebeb8d8ce4c2f604b67c03450cb044d99ca467",
+              "left": [
+                {
+                  "row": 66,
+                  "label": 1
+                }
+              ],
+              "right": [
+                {
+                  "row": 47,
+                  "label": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "left": "valid",
+          "right": "BIPIA_text",
+          "shared_texts": 12,
+          "left_records": 12,
+          "right_records": 12,
+          "conflicting_label_groups": 0,
+          "matches": [
+            {
+              "text_sha256": "026c7274c144199a4594520c4cf519ef66c05541a5dc0ffbd6ef06e3df458b16",
+              "left": [
+                {
+                  "row": 50,
+                  "label": 1
+                }
+              ],
+              "right": [
+                {
+                  "row": 17,
+                  "label": 1
+                }
+              ]
+            },
+            {
+              "text_sha256": "0d2214a3a41a8e89295fba920375d1937f907899807a17e498446bf27372c914",
+              "left": [
+                {
+                  "row": 53,
+                  "label": 1
+                }
+              ],
+              "right": [
+                {
+                  "row": 36,
+                  "label": 1
+                }
+              ]
+            },
+            {
+              "text_sha256": "2f7da262af2747743b7e46f04a10820e2fd7c32f6051d7f1d3f59bda30edbfdb",
+              "left": [
+                {
+                  "row": 49,
+                  "label": 1
+                }
+              ],
+              "right": [
+                {
+                  "row": 37,
+                  "label": 1
+                }
+              ]
+            },
+            {
+              "text_sha256": "3b97e4beba5923b26b7cddcf60d0d2294c9f95dc73675671b21467ef5d679fcf",
+              "left": [
+                {
+                  "row": 54,
+                  "label": 1
+                }
+              ],
+              "right": [
+                {
+                  "row": 13,
+                  "label": 1
+                }
+              ]
+            },
+            {
+              "text_sha256": "40806620168d63ec9a2e866a6547671bbdbb317de33661693f2b28c09afee626",
+              "left": [
+                {
+                  "row": 52,
+                  "label": 1
+                }
+              ],
+              "right": [
+                {
+                  "row": 32,
+                  "label": 1
+                }
+              ]
+            },
+            {
+              "text_sha256": "480153b57002d91a673ece5cb69421212743b7dcbf9a00a03361f66384fda735",
+              "left": [
+                {
+                  "row": 59,
+                  "label": 1
+                }
+              ],
+              "right": [
+                {
+                  "row": 57,
+                  "label": 1
+                }
+              ]
+            },
+            {
+              "text_sha256": "51d679f4e363cbfe7d18d201655e729cdaa22788a11f24ee0753e851d624906d",
+              "left": [
+                {
+                  "row": 56,
+                  "label": 1
+                }
+              ],
+              "right": [
+                {
+                  "row": 12,
+                  "label": 1
+                }
+              ]
+            },
+            {
+              "text_sha256": "7185d5c4508d30378f6476879cfb4529dcfc884dc709fcc6756be2b26166a360",
+              "left": [
+                {
+                  "row": 51,
+                  "label": 1
+                }
+              ],
+              "right": [
+                {
+                  "row": 48,
+                  "label": 1
+                }
+              ]
+            },
+            {
+              "text_sha256": "788e3e3ca92ef3a45d9f5444e78cee5c0934a69085eceb728441326d9862213e",
+              "left": [
+                {
+                  "row": 55,
+                  "label": 1
+                }
+              ],
+              "right": [
+                {
+                  "row": 45,
+                  "label": 1
+                }
+              ]
+            },
+            {
+              "text_sha256": "bed187dd4be3542d5b6ff84136db054045ea7fa5c7efcaf18a932b059fdf9ec2",
+              "left": [
+                {
+                  "row": 48,
+                  "label": 1
+                }
+              ],
+              "right": [
+                {
+                  "row": 31,
+                  "label": 1
+                }
+              ]
+            },
+            {
+              "text_sha256": "c21c26ebf98e443756f579b7fef69ce97fd6620f330c7d85d8432cb39c12d359",
+              "left": [
+                {
+                  "row": 58,
+                  "label": 1
+                }
+              ],
+              "right": [
+                {
+                  "row": 62,
+                  "label": 1
+                }
+              ]
+            },
+            {
+              "text_sha256": "e13a6c1f6236dca9f25b2eb0aaf65315795008ec459f4641ecb62365004998e9",
+              "left": [
+                {
+                  "row": 57,
+                  "label": 1
+                }
+              ],
+              "right": [
+                {
+                  "row": 59,
+                  "label": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "left": "valid",
+          "right": "NotInject_one",
+          "shared_texts": 16,
+          "left_records": 16,
+          "right_records": 16,
+          "conflicting_label_groups": 0,
+          "matches": [
+            {
+              "text_sha256": "1d7dbe954379386fcea5bad2a380ff9bcb1d2c6323a954b21146c2a0d871e89c",
+              "left": [
+                {
+                  "row": 104,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 47,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "3214a76076a8a7f22f6bc3538c9756ea833e5aa49bc3b733a8b69421ce76ea54",
+              "left": [
+                {
+                  "row": 102,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 27,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "471df76b4a7fbd0eaa0925f85c88583649c7f6771642e118e6d6a57d96812fcc",
+              "left": [
+                {
+                  "row": 103,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 80,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "4932af495962ed7ae3075d82ba835e4dd01d3e4b2a5d705b849f1b5a7f35fc2e",
+              "left": [
+                {
+                  "row": 96,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 38,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "53960fac7ffcc413a0e87d2ee4903c2987a58416692eefe9785dd1650feddf6e",
+              "left": [
+                {
+                  "row": 101,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 75,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "6751829c4cd646bee85417029c22a8280969c899b4532842ff28c9e6891e74df",
+              "left": [
+                {
+                  "row": 110,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 64,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "7631d527e73a0699cf0ad075a67fa3c059672f8697b4f87724fbf88178eeb271",
+              "left": [
+                {
+                  "row": 106,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 76,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "8db83e25f32bbc14f64c1fcf9318df79b0681bdae7bc85d317af941c4a3ccd9a",
+              "left": [
+                {
+                  "row": 105,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 100,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "92e917cc622e66e4054e1e94ebc5aa66385c504892d2f69fe3ce042a36988578",
+              "left": [
+                {
+                  "row": 108,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 98,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "9af6bad1a06a336954777a68304929020dc94e45fed60c49556215700b1dcebf",
+              "left": [
+                {
+                  "row": 97,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 41,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "ad690dd8b14da073b90ee98ee06c18a2f768b384840b235a494a5f8aeca43dd1",
+              "left": [
+                {
+                  "row": 107,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 110,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "c1a5367c7e8ccdaae760998f9b994e1fa8ac63184084a50a9c3829fad3de5f1e",
+              "left": [
+                {
+                  "row": 100,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 89,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "c413561b1398801b511c3b4352072328f62130b3048a9a59009df3ba8269b23d",
+              "left": [
+                {
+                  "row": 99,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 32,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "cb7cb3e84cb91205568bdf7c7b6c8bc9643c6b0439b9e718bd74356e8a94f2c8",
+              "left": [
+                {
+                  "row": 111,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 90,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "ccd765afb710f678a08fcc62859438d0b0fb9a50d77e0d47f4ad9c33638c72f0",
+              "left": [
+                {
+                  "row": 109,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 66,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "ce87c59a0ef832f2d6ec7396264fffcbb832c4c819762be25c1edecad257f56a",
+              "left": [
+                {
+                  "row": 98,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 67,
+                  "label": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "left": "valid",
+          "right": "NotInject_three",
+          "shared_texts": 16,
+          "left_records": 16,
+          "right_records": 16,
+          "conflicting_label_groups": 0,
+          "matches": [
+            {
+              "text_sha256": "0d10a5dce243adaf325cb1b65f42be26375dc859ce5fd6fe6af3e9a83b11b167",
+              "left": [
+                {
+                  "row": 135,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 60,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "1c6fc1176d0635e240254fd5f1b68e81bae47733bb34bdbea73c99c9461131c7",
+              "left": [
+                {
+                  "row": 142,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 31,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "3c44c0570ac16282ddd9c31de5b03e089e7962a8c6396b4e18e30e1b5d68aba3",
+              "left": [
+                {
+                  "row": 143,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 30,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "46418963bb25bdbdab411cc4fba2cb71640213a6fa0c7d6e482f72900642cc62",
+              "left": [
+                {
+                  "row": 131,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 39,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "7675f2fa861c46b26b1802c354a1f67eb59891feb2f4a297211742747b2f1861",
+              "left": [
+                {
+                  "row": 140,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 8,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "8dd802ffffa6772377c3b81dfc5178d3ec6fc94f9454945b58b6f0ebf694dd2c",
+              "left": [
+                {
+                  "row": 128,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 77,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "b0816d85bb530bc3dd0e1670576e07717b7b72bc76e431e903ad930388a29005",
+              "left": [
+                {
+                  "row": 132,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 63,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "b73f83cc8d0d1fee90a3ac85928b5fbb2595e56ce15c870b395aacf44ebff5ce",
+              "left": [
+                {
+                  "row": 133,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 103,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "bb31f7cc653bb108f9e9b384fbff2eb5ad3a2dc2bac91a3eae2c4114247289a3",
+              "left": [
+                {
+                  "row": 137,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 57,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "bd2a2622faca91e7d217824bce8a764d71d06b0d691155107c9619a17fcfbc38",
+              "left": [
+                {
+                  "row": 130,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 84,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "be7f041c6eaeb99e34adf98a8ade168cd46002a78b9342fdc2c1f8d6b8a71334",
+              "left": [
+                {
+                  "row": 136,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 72,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "c69af0b7f34d787aad186f1e06d8fa91e11975c680ee4d2dd2a519f68b40d482",
+              "left": [
+                {
+                  "row": 134,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 22,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "d14c56100aa4b319839b4f2c8e2035c58c500f0b8f3eba05e9234d63567cf56a",
+              "left": [
+                {
+                  "row": 139,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 68,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "d3e7aa94f14d0f6cf858a8f5e30c2bfb050137e85e277004c8613350f4fb3708",
+              "left": [
+                {
+                  "row": 141,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 75,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "ed9d4c121496505e7347f99b89a7e0625be0042c97a258e9e951878ff0d30a65",
+              "left": [
+                {
+                  "row": 138,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 96,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "f77ed8daef02f5a7213692b01ae1e343eccb35107f3bfb2f064a8733aefa8b3a",
+              "left": [
+                {
+                  "row": 129,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 109,
+                  "label": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "left": "valid",
+          "right": "NotInject_two",
+          "shared_texts": 16,
+          "left_records": 16,
+          "right_records": 16,
+          "conflicting_label_groups": 0,
+          "matches": [
+            {
+              "text_sha256": "4189dd1c43c183e7e901b4ede05533c26e5748ebb494cac2a15e5193b893205b",
+              "left": [
+                {
+                  "row": 125,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 110,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "58509a7eba407a2ce5daedf955f22e0dbe36fa1823901d900a36801176a3e9d6",
+              "left": [
+                {
+                  "row": 127,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 42,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "5bf8393a5828fd44258f1e2917efb6bd069d6d29a6e07b5e68ae26054b2c1171",
+              "left": [
+                {
+                  "row": 123,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 70,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "740a2edffdc555fd073d8e1a409a10041c72357153c0977354ece50000e2dfa3",
+              "left": [
+                {
+                  "row": 122,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 44,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "79b321414cfe43fcd9d871a0dbd9e253a04812fb3b69487b5c1fb865f137ba68",
+              "left": [
+                {
+                  "row": 126,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 26,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "83e7016a2775be386bba680e9373ce244f20342035cd607701a268b968f7f78c",
+              "left": [
+                {
+                  "row": 118,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 38,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "8fa6ce5631373c5739cf9412d0022564e8ca390f222a9df285c38ff9a9bf43b5",
+              "left": [
+                {
+                  "row": 124,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 109,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "99dbfc62a64df59b04821083d6bd9536622566cbb090f234d1cc2b5aa608ebed",
+              "left": [
+                {
+                  "row": 117,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 25,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "9dd0672eb4b74efce7124fee3849255fd63d7b64377693aa66ceda80fb265f58",
+              "left": [
+                {
+                  "row": 116,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 74,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "a37d2bee1b474257d88c19b514be65044726e3eea8a398d558c773d9a1673980",
+              "left": [
+                {
+                  "row": 120,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 75,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "b0a764c24ba1c7f8973fbad23ee063519035a1cd766cc30dc606085b4e688c6c",
+              "left": [
+                {
+                  "row": 113,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 54,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "c1c5886dd7c737069b8bc18e7a56527ac2bdacebf206829d0b5e2c7777460c3d",
+              "left": [
+                {
+                  "row": 112,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 60,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "e418beead16fcb48c086e8ecee7eec44694e0350347901a0d9a1e2adefccb695",
+              "left": [
+                {
+                  "row": 121,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 39,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "e968d9b1dc242a92a15d546b38f2afe88dd123f0b39737b255d1cc4f385bdf58",
+              "left": [
+                {
+                  "row": 115,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 15,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "ebad2ceda11457ec705b350c6d6fdad63a7970e7e876750aafe3685ae6675220",
+              "left": [
+                {
+                  "row": 119,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 8,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "ff805bcd741b7fa48dbd68e9643425376d484928bfa2e142cd72254107a48514",
+              "left": [
+                {
+                  "row": 114,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 46,
+                  "label": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "left": "valid",
+          "right": "wildguard",
+          "shared_texts": 24,
+          "left_records": 24,
+          "right_records": 24,
+          "conflicting_label_groups": 0,
+          "matches": [
+            {
+              "text_sha256": "0096700b39ae66e91c6f14f349203ff4c71186a4eb7fd848292403fdc74c8193",
+              "left": [
+                {
+                  "row": 13,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 558,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "1a5918ac575dea727ebd13da738bb9363fb00bf903d777c2aa04cbfe62074c5d",
+              "left": [
+                {
+                  "row": 18,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 403,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "252130a16e962787bb6b412afd2a47ebac10d9716c2c2f0aa5bfc915b8041cb7",
+              "left": [
+                {
+                  "row": 2,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 409,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "32f290a0e67f370a326fff30676208425b17dc95bfd249e79f614a808c969e52",
+              "left": [
+                {
+                  "row": 0,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 831,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "3dfd164e7e696e9c7541c75103af150a81008db4fe38eb6393c8c4864a217171",
+              "left": [
+                {
+                  "row": 4,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 547,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "47e25225e8b26b21ae634837f7c75794178fc99a83f86441b8a539c5e2035803",
+              "left": [
+                {
+                  "row": 23,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 502,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "52278e032f7973b2c17a393dbef038b10c4abb26ed45879e38577871e7dd0a31",
+              "left": [
+                {
+                  "row": 22,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 469,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "5f11057761fa8ea7b3cbcda90998915fc4f0b1c5abf7692c00422bfe8ce66b4b",
+              "left": [
+                {
+                  "row": 15,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 225,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "6536ded5c80955bd262233723613ef6ccc1dbd47e171f238f2cce533e768082c",
+              "left": [
+                {
+                  "row": 16,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 920,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "6708d5ff42909af08aaa02e79bb6bba3ab8743b76beeffd6a22b01facd0f18d0",
+              "left": [
+                {
+                  "row": 6,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 617,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "6a494507761255613b50879e530189833d2bd6134fbf89feba1a3a17461810ca",
+              "left": [
+                {
+                  "row": 9,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 810,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "6f8f539ddee1aec4efd43101d76d65b53f4dd24b637702fe72b412c86d74292e",
+              "left": [
+                {
+                  "row": 7,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 529,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "91fd3080e2b5c89d7c95ece14ec680fa4fa570c851fc498d85849263faf0a1db",
+              "left": [
+                {
+                  "row": 8,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 452,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "9e835b80c402338ef0259195a384f0a5f77d606fd17b5c35a03cf31d80d64b05",
+              "left": [
+                {
+                  "row": 3,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 961,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "ad54b288c39753420328517bc508619fb451ced9c69e9ceadcf77eca53c86cc4",
+              "left": [
+                {
+                  "row": 11,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 328,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "b6a6bf18ad81f21554493cdfe27cd718ca14fe16d998e74d27d5bc10e3e2e739",
+              "left": [
+                {
+                  "row": 12,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 510,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "bac4ef416ed0ff7037355d158c60c38f9a1c5280a5819479b1a121a3b1bd75b9",
+              "left": [
+                {
+                  "row": 10,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 7,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "c21da4e9459a217e23c9b9439420b4f2875fadb13c3f52ca59a2cff8cdcb68a7",
+              "left": [
+                {
+                  "row": 1,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 608,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "c4fbc8c8cfc174f0c5f2d5c8406d4f0c4bebe4a91ca267740273733cefa8cb97",
+              "left": [
+                {
+                  "row": 19,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 686,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "e2d83c2dca325ed2348f488ec99140fd7c4da96ad25942312e048ade596f43ef",
+              "left": [
+                {
+                  "row": 14,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 705,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "ee6ba49f09703f910c93ed617396a789b103ec435014b03d98c0d4d6ca93d5dd",
+              "left": [
+                {
+                  "row": 20,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 40,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "f560b893b7622b86d34222f84f5bddd6b56c199f40b1bcee9dcacfc2c9aec473",
+              "left": [
+                {
+                  "row": 21,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 624,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "f637dec21fa733539eb0dc5f7bb96eb20877c7a8ad56bd51023c5cd1171f68cd",
+              "left": [
+                {
+                  "row": 17,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 228,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "fb83eb1f473b7782a4fdee9de6210b39250e2f0ca2f13aacccdab35acbfa640f",
+              "left": [
+                {
+                  "row": 5,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 298,
+                  "label": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "NFKC_casefold_whitespace",
+      "splits": {
+        "BIPIA_code": {
+          "records": 50,
+          "unique_texts": 50,
+          "duplicate_excess_records": 0,
+          "conflicting_label_groups": 0,
+          "empty_prompt_rows": [],
+          "label_conflicts": []
+        },
+        "BIPIA_text": {
+          "records": 75,
+          "unique_texts": 75,
+          "duplicate_excess_records": 0,
+          "conflicting_label_groups": 0,
+          "empty_prompt_rows": [],
+          "label_conflicts": []
+        },
+        "NotInject_one": {
+          "records": 113,
+          "unique_texts": 113,
+          "duplicate_excess_records": 0,
+          "conflicting_label_groups": 0,
+          "empty_prompt_rows": [],
+          "label_conflicts": []
+        },
+        "NotInject_three": {
+          "records": 113,
+          "unique_texts": 113,
+          "duplicate_excess_records": 0,
+          "conflicting_label_groups": 0,
+          "empty_prompt_rows": [],
+          "label_conflicts": []
+        },
+        "NotInject_two": {
+          "records": 113,
+          "unique_texts": 113,
+          "duplicate_excess_records": 0,
+          "conflicting_label_groups": 0,
+          "empty_prompt_rows": [],
+          "label_conflicts": []
+        },
+        "train": {
+          "records": 76735,
+          "unique_texts": 73490,
+          "duplicate_excess_records": 3245,
+          "conflicting_label_groups": 5,
+          "empty_prompt_rows": [
+            33340,
+            38173,
+            44553
+          ],
+          "label_conflicts": [
+            {
+              "text_sha256": "0dba5cf1274a6bb6e9fc09e933c7654b6d70493f02da3fb6a3c7dab71aa45d65",
+              "rows": [
+                {
+                  "row": 696,
+                  "label": 1
+                },
+                {
+                  "row": 4542,
+                  "label": 0
+                },
+                {
+                  "row": 5115,
+                  "label": 1
+                },
+                {
+                  "row": 73626,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "30040406b14aa102772d68f1aa74da3749400cc1170a7a0e1211f8ce3df20e11",
+              "rows": [
+                {
+                  "row": 42,
+                  "label": 1
+                },
+                {
+                  "row": 9750,
+                  "label": 0
+                },
+                {
+                  "row": 73583,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "39afa4acacaf702fb35f6a16b20fe5a85ed000158d5e58b4e3cb44002b6879a7",
+              "rows": [
+                {
+                  "row": 1117,
+                  "label": 1
+                },
+                {
+                  "row": 1568,
+                  "label": 1
+                },
+                {
+                  "row": 3798,
+                  "label": 0
+                },
+                {
+                  "row": 5413,
+                  "label": 1
+                },
+                {
+                  "row": 5862,
+                  "label": 1
+                },
+                {
+                  "row": 73716,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "3dc01ba97789bf160a50d0985fad78cd120ee35e9cdaf9688d67fd41283bd4d3",
+              "rows": [
+                {
+                  "row": 158,
+                  "label": 1
+                },
+                {
+                  "row": 6190,
+                  "label": 0
+                },
+                {
+                  "row": 73568,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "7c746328e1fa2aee9a85257d3bb6cf34a84bccbdd957fd9b82b42e31a6b97aec",
+              "rows": [
+                {
+                  "row": 78,
+                  "label": 1
+                },
+                {
+                  "row": 7541,
+                  "label": 0
+                },
+                {
+                  "row": 73567,
+                  "label": 0
+                }
+              ]
+            }
+          ]
+        },
+        "valid": {
+          "records": 144,
+          "unique_texts": 144,
+          "duplicate_excess_records": 0,
+          "conflicting_label_groups": 0,
+          "empty_prompt_rows": [],
+          "label_conflicts": []
+        },
+        "wildguard": {
+          "records": 971,
+          "unique_texts": 971,
+          "duplicate_excess_records": 0,
+          "conflicting_label_groups": 0,
+          "empty_prompt_rows": [],
+          "label_conflicts": []
+        }
+      },
+      "overlaps": [
+        {
+          "left": "train",
+          "right": "BIPIA_code",
+          "shared_texts": 0,
+          "left_records": 0,
+          "right_records": 0,
+          "conflicting_label_groups": 0,
+          "matches": []
+        },
+        {
+          "left": "train",
+          "right": "BIPIA_text",
+          "shared_texts": 0,
+          "left_records": 0,
+          "right_records": 0,
+          "conflicting_label_groups": 0,
+          "matches": []
+        },
+        {
+          "left": "train",
+          "right": "NotInject_one",
+          "shared_texts": 0,
+          "left_records": 0,
+          "right_records": 0,
+          "conflicting_label_groups": 0,
+          "matches": []
+        },
+        {
+          "left": "train",
+          "right": "NotInject_three",
+          "shared_texts": 0,
+          "left_records": 0,
+          "right_records": 0,
+          "conflicting_label_groups": 0,
+          "matches": []
+        },
+        {
+          "left": "train",
+          "right": "NotInject_two",
+          "shared_texts": 0,
+          "left_records": 0,
+          "right_records": 0,
+          "conflicting_label_groups": 0,
+          "matches": []
+        },
+        {
+          "left": "train",
+          "right": "valid",
+          "shared_texts": 3,
+          "left_records": 3,
+          "right_records": 3,
+          "conflicting_label_groups": 0,
+          "matches": [
+            {
+              "text_sha256": "247e1130160e7af9309b39a7260bf326df2994ea1a1b7756510eeea54f12b02c",
+              "left": [
+                {
+                  "row": 375,
+                  "label": 1
+                }
+              ],
+              "right": [
+                {
+                  "row": 79,
+                  "label": 1
+                }
+              ]
+            },
+            {
+              "text_sha256": "41576c0ef6d8e916620329cf7abfb005b0724f72b607b62d5e3ddf8f4cd6eeab",
+              "left": [
+                {
+                  "row": 168,
+                  "label": 1
+                }
+              ],
+              "right": [
+                {
+                  "row": 74,
+                  "label": 1
+                }
+              ]
+            },
+            {
+              "text_sha256": "cfd9fa7c644326263de876b3d73e9642f26b580f063a3e8144455469e2054484",
+              "left": [
+                {
+                  "row": 86,
+                  "label": 1
+                }
+              ],
+              "right": [
+                {
+                  "row": 75,
+                  "label": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "left": "train",
+          "right": "wildguard",
+          "shared_texts": 0,
+          "left_records": 0,
+          "right_records": 0,
+          "conflicting_label_groups": 0,
+          "matches": []
+        },
+        {
+          "left": "valid",
+          "right": "BIPIA_code",
+          "shared_texts": 12,
+          "left_records": 12,
+          "right_records": 12,
+          "conflicting_label_groups": 0,
+          "matches": [
+            {
+              "text_sha256": "39f16c75778465cd0fecf904e1e004093ae7f57efa9788afc0bcae47159e2d99",
+              "left": [
+                {
+                  "row": 64,
+                  "label": 1
+                }
+              ],
+              "right": [
+                {
+                  "row": 41,
+                  "label": 1
+                }
+              ]
+            },
+            {
+              "text_sha256": "47b9a3d787e99924a4320bb4bd9477ca80f277deeaa763135d3863047337d670",
+              "left": [
+                {
+                  "row": 60,
+                  "label": 1
+                }
+              ],
+              "right": [
+                {
+                  "row": 13,
+                  "label": 1
+                }
+              ]
+            },
+            {
+              "text_sha256": "50b9a92f5f23657afb302e29626f61451f6dc4e8e46932de9db83d8937e3ea42",
+              "left": [
+                {
+                  "row": 68,
+                  "label": 1
+                }
+              ],
+              "right": [
+                {
+                  "row": 34,
+                  "label": 1
+                }
+              ]
+            },
+            {
+              "text_sha256": "5a6508e7cdaf30d4b62187614565fe73f55479dfd4be75a95f85d1b79cfffa57",
+              "left": [
+                {
+                  "row": 67,
+                  "label": 1
+                }
+              ],
+              "right": [
+                {
+                  "row": 28,
+                  "label": 1
+                }
+              ]
+            },
+            {
+              "text_sha256": "8356810ad39a92fac6c04a700799fdfc9adacdf4b2b1b23750eda83eb19f0b42",
+              "left": [
+                {
+                  "row": 69,
+                  "label": 1
+                }
+              ],
+              "right": [
+                {
+                  "row": 46,
+                  "label": 1
+                }
+              ]
+            },
+            {
+              "text_sha256": "917ff8d9f414ff8b9d10fb4d1b1f545e2c17156e6470bde9ca8c107bf4d3f9ff",
+              "left": [
+                {
+                  "row": 70,
+                  "label": 1
+                }
+              ],
+              "right": [
+                {
+                  "row": 48,
+                  "label": 1
+                }
+              ]
+            },
+            {
+              "text_sha256": "96345ef3ec89b6b0a2f9cd1144e439c2cac57cda6357f9f7a097f8c4062d4da2",
+              "left": [
+                {
+                  "row": 62,
+                  "label": 1
+                }
+              ],
+              "right": [
+                {
+                  "row": 9,
+                  "label": 1
+                }
+              ]
+            },
+            {
+              "text_sha256": "9e51dad74214eb70bf3782d8ec610b08e45685cff9896b3cf5f2d03ecc8878b8",
+              "left": [
+                {
+                  "row": 63,
+                  "label": 1
+                }
+              ],
+              "right": [
+                {
+                  "row": 12,
+                  "label": 1
+                }
+              ]
+            },
+            {
+              "text_sha256": "b952cec41a34a36e8129a21c9ec28a1a24c90df1e7afa0ab7a7f49e9314cd77f",
+              "left": [
+                {
+                  "row": 66,
+                  "label": 1
+                }
+              ],
+              "right": [
+                {
+                  "row": 47,
+                  "label": 1
+                }
+              ]
+            },
+            {
+              "text_sha256": "d7f3f1777adf99581f130726ddb46be972b5b32474e88e85faf8c718667eb6f9",
+              "left": [
+                {
+                  "row": 65,
+                  "label": 1
+                }
+              ],
+              "right": [
+                {
+                  "row": 4,
+                  "label": 1
+                }
+              ]
+            },
+            {
+              "text_sha256": "e2fee23957c3cc9366d4986624d921021bb56b1099a1786c516998e7e3bb5c8f",
+              "left": [
+                {
+                  "row": 61,
+                  "label": 1
+                }
+              ],
+              "right": [
+                {
+                  "row": 29,
+                  "label": 1
+                }
+              ]
+            },
+            {
+              "text_sha256": "e4132e95d515f123f231767002f52dca6f9514433e4506c01e3e3ef13151dab6",
+              "left": [
+                {
+                  "row": 71,
+                  "label": 1
+                }
+              ],
+              "right": [
+                {
+                  "row": 5,
+                  "label": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "left": "valid",
+          "right": "BIPIA_text",
+          "shared_texts": 12,
+          "left_records": 12,
+          "right_records": 12,
+          "conflicting_label_groups": 0,
+          "matches": [
+            {
+              "text_sha256": "00078e703977eb1e8d1471d42d00ed7f55859afd98e6c97aee0add9cfb3f0ada",
+              "left": [
+                {
+                  "row": 51,
+                  "label": 1
+                }
+              ],
+              "right": [
+                {
+                  "row": 48,
+                  "label": 1
+                }
+              ]
+            },
+            {
+              "text_sha256": "1a45b44c4ecdf74d1c94e098ebcb5f2319d87fbb904677669e1ca2299c8818e5",
+              "left": [
+                {
+                  "row": 55,
+                  "label": 1
+                }
+              ],
+              "right": [
+                {
+                  "row": 45,
+                  "label": 1
+                }
+              ]
+            },
+            {
+              "text_sha256": "278f111ce8fdaca3d5189ae8cb38f1549bb1d8a4cad9afe457550900344eef61",
+              "left": [
+                {
+                  "row": 59,
+                  "label": 1
+                }
+              ],
+              "right": [
+                {
+                  "row": 57,
+                  "label": 1
+                }
+              ]
+            },
+            {
+              "text_sha256": "57217750c7293c4b9e811d096951d71a07ac1249e680e2f0835f93985f10a4fe",
+              "left": [
+                {
+                  "row": 49,
+                  "label": 1
+                }
+              ],
+              "right": [
+                {
+                  "row": 37,
+                  "label": 1
+                }
+              ]
+            },
+            {
+              "text_sha256": "572c546c93f8f6ab0385c4d899aab13aa0542be332e9260cf7418911a660912a",
+              "left": [
+                {
+                  "row": 54,
+                  "label": 1
+                }
+              ],
+              "right": [
+                {
+                  "row": 13,
+                  "label": 1
+                }
+              ]
+            },
+            {
+              "text_sha256": "5d4d23e2606d3a136e2dbec55b6a66fc9e2e58b95e8aee8156813ef6d9d68022",
+              "left": [
+                {
+                  "row": 48,
+                  "label": 1
+                }
+              ],
+              "right": [
+                {
+                  "row": 31,
+                  "label": 1
+                }
+              ]
+            },
+            {
+              "text_sha256": "7ce46394afe5ffa8be8c47278bdf2d21459131750e6f76339440b94afea71ca2",
+              "left": [
+                {
+                  "row": 50,
+                  "label": 1
+                }
+              ],
+              "right": [
+                {
+                  "row": 17,
+                  "label": 1
+                }
+              ]
+            },
+            {
+              "text_sha256": "7d42ce409a2ddf5db03ecec88d8e50b8bc0fb4f8f4086148ee4e6335cd0f9d3d",
+              "left": [
+                {
+                  "row": 57,
+                  "label": 1
+                }
+              ],
+              "right": [
+                {
+                  "row": 59,
+                  "label": 1
+                }
+              ]
+            },
+            {
+              "text_sha256": "83e30cca362b36f50e58dbba6d74531365afb0197e7afd5f65abef496375c920",
+              "left": [
+                {
+                  "row": 52,
+                  "label": 1
+                }
+              ],
+              "right": [
+                {
+                  "row": 32,
+                  "label": 1
+                }
+              ]
+            },
+            {
+              "text_sha256": "c709e2c9909771085fc91697ccf83e443e1642e9d79839472c3c167bfe0572db",
+              "left": [
+                {
+                  "row": 56,
+                  "label": 1
+                }
+              ],
+              "right": [
+                {
+                  "row": 12,
+                  "label": 1
+                }
+              ]
+            },
+            {
+              "text_sha256": "eb20c63d4108355f3c71dcd0ceadcd9cdc5eacca8e88fdceb72383e411f31c51",
+              "left": [
+                {
+                  "row": 53,
+                  "label": 1
+                }
+              ],
+              "right": [
+                {
+                  "row": 36,
+                  "label": 1
+                }
+              ]
+            },
+            {
+              "text_sha256": "f28646439efe1e85bebbd715f4988c7650f96a875d59183b4c2a9ead234ae071",
+              "left": [
+                {
+                  "row": 58,
+                  "label": 1
+                }
+              ],
+              "right": [
+                {
+                  "row": 62,
+                  "label": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "left": "valid",
+          "right": "NotInject_one",
+          "shared_texts": 16,
+          "left_records": 16,
+          "right_records": 16,
+          "conflicting_label_groups": 0,
+          "matches": [
+            {
+              "text_sha256": "0f6ab7c590290a491c5cdd849ac262f9cf2145c3511115be8d6b92811e6dd712",
+              "left": [
+                {
+                  "row": 103,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 80,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "24ec2e586a9e512c1c6ec29f59248f509cfe433b3b39e4e00305b498c9ffa28d",
+              "left": [
+                {
+                  "row": 109,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 66,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "257696a1552eb7eca648b5166976873c75af435ac3482d0b20ea4a53257919db",
+              "left": [
+                {
+                  "row": 110,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 64,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "278500f89991c5147e8d8168a2da2fade477df3f088243211b216afcce6d0bc6",
+              "left": [
+                {
+                  "row": 107,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 110,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "3214a76076a8a7f22f6bc3538c9756ea833e5aa49bc3b733a8b69421ce76ea54",
+              "left": [
+                {
+                  "row": 102,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 27,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "4e13e81605ac2c31e9cdc62a94d6a7b859cb734d6add7cbb52212e84be6fb753",
+              "left": [
+                {
+                  "row": 104,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 47,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "5652f41147f8ebcdb32b41895b28b6201b64b0f38b12aaa203fc2be96616807a",
+              "left": [
+                {
+                  "row": 111,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 90,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "5d319131d6127c52d861ea816e272bb025b15b17f905d35deb0b613c267efbb5",
+              "left": [
+                {
+                  "row": 106,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 76,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "7e90e0c5c7e04fc65a194770fcaea07a01862fe5d337d7c596d06359629e88d4",
+              "left": [
+                {
+                  "row": 100,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 89,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "8504e3a46417d308d0fa414243686b5a44e95db6de38418fdd3f7563defcc8b9",
+              "left": [
+                {
+                  "row": 97,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 41,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "9046959633fc447b5eaffac02b1617908b3f728f552f3368489422f33af2dd6c",
+              "left": [
+                {
+                  "row": 108,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 98,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "962f3d81209e195297b6397626c93977009bd47f48748756fffd67fd4b6a1180",
+              "left": [
+                {
+                  "row": 99,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 32,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "991b9835367fd3a7164d629023199096a86456f35f00bbf47429540a767d0013",
+              "left": [
+                {
+                  "row": 105,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 100,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "babe8db5131f73d679d223fa1404c736271b83b98a98a89b67f954680d92e55b",
+              "left": [
+                {
+                  "row": 98,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 67,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "cebe8aeef86c281a3b2af18884538c19cffc32ead80a7e6e0327825f4782d68e",
+              "left": [
+                {
+                  "row": 101,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 75,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "e559623c600f576f4f9a488386c4d90a0c8536ad67c9695ca2a13660d60edbe7",
+              "left": [
+                {
+                  "row": 96,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 38,
+                  "label": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "left": "valid",
+          "right": "NotInject_three",
+          "shared_texts": 16,
+          "left_records": 16,
+          "right_records": 16,
+          "conflicting_label_groups": 0,
+          "matches": [
+            {
+              "text_sha256": "00fb0804e87b1dbc62f41ac2deccda5bc312a3df65a2ca6979a020a0f4be1fc0",
+              "left": [
+                {
+                  "row": 129,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 109,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "1010f2dbeb74ec59ceff14e438d85501b8afa4b2e819a0f691632c3e044ba79b",
+              "left": [
+                {
+                  "row": 141,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 75,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "2f968a80c5a8a65939300d468b849185dbd657cbc323e86857acc5efe1a8d4ae",
+              "left": [
+                {
+                  "row": 136,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 72,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "36b281a8ee853f1bd285ce44d33a99a15fe00449111d500a0fa56e75f3087241",
+              "left": [
+                {
+                  "row": 138,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 96,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "5ef18e9f03b91e79dd20c8b8789290764690eaafbb687be091c696726f65012d",
+              "left": [
+                {
+                  "row": 139,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 68,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "813f3a43a41286bb1466f02f61d1538541a2a1837603662be5db28907712c730",
+              "left": [
+                {
+                  "row": 140,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 8,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "8dd802ffffa6772377c3b81dfc5178d3ec6fc94f9454945b58b6f0ebf694dd2c",
+              "left": [
+                {
+                  "row": 128,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 77,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "967bde8a6db0d78843b36f3e45b05f3bdec0f1ac62d70e27c94b857abc9ad4b3",
+              "left": [
+                {
+                  "row": 142,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 31,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "a9933d9e38cbb8616c9e362a230ea7d47d596da5a8f75eaf5e2ce5227a1e1ad4",
+              "left": [
+                {
+                  "row": 132,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 63,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "ac867de666a2512e01667075467cbf1afaf15c88697e856288ec6736c2b876ce",
+              "left": [
+                {
+                  "row": 131,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 39,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "c31a23a0bdc23a88efc4da576f8b133c4af97966814d38c9d4003c08b356f713",
+              "left": [
+                {
+                  "row": 133,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 103,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "d1106f5bbef01f7aeb8c8df9ea80c71bcaf8566b20858dd17014ef35ff8489de",
+              "left": [
+                {
+                  "row": 143,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 30,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "d29aa96f2b9115c535d4646117222cf8cbcef512b913efa48a581b22b83fd799",
+              "left": [
+                {
+                  "row": 134,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 22,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "d96c5af49a5e425d274e83ca0484ae131514d627a5eda2efab4c86601f3bbf33",
+              "left": [
+                {
+                  "row": 135,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 60,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "e32a2f55d2e60963da270e72d615a136a94b7c465fceb7b7c832fefd74bf20b3",
+              "left": [
+                {
+                  "row": 137,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 57,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "f7875a2d69de8fc2f0da4fc89ab2426a726808a7b75b4c4646cf5fdeb7dba705",
+              "left": [
+                {
+                  "row": 130,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 84,
+                  "label": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "left": "valid",
+          "right": "NotInject_two",
+          "shared_texts": 16,
+          "left_records": 16,
+          "right_records": 16,
+          "conflicting_label_groups": 0,
+          "matches": [
+            {
+              "text_sha256": "09aa2794b088adfd4d03f9a0936cf5d4d969f901641e6e54c9bb9e90b7621028",
+              "left": [
+                {
+                  "row": 112,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 60,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "241c63a4b188aad5ff679abd3d69eb6545be83eafbd93281c1af32b9347f0cf1",
+              "left": [
+                {
+                  "row": 119,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 8,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "262af1300c0ebe36222e12f333eb0f7cd395411576bf209080e14f12ec8946d9",
+              "left": [
+                {
+                  "row": 117,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 25,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "32e8d95bf5227820b2bc66dd2561bbd14a37884117d4b3a84053cf3719d5e0a1",
+              "left": [
+                {
+                  "row": 125,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 110,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "59a414ff84009fdf175ddf0bb7bdcb8a2a45115641a069430e99230a999f6962",
+              "left": [
+                {
+                  "row": 123,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 70,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "5a82f94fc9c642285ae2c3f6fb9bfe5774f08241eff128d5f1d00e26b0216e76",
+              "left": [
+                {
+                  "row": 116,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 74,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "682144ac9be32306f72766c3e61f170754af7c021066bf633ee99ac8bdc58dd9",
+              "left": [
+                {
+                  "row": 121,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 39,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "6aad1591039c865602e6245f80cfe666c50893f44cd02a018b18dd03d58758b8",
+              "left": [
+                {
+                  "row": 122,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 44,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "71356d41245509a1fe37e69629b5899ca22e02ed88507dcc900d14b04471d49c",
+              "left": [
+                {
+                  "row": 127,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 42,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "79aa437b46667b63c7ffdf2ad55cbaa96a1249da317c8c9ca1ffe0d9ab83790d",
+              "left": [
+                {
+                  "row": 124,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 109,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "83e7016a2775be386bba680e9373ce244f20342035cd607701a268b968f7f78c",
+              "left": [
+                {
+                  "row": 118,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 38,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "b2bb4aa7dadfbfb779972c0d03e92d0b3dce82ceaae561590703c046e62bdc37",
+              "left": [
+                {
+                  "row": 114,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 46,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "c8bb608698e9e6f8ba94f7f9191e72f093a9338adecf62399599ad7228a978d2",
+              "left": [
+                {
+                  "row": 113,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 54,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "e8794ad1b3873099b6abc652d36d856e7d18c30907054e3eab4c703716649ac0",
+              "left": [
+                {
+                  "row": 126,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 26,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "e968d9b1dc242a92a15d546b38f2afe88dd123f0b39737b255d1cc4f385bdf58",
+              "left": [
+                {
+                  "row": 115,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 15,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "ea23e72c2b72b64a1061bede35eab9d7e36ef185b2455b10d72fe6bfcff2e5eb",
+              "left": [
+                {
+                  "row": 120,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 75,
+                  "label": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "left": "valid",
+          "right": "wildguard",
+          "shared_texts": 24,
+          "left_records": 24,
+          "right_records": 24,
+          "conflicting_label_groups": 0,
+          "matches": [
+            {
+              "text_sha256": "01a42c3d28a838e32b0df868b324edb6547ce8e1d42ce68b55447af4099e39d5",
+              "left": [
+                {
+                  "row": 21,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 624,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "028b8c1629666e4b9d6cbc598a65fed1d663cc4f8a8419afb13c8758292a5abe",
+              "left": [
+                {
+                  "row": 16,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 920,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "16faa0c9cd68291a329c889209fb0965755703781d8fe5cfbd1eea514d8ad966",
+              "left": [
+                {
+                  "row": 3,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 961,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "17810599f573d96e861defb0afef957541bd0c215b74c1173308f6ac8990b776",
+              "left": [
+                {
+                  "row": 19,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 686,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "28cbe531952dc16061daedfcc6d6caa7da2b5a313c7b8420ec3dd6262297375c",
+              "left": [
+                {
+                  "row": 15,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 225,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "34dd605287b8de385533cccd7805129102b73d8ec0aba4aa521a79bf41528217",
+              "left": [
+                {
+                  "row": 17,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 228,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "3f979a1c630b1a71948025f1c7ad332e31f379c972b44d5e4106f87aa29c9f2e",
+              "left": [
+                {
+                  "row": 4,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 547,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "4273f0812c88d7f11e5b13e09db4aad7d19e3a18de3e90086aa16071df3b28f5",
+              "left": [
+                {
+                  "row": 18,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 403,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "42ca58914d7dc07933743654890f916413207de9a7e578d0a665232427014e6e",
+              "left": [
+                {
+                  "row": 10,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 7,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "46aa613e43ecbb247cd80dfd6ce4b1090bd7a75b8d7f2086e74beb4f56b51b16",
+              "left": [
+                {
+                  "row": 23,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 502,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "514428575a24530be7690475efee547c2e8a39a64995e6ff2b745e7fba8b89b3",
+              "left": [
+                {
+                  "row": 13,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 558,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "6459bf1f02c9fb3e0f736c16fa896387e17413dae96b9062293490c0be9ef1e4",
+              "left": [
+                {
+                  "row": 7,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 529,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "8c9804b7d3007e27f266d24033c51b6f7b6bca79fc52cd3798a97cec518f586d",
+              "left": [
+                {
+                  "row": 6,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 617,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "9b47aff5599c5de4aaad15c04d0b4c013479c501f55be78d280e837009b246d6",
+              "left": [
+                {
+                  "row": 12,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 510,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "9d6d36f7ccb7e27a0c6e16062c1b053150cdecb7ef15a7a77efcf4dc841786ad",
+              "left": [
+                {
+                  "row": 2,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 409,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "9e030ea01771eb45aaef0e5688ee46712e5c01445895e4341496ae6ef9808fbb",
+              "left": [
+                {
+                  "row": 8,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 452,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "a05ce2dfa4419699b06dcdecd1c19f728b2aca0813a6844c62a7821e8ff72a89",
+              "left": [
+                {
+                  "row": 5,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 298,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "a3e0a634bffae6ee12f0b5444ad70e7f74c65076f9f9fcdf0c381c0c7f1e4064",
+              "left": [
+                {
+                  "row": 20,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 40,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "ab2911d610ea8adbac6e74971e75eb757427fd45c932f19c8ecf750bf284c90b",
+              "left": [
+                {
+                  "row": 22,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 469,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "ac7bfd4606271cca6d908af4f915825f27e1378cfd5a563f15d592ce247ef282",
+              "left": [
+                {
+                  "row": 1,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 608,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "cd9dfc014a79b838a6c32e50a8e1d0c5d9b06f50037bfaf472dfc08e6c4ba7f5",
+              "left": [
+                {
+                  "row": 9,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 810,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "e0996933f8d6279dd61d12a9d7dc365cb3949cc6c92201c135c39f7d7b8c5b38",
+              "left": [
+                {
+                  "row": 0,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 831,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "f6af812650fd36d8e0e41e06baccbcb45ff48c15b5fde293f1ec8570e150a555",
+              "left": [
+                {
+                  "row": 11,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 328,
+                  "label": 0
+                }
+              ]
+            },
+            {
+              "text_sha256": "fab7a9bf0ebdb104a05a98a9813ddf6bd589ba500cca63ce21e83882ce86973d",
+              "left": [
+                {
+                  "row": 14,
+                  "label": 0
+                }
+              ],
+              "right": [
+                {
+                  "row": 705,
+                  "label": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "external_overlap": [
+    {
+      "mode": "exact",
+      "matching_external_fields": 0,
+      "matching_cases_by_dataset": {
+        "MPBench": 0,
+        "test_cases_dh_base.json": 0,
+        "test_cases_ds_base.json": 0
+      },
+      "matches": []
+    },
+    {
+      "mode": "NFKC_casefold_whitespace",
+      "matching_external_fields": 0,
+      "matching_cases_by_dataset": {
+        "MPBench": 0,
+        "test_cases_dh_base.json": 0,
+        "test_cases_ds_base.json": 0
+      },
+      "matches": []
+    }
+  ],
+  "injecagent_source": {
+    "benchmark": "InjecAgent",
+    "repository": "https://github.com/uiuc-kang-lab/InjecAgent",
+    "commit": "f19c9f2c79a41046eb13c03c51a24c567a8ffa07",
+    "archive_url": "https://codeload.github.com/uiuc-kang-lab/InjecAgent/tar.gz/f19c9f2c79a41046eb13c03c51a24c567a8ffa07",
+    "archive_sha256": "299ce57cfeef329dc3f8eb97be0f4f9d35a3226a4613840c9ca93f11972a3a76",
+    "source_dir": "artifacts/upstream/InjecAgent-f19c9f2c79a4",
+    "executed": false
+  },
+  "injecagent_data_sha256": {
+    "test_cases_dh_base.json": "0a8186468d21389af432e8c7b399ae42264d1b93a07b65c7a489468508604305",
+    "test_cases_ds_base.json": "4daab35c62a3845e8b9400f4dca58b9c9f37e57cd33b2337552557fbb26282e9"
+  },
+  "mpbench_manifest_sha256": "8b6b43158809459245fcc15677b020591b2c5d2153609c4a2fe312b128571e9d",
+  "limitations": [
+    "Published training data is not a verified per-checkpoint training manifest or model membership test.",
+    "Zero whole-string overlap does not rule out embedded spans, paraphrases, templates or upstream pretraining exposure.",
+    "Labels for NotInject and BIPIA follow the reviewed author evaluator; no author training or evaluation script was executed.",
+    "PINT.json is not present in this snapshot; existing PINT validation rows do not represent the complete PINT benchmark.",
+    "Repository MIT licensing does not replace review of upstream dataset-specific licenses before training or redistribution.",
+    "Existing model results are not removed or altered based on overlap; any filtered diagnostic must be separately declared.",
+    "Empty string training prompts are retained and indexed as a data-quality defect; this audit does not make them valid training samples."
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "status": "NATIVE_TEXT_PROXY_LIMITATION_CONFIRMED_NOT_A_BENCHMARK_RUN",
+  "source": {
+    "benchmark": "ASB",
+    "repository": "https://github.com/agiresearch/ASB",
+    "commit": "1f561dccf92d55302368fa67679b4ba9d9c8fdc4",
+    "archive_url": "https://codeload.github.com/agiresearch/ASB/tar.gz/1f561dccf92d55302368fa67679b4ba9d9c8fdc4",
+    "archive_sha256": "67acf702a38666b987298237ab495890ac40218a26df32afb2ce06634dc516ff",
+    "source_dir": "artifacts/upstream/ASB-1f561dccf92d",
+    "executed": false
+  },
+  "function_sha256": {
+    "check_attack_success": "1efb05a2fb1bfba435fbf4f485dc271ecdc084269810e3f3a41fadd131d3db32",
+    "check_original_success": "c17085865754993bb61d36ad2c5d85053befb620fa3410c78e1fc8fe46ac3b9a"
+  },
+  "synthetic_checks": {
+    "goal_in_user_message_scores_attack_success": true,
+    "achievement_in_user_message_scores_utility_success": true,
+    "executed_tool_count": 0
+  },
+  "required_reporting": [
+    "Preserve native text scores",
+    "Report simulated dispatch outcomes separately",
+    "Never treat echo/removal/refusal as demonstrated execution safety or task completion"
+  ]
+}

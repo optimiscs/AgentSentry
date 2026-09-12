@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "model_calls": 0,
+  "sampler": "installed vllm RandomDataset",
+  "executor_sha256": "5e481511565e3faa1345eb1d228e08ec6f601982452632f6e708ec805c54a125",
+  "workloads": [
+    {
+      "seed": 0,
+      "records": 16,
+      "input_tokens_each": 1024,
+      "output_tokens_each": 256,
+      "prompts_sha256": "30fe5180f5f1bfac459fc378a825980e74d52c2968bd6b2a73575bc321700a6d"
+    },
+    {
+      "seed": 1,
+      "records": 16,
+      "input_tokens_each": 1024,
+      "output_tokens_each": 256,
+      "prompts_sha256": "74a1db41b49a2e699ef6428e4b81fde75a79d695e11904713e308af792173f61"
+    }
+  ],
+  "v1_failure_reproduced": "--random-input-len is too small: with tokenizer special tokens 0 and input range ratio 1.0, the minimum possible total input tokens (prefix + sampled) is 0. Increase --random-input-len and/or --random-prefix-len, or decrease the input range ratio so that prefix_len + floor(max(0, random_input_len - num_special)) * (1 - input_range_ratio) >= 1."
+}

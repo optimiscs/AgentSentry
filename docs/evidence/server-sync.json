@@ -1,0 +1,9 @@
+{
+  "remote_root": "/root/autodl-tmp/AgentSentry",
+  "created_files": 89,
+  "preserved_identical_files": 5,
+  "verified_files": 94,
+  "all_sha256_match": true,
+  "git_initialized": true,
+  "runtime_services_started": false
+}

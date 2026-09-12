@@ -1,0 +1,23 @@
+{
+  "tested_at": "2026-09-12T09:03:40.018641+00:00",
+  "kind": "real_codex_cli_local_model_spike",
+  "vendor_version": "codex-cli 0.154.0-alpha.6.2",
+  "model": "agentsentry-local-qwen",
+  "read_only_sandbox": true,
+  "user_config_ignored": true,
+  "paid_api_used": false,
+  "one_off_hook_trust": "reviewed project bridge only; no persisted trust modification",
+  "exit_code": 0,
+  "timed_out": false,
+  "session_id": "sess_7eeb328e2f8c4e25b05a17c56a38f4e4",
+  "trace_id": "tr_154a5a7bea8c42e18bab2eb844b364fd",
+  "status": "PARTIAL_PRETOOLUSE_BLOCK_VERIFIED",
+  "candidate_count": 1,
+  "claim_count": 0,
+  "native_command": "cat README.md | head -n 1",
+  "initial_reason": "NATIVE_SHELL_SEMANTICS_UNSUPPORTED",
+  "account_auth_refresh_attempted": true,
+  "account_auth_refresh_result": "403 unsupported_country_region_territory",
+  "sandbox_probe": "UNAVAILABLE",
+  "full_product_accepted": false
+}

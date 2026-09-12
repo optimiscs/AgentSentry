@@ -1,0 +1,18 @@
+{
+  "tested_at": "2026-09-12T07:12:38.467378+00:00",
+  "method": "CUA browser UI and screenshot inspection",
+  "url": "http://127.0.0.1:8080",
+  "checks": {
+    "login_and_memory_only_token": "PASS",
+    "issue_injection_block_with_benign_read": "PASS",
+    "approval_executes_once": "PASS",
+    "full_redacted_argument_preview": "PASS",
+    "deny_leaves_execution_count_unchanged": "PASS",
+    "provenance_graph_render": "PASS",
+    "reports_show_actual_tests_and_open_gates": "PASS",
+    "browser_console_errors": 0
+  },
+  "limits": [
+    "桌面浏览器人工代理验收；尚无移动端端到端测试或大规模 Trace 布局验收。"
+  ]
+}

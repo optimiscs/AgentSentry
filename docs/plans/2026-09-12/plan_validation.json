@@ -1,0 +1,13 @@
+{
+  "work_packages": 24,
+  "estimated_days_by_owner": {
+    "A": 32,
+    "B": 32,
+    "C": 32
+  },
+  "planned_person_days": 96,
+  "all_prd_fr_ids_present": true,
+  "week_dates_valid": true,
+  "code_fences_balanced": true,
+  "limitations": "Document consistency checks only; no application tests, benchmark runs, GPU availability, or deployment have been validated."
+}

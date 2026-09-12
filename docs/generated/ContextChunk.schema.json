@@ -1,0 +1,85 @@
+{
+  "$defs": {
+    "SourceType": {
+      "enum": [
+        "USER",
+        "WEB",
+        "DOCUMENT",
+        "ISSUE",
+        "MCP_DESCRIPTION",
+        "MCP_RESPONSE",
+        "MEMORY",
+        "SUB_AGENT"
+      ],
+      "title": "SourceType",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0",
+      "default": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "chunk_id": {
+      "title": "Chunk Id",
+      "type": "string"
+    },
+    "session_id": {
+      "title": "Session Id",
+      "type": "string"
+    },
+    "source_type": {
+      "$ref": "#/$defs/SourceType"
+    },
+    "source_id": {
+      "maxLength": 2048,
+      "title": "Source Id",
+      "type": "string"
+    },
+    "trust": {
+      "default": "UNTRUSTED",
+      "enum": [
+        "TRUSTED",
+        "UNTRUSTED",
+        "UNKNOWN"
+      ],
+      "title": "Trust",
+      "type": "string"
+    },
+    "text": {
+      "maxLength": 65536,
+      "title": "Text",
+      "type": "string"
+    },
+    "canonical_text": {
+      "default": "",
+      "title": "Canonical Text",
+      "type": "string"
+    },
+    "labels": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Labels",
+      "type": "array"
+    },
+    "source_refs": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Source Refs",
+      "type": "array"
+    }
+  },
+  "required": [
+    "session_id",
+    "source_type",
+    "source_id",
+    "text"
+  ],
+  "title": "ContextChunk",
+  "type": "object"
+}

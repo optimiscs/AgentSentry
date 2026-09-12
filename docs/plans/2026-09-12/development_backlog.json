@@ -1,0 +1,273 @@
+{
+  "document_id": "AS-DEV-PLAN-009",
+  "version": "1.0",
+  "status": "proposed_plan",
+  "estimated_days_by_owner": {
+    "A": 32,
+    "B": 32,
+    "C": 32
+  },
+  "planned_person_days": 96,
+  "buffer_person_days": 24,
+  "calendar_is_assumed": true,
+  "weeks": [
+    {
+      "week": 1,
+      "start": "2026-09-14",
+      "end": "2026-09-20"
+    },
+    {
+      "week": 2,
+      "start": "2026-09-21",
+      "end": "2026-09-27"
+    },
+    {
+      "week": 3,
+      "start": "2026-09-28",
+      "end": "2026-10-04"
+    },
+    {
+      "week": 4,
+      "start": "2026-10-05",
+      "end": "2026-10-11"
+    },
+    {
+      "week": 5,
+      "start": "2026-10-12",
+      "end": "2026-10-18"
+    },
+    {
+      "week": 6,
+      "start": "2026-10-19",
+      "end": "2026-10-25"
+    },
+    {
+      "week": 7,
+      "start": "2026-10-26",
+      "end": "2026-11-01"
+    },
+    {
+      "week": 8,
+      "start": "2026-11-02",
+      "end": "2026-11-08"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "A01",
+      "owner": "A",
+      "estimated_person_days": 2,
+      "window": "W1",
+      "deliverable_and_done_criteria": "环境与资源：独立目录/解释器，资源快照，GPU/Compose 路线，磁盘预算",
+      "dependencies": "无",
+      "status": "planned"
+    },
+    {
+      "id": "A02",
+      "owner": "A",
+      "estimated_person_days": 6,
+      "window": "W1–W3",
+      "deliverable_and_done_criteria": "Hook + stdio/HTTP Proxy：执行前 gate、返回入站、取消/超时；BLOCK 不触达下游",
+      "dependencies": "B01 alpha、C01",
+      "status": "planned"
+    },
+    {
+      "id": "A03",
+      "owner": "A",
+      "estimated_person_days": 6,
+      "window": "W2–W4",
+      "deliverable_and_done_criteria": "Context Guard：直接输入、Web/文档/Issue/MCP 返回及描述；来源/证据窗口/扫描批量 JSON",
+      "dependencies": "B01、A02",
+      "status": "planned"
+    },
+    {
+      "id": "A04",
+      "owner": "A",
+      "estimated_person_days": 5,
+      "window": "W2–W4",
+      "deliverable_and_done_criteria": "五类 Executor 适配与旁路限制；路径/目的地址/执行对象规范化一致",
+      "dependencies": "B03、B04 最小版",
+      "status": "planned"
+    },
+    {
+      "id": "A05",
+      "owner": "A",
+      "estimated_person_days": 4,
+      "window": "W5–W6",
+      "deliverable_and_done_criteria": "Memory 读写污染检测/隔离、跨 Agent 上下文；标签跨 session 留存",
+      "dependencies": "A03、C06",
+      "status": "planned"
+    },
+    {
+      "id": "A06",
+      "owner": "A",
+      "estimated_person_days": 3,
+      "window": "W4–W7",
+      "deliverable_and_done_criteria": "小模型/缓存/分块性能，CPU 配置实测，关闭模型后的故障兜底",
+      "dependencies": "A03、B02、资源就绪",
+      "status": "planned"
+    },
+    {
+      "id": "A07",
+      "owner": "A",
+      "estimated_person_days": 4,
+      "window": "W1 骨架、W6–W7",
+      "deliverable_and_done_criteria": "Compose、健康检查、独立身份、配置、日志留存、干净部署/回滚",
+      "dependencies": "A02、B04、C02、容器环境",
+      "status": "planned"
+    },
+    {
+      "id": "A08",
+      "owner": "A",
+      "estimated_person_days": 2,
+      "window": "W8",
+      "deliverable_and_done_criteria": "发布封装、接入说明、版本 tag、重复部署确认",
+      "dependencies": "A06、A07、C07",
+      "status": "planned"
+    },
+    {
+      "id": "B01",
+      "owner": "B",
+      "estimated_person_days": 3,
+      "window": "W1–W2",
+      "deliverable_and_done_criteria": "JSON Schema / 枚举 / 版本；alpha→v1，UNKNOWN 与权限语义契约测试",
+      "dependencies": "无",
+      "status": "planned"
+    },
+    {
+      "id": "B02",
+      "owner": "B",
+      "estimated_person_days": 5,
+      "window": "W1–W4",
+      "deliverable_and_done_criteria": "Intent 合同：目标、范围、合法/禁止副作用、证据、未决项；三个模板到语义解析",
+      "dependencies": "B01",
+      "status": "planned"
+    },
+    {
+      "id": "B03",
+      "owner": "B",
+      "estimated_person_days": 4,
+      "window": "W2–W3",
+      "deliverable_and_done_criteria": "ActionIR 及对齐：五类工具、复合 effects，三类偏离均有解释",
+      "dependencies": "B01、B02 模板",
+      "status": "planned"
+    },
+    {
+      "id": "B04",
+      "owner": "B",
+      "estimated_person_days": 6,
+      "window": "W1 最小版、W3–W4",
+      "deliverable_and_done_criteria": "DSL parser/AST/求值；≥10 谓词、优先级、版本、规则边界测试",
+      "dependencies": "B01、B03",
+      "status": "planned"
+    },
+    {
+      "id": "B05",
+      "owner": "B",
+      "estimated_person_days": 4,
+      "window": "W2 原型、W3–W4",
+      "deliverable_and_done_criteria": "ASK token 与状态机：准许/拒绝/过期/变参/重放/权限变化，硬 BLOCK 不可覆盖",
+      "dependencies": "B01、B04 最小版、A02",
+      "status": "planned"
+    },
+    {
+      "id": "B06",
+      "owner": "B",
+      "estimated_person_days": 4,
+      "window": "W2 最小版、W5–W6",
+      "deliverable_and_done_criteria": "SECRET/UNTRUSTED 策略、数据流判定、子 Agent 权限交集/深度限制",
+      "dependencies": "B04、C06",
+      "status": "planned"
+    },
+    {
+      "id": "B07",
+      "owner": "B",
+      "estimated_person_days": 4,
+      "window": "W4–W7",
+      "deliverable_and_done_criteria": "ASB/自建集失败分析、三态校准和四项消融；提交原始结果",
+      "dependencies": "C04、C03、B02–B06",
+      "status": "planned"
+    },
+    {
+      "id": "B08",
+      "owner": "B",
+      "estimated_person_days": 2,
+      "window": "W8",
+      "deliverable_and_done_criteria": "固定 IR/规则/阈值，决策重放一致，策略发布说明",
+      "dependencies": "B07、C07",
+      "status": "planned"
+    },
+    {
+      "id": "C01",
+      "owner": "C",
+      "estimated_person_days": 3,
+      "window": "W1",
+      "deliverable_and_done_criteria": "Demo Agent、模拟文件/网络/Git/执行/子 Agent、测试运行器与 Trace 契约",
+      "dependencies": "B01 alpha",
+      "status": "planned"
+    },
+    {
+      "id": "C02",
+      "owner": "C",
+      "estimated_person_days": 5,
+      "window": "W1–W2",
+      "deliverable_and_done_criteria": "Trace Store、span/source 边、脱敏与回放；P0 调用完整，无 canary 明文泄露",
+      "dependencies": "C01、B01",
+      "status": "planned"
+    },
+    {
+      "id": "C03",
+      "owner": "C",
+      "estimated_person_days": 5,
+      "window": "W1–W4",
+      "deliverable_and_done_criteria": "20 条黄金 E2E；三态/良性数据分组去重、双人标注、test 冻结及覆盖矩阵",
+      "dependencies": "C01、B01；联调需 A02/B04",
+      "status": "planned"
+    },
+    {
+      "id": "C04",
+      "owner": "C",
+      "estimated_person_days": 5,
+      "window": "W1 核源、W2–W4",
+      "deliverable_and_done_criteria": "AgentDojo/InjecAgent/ASB 的版本锁定、接入、裸 Agent/防护对照；统一指标",
+      "dependencies": "C01、A02、B04",
+      "status": "planned"
+    },
+    {
+      "id": "C05",
+      "owner": "C",
+      "estimated_person_days": 4,
+      "window": "W3–W4",
+      "deliverable_and_done_criteria": "事件列表、审批、DAG/时间线、指标页；证据来源能点击核对",
+      "dependencies": "C02、B05",
+      "status": "planned"
+    },
+    {
+      "id": "C06",
+      "owner": "C",
+      "estimated_person_days": 4,
+      "window": "W2 最小版、W5–W6",
+      "deliverable_and_done_criteria": "provenance 标签存储/传播、黄金图；MSB/MPBench 小样与适配，记录缺失边",
+      "dependencies": "C02、A02、B01",
+      "status": "planned"
+    },
+    {
+      "id": "C07",
+      "owner": "C",
+      "estimated_person_days": 4,
+      "window": "W5–W7",
+      "deliverable_and_done_criteria": "AI-Infra-Guard 回归适配、统一 manifest、全量/三次重跑、指标报告及 CI Gate",
+      "dependencies": "C03、C04、C06",
+      "status": "planned"
+    },
+    {
+      "id": "C08",
+      "owner": "C",
+      "estimated_person_days": 2,
+      "window": "W7–W8",
+      "deliverable_and_done_criteria": "最终报告/演示脚本/录屏、稳定性结果、证据包索引和需求签收",
+      "dependencies": "C05、C07、A07、B08",
+      "status": "planned"
+    }
+  ]
+}

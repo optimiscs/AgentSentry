@@ -1,0 +1,21 @@
+{
+  "name": "开发版工程验证",
+  "kind": "development_verification",
+  "generated_at": "2026-09-12T10:13:07.022394+00:00",
+  "summary": {
+    "pytest": {
+      "passed": 160
+    },
+    "pytest_exitstatus": 0,
+    "statement_coverage_percent": 80.8575140753573,
+    "branch_coverage_percent": 69.05405405405405,
+    "test_topics_with_evidence": 38,
+    "release_accepted": false
+  },
+  "limits": [
+    "没有将自动化工程回归等同于 50 条需求正式签收。",
+    "AgentDojo/InjecAgent 已接入原生评测，单列实际结果；ASB/MSB/Memory、独立 F1 和完整消融未验收。",
+    "可选本地神经模型、Docker 干净部署、七天稳定性和独立安全评审未验收。",
+    "外部 Agent 需要独立隔离；当前强制执行声明仅覆盖网关内工具及受限 Python。"
+  ]
+}

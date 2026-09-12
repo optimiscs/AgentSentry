@@ -1,0 +1,25 @@
+services:
+  gateway:
+    build: .
+    ports:
+      - "127.0.0.1:8080:8080"
+    volumes:
+      - agentsentry-state:/state
+    read_only: true
+    tmpfs:
+      - /tmp:rw,noexec,nosuid,size=64m
+    cap_drop: [ALL]
+    cap_add: [SYS_CHROOT, SETUID, SETGID, CHOWN, DAC_OVERRIDE]
+    security_opt:
+      - no-new-privileges:true
+    pids_limit: 64
+    mem_limit: 8g
+    cpus: 4
+    restart: unless-stopped
+    healthcheck:
+      test: [CMD, python, -c, "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8080/healthz', timeout=2)"]
+      interval: 60s
+      timeout: 5s
+      retries: 3
+volumes:
+  agentsentry-state:

@@ -1,0 +1,170 @@
+{
+  "$defs": {
+    "Effect": {
+      "enum": [
+        "FILE_READ",
+        "FILE_WRITE",
+        "NET_EGRESS",
+        "EXEC",
+        "GIT_COMMIT",
+        "GIT_PUSH",
+        "DELEGATE",
+        "MEMORY_READ",
+        "MEMORY_WRITE",
+        "OTHER"
+      ],
+      "title": "Effect",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0",
+      "default": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "action_id": {
+      "title": "Action Id",
+      "type": "string"
+    },
+    "session_id": {
+      "title": "Session Id",
+      "type": "string"
+    },
+    "tool": {
+      "title": "Tool",
+      "type": "string"
+    },
+    "server_id": {
+      "default": "builtin",
+      "title": "Server Id",
+      "type": "string"
+    },
+    "tool_version": {
+      "default": "1.0",
+      "title": "Tool Version",
+      "type": "string"
+    },
+    "effects": {
+      "items": {
+        "$ref": "#/$defs/Effect"
+      },
+      "title": "Effects",
+      "type": "array"
+    },
+    "resource": {
+      "title": "Resource",
+      "type": "string"
+    },
+    "resource_class": {
+      "default": "UNKNOWN",
+      "title": "Resource Class",
+      "type": "string"
+    },
+    "resource_version": {
+      "default": "",
+      "title": "Resource Version",
+      "type": "string"
+    },
+    "args_hash": {
+      "title": "Args Hash",
+      "type": "string"
+    },
+    "destination_domain": {
+      "default": "",
+      "title": "Destination Domain",
+      "type": "string"
+    },
+    "destination_trust": {
+      "default": "UNKNOWN",
+      "title": "Destination Trust",
+      "type": "string"
+    },
+    "destination_hashes": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Destination Hashes",
+      "type": "array"
+    },
+    "labels": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Labels",
+      "type": "array"
+    },
+    "source_refs": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Source Refs",
+      "type": "array"
+    },
+    "source_type": {
+      "default": "USER",
+      "title": "Source Type",
+      "type": "string"
+    },
+    "data_refs": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Data Refs",
+      "type": "array"
+    },
+    "source_trust": {
+      "default": "UNKNOWN",
+      "title": "Source Trust",
+      "type": "string"
+    },
+    "scope_valid": {
+      "default": false,
+      "title": "Scope Valid",
+      "type": "boolean"
+    },
+    "scope_allowed": {
+      "default": false,
+      "title": "Scope Allowed",
+      "type": "boolean"
+    },
+    "adapter_valid": {
+      "default": true,
+      "title": "Adapter Valid",
+      "type": "boolean"
+    },
+    "adapter_error": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Adapter Error"
+    },
+    "agent_depth": {
+      "default": 0,
+      "title": "Agent Depth",
+      "type": "integer"
+    },
+    "adapter_version": {
+      "default": "builtin-1.0",
+      "title": "Adapter Version",
+      "type": "string"
+    }
+  },
+  "required": [
+    "session_id",
+    "tool",
+    "effects",
+    "resource",
+    "args_hash"
+  ],
+  "title": "ActionIR",
+  "type": "object"
+}

@@ -1,0 +1,183 @@
+{
+  "exitstatus": 0,
+  "tests": [
+    {
+      "test": "tests/test_gateway.py::test_real_three_state_side_effects",
+      "outcome": "passed",
+      "duration_seconds": 0.026661579497158527,
+      "cases": [
+        "TC-13"
+      ]
+    },
+    {
+      "test": "tests/test_gateway.py::test_path_boundaries[../outside]",
+      "outcome": "passed",
+      "duration_seconds": 0.006303844042122364,
+      "cases": [
+        "TC-09"
+      ]
+    },
+    {
+      "test": "tests/test_gateway.py::test_path_boundaries[/etc/passwd]",
+      "outcome": "passed",
+      "duration_seconds": 0.006285079754889011,
+      "cases": [
+        "TC-09"
+      ]
+    },
+    {
+      "test": "tests/test_gateway.py::test_path_boundaries[.git/config]",
+      "outcome": "passed",
+      "duration_seconds": 0.004516467452049255,
+      "cases": [
+        "TC-09"
+      ]
+    },
+    {
+      "test": "tests/test_gateway.py::test_path_boundaries[src/../../outside]",
+      "outcome": "passed",
+      "duration_seconds": 0.008263040333986282,
+      "cases": [
+        "TC-09"
+      ]
+    },
+    {
+      "test": "tests/test_gateway.py::test_symlink_and_approval_resource_replacement",
+      "outcome": "passed",
+      "duration_seconds": 0.014305935241281986,
+      "cases": [
+        "TC-14",
+        "TC-09"
+      ]
+    },
+    {
+      "test": "tests/test_gateway.py::test_concurrent_approval_only_once",
+      "outcome": "passed",
+      "duration_seconds": 0.020730815827846527,
+      "cases": [
+        "TC-16"
+      ]
+    },
+    {
+      "test": "tests/test_gateway.py::test_approval_identity_version_and_expiry[owner]",
+      "outcome": "passed",
+      "duration_seconds": 0.0065933577716350555,
+      "cases": [
+        "TC-15"
+      ]
+    },
+    {
+      "test": "tests/test_gateway.py::test_approval_identity_version_and_expiry[intent]",
+      "outcome": "passed",
+      "duration_seconds": 0.006336843594908714,
+      "cases": [
+        "TC-15"
+      ]
+    },
+    {
+      "test": "tests/test_gateway.py::test_approval_identity_version_and_expiry[policy]",
+      "outcome": "passed",
+      "duration_seconds": 0.03811825346201658,
+      "cases": [
+        "TC-15"
+      ]
+    },
+    {
+      "test": "tests/test_gateway.py::test_approval_identity_version_and_expiry[signature]",
+      "outcome": "passed",
+      "duration_seconds": 0.008466409519314766,
+      "cases": [
+        "TC-15"
+      ]
+    },
+    {
+      "test": "tests/test_gateway.py::test_approval_identity_version_and_expiry[expires]",
+      "outcome": "passed",
+      "duration_seconds": 0.008295034989714622,
+      "cases": [
+        "TC-15"
+      ]
+    },
+    {
+      "test": "tests/test_gateway.py::test_secret_fallback_and_redacted_evidence[corp.example.test]",
+      "outcome": "passed",
+      "duration_seconds": 0.007285229861736298,
+      "cases": [
+        "TC-28",
+        "TC-24",
+        "TC-18"
+      ]
+    },
+    {
+      "test": "tests/test_gateway.py::test_secret_fallback_and_redacted_evidence[attacker.example.test]",
+      "outcome": "passed",
+      "duration_seconds": 0.007872350513935089,
+      "cases": [
+        "TC-28",
+        "TC-24",
+        "TC-18"
+      ]
+    },
+    {
+      "test": "tests/test_gateway.py::test_memory_quarantine_and_safe_recall",
+      "outcome": "passed",
+      "duration_seconds": 0.026239353232085705,
+      "cases": [
+        "TC-05",
+        "TC-04"
+      ]
+    },
+    {
+      "test": "tests/test_gateway.py::test_external_claim_and_child_permissions",
+      "outcome": "passed",
+      "duration_seconds": 0.01780636142939329,
+      "cases": [
+        "TC-19",
+        "TC-07"
+      ]
+    },
+    {
+      "test": "tests/test_gateway.py::test_unknown_side_effect_no_retry",
+      "outcome": "passed",
+      "duration_seconds": 0.006426083855330944,
+      "cases": [
+        "TC-32"
+      ]
+    },
+    {
+      "test": "tests/test_gateway.py::test_policy_and_audit_fail_closed",
+      "outcome": "passed",
+      "duration_seconds": 0.008838840760290623,
+      "cases": [
+        "TC-30",
+        "TC-26"
+      ]
+    },
+    {
+      "test": "tests/test_gateway.py::test_trace_explicit_flow_and_replay",
+      "outcome": "passed",
+      "duration_seconds": 0.009044788777828217,
+      "cases": [
+        "TC-40",
+        "TC-20",
+        "TC-17"
+      ]
+    },
+    {
+      "test": "tests/test_gateway.py::test_context_and_delegation_limits",
+      "outcome": "passed",
+      "duration_seconds": 0.003622845746576786,
+      "cases": [
+        "TC-31"
+      ]
+    },
+    {
+      "test": "tests/test_gateway.py::test_git_head_change_invalidates_push",
+      "outcome": "passed",
+      "duration_seconds": 0.024134633131325245,
+      "cases": [
+        "TC-27"
+      ]
+    }
+  ]
+}

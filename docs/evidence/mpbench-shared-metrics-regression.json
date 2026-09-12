@@ -1,0 +1,149 @@
+{
+  "status": "HISTORICAL_RULES_METRICS_UNCHANGED",
+  "prediction_records": 12480,
+  "groups_checked": 28,
+  "historical_report_sha256": "de1c5da183ffeb04b28f58f1ed6583826593d6d11e89e4814eefd519833eea85",
+  "new_metrics_helper_sha256": "51e58776508038f3e587923a3b3c37a46650986fdedb23d7d008e5fbf7811471",
+  "checks": [
+    {
+      "mode": "all_external_fields",
+      "group": "all",
+      "metrics_unchanged": true
+    },
+    {
+      "mode": "all_external_fields",
+      "group": "signal:moderate",
+      "metrics_unchanged": true
+    },
+    {
+      "mode": "all_external_fields",
+      "group": "signal:strong",
+      "metrics_unchanged": true
+    },
+    {
+      "mode": "all_external_fields",
+      "group": "signal:subtle",
+      "metrics_unchanged": true
+    },
+    {
+      "mode": "all_external_fields",
+      "group": "signal:weak",
+      "metrics_unchanged": true
+    },
+    {
+      "mode": "all_external_fields",
+      "group": "type:delayed_conditional_injection",
+      "metrics_unchanged": true
+    },
+    {
+      "mode": "all_external_fields",
+      "group": "type:delayed_conditional_injection_injection",
+      "metrics_unchanged": true
+    },
+    {
+      "mode": "all_external_fields",
+      "group": "type:experience_injection",
+      "metrics_unchanged": true
+    },
+    {
+      "mode": "all_external_fields",
+      "group": "type:explicit_keyword",
+      "metrics_unchanged": true
+    },
+    {
+      "mode": "all_external_fields",
+      "group": "type:explicit_keyword_injection",
+      "metrics_unchanged": true
+    },
+    {
+      "mode": "all_external_fields",
+      "group": "type:fact_injection",
+      "metrics_unchanged": true
+    },
+    {
+      "mode": "all_external_fields",
+      "group": "type:repetition",
+      "metrics_unchanged": true
+    },
+    {
+      "mode": "all_external_fields",
+      "group": "type:repetition_based_injection",
+      "metrics_unchanged": true
+    },
+    {
+      "mode": "all_external_fields",
+      "group": "type:repetition_injection",
+      "metrics_unchanged": true
+    },
+    {
+      "mode": "context_only",
+      "group": "all",
+      "metrics_unchanged": true
+    },
+    {
+      "mode": "context_only",
+      "group": "signal:moderate",
+      "metrics_unchanged": true
+    },
+    {
+      "mode": "context_only",
+      "group": "signal:strong",
+      "metrics_unchanged": true
+    },
+    {
+      "mode": "context_only",
+      "group": "signal:subtle",
+      "metrics_unchanged": true
+    },
+    {
+      "mode": "context_only",
+      "group": "signal:weak",
+      "metrics_unchanged": true
+    },
+    {
+      "mode": "context_only",
+      "group": "type:delayed_conditional_injection",
+      "metrics_unchanged": true
+    },
+    {
+      "mode": "context_only",
+      "group": "type:delayed_conditional_injection_injection",
+      "metrics_unchanged": true
+    },
+    {
+      "mode": "context_only",
+      "group": "type:experience_injection",
+      "metrics_unchanged": true
+    },
+    {
+      "mode": "context_only",
+      "group": "type:explicit_keyword",
+      "metrics_unchanged": true
+    },
+    {
+      "mode": "context_only",
+      "group": "type:explicit_keyword_injection",
+      "metrics_unchanged": true
+    },
+    {
+      "mode": "context_only",
+      "group": "type:fact_injection",
+      "metrics_unchanged": true
+    },
+    {
+      "mode": "context_only",
+      "group": "type:repetition",
+      "metrics_unchanged": true
+    },
+    {
+      "mode": "context_only",
+      "group": "type:repetition_based_injection",
+      "metrics_unchanged": true
+    },
+    {
+      "mode": "context_only",
+      "group": "type:repetition_injection",
+      "metrics_unchanged": true
+    }
+  ]
+}

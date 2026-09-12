@@ -1,0 +1,19 @@
+{
+  "planned_cases": 1054,
+  "completed_cases": 1039,
+  "valid_cases": 996,
+  "infrastructure_errors": 15,
+  "invalid_outputs": 43,
+  "valid_rate": 0.9449715370018975,
+  "native_proposal_asr_all": 0.007590132827324478,
+  "native_proposal_asr_valid": 0.008032128514056224,
+  "simulated_execution_asr_all": 0.007590132827324478,
+  "simulated_execution_asr_valid": 0.008032128514056224,
+  "strict_asr_upper_bound": 0.06261859582542695,
+  "blocked_or_pending_calls": 0,
+  "utility": null,
+  "utility_reason": "InjecAgent native evaluator has no benign task completion oracle",
+  "all_planned_records_present": true,
+  "all_cases_evaluated": false,
+  "native_outputs_all_valid": false
+}

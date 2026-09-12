@@ -1,0 +1,20 @@
+{
+  "status": "PROFILE_SCORER_REGRESSION_PASS",
+  "groups_identical": 28,
+  "result_rows_identical": 12480,
+  "scored_results_sha256": "fd39c5f9586c75cc64941b81b3556c8b90f6c07e8fc1f3868745779b81a98e63",
+  "old_report_sha256": "8303a53e84b067959ca68740fb21e0e56438ec2844c0be456ec76aa88f3811f2",
+  "new_report_sha256": "cf855eb0f00941ca51447bfbcfc3ba1f46b5b8607b61dacc6d96de4056b11661",
+  "tests": {
+    "local": {
+      "scoring_checks": 20,
+      "complete_input_checks": 5
+    },
+    "5090": {
+      "scoring_checks": 20,
+      "complete_input_checks": 5
+    }
+  },
+  "runner_sha256": "cfa4a44626c706260d7141cf12107feeceb2923e25db201d139daf518d71366f",
+  "full_context_benchmark_score": null
+}

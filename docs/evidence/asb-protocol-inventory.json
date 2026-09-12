@@ -1,0 +1,179 @@
+{
+  "status": "PROTOCOL_INVENTORY_ONLY_NOT_A_BENCHMARK_RUN",
+  "generated_at": "2026-09-12T11:32:26.704022+00:00",
+  "source": {
+    "benchmark": "ASB",
+    "repository": "https://github.com/agiresearch/ASB",
+    "commit": "1f561dccf92d55302368fa67679b4ba9d9c8fdc4",
+    "archive_url": "https://codeload.github.com/agiresearch/ASB/tar.gz/1f561dccf92d55302368fa67679b4ba9d9c8fdc4",
+    "archive_sha256": "67acf702a38666b987298237ab495890ac40218a26df32afb2ce06634dc516ff",
+    "source_dir": "artifacts/upstream/ASB-1f561dccf92d",
+    "executed": false
+  },
+  "source_file_sha256": {
+    "data/agent_task.jsonl": "d6c1d214811b5d908ae9c04ffbbde36ce35d39932766feb8bf24e202441c1dc8",
+    "data/all_normal_tools.jsonl": "45b821931348993de3eda474a997d62cb5b9e7a3fe358e5c81a7ef0417ccb73f",
+    "data/all_attack_tools.jsonl": "c960ab1e60dee2038d51bc64e8f119e565c037c95a8565f176899de8d819a4b2",
+    "main_attacker.py": "424afae61f9dbd133cf061f8bc9586a2f9cca97ab8e47dadd9d0f2554c9c5e96",
+    "scripts/agent_attack.py": "942613b73b3c6e6be9ca7005f57ecd9f7d83cd38a6bfe5e5c30a524c65ba12f9",
+    "aios/utils/utils.py": "4974a370e34195f091b792206dcaf74c3143edc38d244e4a71a160a0ddfd722d",
+    "pyopenagi/agents/react_agent_attack.py": "128b44d0e37fea22d702babd6de41b02d7aca81860f7a7286ff485187c74462f",
+    "pyopenagi/tools/simulated_tool.py": "902f3c49343eb3f4c1a238824882516d3d0ccf3a19ecc5c0c7ee6907de150a4f",
+    "config/mixed.yml": "a9a0bffed57a891eb483f3bd15c454779fcf4c2a93e7491d83e86ddb9dac160d",
+    "config/DPI_OPI.yml": "16fd75a1c2ab0aeefe7eaa66344929e7a19bf5217681c7e36d44608a48e605d9",
+    "config/DPI_MP.yml": "dc418daac8b17e340e066e25674e5a1183d8d7b2dfe232fec984efab7f558f4e",
+    "config/OPI_MP.yml": "d1d74b73f5550eb5a7655bc4f49e36f02ef077aa8a851eb6b6299809e344ef7c"
+  },
+  "upstream_default_task_num": 1,
+  "catalog": {
+    "agents": 10,
+    "available_user_tasks": 51,
+    "normal_tools": 20,
+    "attack_rows": 400,
+    "distinct_attack_tool_names": 400,
+    "duplicate_attack_names": {}
+  },
+  "modes": {
+    "mixed": {
+      "source_config": "config/mixed.yml",
+      "surfaces": {
+        "direct": true,
+        "observation": true,
+        "memory": true
+      },
+      "upstream_models": [
+        "gpt-4o-mini"
+      ],
+      "attack_styles": [
+        "combined_attack"
+      ],
+      "cases_per_model": 400
+    },
+    "DPI_OPI": {
+      "source_config": "config/DPI_OPI.yml",
+      "surfaces": {
+        "direct": true,
+        "observation": true,
+        "memory": false
+      },
+      "upstream_models": [
+        "gpt-4o-2024-08-06"
+      ],
+      "attack_styles": [
+        "combined_attack"
+      ],
+      "cases_per_model": 400
+    },
+    "DPI_MP": {
+      "source_config": "config/DPI_MP.yml",
+      "surfaces": {
+        "direct": true,
+        "observation": false,
+        "memory": true
+      },
+      "upstream_models": [
+        "gpt-3.5-turbo",
+        "gpt-4o-2024-08-06",
+        "claude-3-5-sonnet-20240620"
+      ],
+      "attack_styles": [
+        "combined_attack"
+      ],
+      "cases_per_model": 400
+    },
+    "OPI_MP": {
+      "source_config": "config/OPI_MP.yml",
+      "surfaces": {
+        "direct": false,
+        "observation": true,
+        "memory": true
+      },
+      "upstream_models": [
+        "gpt-4o-2024-08-06",
+        "claude-3-5-sonnet-20240620"
+      ],
+      "attack_styles": [
+        "combined_attack"
+      ],
+      "cases_per_model": 400
+    }
+  },
+  "indexed_scenarios_for_one_model": 1600,
+  "memory_snapshots": {
+    "memory_db/chroma_db/chroma.sqlite3": {
+      "sha256": "254169ee096143aa39c33a31d6737ff38e1479297e140832df5c303a361afd60",
+      "embedding_rows": 0,
+      "documents": 0,
+      "dimensions": [
+        null
+      ],
+      "documents_with_native_workflow_pattern": 0,
+      "retrieval_executed": false,
+      "note": "Document presence is not proof that the native query retrieves it. Cached vectors require the original embedding space."
+    },
+    "memory_db/direct_prompt_injection/combined_attack_gpt-4o-mini/chroma.sqlite3": {
+      "sha256": "466893ad57d1f45564286a5397611453729dae32bd7d970c589b635630549317",
+      "embedding_rows": 462,
+      "documents": 462,
+      "dimensions": [
+        1536
+      ],
+      "documents_with_native_workflow_pattern": 462,
+      "retrieval_executed": false,
+      "note": "Document presence is not proof that the native query retrieves it. Cached vectors require the original embedding space."
+    },
+    "memory_db/direct_prompt_injection/context_ignoring_gpt-4o-mini/chroma.sqlite3": {
+      "sha256": "69c2ebe775baad221759a5fbb424378407b1a23f046bf1ffead584aa9d5821c3",
+      "embedding_rows": 400,
+      "documents": 400,
+      "dimensions": [
+        1536
+      ],
+      "documents_with_native_workflow_pattern": 400,
+      "retrieval_executed": false,
+      "note": "Document presence is not proof that the native query retrieves it. Cached vectors require the original embedding space."
+    },
+    "memory_db/direct_prompt_injection/escape_characters_gpt-4o-mini/chroma.sqlite3": {
+      "sha256": "2cce337621f30cd962453872b715992febd16f88cf6e9cf2bdce05c7f0e5a505",
+      "embedding_rows": 398,
+      "documents": 398,
+      "dimensions": [
+        1536
+      ],
+      "documents_with_native_workflow_pattern": 398,
+      "retrieval_executed": false,
+      "note": "Document presence is not proof that the native query retrieves it. Cached vectors require the original embedding space."
+    },
+    "memory_db/direct_prompt_injection/fake_completion_gpt-4o-mini/chroma.sqlite3": {
+      "sha256": "1f1798bb0d31691ee0ded099c9565ba87be2d392bc7b72437c7936e434d97146",
+      "embedding_rows": 398,
+      "documents": 398,
+      "dimensions": [
+        1536
+      ],
+      "documents_with_native_workflow_pattern": 398,
+      "retrieval_executed": false,
+      "note": "Document presence is not proof that the native query retrieves it. Cached vectors require the original embedding space."
+    },
+    "memory_db/direct_prompt_injection/naive_gpt-4o-mini/chroma.sqlite3": {
+      "sha256": "67f4e1d9cf68da110335e252f41a95aa9bf7809853a2ce3518c01ff71c3914ed",
+      "embedding_rows": 399,
+      "documents": 399,
+      "dimensions": [
+        1536
+      ],
+      "documents_with_native_workflow_pattern": 399,
+      "retrieval_executed": false,
+      "note": "Document presence is not proof that the native query retrieves it. Cached vectors require the original embedding space."
+    }
+  },
+  "remaining_protocol_requirements": [
+    "Implement and validate local agent/workflow transport; no model run was performed here.",
+    "Preserve native attack/utility text scores and separately record actual simulated dispatch.",
+    "Do not feed evaluator labels, attack goal or row membership into defender authorization.",
+    "Match native memory embedding/retrieval, or report a separately named adapted protocol; do not choose memory by attack labels.",
+    "Declare the original trusted user request separately from the DPI-mutated runtime message; do not promote DPI text into authorization.",
+    "Model and refusal-judge substitutions require explicit provenance. No paid API was called."
+  ],
+  "scenario_index_sha256": "66c492187839f941332e5f1a7c77f6e9d5394536f9e2143622cb8759264f8d62"
+}

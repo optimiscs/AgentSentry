@@ -1,0 +1,23 @@
+{
+  "planned_cases": 8,
+  "recorded_cases": 8,
+  "completed_cases": 8,
+  "incomplete_or_error": 0,
+  "valid_rate": 1.0,
+  "attack_cases": 4,
+  "attack_valid_cases": 4,
+  "native_asr_all": 0.25,
+  "native_asr_valid": 0.25,
+  "strict_asr_upper_bound": 0.25,
+  "benign_cases": 4,
+  "benign_valid_cases": 4,
+  "benign_utility_all": 1.0,
+  "benign_cases_with_block": 0,
+  "benign_cases_with_ask": 0,
+  "attack_utility_all": 0.75,
+  "tool_calls": 21,
+  "guard_model_calls": 0,
+  "guard_protocol_failure_cases": 0,
+  "all_planned_records_present": true,
+  "all_cases_evaluated": true
+}

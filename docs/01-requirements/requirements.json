@@ -1,0 +1,1338 @@
+[
+  {
+    "id": "FR-1.1",
+    "priority": "P0",
+    "title": "直接注入检测",
+    "acceptance": "输入扫描输出风险等级、攻击类型、证据片段和来源，支持批量结果",
+    "owner": "A",
+    "tasks": [
+      "A03",
+      "C03"
+    ],
+    "design_docs": [
+      "AS-DOC-10",
+      "AS-DOC-12"
+    ],
+    "tests": [
+      "TC-01"
+    ],
+    "milestone": "W4",
+    "source": "AS-PRD-001 v0.9",
+    "implementation_status": "implemented_development_scope",
+    "verification_status": "regression_covered",
+    "evidence": [
+      "docs/evidence/runtime-tests.json"
+    ],
+    "acceptance_signed_off": false
+  },
+  {
+    "id": "FR-1.2",
+    "priority": "P0",
+    "title": "间接注入入站",
+    "acceptance": "网页、文档、Issue、MCP 响应四类来源全部分块扫描并标记不可信",
+    "owner": "A",
+    "tasks": [
+      "A02",
+      "A03"
+    ],
+    "design_docs": [
+      "AS-DOC-10",
+      "AS-DOC-12"
+    ],
+    "tests": [
+      "TC-02",
+      "TC-03"
+    ],
+    "milestone": "W4",
+    "source": "AS-PRD-001 v0.9",
+    "implementation_status": "implemented_development_scope",
+    "verification_status": "regression_covered",
+    "evidence": [
+      "docs/evidence/runtime-tests.json"
+    ],
+    "acceptance_signed_off": false
+  },
+  {
+    "id": "FR-1.3",
+    "priority": "P1",
+    "title": "内存污染防护",
+    "acceptance": "污染写入/读取均产生事件，支持阻断与隔离",
+    "owner": "A",
+    "tasks": [
+      "A05",
+      "B06",
+      "C06"
+    ],
+    "design_docs": [
+      "AS-DOC-10",
+      "AS-DOC-13"
+    ],
+    "tests": [
+      "TC-04",
+      "TC-05"
+    ],
+    "milestone": "W6",
+    "source": "AS-PRD-001 v0.9",
+    "implementation_status": "implemented_development_scope",
+    "verification_status": "regression_covered",
+    "evidence": [
+      "docs/evidence/runtime-tests.json"
+    ],
+    "acceptance_signed_off": false
+  },
+  {
+    "id": "FR-2.1",
+    "priority": "P0",
+    "title": "IntentIR",
+    "acceptance": "目标、影响范围、合法副作用、禁止副作用和未决权限均结构化",
+    "owner": "B",
+    "tasks": [
+      "B01",
+      "B02"
+    ],
+    "design_docs": [
+      "AS-DOC-12",
+      "AS-DOC-13"
+    ],
+    "tests": [
+      "TC-06",
+      "TC-07"
+    ],
+    "milestone": "W4",
+    "source": "AS-PRD-001 v0.9",
+    "implementation_status": "implemented_development_scope",
+    "verification_status": "regression_covered",
+    "evidence": [
+      "docs/evidence/runtime-tests.json"
+    ],
+    "acceptance_signed_off": false
+  },
+  {
+    "id": "FR-2.2",
+    "priority": "P0",
+    "title": "ActionIR",
+    "acceptance": "文件、网络、代码执行、Git、子 Agent 五类工具统一归一化",
+    "owner": "B",
+    "tasks": [
+      "B03",
+      "A04"
+    ],
+    "design_docs": [
+      "AS-DOC-12"
+    ],
+    "tests": [
+      "TC-08",
+      "TC-09",
+      "TC-10"
+    ],
+    "milestone": "W4",
+    "source": "AS-PRD-001 v0.9",
+    "implementation_status": "implemented_development_scope",
+    "verification_status": "regression_covered",
+    "evidence": [
+      "docs/evidence/runtime-tests.json"
+    ],
+    "acceptance_signed_off": false
+  },
+  {
+    "id": "FR-2.3",
+    "priority": "P0",
+    "title": "对齐校验",
+    "acceptance": "解释范围越界、副作用升级、无授权高危操作三类风险",
+    "owner": "B",
+    "tasks": [
+      "B03",
+      "B07"
+    ],
+    "design_docs": [
+      "AS-DOC-10",
+      "AS-DOC-13"
+    ],
+    "tests": [
+      "TC-11"
+    ],
+    "milestone": "W4",
+    "source": "AS-PRD-001 v0.9",
+    "implementation_status": "implemented_development_scope",
+    "verification_status": "regression_covered",
+    "evidence": [
+      "docs/evidence/runtime-tests.json"
+    ],
+    "acceptance_signed_off": false
+  },
+  {
+    "id": "FR-3.1",
+    "priority": "P0",
+    "title": "策略 DSL",
+    "acceptance": "不少于10个独立谓词覆盖五类工具；语法、冲突、边界可验",
+    "owner": "B",
+    "tasks": [
+      "B04"
+    ],
+    "design_docs": [
+      "AS-DOC-13"
+    ],
+    "tests": [
+      "TC-12"
+    ],
+    "milestone": "W4",
+    "source": "AS-PRD-001 v0.9",
+    "implementation_status": "implemented_development_scope",
+    "verification_status": "regression_covered",
+    "evidence": [
+      "docs/evidence/runtime-tests.json"
+    ],
+    "acceptance_signed_off": false
+  },
+  {
+    "id": "FR-3.2",
+    "priority": "P0",
+    "title": "三态决策",
+    "acceptance": "ALLOW/ASK/BLOCK 全链路；审批绑定精确参数和用户权限",
+    "owner": "B",
+    "tasks": [
+      "B05",
+      "C05"
+    ],
+    "design_docs": [
+      "AS-DOC-12",
+      "AS-DOC-13"
+    ],
+    "tests": [
+      "TC-13",
+      "TC-14",
+      "TC-15",
+      "TC-16"
+    ],
+    "milestone": "W4",
+    "source": "AS-PRD-001 v0.9",
+    "implementation_status": "implemented_development_scope",
+    "verification_status": "regression_covered",
+    "evidence": [
+      "docs/evidence/runtime-tests.json"
+    ],
+    "acceptance_signed_off": false
+  },
+  {
+    "id": "FR-4.1",
+    "priority": "P0",
+    "title": "全链路埋点",
+    "acceptance": "P0候选调用100%包含trace/span/parent且结果可关联",
+    "owner": "C",
+    "tasks": [
+      "C02",
+      "A02"
+    ],
+    "design_docs": [
+      "AS-DOC-12",
+      "AS-DOC-25"
+    ],
+    "tests": [
+      "TC-17"
+    ],
+    "milestone": "W4",
+    "source": "AS-PRD-001 v0.9",
+    "implementation_status": "implemented_development_scope",
+    "verification_status": "partial_scope_verified",
+    "evidence": [
+      "docs/evidence/runtime-tests.json"
+    ],
+    "acceptance_signed_off": false
+  },
+  {
+    "id": "FR-4.2",
+    "priority": "P1",
+    "title": "溯源与污点",
+    "acceptance": "SECRET与UNTRUSTED标签在显式数据流中跨Agent/MCP传播",
+    "owner": "C",
+    "tasks": [
+      "C06",
+      "B06",
+      "A05"
+    ],
+    "design_docs": [
+      "AS-DOC-10",
+      "AS-DOC-12"
+    ],
+    "tests": [
+      "TC-18",
+      "TC-19"
+    ],
+    "milestone": "W6",
+    "source": "AS-PRD-001 v0.9",
+    "implementation_status": "implemented_development_scope",
+    "verification_status": "partial_scope_verified",
+    "evidence": [
+      "docs/evidence/runtime-tests.json"
+    ],
+    "acceptance_signed_off": false
+  },
+  {
+    "id": "FR-4.3",
+    "priority": "P1",
+    "title": "DAG与时间线",
+    "acceptance": "展示攻击源、Agent、MCP、工具、风险落点、安全决策",
+    "owner": "C",
+    "tasks": [
+      "C05",
+      "C06"
+    ],
+    "design_docs": [
+      "AS-DOC-10",
+      "AS-DOC-12"
+    ],
+    "tests": [
+      "TC-20"
+    ],
+    "milestone": "W6",
+    "source": "AS-PRD-001 v0.9",
+    "implementation_status": "implemented_development_scope",
+    "verification_status": "partial_scope_verified",
+    "evidence": [
+      "docs/evidence/runtime-tests.json"
+    ],
+    "acceptance_signed_off": false
+  },
+  {
+    "id": "FR-5.1",
+    "priority": "P1",
+    "title": "对抗样本归一化",
+    "acceptance": "NFKC、零宽、混淆、大小写/全半角和空白，证据坐标可回溯",
+    "owner": "A",
+    "tasks": [
+      "A03",
+      "A05"
+    ],
+    "design_docs": [
+      "AS-DOC-10",
+      "AS-DOC-12"
+    ],
+    "tests": [
+      "TC-21"
+    ],
+    "milestone": "W6",
+    "source": "AS-PRD-001 v0.9",
+    "implementation_status": "implemented_development_scope",
+    "verification_status": "regression_covered",
+    "evidence": [
+      "docs/evidence/runtime-tests.json"
+    ],
+    "acceptance_signed_off": false
+  },
+  {
+    "id": "FR-5.2",
+    "priority": "P1",
+    "title": "红队回归",
+    "acceptance": "AI-Infra-Guard与明确版本的公开基准自动回归",
+    "owner": "C",
+    "tasks": [
+      "C04",
+      "C06",
+      "C07"
+    ],
+    "design_docs": [
+      "AS-DOC-17"
+    ],
+    "tests": [
+      "TC-22"
+    ],
+    "milestone": "W7",
+    "source": "AS-PRD-001 v0.9",
+    "implementation_status": "partial",
+    "verification_status": "adapter_contract_only",
+    "evidence": [
+      "docs/evidence/runtime-tests.json"
+    ],
+    "acceptance_signed_off": false
+  },
+  {
+    "id": "NFR-01",
+    "priority": "P0",
+    "title": "快速链路",
+    "acceptance": "P95≤200ms",
+    "owner": "A",
+    "tasks": [
+      "A06"
+    ],
+    "design_docs": [
+      "AS-DOC-25"
+    ],
+    "tests": [
+      "TC-35"
+    ],
+    "milestone": "W7–W8",
+    "source": "AS-PRD-001 v0.9",
+    "implementation_status": "partial",
+    "verification_status": "measured_limited",
+    "evidence": [
+      "docs/evidence/perf-cpu.json"
+    ],
+    "acceptance_signed_off": false
+  },
+  {
+    "id": "NFR-02",
+    "priority": "P0",
+    "title": "复杂链路",
+    "acceptance": "P95≤1.5s，排除上游Agent/下游工具与人工等待",
+    "owner": "A",
+    "tasks": [
+      "A06",
+      "B02"
+    ],
+    "design_docs": [
+      "AS-DOC-25"
+    ],
+    "tests": [
+      "TC-36"
+    ],
+    "milestone": "W7–W8",
+    "source": "AS-PRD-001 v0.9",
+    "implementation_status": "pending_acceptance",
+    "verification_status": "not_run",
+    "evidence": [],
+    "acceptance_signed_off": false
+  },
+  {
+    "id": "NFR-03",
+    "priority": "P0",
+    "title": "总Trace覆盖",
+    "acceptance": "受控环境全部调用≥99%，P0仍100%",
+    "owner": "C",
+    "tasks": [
+      "C02"
+    ],
+    "design_docs": [
+      "AS-DOC-25"
+    ],
+    "tests": [
+      "TC-17"
+    ],
+    "milestone": "W7–W8",
+    "source": "AS-PRD-001 v0.9",
+    "implementation_status": "partial",
+    "verification_status": "regression_covered",
+    "evidence": [
+      "docs/evidence/runtime-tests.json"
+    ],
+    "acceptance_signed_off": false
+  },
+  {
+    "id": "NFR-04",
+    "priority": "P0",
+    "title": "确定性",
+    "acceptance": "固定规范化输入、signals和全部版本的策略回放100%一致",
+    "owner": "B",
+    "tasks": [
+      "B08"
+    ],
+    "design_docs": [
+      "AS-DOC-12",
+      "AS-DOC-17"
+    ],
+    "tests": [
+      "TC-40"
+    ],
+    "milestone": "W7–W8",
+    "source": "AS-PRD-001 v0.9",
+    "implementation_status": "partial",
+    "verification_status": "regression_covered",
+    "evidence": [
+      "docs/evidence/runtime-tests.json"
+    ],
+    "acceptance_signed_off": false
+  },
+  {
+    "id": "NFR-05",
+    "priority": "P0",
+    "title": "审计留存",
+    "acceptance": "默认7天可配置，日志敏感字段先脱敏",
+    "owner": "C",
+    "tasks": [
+      "C02",
+      "A07"
+    ],
+    "design_docs": [
+      "AS-DOC-09",
+      "AS-DOC-25"
+    ],
+    "tests": [
+      "TC-28",
+      "TC-29"
+    ],
+    "milestone": "W7–W8",
+    "source": "AS-PRD-001 v0.9",
+    "implementation_status": "partial",
+    "verification_status": "regression_covered",
+    "evidence": [
+      "docs/evidence/runtime-tests.json"
+    ],
+    "acceptance_signed_off": false
+  },
+  {
+    "id": "NFR-06",
+    "priority": "P0",
+    "title": "单节点可用性",
+    "acceptance": "赛事观测窗口≥99%，不承诺企业HA",
+    "owner": "A",
+    "tasks": [
+      "A07",
+      "C08"
+    ],
+    "design_docs": [
+      "AS-DOC-25"
+    ],
+    "tests": [
+      "TC-42"
+    ],
+    "milestone": "W7–W8",
+    "source": "AS-PRD-001 v0.9",
+    "implementation_status": "pending_acceptance",
+    "verification_status": "not_run",
+    "evidence": [],
+    "acceptance_signed_off": false
+  },
+  {
+    "id": "NFR-07",
+    "priority": "P0",
+    "title": "安全默认",
+    "acceptance": "高危fail-closed；低危只读显式配置才可fail-open",
+    "owner": "B",
+    "tasks": [
+      "B04"
+    ],
+    "design_docs": [
+      "AS-DOC-13"
+    ],
+    "tests": [
+      "TC-26",
+      "TC-30"
+    ],
+    "milestone": "W7–W8",
+    "source": "AS-PRD-001 v0.9",
+    "implementation_status": "partial",
+    "verification_status": "regression_covered",
+    "evidence": [
+      "docs/evidence/runtime-tests.json"
+    ],
+    "acceptance_signed_off": false
+  },
+  {
+    "id": "GATE-01",
+    "priority": "P0",
+    "title": "公开ASR",
+    "acceptance": "AgentDojo/InjecAgent主配置分别≤32%，聚合口径W1冻结",
+    "owner": "C",
+    "tasks": [
+      "C04",
+      "C07"
+    ],
+    "design_docs": [
+      "AS-DOC-17"
+    ],
+    "tests": [
+      "TC-39"
+    ],
+    "milestone": "W7–W8",
+    "source": "AS-PRD-001 v0.9",
+    "implementation_status": "pending_acceptance",
+    "verification_status": "not_run",
+    "evidence": [],
+    "acceptance_signed_off": false
+  },
+  {
+    "id": "GATE-02",
+    "priority": "P0",
+    "title": "A相对改善",
+    "acceptance": "相同配置ASR相对基线下降≥45%，零基线需单列",
+    "owner": "C",
+    "tasks": [
+      "A03",
+      "C04"
+    ],
+    "design_docs": [
+      "AS-DOC-17"
+    ],
+    "tests": [
+      "TC-39"
+    ],
+    "milestone": "W7–W8",
+    "source": "AS-PRD-001 v0.9",
+    "implementation_status": "pending_acceptance",
+    "verification_status": "not_run",
+    "evidence": [],
+    "acceptance_signed_off": false
+  },
+  {
+    "id": "GATE-03",
+    "priority": "P0",
+    "title": "ASB效果",
+    "acceptance": "固定混合攻击配置ASR≤35%",
+    "owner": "C",
+    "tasks": [
+      "B07",
+      "C04"
+    ],
+    "design_docs": [
+      "AS-DOC-17"
+    ],
+    "tests": [
+      "TC-39"
+    ],
+    "milestone": "W7–W8",
+    "source": "AS-PRD-001 v0.9",
+    "implementation_status": "pending_acceptance",
+    "verification_status": "not_run",
+    "evidence": [],
+    "acceptance_signed_off": false
+  },
+  {
+    "id": "GATE-04",
+    "priority": "P0",
+    "title": "良性效用",
+    "acceptance": "同配置良性任务成功率下降≤5个百分点",
+    "owner": "C",
+    "tasks": [
+      "B07",
+      "C03"
+    ],
+    "design_docs": [
+      "AS-DOC-17"
+    ],
+    "tests": [
+      "TC-37"
+    ],
+    "milestone": "W7–W8",
+    "source": "AS-PRD-001 v0.9",
+    "implementation_status": "pending_acceptance",
+    "verification_status": "not_run",
+    "evidence": [
+      "docs/evidence/runtime-tests.json"
+    ],
+    "acceptance_signed_off": false
+  },
+  {
+    "id": "GATE-05",
+    "priority": "P0",
+    "title": "良性误拦",
+    "acceptance": "良性任务误BLOCK≤5%，未完成ASK另报",
+    "owner": "C",
+    "tasks": [
+      "B07",
+      "C03"
+    ],
+    "design_docs": [
+      "AS-DOC-17"
+    ],
+    "tests": [
+      "TC-37"
+    ],
+    "milestone": "W7–W8",
+    "source": "AS-PRD-001 v0.9",
+    "implementation_status": "pending_acceptance",
+    "verification_status": "not_run",
+    "evidence": [
+      "docs/evidence/runtime-tests.json"
+    ],
+    "acceptance_signed_off": false
+  },
+  {
+    "id": "GATE-06",
+    "priority": "P0",
+    "title": "三态Macro-F1",
+    "acceptance": "自建独立test≥0.85",
+    "owner": "C",
+    "tasks": [
+      "B07",
+      "C03"
+    ],
+    "design_docs": [
+      "AS-DOC-17"
+    ],
+    "tests": [
+      "TC-37"
+    ],
+    "milestone": "W7–W8",
+    "source": "AS-PRD-001 v0.9",
+    "implementation_status": "pending_acceptance",
+    "verification_status": "not_run",
+    "evidence": [
+      "docs/evidence/runtime-tests.json"
+    ],
+    "acceptance_signed_off": false
+  },
+  {
+    "id": "GATE-07",
+    "priority": "P0",
+    "title": "检测Macro-F1",
+    "acceptance": "独立文本test≥0.88",
+    "owner": "C",
+    "tasks": [
+      "A03",
+      "C03"
+    ],
+    "design_docs": [
+      "AS-DOC-17"
+    ],
+    "tests": [
+      "TC-38"
+    ],
+    "milestone": "W7–W8",
+    "source": "AS-PRD-001 v0.9",
+    "implementation_status": "pending_acceptance",
+    "verification_status": "not_run",
+    "evidence": [],
+    "acceptance_signed_off": false
+  },
+  {
+    "id": "GATE-08",
+    "priority": "P0",
+    "title": "P0外泄",
+    "acceptance": "预定义canary外发100%拦截，检查真实模拟sink",
+    "owner": "C",
+    "tasks": [
+      "B06",
+      "C03"
+    ],
+    "design_docs": [
+      "AS-DOC-17"
+    ],
+    "tests": [
+      "TC-18",
+      "TC-24"
+    ],
+    "milestone": "W7–W8",
+    "source": "AS-PRD-001 v0.9",
+    "implementation_status": "pending_acceptance",
+    "verification_status": "synthetic_regression_only",
+    "evidence": [
+      "docs/evidence/runtime-tests.json"
+    ],
+    "acceptance_signed_off": false
+  },
+  {
+    "id": "GATE-09",
+    "priority": "P0",
+    "title": "黄金溯源",
+    "acceptance": "P0 source/sink/必要图边及决策精确匹配100%",
+    "owner": "C",
+    "tasks": [
+      "C02",
+      "C06"
+    ],
+    "design_docs": [
+      "AS-DOC-17"
+    ],
+    "tests": [
+      "TC-20"
+    ],
+    "milestone": "W7–W8",
+    "source": "AS-PRD-001 v0.9",
+    "implementation_status": "pending_acceptance",
+    "verification_status": "not_run",
+    "evidence": [
+      "docs/evidence/runtime-tests.json"
+    ],
+    "acceptance_signed_off": false
+  },
+  {
+    "id": "GATE-10",
+    "priority": "P1",
+    "title": "污点TPR",
+    "acceptance": "显式数据流标签TPR≥90%，同时报告Precision/FPR",
+    "owner": "C",
+    "tasks": [
+      "C06",
+      "B06"
+    ],
+    "design_docs": [
+      "AS-DOC-17"
+    ],
+    "tests": [
+      "TC-19"
+    ],
+    "milestone": "W7–W8",
+    "source": "AS-PRD-001 v0.9",
+    "implementation_status": "pending_acceptance",
+    "verification_status": "not_run",
+    "evidence": [
+      "docs/evidence/runtime-tests.json"
+    ],
+    "acceptance_signed_off": false
+  },
+  {
+    "id": "SR-01",
+    "priority": "P0",
+    "title": "执行前门控",
+    "acceptance": "受控高风险调用只有最终ALLOW才可触达执行器，BLOCK/待审批下游计数必须为0",
+    "owner": "B",
+    "tasks": [
+      "A02",
+      "A04"
+    ],
+    "design_docs": [
+      "AS-DOC-08",
+      "AS-DOC-10",
+      "AS-DOC-12",
+      "AS-DOC-13"
+    ],
+    "tests": [
+      "TC-13",
+      "TC-23"
+    ],
+    "milestone": "W4–W7",
+    "source": "由Threat Model INV-03派生；工程建议，待评审",
+    "implementation_status": "implemented_development_scope",
+    "verification_status": "partial_scope_verified",
+    "evidence": [
+      "docs/evidence/runtime-tests.json"
+    ],
+    "acceptance_signed_off": false
+  },
+  {
+    "id": "SR-02",
+    "priority": "P0",
+    "title": "授权来源与上限",
+    "acceptance": "Intent更新只来自已认证用户/管理配置；用户文本、模型及外部工具均不能超出静态权限上限",
+    "owner": "B",
+    "tasks": [
+      "B02",
+      "B04"
+    ],
+    "design_docs": [
+      "AS-DOC-08",
+      "AS-DOC-10",
+      "AS-DOC-12",
+      "AS-DOC-13"
+    ],
+    "tests": [
+      "TC-07"
+    ],
+    "milestone": "W4–W7",
+    "source": "由Threat Model INV-02派生；工程建议，待评审",
+    "implementation_status": "implemented_development_scope",
+    "verification_status": "regression_covered",
+    "evidence": [
+      "docs/evidence/runtime-tests.json"
+    ],
+    "acceptance_signed_off": false
+  },
+  {
+    "id": "SR-03",
+    "priority": "P0",
+    "title": "凭据外发限制",
+    "acceptance": "SECRET/CREDENTIAL不得外发到未经明确批准的目的；trusted域名本身不能授权泄密",
+    "owner": "B",
+    "tasks": [
+      "B06",
+      "A04"
+    ],
+    "design_docs": [
+      "AS-DOC-08",
+      "AS-DOC-10",
+      "AS-DOC-12",
+      "AS-DOC-13"
+    ],
+    "tests": [
+      "TC-18",
+      "TC-24"
+    ],
+    "milestone": "W4–W7",
+    "source": "由Threat Model INV-01派生；工程建议，待评审",
+    "implementation_status": "implemented_development_scope",
+    "verification_status": "regression_covered",
+    "evidence": [
+      "docs/evidence/runtime-tests.json"
+    ],
+    "acceptance_signed_off": false
+  },
+  {
+    "id": "SR-04",
+    "priority": "P0",
+    "title": "审批不可漂移",
+    "acceptance": "用户/权限、会话、动作、工具身份、参数、资源版本、策略和Intent版本全部绑定",
+    "owner": "B",
+    "tasks": [
+      "B05"
+    ],
+    "design_docs": [
+      "AS-DOC-08",
+      "AS-DOC-10",
+      "AS-DOC-12",
+      "AS-DOC-13"
+    ],
+    "tests": [
+      "TC-14",
+      "TC-15",
+      "TC-16"
+    ],
+    "milestone": "W4–W7",
+    "source": "由Threat Model INV-04派生；工程建议，待评审",
+    "implementation_status": "implemented_development_scope",
+    "verification_status": "regression_covered",
+    "evidence": [
+      "docs/evidence/runtime-tests.json"
+    ],
+    "acceptance_signed_off": false
+  },
+  {
+    "id": "SR-05",
+    "priority": "P0",
+    "title": "硬拒绝不可审批覆盖",
+    "acceptance": "Critical和显式DENY先于审批；批准只解决ASK可授权的不确定项",
+    "owner": "B",
+    "tasks": [
+      "B04",
+      "B05"
+    ],
+    "design_docs": [
+      "AS-DOC-08",
+      "AS-DOC-10",
+      "AS-DOC-12",
+      "AS-DOC-13"
+    ],
+    "tests": [
+      "TC-25"
+    ],
+    "milestone": "W4–W7",
+    "source": "由Threat Model INV-04派生；工程建议，待评审",
+    "implementation_status": "implemented_development_scope",
+    "verification_status": "regression_covered",
+    "evidence": [
+      "docs/evidence/runtime-tests.json"
+    ],
+    "acceptance_signed_off": false
+  },
+  {
+    "id": "SR-06",
+    "priority": "P0",
+    "title": "故障默认关闭",
+    "acceptance": "策略、Intent或审批故障不得导致写/执行/外发/push等高危默认ALLOW",
+    "owner": "B",
+    "tasks": [
+      "B04",
+      "A02"
+    ],
+    "design_docs": [
+      "AS-DOC-08",
+      "AS-DOC-10",
+      "AS-DOC-12",
+      "AS-DOC-13"
+    ],
+    "tests": [
+      "TC-26"
+    ],
+    "milestone": "W4–W7",
+    "source": "由Threat Model INV-05派生；工程建议，待评审",
+    "implementation_status": "implemented_development_scope",
+    "verification_status": "regression_covered",
+    "evidence": [
+      "docs/evidence/runtime-tests.json"
+    ],
+    "acceptance_signed_off": false
+  },
+  {
+    "id": "SR-07",
+    "priority": "P0",
+    "title": "规范化执行一致",
+    "acceptance": "文件路径/符号链接、网络解析/重定向、Git对象、复合命令在执行前再次核对",
+    "owner": "B",
+    "tasks": [
+      "A04",
+      "B03"
+    ],
+    "design_docs": [
+      "AS-DOC-08",
+      "AS-DOC-10",
+      "AS-DOC-12",
+      "AS-DOC-13"
+    ],
+    "tests": [
+      "TC-09",
+      "TC-10",
+      "TC-27"
+    ],
+    "milestone": "W4–W7",
+    "source": "由Threat Model INV-03派生；工程建议，待评审",
+    "implementation_status": "implemented_development_scope",
+    "verification_status": "regression_covered",
+    "evidence": [
+      "docs/evidence/runtime-tests.json"
+    ],
+    "acceptance_signed_off": false
+  },
+  {
+    "id": "SR-08",
+    "priority": "P0",
+    "title": "来源标签保留",
+    "acceptance": "外部内容经摘要/委派/Memory后不自动升级信任；显式边与推断边区分",
+    "owner": "B",
+    "tasks": [
+      "C06",
+      "A05"
+    ],
+    "design_docs": [
+      "AS-DOC-08",
+      "AS-DOC-10",
+      "AS-DOC-12",
+      "AS-DOC-13"
+    ],
+    "tests": [
+      "TC-19",
+      "TC-20"
+    ],
+    "milestone": "W4–W7",
+    "source": "由Threat Model INV-02派生；工程建议，待评审",
+    "implementation_status": "implemented_development_scope",
+    "verification_status": "partial_scope_verified",
+    "evidence": [
+      "docs/evidence/runtime-tests.json"
+    ],
+    "acceptance_signed_off": false
+  },
+  {
+    "id": "SR-09",
+    "priority": "P0",
+    "title": "工具元数据不授权",
+    "acceptance": "tools/list描述与annotations只作不可信信号，不决定权限或谓词实现",
+    "owner": "B",
+    "tasks": [
+      "A03",
+      "B04"
+    ],
+    "design_docs": [
+      "AS-DOC-08",
+      "AS-DOC-10",
+      "AS-DOC-12",
+      "AS-DOC-13"
+    ],
+    "tests": [
+      "TC-03"
+    ],
+    "milestone": "W4–W7",
+    "source": "由Threat Model INV-07派生；工程建议，待评审",
+    "implementation_status": "implemented_development_scope",
+    "verification_status": "regression_covered",
+    "evidence": [
+      "docs/evidence/runtime-tests.json"
+    ],
+    "acceptance_signed_off": false
+  },
+  {
+    "id": "SR-10",
+    "priority": "P0",
+    "title": "审计最小化",
+    "acceptance": "日志、错误、导出无凭据原文；证据hash/类型/位置替代敏感原文",
+    "owner": "B",
+    "tasks": [
+      "C02",
+      "A07"
+    ],
+    "design_docs": [
+      "AS-DOC-08",
+      "AS-DOC-10",
+      "AS-DOC-12",
+      "AS-DOC-13"
+    ],
+    "tests": [
+      "TC-28",
+      "TC-29"
+    ],
+    "milestone": "W4–W7",
+    "source": "由Threat Model INV-06派生；工程建议，待评审",
+    "implementation_status": "implemented_development_scope",
+    "verification_status": "regression_covered",
+    "evidence": [
+      "docs/evidence/runtime-tests.json"
+    ],
+    "acceptance_signed_off": false
+  },
+  {
+    "id": "SR-11",
+    "priority": "P0",
+    "title": "证据与安全默认独立",
+    "acceptance": "BLOCK不依赖写日志成功；有界审计缓冲耗尽时停止新的高危ALLOW",
+    "owner": "B",
+    "tasks": [
+      "C02",
+      "A02"
+    ],
+    "design_docs": [
+      "AS-DOC-08",
+      "AS-DOC-10",
+      "AS-DOC-12",
+      "AS-DOC-13"
+    ],
+    "tests": [
+      "TC-30"
+    ],
+    "milestone": "W4–W7",
+    "source": "由Threat Model INV-05派生；工程建议，待评审",
+    "implementation_status": "implemented_development_scope",
+    "verification_status": "regression_covered",
+    "evidence": [
+      "docs/evidence/runtime-tests.json"
+    ],
+    "acceptance_signed_off": false
+  },
+  {
+    "id": "SR-12",
+    "priority": "P0",
+    "title": "委派不扩权",
+    "acceptance": "子Agent权限取父任务、委派请求和静态策略的交集；深度/调用预算可控",
+    "owner": "B",
+    "tasks": [
+      "B06",
+      "A04"
+    ],
+    "design_docs": [
+      "AS-DOC-08",
+      "AS-DOC-10",
+      "AS-DOC-12",
+      "AS-DOC-13"
+    ],
+    "tests": [
+      "TC-19",
+      "TC-31"
+    ],
+    "milestone": "W4–W7",
+    "source": "由Threat Model INV-02派生；工程建议，待评审",
+    "implementation_status": "implemented_development_scope",
+    "verification_status": "regression_covered",
+    "evidence": [
+      "docs/evidence/runtime-tests.json"
+    ],
+    "acceptance_signed_off": false
+  },
+  {
+    "id": "SR-13",
+    "priority": "P0",
+    "title": "重试不重复副作用",
+    "acceptance": "审批nonce一次性消费；超时结果未知的非幂等操作不得自动重试",
+    "owner": "B",
+    "tasks": [
+      "B05",
+      "A02"
+    ],
+    "design_docs": [
+      "AS-DOC-08",
+      "AS-DOC-10",
+      "AS-DOC-12",
+      "AS-DOC-13"
+    ],
+    "tests": [
+      "TC-16",
+      "TC-32"
+    ],
+    "milestone": "W4–W7",
+    "source": "由Threat Model INV-04派生；工程建议，待评审",
+    "implementation_status": "implemented_development_scope",
+    "verification_status": "regression_covered",
+    "evidence": [
+      "docs/evidence/runtime-tests.json"
+    ],
+    "acceptance_signed_off": false
+  },
+  {
+    "id": "SR-14",
+    "priority": "P0",
+    "title": "管理与展示隔离",
+    "acceptance": "管理接口鉴权；本地网页CSRF/Origin保护；DAG与日志不执行攻击内容",
+    "owner": "B",
+    "tasks": [
+      "A07",
+      "C05"
+    ],
+    "design_docs": [
+      "AS-DOC-08",
+      "AS-DOC-10",
+      "AS-DOC-12",
+      "AS-DOC-13"
+    ],
+    "tests": [
+      "TC-33",
+      "TC-34"
+    ],
+    "milestone": "W4–W7",
+    "source": "由Threat Model INV-06派生；工程建议，待评审",
+    "implementation_status": "implemented_development_scope",
+    "verification_status": "regression_covered",
+    "evidence": [
+      "docs/evidence/runtime-tests.json"
+    ],
+    "acceptance_signed_off": false
+  },
+  {
+    "id": "G1",
+    "priority": "Goal",
+    "title": "注入入口覆盖",
+    "acceptance": "直接、间接、MCP描述/响应、Memory；全部覆盖到W6",
+    "owner": "A",
+    "tasks": [
+      "A03",
+      "A05"
+    ],
+    "design_docs": [
+      "AS-DOC-10",
+      "AS-DOC-17",
+      "AS-DOC-23"
+    ],
+    "tests": [
+      "TC-01",
+      "TC-02",
+      "TC-03",
+      "TC-04",
+      "TC-05"
+    ],
+    "milestone": "W6–W8",
+    "source": "AS-PRD-001 v0.9",
+    "implementation_status": "partial",
+    "verification_status": "regression_covered",
+    "evidence": [
+      "docs/evidence/runtime-tests.json"
+    ],
+    "acceptance_signed_off": false
+  },
+  {
+    "id": "G2",
+    "priority": "Goal",
+    "title": "语义行为归一化",
+    "acceptance": "Intent与Action统一且可以解释偏差",
+    "owner": "A",
+    "tasks": [
+      "B02",
+      "B03"
+    ],
+    "design_docs": [
+      "AS-DOC-10",
+      "AS-DOC-17",
+      "AS-DOC-23"
+    ],
+    "tests": [
+      "TC-06",
+      "TC-08",
+      "TC-11"
+    ],
+    "milestone": "W6–W8",
+    "source": "AS-PRD-001 v0.9",
+    "implementation_status": "partial",
+    "verification_status": "regression_covered",
+    "evidence": [
+      "docs/evidence/runtime-tests.json"
+    ],
+    "acceptance_signed_off": false
+  },
+  {
+    "id": "G3",
+    "priority": "Goal",
+    "title": "精细策略管控",
+    "acceptance": "五类工具按DSL输出精确三态决策",
+    "owner": "A",
+    "tasks": [
+      "B04",
+      "B05"
+    ],
+    "design_docs": [
+      "AS-DOC-10",
+      "AS-DOC-17",
+      "AS-DOC-23"
+    ],
+    "tests": [
+      "TC-12",
+      "TC-13"
+    ],
+    "milestone": "W6–W8",
+    "source": "AS-PRD-001 v0.9",
+    "implementation_status": "partial",
+    "verification_status": "regression_covered",
+    "evidence": [
+      "docs/evidence/runtime-tests.json"
+    ],
+    "acceptance_signed_off": false
+  },
+  {
+    "id": "G4",
+    "priority": "Goal",
+    "title": "证据溯源",
+    "acceptance": "显式污点/来源关联与DAG可核验",
+    "owner": "A",
+    "tasks": [
+      "C02",
+      "C06"
+    ],
+    "design_docs": [
+      "AS-DOC-10",
+      "AS-DOC-17",
+      "AS-DOC-23"
+    ],
+    "tests": [
+      "TC-17",
+      "TC-19",
+      "TC-20"
+    ],
+    "milestone": "W6–W8",
+    "source": "AS-PRD-001 v0.9",
+    "implementation_status": "partial",
+    "verification_status": "partial_scope_verified",
+    "evidence": [
+      "docs/evidence/runtime-tests.json"
+    ],
+    "acceptance_signed_off": false
+  },
+  {
+    "id": "G5",
+    "priority": "Goal",
+    "title": "检测漏检兜底",
+    "acceptance": "检测器漏报仍由合同/策略/数据流阻止敏感副作用",
+    "owner": "A",
+    "tasks": [
+      "A04",
+      "B06"
+    ],
+    "design_docs": [
+      "AS-DOC-10",
+      "AS-DOC-17",
+      "AS-DOC-23"
+    ],
+    "tests": [
+      "TC-18",
+      "TC-23"
+    ],
+    "milestone": "W6–W8",
+    "source": "AS-PRD-001 v0.9",
+    "implementation_status": "partial",
+    "verification_status": "partial_scope_verified",
+    "evidence": [
+      "docs/evidence/runtime-tests.json"
+    ],
+    "acceptance_signed_off": false
+  },
+  {
+    "id": "G6",
+    "priority": "Goal",
+    "title": "轻量部署",
+    "acceptance": "CPU+本地轻量模型离线P0，Docker Compose干净部署和回滚",
+    "owner": "A",
+    "tasks": [
+      "A06",
+      "A07"
+    ],
+    "design_docs": [
+      "AS-DOC-10",
+      "AS-DOC-17",
+      "AS-DOC-23"
+    ],
+    "tests": [
+      "TC-35",
+      "TC-41"
+    ],
+    "milestone": "W6–W8",
+    "source": "AS-PRD-001 v0.9",
+    "implementation_status": "partial",
+    "verification_status": "measured_limited",
+    "evidence": [
+      "docs/evidence/perf-cpu.json",
+      "docs/evidence/runtime-tests.json"
+    ],
+    "acceptance_signed_off": false
+  }
+]

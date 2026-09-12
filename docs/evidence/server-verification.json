@@ -1,0 +1,23 @@
+{
+  "verified_at": "2026-09-12T07:42:27.134024+00:00",
+  "remote_root": "/root/autodl-tmp/AgentSentry",
+  "runtime_stage": "development_preview",
+  "health": {
+    "status": "ok",
+    "version": "0.1.0.dev1"
+  },
+  "pytest_passed": 92,
+  "golden": {
+    "cases": 20,
+    "passed": 20,
+    "failed": 0
+  },
+  "cpu_performance_configurations_passed": 4,
+  "mcp_transports": [
+    "stdio",
+    "streamable_http"
+  ],
+  "release_accepted": false,
+  "secrets_and_runtime_state_synced": false,
+  "operator_test_credential_rotated": true
+}

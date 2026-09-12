@@ -1,0 +1,123 @@
+{
+  "$defs": {
+    "Effect": {
+      "enum": [
+        "FILE_READ",
+        "FILE_WRITE",
+        "NET_EGRESS",
+        "EXEC",
+        "GIT_COMMIT",
+        "GIT_PUSH",
+        "DELEGATE",
+        "MEMORY_READ",
+        "MEMORY_WRITE",
+        "OTHER"
+      ],
+      "title": "Effect",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0",
+      "default": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "intent_id": {
+      "title": "Intent Id",
+      "type": "string"
+    },
+    "version": {
+      "default": 1,
+      "title": "Version",
+      "type": "integer"
+    },
+    "actor": {
+      "title": "Actor",
+      "type": "string"
+    },
+    "permission_snapshot_hash": {
+      "title": "Permission Snapshot Hash",
+      "type": "string"
+    },
+    "goal": {
+      "title": "Goal",
+      "type": "string"
+    },
+    "allowed_scopes": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Allowed Scopes",
+      "type": "array"
+    },
+    "allowed_effects": {
+      "items": {
+        "$ref": "#/$defs/Effect"
+      },
+      "title": "Allowed Effects",
+      "type": "array"
+    },
+    "maximum_effects": {
+      "items": {
+        "$ref": "#/$defs/Effect"
+      },
+      "title": "Maximum Effects",
+      "type": "array"
+    },
+    "forbidden_effects": {
+      "items": {
+        "$ref": "#/$defs/Effect"
+      },
+      "title": "Forbidden Effects",
+      "type": "array"
+    },
+    "sensitive_access": {
+      "default": "DENY",
+      "enum": [
+        "DENY",
+        "ALLOW"
+      ],
+      "title": "Sensitive Access",
+      "type": "string"
+    },
+    "unresolved": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Unresolved",
+      "type": "array"
+    },
+    "evidence_source_refs": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Evidence Source Refs",
+      "type": "array"
+    },
+    "parser_version": {
+      "default": "templates-1.0",
+      "title": "Parser Version",
+      "type": "string"
+    },
+    "authorized_destination_hashes": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Authorized Destination Hashes",
+      "type": "array"
+    }
+  },
+  "required": [
+    "actor",
+    "permission_snapshot_hash",
+    "goal",
+    "allowed_scopes",
+    "allowed_effects",
+    "maximum_effects"
+  ],
+  "title": "IntentIR",
+  "type": "object"
+}

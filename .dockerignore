@@ -1,0 +1,11 @@
+.git
+.venv
+.cache
+node_modules
+dashboard/node_modules
+artifacts
+runtime-data
+models
+datasets
+**/__pycache__
+**/*.egg-info

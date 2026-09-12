@@ -1,0 +1,99 @@
+{
+  "status": "CANDIDATE_VERIFIED_NOT_DEPLOYED",
+  "generated_at": "2026-09-12T10:52:38.491774+00:00",
+  "candidate_path": "artifacts/development/semantic-contract-v1",
+  "active_source_changed": [],
+  "origin_manifest_sha256": "b579855c6fa08bfc8ab7c133b7a269afa3f04ebf1c106b4261e415738fff86c4",
+  "changed_files": {
+    "src/agentsentry/schemas/models.py": "bdd54574d7f4efe072fc128457b0f66298652252264ff10e6aa71e6c710f751f",
+    "src/agentsentry/adapters/registry.py": "9dbd08bea0f7360a2c28748cff602ad64d7441efadcfc5cd885515b02c3cbc24",
+    "src/agentsentry/intent/literal_plan.py": "d6a5f29b5f175c445778c4794e55afe63725258629f02eb13f71288cf272f99b",
+    "src/agentsentry/intent/contracts.py": "c7446cbdb9256db3ab3bc8fb57afa4988de0bc840e3a74c273d8113fb7b48bb5",
+    "src/agentsentry/gateway/native_hooks.py": "54c1e4785de611404c3b089362f058dc156769d17eb6aaed9d4bca46413addad",
+    "src/agentsentry/gateway/runtime.py": "526a4c37d6f1ac70d43e86b52d926e103885e7556259ec533a18593f42038f65",
+    "tests/test_literal_plan.py": "3de4e47cbb9506df6b76c0f17453e73f6a5b2f2617d07e991e2a1294c066b898",
+    "tests/test_native_hooks.py": "fd68118a3c699a79d0f15329595e11964f626306f2d974401f650efb98895a7e",
+    "benchmarks/run_injecagent.py": "36243a085b51d26a2c347194414ebff892322fb9277a51cd21918389f49b5483",
+    "benchmarks/run_agentdojo.py": "f56eb2df1eb369832cc4999bf0bb1a45affc60af30e7641b2ae6f0106951cb64"
+  },
+  "tests": {
+    "passed": 192,
+    "exitstatus": 0,
+    "completed_at": "2026-09-12T10:51:00.152689+00:00",
+    "sha256": "9083f9df9e450fd9c5d3bf6c00091faac6b4c8b23a7df55403d818a51f6a7d29"
+  },
+  "golden": {
+    "cases": 20,
+    "passed": 20,
+    "failed": 0
+  },
+  "coverage": {
+    "covered_lines": 1985,
+    "num_statements": 2427,
+    "percent_covered": 79.04583723105706,
+    "percent_covered_display": "79",
+    "missing_lines": 442,
+    "excluded_lines": 0,
+    "percent_statements_covered": 81.78821590440873,
+    "percent_statements_covered_display": "82",
+    "num_branches": 780,
+    "num_partial_branches": 140,
+    "covered_branches": 550,
+    "missing_branches": 230,
+    "percent_branches_covered": 70.51282051282051,
+    "percent_branches_covered_display": "71"
+  },
+  "duplication": [
+    {
+      "minimum_tokens": 50,
+      "mode": "exact",
+      "total_tokens": 50984,
+      "clone_covered_tokens": 352,
+      "clone_coverage": 0.006904126784873686
+    },
+    {
+      "minimum_tokens": 100,
+      "mode": "exact",
+      "total_tokens": 50984,
+      "clone_covered_tokens": 0,
+      "clone_coverage": 0.0
+    },
+    {
+      "minimum_tokens": 200,
+      "mode": "exact",
+      "total_tokens": 50984,
+      "clone_covered_tokens": 0,
+      "clone_coverage": 0.0
+    },
+    {
+      "minimum_tokens": 50,
+      "mode": "identifier_normalized",
+      "total_tokens": 50984,
+      "clone_covered_tokens": 1082,
+      "clone_coverage": 0.02122234426486741
+    },
+    {
+      "minimum_tokens": 100,
+      "mode": "identifier_normalized",
+      "total_tokens": 50984,
+      "clone_covered_tokens": 224,
+      "clone_coverage": 0.0043935352267378
+    },
+    {
+      "minimum_tokens": 200,
+      "mode": "identifier_normalized",
+      "total_tokens": 50984,
+      "clone_covered_tokens": 0,
+      "clone_coverage": 0.0
+    }
+  ],
+  "limitations": [
+    "32 added engineering regressions; not independent hidden test or benchmark evidence.",
+    "Bounded literal task grammar for builtin tools and native full-file Write; general semantic planning not implemented.",
+    "No promotion into the running v4 benchmark tree.",
+    "Effect-only legacy task handling remains for unsupported request forms.",
+    "Grants constrain action values; they are not single-use workflow steps or source attestation.",
+    "Native hook fixtures do not replace real vendor CLI E2E.",
+    "Foreign benchmark tool catalogs explicitly disable builtin literal compilation."
+  ]
+}
