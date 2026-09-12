@@ -1,0 +1,34 @@
+{
+  "recorded_at": "2026-09-12T17:48:16.607831+00:00",
+  "repository": "https://github.com/optimiscs/AgentSentry",
+  "branch": "main",
+  "uploaded_initial_commit": "ef22d085f88ad2500823b057bf97611503fdd831",
+  "initial_files": 365,
+  "selected_artifacts": 93,
+  "publication": "PUSHED_AND_REMOTE_REF_VERIFIED",
+  "verification": {
+    "fresh_clone_artifact_hashes": 93,
+    "documentation": "PASS",
+    "message_boundary_checks_local": 5,
+    "tuning_checks_local": 10
+  },
+  "experiments": {
+    "pause_requested": true,
+    "pause_confirmed": false,
+    "reason": "5090 SSH connection refused; no pause signal delivered",
+    "new_experiments_scheduled_after_pause_request": 0,
+    "last_known_identities": [
+      {
+        "name": "vllm-tuning-v2",
+        "pid": 915463,
+        "start_ticks": "444214790"
+      },
+      {
+        "name": "piguard-full-context-cpu",
+        "pid": 882846,
+        "start_ticks": "444083051"
+      }
+    ]
+  },
+  "benchmark_acceptance": "NOT_ACCEPTED"
+}
