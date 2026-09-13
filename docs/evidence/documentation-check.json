@@ -1,7 +1,7 @@
 {
   "status": "PASS",
   "scope": "documentation_only",
-  "checked_at": "2026-09-13T12:18:16.513278+00:00",
+  "checked_at": "2026-09-13T12:54:05.992190+00:00",
   "lifecycle_documents": 30,
   "requirements_and_goals": 50,
   "test_designs": 42,
@@ -13,7 +13,7 @@
   },
   "planned_person_days": 96,
   "buffer_person_days": 24,
-  "local_links_checked": 458,
+  "local_links_checked": 504,
   "business_tests_run": 0,
   "benchmark_runs": 0,
   "runtime_implemented": true,

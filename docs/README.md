@@ -85,6 +85,8 @@
 
 [完整模型提示词](05-validation/model-prompts-2026-09-13.md)与[GPU 历史/真实客户端核查](05-validation/runtime-audit-2026-09-13.md)：没有可信的一小时硬件利用率均值，没有云模型防护测试；Codex 仅部分真实拦截，Claude 为事件夹具。
 
-[清洗模式与单次调用候选对照](05-validation/context-filter-mode-comparison.md)：同一批选定输入的正常误删 8/16→0/16，32 条无处理错误；不能据片段删除声明 ASR 为零。两组各 97 个完整正常任务复测已启动。
+[清洗模式与单次调用候选对照](05-validation/context-filter-mode-comparison.md)：同一批选定输入的正常误删 8/16→0/16，32 条无处理错误；不能据片段删除声明 ASR 为零。两组各 97 个正常任务复测已结束，均完成 89/97；仍有错误和验证码误删，未验收。
+
+[历次评估、代码修改与前后变化](05-validation/evaluation-history-and-code-changes.md)：汇总 22 组真实模型 benchmark 配对，以及固定输入诊断、离线协议回放、CPU/模型速度测试；按版本区分收益、退化与未运行项。
 
 [SecOPD 强基线与复现条件](05-validation/secopd-baseline-review.md)：补充自适应攻击与训练防御的比较，作者结果与本项目运行分开记录。

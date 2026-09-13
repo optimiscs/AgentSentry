@@ -2,7 +2,9 @@
 
 本文件从 Lab3090 已冻结的 context-filter-v2 实际代码导出，并逐项核对源码哈希。模型为 Qwen/Qwen3.5-9B，两个本地 vLLM 服务；temperature=0、seed=0、actor/guard 输出上限均 4096。不是云端 GPT/Claude 测试。
 
-## 当前 97 条正常任务对照使用哪些提示词
+## v2 的 97 条正常任务对照使用哪些提示词
+
+以下 detect/extract 对应已完成的 v2 两阶段对照；最新 v4 的 97 条正常任务使用文末 joint 提示，两组均完成 89/97，仍未验收。两版调用及分数见[逐轮汇总](evaluation-history-and-code-changes.md)。
 
 baseline 只运行任务执行模型；promptarmor_adapted 对每个真实模拟工具返回调用 detect_injection，判为注入时再调用 extract_injection。参考配置不运行下面的 plan/verify，也不启用动作权限门控。
 
