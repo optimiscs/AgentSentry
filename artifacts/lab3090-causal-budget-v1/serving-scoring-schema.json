@@ -1,0 +1,89 @@
+{
+  "status": "SCHEMA_INSPECTION_ONLY_NO_INFERENCE",
+  "openapi_sha256": "7317e330bd37f4c29fddaf7900a622463e6c1c14bf3c2ff4995bb7a8198617c6",
+  "path_present": true,
+  "request_schema": "CompletionRequest",
+  "fields": {
+    "prompt": {
+      "anyOf": [
+        {
+          "items": {
+            "type": "integer",
+            "minimum": 0.0
+          },
+          "type": "array"
+        },
+        {
+          "items": {
+            "items": {
+              "type": "integer",
+              "minimum": 0.0
+            },
+            "type": "array"
+          },
+          "type": "array"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Prompt"
+    },
+    "max_tokens": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Max Tokens",
+      "default": 16
+    },
+    "echo": {
+      "anyOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Echo",
+      "default": false
+    },
+    "logprobs": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Logprobs"
+    },
+    "prompt_logprobs": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Prompt Logprobs"
+    }
+  },
+  "limits": "Schema support is not a successful target-logprob scoring run. No chat/completion request was sent."
+}

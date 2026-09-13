@@ -1,0 +1,52 @@
+{
+  "status": "COMPLETED_CPU_AUDIT_NOT_MODEL_EVALUATION",
+  "working_directory": "/home/moxu/AgentSentry",
+  "thinking": false,
+  "inference_requests": 0,
+  "unit_tests": {
+    "command": [
+      "/home/moxu/miniconda3/envs/agentsentry-bench-lab3090/bin/python",
+      "-m",
+      "pytest",
+      "-q",
+      "tests/test_causal_proxy_budget.py"
+    ],
+    "environment": {
+      "PYTHONPATH": "src"
+    },
+    "passed": 8,
+    "returncode": 0,
+    "log": "unit-checks.log"
+  },
+  "initial_attempt": {
+    "environment": "agentsentry-bench-lab3090",
+    "returncode": 1,
+    "error": "ModuleNotFoundError: No module named transformers",
+    "log": "audit.log"
+  },
+  "successful_attempt": {
+    "command": [
+      "/home/moxu/miniconda3/envs/agentsentry-lab3090/bin/python",
+      "-c",
+      "import sys,runpy; sys.path.append(\"/home/moxu/miniconda3/envs/agentsentry-bench-lab3090/lib/python3.11/site-packages\"); runpy.run_path(\"scripts/audit_causal_proxy_budget.py\",run_name=\"__main__\")",
+      "--run",
+      "artifacts/benchmarks/agentdojo/agentdojo-lab3090-qwen35-9b-context-filter-v5-dev35-baseline-s0",
+      "--candidate",
+      "artifacts/development/context-filter-v5",
+      "--source",
+      "artifacts/upstream/agentdojo-089ed468cf3e",
+      "--model-path",
+      "artifacts/models/qwen3.5-9b-c20223623576",
+      "--output",
+      "artifacts/lab3090-causal-budget-v1/budget.json"
+    ],
+    "environment": {
+      "PYTHONPATH": "artifacts/development/context-filter-v5/src:artifacts/development/context-filter-v5/benchmarks:artifacts/upstream/agentdojo-089ed468cf3e/src",
+      "HF_HUB_OFFLINE": "1",
+      "TOKENIZERS_PARALLELISM": "false"
+    },
+    "returncode": 0,
+    "log": "audit-tokenizer-env.log"
+  },
+  "reproduction_note": "Restore the frozen source, input traces, pinned tokenizer and runtime first. Use a new output path; existing output is intentionally rejected. No package installation or weights loaded."
+}

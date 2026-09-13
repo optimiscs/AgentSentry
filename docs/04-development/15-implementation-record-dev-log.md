@@ -324,3 +324,9 @@ context-filter-v4 两组各 97 条正常任务于北京时间 20:40 前均结束
 Lab3090 实际通过 149 项相关单测、2 个 subtest、16 项 AgentDojo 与 17 项 ASB 原生模拟流程检查。新增断言最初增加 114 个规范化重复 token，合并共同拒绝断言后克隆覆盖回到父版本的 352/1312。冻结 132 文件，补丁重建、远端文件哈希核对通过；源码、命令与日志见[组合评审](../05-validation/composed-guard-v1-review.md)及 [ADR-012](../adr/adr-012.md)。
 
 已准备同源 35 条/组 baseline/full 命令，尚未调用模型，也没有后台自动启动。21:49 北京时间实查当前 full1046 两个子进程身份匹配且存活：baseline 242/1046、输入参考 176/1046，已记录项均有效、零错误；两组思考均关闭。[带时间的进程与源码快照](../../artifacts/lab3090-composed-guard-v1/parent-progress.json)。这是进行中的单一输入参考，不能宣称全量完成或组合性能提高。后续待真实终态及输出覆盖核对后运行组合对照，原 benchmark、独立测试、消融和产品客户端验收要求不变。
+
+## DL-043：归因成本审计与强基线补查
+
+2026-09-13。核对 CausalArmor 完整表格及 MemSecBench 的跨阶段证据协议，明确论文成绩与本地配置的区别。新增独立 CPU 审计：35 条已完成的 v5 baseline 轨迹全部有效，114 次 actor 输入 token 数与原服务记录一致；26 个决策扩展为 137 份上下文、430799 token，是同决策单次评分 token 量的 4.665 倍。未取得归因值或新的模型效果，任务与防护继续默认非思考。[研究与真实审计报告](../05-validation/causal-proxy-budget-and-baseline-review.md)
+
+8 项检查通过。首次 benchmark 环境缺少 Transformers 的失败保留；改用既有模型环境 tokenizer 与只读依赖查找路径后真实审计成功，没有安装、推理请求或权重加载。原 35 条模拟轨迹随许可及哈希归档。主树 50-token 精确/规范化重复覆盖保持 692/1747；未改动 v5 和组合候选冻结源码。同步 MPBench 最新完整字段结果及历史状态边界。[本轮证据](../evidence/causal-proxy-budget.json)

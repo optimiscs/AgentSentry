@@ -6,6 +6,8 @@
 
 2026-09-13 仓库交接：已按用户要求准备代码和精选中间产物，[产物索引](artifacts/README.md)记录范围与哈希。[实验暂停交接](docs/04-development/experiment-pause-and-handoff.md)记录最后确认的进程状态；SSH 不可达时不能据此声称远端实验已停止。
 
+当前实验已[迁移至 Lab3090](docs/04-development/lab3090-migration-and-resume.md)，采用 Qwen3.5-9B，任务与防护均默认关闭思考。[v5 输入参考](docs/05-validation/context-filter-v5-review.md)正在运行全量配对；[清洗与动作授权组合](docs/05-validation/composed-guard-v1-review.md)已冻结、尚待真实模型评估。最新 [归因防护成本审计](docs/05-validation/causal-proxy-budget-and-baseline-review.md)仅使用已完成轨迹做 CPU token 核对，不属于效果验收。
+
 ## 当前能力
 
 - 规则检测支持用户输入、Web、文档、Issue、MCP 描述/响应和 Memory；保留 Unicode 证据坐标，支持批量扫描。

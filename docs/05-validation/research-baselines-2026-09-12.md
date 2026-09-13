@@ -4,6 +4,8 @@
 
 2026-09-13 更新：[SecOPD 强基线核对](secopd-baseline-review.md)补充 2026 年 8 月的训练防御、自适应攻击结果、AgentDojo 协议差异和双 3090 资源限制。固定作者源码已审阅，尚未运行或移植。
 
+后续更新：[CausalArmor 与 MemSecBench 核对](causal-proxy-budget-and-baseline-review.md)补全原论文表格、协议限制及已完成轨迹的 CPU 成本审计；[MPBench 完整字段结果](mpbench-protocol-and-diagnostic.md)已在 Lab3090 完成。下文旧运行状态按当时记录保留。
+
 | 方法 / 原始来源 | 可核对的配置和结果 | 对本项目的启示与限制 |
 |---|---|---|
 | [IPIGuard，EMNLP 2025](https://aclanthology.org/2025.emnlp-main.53/)；[论文 v1](https://arxiv.org/html/2508.15310v1)；[作者代码](https://github.com/Greysahy/ipiguard) | 表 1：GPT-4o-mini、AgentDojo、Important Instructions，基线 ASR 27.19%、UA 49.92%；防护 ASR 0.64%、UA 57.07%。附录 G：Qwen2.5-7B 同时作为执行器和规划器，BU 35.05%、UA 33.55%、ASR 0.16%。 | 在读取不可信内容前规划工具依赖图；运行中只允许扩展查询工具。适合比较受信任务规划，但单纯工具白名单不能保护所有参数。这里的 Inj.Age. 是 AgentDojo 内的攻击名称，不等于完整 InjecAgent 数据集。 |
@@ -12,7 +14,7 @@
 | [PromptArmor v1](https://arxiv.org/html/2507.15219v1) | 主 Agent 为 GPT-4.1；629 个攻击场景，四种攻击的联合 ASR。表 1 的 GPT-4.1 核验器：ASR 0%、UA 72.02%、FPR 0.56%、FNR 0.13%。 | 检测并删除注入片段，保留正常内容，值得作为独立输入防御基线。四攻击取并集的 ASR 不能与本项目单攻击配置直接比较；其 FPR 也不等于本项目三态误 BLOCK。 |
 | [PlanGuard v1，2026-04](https://arxiv.org/html/2604.10134v1) | InjecAgent 1,054 条；DeepSeek-V3.2 同时用于主 Agent 与防御。作者修改受害者系统提示以强制服从工具内容，报告 ASR 从 72.8% 到 0%。 | 先隔离规划，再做工具/参数两级核验。这个提示修改必须单独标记，不能复制其基线 ASR 到我们的原生提示配置。论文摘要与分组 FPR 的汇总口径需要进一步核对，暂不采用为验收参考值。 |
 | [AgentSentry 论文 v1，2026-02](https://arxiv.org/html/2602.22724v1) | GPT-4o、GPT-3.5-turbo、Qwen3-Max，多种 AgentDojo 攻击；作者报告跨模型平均 UA 74.55%、ASR 0%。 | 在工具返回边界做反事实诊断并选择性净化。**该论文与本工程同名，但本工程不是该论文的复现，也未复制其实现。** 当前实现没有该反事实算法；对外介绍必须区分。 |
-| [CausalArmor，Google Research，2026](https://research.google/pubs/causal-armor-efficient-indirect-prompt-injection-guardrails-via-causal-attribution/) | 官方摘要描述 AgentDojo 与 DoomArena 实验，当前已核对页面未给完整表格。 | 在高权限动作前按片段做 leave-one-out 归因，再定向净化和屏蔽受污染推理。只列为候选，不虚构性能、延迟或同配领先结论。 |
+| [CausalArmor，Google Research，2026](https://research.google/pubs/causal-armor-efficient-indirect-prompt-injection-guardrails-via-causal-attribution/) | 已补查论文表 3，配置与数值见 [专门评审](causal-proxy-budget-and-baseline-review.md)。 | 按需归因与定向清洗仍有计算及效用代价；目前只有本地 token 审计，未取得同配推理成绩。 |
 | [SecureClaw v1，2026-06](https://arxiv.org/html/2606.09549v1) | GPT-4o-mini；AgentDojo v1.1.2 的629攻击条目，ASR0.64%；正常效用70.10%→60.82%。ASB是5类DPI各400条，ASR0%、效用88.90%。 | 敏感读句柄、精确提交及拒绝后的恢复。ASB不是mixed；包含别名解析与仅对策略已允许动作的自动确认。按表计算正常效用损失9.28pp，不满足本项目5pp门槛。没有将同名OpenClaw插件当作论文代码。 |
 | [ALRPHFS，Findings EMNLP 2025](https://aclanthology.org/2025.findings-emnlp.1066/)；[预印本v1表2](https://arxiv.org/html/2505.19260v1) | v1以GPT-4o-mini评测ASB的mixed分类ACC82.50%、四类平均ACC83.13%；Claude-3.5配置mixed ACC67.50%。 | 离线风险模式去重及快慢分层核验值得比较。ACC不等于执行ASR或三态Macro-F1；不能计算1−ACC作为我们的攻击成功率。正文概括与分组表不完全一致，保留版本及表格口径。 |
 | [MSB v2 的 MCIP 对照](https://arxiv.org/html/2510.15994v2)；[MCIP作者代码](https://github.com/HKUST-KnowComp/MCIP) | 表4中Qwen3-8B的ASR为47.23%→24.04%，PUA为51.15%→48.34%；12种攻击类型取平均。 | 工具级分类器是可复现比较对象，但需要实际MCP工具与返回结果防护。不同模型与工具版本的数字不能作为我们的达标证据；当前尚未运行MCIP。 |

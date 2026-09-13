@@ -4,6 +4,8 @@
 
 2026-09-13 实验已迁移到双卡 Lab3090，使用新 Conda 环境与 Qwen/Qwen3.5-9B；本轮 ASB 小样和 PIGuard 输入诊断已完成，综合 benchmark 仍未验收。[迁移与结果](04-development/lab3090-migration-and-resume.md) / [恢复证据](evidence/lab3090-recovery.json) / [当前开发计划](04-development/14-implementation-plan.md)。5090 的旧环境记录保留为[历史环境证据](evidence/environment-current.json)，不能视为 Lab3090 配置或当前在线状态。
 
+新增 [归因防护成本与强基线评审](05-validation/causal-proxy-budget-and-baseline-review.md)：35 条真实开发轨迹的 CPU token 核对已完成，没有新增模型效果；任务与防护继续默认关闭思考。
+
 ## 30类文档
 
 | 编号 | 文档 | Owner | 状态 |

@@ -1,0 +1,139 @@
+{
+  "generated_at": "2026-09-13T14:20:58.331092+00:00",
+  "status": "COMPLETED_CPU_AUDIT_NOT_MODEL_EVALUATION",
+  "summary": {
+    "cases": 35,
+    "valid": 35,
+    "actor_prompt_counts_verified": 114,
+    "privileged_turns_with_observations": 26,
+    "scoring_contexts": 137,
+    "scoring_tokens": 430799,
+    "unablated_scoring_tokens": 92348,
+    "token_multiplier_over_single_scoring": 4.664952137566596,
+    "max_context_tokens": 12941,
+    "over_context_limit": 0,
+    "max_contexts_per_turn": 11,
+    "two_context_chunks_if_statically_batched": 77,
+    "cpu_tokenizer_seconds": 2.13240925129503
+  },
+  "actor_thinking": false,
+  "guard_thinking": false,
+  "inference_requests": 0,
+  "runner_sha256": "f35080a789e9542cb427ccb6e9e9efbe53c3c3b207342b5c7c6c6147695cdb06",
+  "unit_tests": {
+    "passed": 8,
+    "returncode": 0
+  },
+  "input_archive_sha256": "551f35b40b6ff96f6fd59eb095278478bf13d9a3e620c425a147d19dd328a125",
+  "artifact_manifest": {
+    "path": "artifacts/lab3090-causal-budget-v1/artifact-manifest.json",
+    "sha256": "cd86526a86e5d9b50258448f9898f8f52860076801021b1eb8e2e1bd92041c84"
+  },
+  "duplication": {
+    "scope": "First-party Python src, benchmarks and scripts. Tests, generated JS, dependencies and upstream artifacts excluded explicitly.",
+    "baseline_commit": "0bb37c9a3dfc073fa8610de1131571fe768769f6",
+    "baseline_files": 68,
+    "current_files": 69,
+    "measurements": [
+      {
+        "minimum_tokens": 50,
+        "mode": "exact",
+        "total_tokens": 66496,
+        "clone_covered_tokens": 692,
+        "clone_coverage": 0.010406641000962464
+      },
+      {
+        "minimum_tokens": 100,
+        "mode": "exact",
+        "total_tokens": 66496,
+        "clone_covered_tokens": 0,
+        "clone_coverage": 0.0
+      },
+      {
+        "minimum_tokens": 200,
+        "mode": "exact",
+        "total_tokens": 66496,
+        "clone_covered_tokens": 0,
+        "clone_coverage": 0.0
+      },
+      {
+        "minimum_tokens": 50,
+        "mode": "identifier_normalized",
+        "total_tokens": 66496,
+        "clone_covered_tokens": 1747,
+        "clone_coverage": 0.02627225697786333
+      },
+      {
+        "minimum_tokens": 100,
+        "mode": "identifier_normalized",
+        "total_tokens": 66496,
+        "clone_covered_tokens": 224,
+        "clone_coverage": 0.003368623676612127
+      },
+      {
+        "minimum_tokens": 200,
+        "mode": "identifier_normalized",
+        "total_tokens": 66496,
+        "clone_covered_tokens": 0,
+        "clone_coverage": 0.0
+      }
+    ]
+  },
+  "parent_progress": {
+    "observed_at_utc": "2026-09-13T14:17:53.497399+00:00",
+    "parent_run": "context-filter-v5-full1046",
+    "source_verification": {
+      "context-filter-v5": {
+        "verified_files": 129,
+        "matches": true
+      },
+      "composed-guard-v1": {
+        "verified_files": 132,
+        "matches": true
+      }
+    },
+    "runs": {
+      "baseline": {
+        "controller_status": "RUNNING",
+        "pid": 2668533,
+        "start_ticks": "755411078",
+        "expected_start_ticks": "755411078",
+        "live_identity_verified": true,
+        "planned": 1046,
+        "recorded": 349,
+        "valid": 349,
+        "errors": 0,
+        "partial_lines": 0,
+        "actor_thinking": false,
+        "guard_thinking": false
+      },
+      "reference": {
+        "controller_status": "RUNNING",
+        "pid": 2668532,
+        "start_ticks": "755411078",
+        "expected_start_ticks": "755411078",
+        "live_identity_verified": true,
+        "planned": 1046,
+        "recorded": 287,
+        "valid": 287,
+        "errors": 0,
+        "partial_lines": 0,
+        "actor_thinking": false,
+        "guard_thinking": false
+      }
+    },
+    "terminal": false
+  },
+  "research_sources": [
+    "https://arxiv.org/html/2602.07918v1",
+    "https://research.google/pubs/causal-armor-efficient-indirect-prompt-injection-guardrails-via-causal-attribution/",
+    "https://arxiv.org/html/2607.27080v1"
+  ],
+  "limitations": [
+    "Not author-code reproduction; no attribution scores or new ASR/latency.",
+    "35 already inspected development cases are not independent heldout data.",
+    "Token multiplier is not compute or wall-clock multiplier.",
+    "Schema inspection is not a successful scoring inference.",
+    "Root-source duplication scope differs from frozen composed candidate."
+  ]
+}

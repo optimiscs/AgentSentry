@@ -6,6 +6,8 @@
 
 新增[SecOPD 强基线评审](secopd-baseline-review.md)：作者固定源码已核对，其逐 token 干净教师训练与当前输入清洗/动作权限路线不同；没有作者模型或本地移植成绩，不能据文献分数宣布同配领先。
 
+22:17 CST 补充：[v5 输入参考](context-filter-v5-review.md)已完成开发 35 条配对，正在运行 1046 条/组全量；[组合候选](composed-guard-v1-review.md)已冻结但未取得真实模型结果。本轮新增 [CausalArmor 表格核对与 CPU 成本审计](causal-proxy-budget-and-baseline-review.md)，未运行该方法推理。PIGuard 的最新完整字段分数为 TPR30.33%、FPR13.64%、Macro-F1 0.5422，见 [MPBench 当前结果](mpbench-protocol-and-diagnostic.md)；下文分窗及早期候选数字为历史记录。
+
 ## 当前设计的新意在哪里
 
 | 当前设计或候选 | 已有工作与重叠 | 当前可合理主张的贡献 |

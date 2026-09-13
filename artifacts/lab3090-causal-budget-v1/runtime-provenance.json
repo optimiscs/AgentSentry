@@ -1,0 +1,40 @@
+{
+  "status": "READ_ONLY_RUNTIME_PROVENANCE",
+  "observed_at": "2026-09-13T14:17:51.163323+00:00",
+  "executable": "/home/moxu/miniconda3/envs/agentsentry-lab3090/bin/python",
+  "python": "3.11.14 (main, Oct 21 2025, 18:31:21) [GCC 11.2.0]",
+  "fallback_site_packages": "/home/moxu/miniconda3/envs/agentsentry-bench-lab3090/lib/python3.11/site-packages",
+  "model_weights_loaded": false,
+  "modules": {
+    "transformers": {
+      "version": "4.57.6",
+      "file": "/home/moxu/miniconda3/envs/agentsentry-lab3090/lib/python3.11/site-packages/transformers/__init__.py",
+      "sha256": "aa8cb54da488cf43ba37b9955bb6c0d84d2000db0306f6a5f1c20b6842482d04"
+    },
+    "tokenizers": {
+      "version": "0.22.2",
+      "file": "/home/moxu/miniconda3/envs/agentsentry-lab3090/lib/python3.11/site-packages/tokenizers/__init__.py",
+      "sha256": "148ecb122f3fee03be9abb1fe213dd85fbc691bf2ad2b437ff531533781a6a3a"
+    },
+    "pydantic": {
+      "version": "2.13.5",
+      "file": "/home/moxu/miniconda3/envs/agentsentry-lab3090/lib/python3.11/site-packages/pydantic/__init__.py",
+      "sha256": "e62127278c07bf5384cdd2903f368a69929f3b8a524000bae4e0eb608ebf4bc6"
+    },
+    "openai": {
+      "version": "2.24.0",
+      "file": "/home/moxu/miniconda3/envs/agentsentry-lab3090/lib/python3.11/site-packages/openai/__init__.py",
+      "sha256": "7fcfeb79b49b8b9604bc0d2337e8a313a9158e89103feebe488b2bfeb0286bb2"
+    },
+    "tenacity": {
+      "version": "9.1.4",
+      "file": "/home/moxu/miniconda3/envs/agentsentry-bench-lab3090/lib/python3.11/site-packages/tenacity/__init__.py",
+      "sha256": "8f4bed57919393702b562309921c215cf5949a719dd37ec1d61a062b69954194"
+    },
+    "agentdojo": {
+      "version": "0.1.35",
+      "file": "/home/moxu/AgentSentry/artifacts/upstream/agentdojo-089ed468cf3e/src/agentdojo/__init__.py",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    }
+  }
+}

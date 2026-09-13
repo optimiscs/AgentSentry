@@ -1,0 +1,14 @@
+{
+  "run": "artifacts/benchmarks/agentdojo/agentdojo-lab3090-qwen35-9b-context-filter-v5-dev35-baseline-s0",
+  "input_files_sha256": {
+    "manifest.json": "8160d6050031577b85e1191a0d3af19f591f675d3a0ac7737e2fcade1b65c588",
+    "metrics.json": "dc0de149927dc9014ee1a415f47438006a793c277ce5ac5bd7c2cf515e7b9b1c",
+    "per_case.jsonl": "03dbfca80e07c6d38928b8928e5cc6809f0bf3e62cc8c2b5c912d73c0f3c3096",
+    "LICENSE-AgentDojo": "4285a071f2d382338e52b4fb0a186d952984a34d43a33d8872e1a1d8cb43401e"
+  },
+  "input_archive_sha256": "551f35b40b6ff96f6fd59eb095278478bf13d9a3e620c425a147d19dd328a125",
+  "input_archive_scope": "Only the previously completed 35 baseline simulated development cases. Original task/tool text and model responses retained; not real user email or production credentials.",
+  "baseline_source_commit": "0bb37c9a3dfc073fa8610de1131571fe768769f6",
+  "baseline_python_files": 68,
+  "baseline_archive_sha256": "75ef5656df3ffd39684debe344badec33746a887319a2ddf51d08b0368d3282b"
+}

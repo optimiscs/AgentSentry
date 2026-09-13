@@ -1,0 +1,45 @@
+{
+  "observed_at_utc": "2026-09-13T14:17:53.497399+00:00",
+  "parent_run": "context-filter-v5-full1046",
+  "source_verification": {
+    "context-filter-v5": {
+      "verified_files": 129,
+      "matches": true
+    },
+    "composed-guard-v1": {
+      "verified_files": 132,
+      "matches": true
+    }
+  },
+  "runs": {
+    "baseline": {
+      "controller_status": "RUNNING",
+      "pid": 2668533,
+      "start_ticks": "755411078",
+      "expected_start_ticks": "755411078",
+      "live_identity_verified": true,
+      "planned": 1046,
+      "recorded": 349,
+      "valid": 349,
+      "errors": 0,
+      "partial_lines": 0,
+      "actor_thinking": false,
+      "guard_thinking": false
+    },
+    "reference": {
+      "controller_status": "RUNNING",
+      "pid": 2668532,
+      "start_ticks": "755411078",
+      "expected_start_ticks": "755411078",
+      "live_identity_verified": true,
+      "planned": 1046,
+      "recorded": 287,
+      "valid": 287,
+      "errors": 0,
+      "partial_lines": 0,
+      "actor_thinking": false,
+      "guard_thinking": false
+    }
+  },
+  "terminal": false
+}

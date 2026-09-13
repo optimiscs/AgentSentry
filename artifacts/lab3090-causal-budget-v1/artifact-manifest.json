@@ -1,0 +1,58 @@
+{
+  "generated_at": "2026-09-13T14:20:58.329009+00:00",
+  "status": "COMPLETED_CPU_AUDIT_NOT_MODEL_EVALUATION",
+  "files": {
+    "artifacts/lab3090-causal-budget-v1/audit-tokenizer-env.log": {
+      "sha256": "43cdd8814b861eca5f3199e570d58801270ef69fb392732601ba8e4f9a2b8f41",
+      "bytes": 425
+    },
+    "artifacts/lab3090-causal-budget-v1/audit.log": {
+      "sha256": "fa33a8f06d1b1b0a84263d97d33ae89764d21595ff0a7100317fde69800cb19f",
+      "bytes": 404
+    },
+    "artifacts/lab3090-causal-budget-v1/baseline-firstparty-source.tar.gz": {
+      "sha256": "75ef5656df3ffd39684debe344badec33746a887319a2ddf51d08b0368d3282b",
+      "bytes": 113151
+    },
+    "artifacts/lab3090-causal-budget-v1/budget.json": {
+      "sha256": "d4c3300f68bcc50d238e38cf3b7ef9759a0820e0a712f0a2ee665cc97d2a83cc",
+      "bytes": 85927
+    },
+    "artifacts/lab3090-causal-budget-v1/duplication.json": {
+      "sha256": "89239cddcf77e6247adf7428aef30c31c38a3f3551a6329bc40095134d261035",
+      "bytes": 246431
+    },
+    "artifacts/lab3090-causal-budget-v1/execution.json": {
+      "sha256": "b3368563dc3ea4d6f263513324953131314a7289b4971f3448c1033369b4425d",
+      "bytes": 1943
+    },
+    "artifacts/lab3090-causal-budget-v1/input-provenance.json": {
+      "sha256": "9e867411cd3ad3b791fabd9e8d432dba6d5d1f9c8053232c264cc48576c1686d",
+      "bytes": 994
+    },
+    "artifacts/lab3090-causal-budget-v1/input-traces.tar.gz": {
+      "sha256": "551f35b40b6ff96f6fd59eb095278478bf13d9a3e620c425a147d19dd328a125",
+      "bytes": 42997
+    },
+    "artifacts/lab3090-causal-budget-v1/parent-progress.json": {
+      "sha256": "1cb161c62087b737c88e82d5e8d924c521c6d0bf8d2aa339fc77482b9272107a",
+      "bytes": 1089
+    },
+    "artifacts/lab3090-causal-budget-v1/runtime-provenance.json": {
+      "sha256": "ccbdc29495274b7175a4193e30a89fdac3c6f728b516a8011ec12a97299b83b3",
+      "bytes": 1910
+    },
+    "artifacts/lab3090-causal-budget-v1/serving-scoring-schema.json": {
+      "sha256": "c2a412dc22b5b251680026609286c37599599d35d7c7766d0db207328a9508e7",
+      "bytes": 1703
+    },
+    "artifacts/lab3090-causal-budget-v1/serving-scoring-source.json": {
+      "sha256": "77d325c143c4965e6aa767a62f4b9a1cbff89113bd0380688744399bbb80f52f",
+      "bytes": 236
+    },
+    "artifacts/lab3090-causal-budget-v1/unit-checks.log": {
+      "sha256": "092afb193e0565b502e8c29ec6c9f2e9ed67befee919192e41fe9bd294ef0cc2",
+      "bytes": 98
+    }
+  }
+}

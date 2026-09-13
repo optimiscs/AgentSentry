@@ -2,6 +2,8 @@
 
 更新：2026-09-13。状态：**INPUT_SCREEN_DIAGNOSTIC_NOT_MEMORY_BENCHMARK_ACCEPTANCE**。
 
+最新完整字段结果已在 Lab3090 取得：6240/6240 有效、零未知，TP983/FN2258/FP409/TN2590，TPR **30.33%**、FPR **13.64%**、二分类 Macro-F1 **0.5422**。采用固定 PIGuard 权重、FP32、0.5 阈值及 2048-token 完整字段输入，不截断；它仍是第三方输入诊断，尚不能签收检测 F1 或记忆全流程。[完整评分证据](../evidence/lab3090-piguard-mpbench.json)、[迁移与执行记录](../04-development/lab3090-migration-and-resume.md)
+
 ## 来源与完整性
 
 [作者数据仓库](https://github.com/Digital-Trust-Lab/mp-bench)固定提交 `6886880a7c29625e0109e0ad91d0e095029f1577`，Apache-2.0，源码包SHA `63d6f551f39de46647a02064927e553a5c510ff223261e9f96b6290410ad5b69`。快照提供数据、说明和许可，没有可直接运行的Agent配置、裁判实现或官方训练/测试划分。
@@ -47,7 +49,7 @@ PIGuard固定revision `dd78b24e330193a22d2293ac66922dd4f982f563`，safetensors�
 
 另以16条不读取标签的输入核对原生HF pipeline：同一前缀概率全部一致，最大差7.08e-8；8条长输入中3条在完整上下文与分窗最大值之间改变分类。作者固定源码eval_hf.py使用2048输入上限；这批6480个外部字段最长1959个内容token，全部可完整输入。下一轮将独立运行完整上下文对照，保留旧结果与固定阈值；目前只有兼容性核对，不是全量重测或原论文复现。[核对证据](../evidence/piguard-pipeline-parity.json)。
 
-2026-09-13完整上下文对照已启动：CPU 2线程、全部6240条，固定0.5阈值，每个外部字段一次完整输入；超过2048编码预算记错误，不截断。执行器为scripts/run_piguard_full_context.py，SHA为cfa4a44626c706260d7141cf12107feeceb2923e25db201d139daf518d71366f。实际模型680-token长输入检查通过；输出位于artifacts/piguard-mpbench-full-context-v1，PID882846/start_ticks444083051，完整分数待结束。运行时四个源文件已封存，不改变活动网关检测器。
+历史启动记录（5090，非当前活动作业）：2026-09-13 的完整上下文 CPU 对照为 2线程、6240条、0.5阈值；超过2048编码预算记错误，不截断。原执行器 SHA 为 cfa4a44626c706260d7141cf12107feeceb2923e25db201d139daf518d71366f，输出 artifacts/piguard-mpbench-full-context-v1，PID882846/start_ticks444083051；当时尚未取得完整结果。该记录保留，不以 Lab3090 新作业的完成来证明旧进程终态。
 
 评分器以固定运行器哈希区分448分窗与2048完整字段两种配置，禁止跨配置冒充、丢失尾部或扩大输入上限。20项评分与5项完整输入检查本地/5090通过；新增配置后，旧预测的28组分数及12480条评分行保持一致，旧评分源码也已保存。[兼容与回归证据](../evidence/piguard-full-context-preparation.json)。
 
