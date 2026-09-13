@@ -1,0 +1,54 @@
+{
+  "updated_at": "2026-09-13T16:52:39.610732+00:00",
+  "jobs": [
+    {
+      "job": "agentdojo-shard0-process",
+      "actual_child_identity_matches": true,
+      "controller_status": "RUNNING",
+      "recorded": 240,
+      "errors": 0,
+      "planned": 262
+    },
+    {
+      "job": "agentdojo-shard1-process",
+      "actual_child_identity_matches": true,
+      "controller_status": "RUNNING",
+      "recorded": 237,
+      "errors": 0,
+      "planned": 262
+    },
+    {
+      "job": "agentdojo-shard2-process",
+      "actual_child_identity_matches": true,
+      "controller_status": "RUNNING",
+      "recorded": 243,
+      "errors": 0,
+      "planned": 261
+    },
+    {
+      "job": "agentdojo-shard3-process",
+      "actual_child_identity_matches": true,
+      "controller_status": "RUNNING",
+      "recorded": 238,
+      "errors": 0,
+      "planned": 261
+    },
+    {
+      "job": "injecagent-shard0-process",
+      "actual_child_identity_matches": true,
+      "controller_status": "RUNNING",
+      "recorded": 8,
+      "errors": 0,
+      "planned": 527
+    },
+    {
+      "job": "injecagent-shard1-process",
+      "actual_child_identity_matches": true,
+      "controller_status": "RUNNING",
+      "recorded": 10,
+      "errors": 0,
+      "planned": 527
+    }
+  ],
+  "quota_stop_exists": false
+}

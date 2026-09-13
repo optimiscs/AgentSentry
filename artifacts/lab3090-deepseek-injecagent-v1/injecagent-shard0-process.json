@@ -1,0 +1,27 @@
+{
+  "status": "RUNNING",
+  "pid": 2809910,
+  "start_ticks": "756701494",
+  "job": {
+    "candidate": "artifacts/development/deepseek-injecagent-v1",
+    "output": "artifacts/lab3090-deepseek-injecagent-v1/injecagent-shard0",
+    "command": [
+      "/home/moxu/miniconda3/envs/agentsentry-bench-lab3090/bin/python",
+      "/home/moxu/AgentSentry/artifacts/development/deepseek-injecagent-v1/benchmarks/run_dsh_injecagent.py",
+      "--source",
+      "/home/moxu/AgentSentry/artifacts/upstream/InjecAgent-f19c9f2c79a4",
+      "--output",
+      "/home/moxu/AgentSentry/artifacts/lab3090-deepseek-injecagent-v1/injecagent-shard0",
+      "--cases",
+      "/home/moxu/AgentSentry/artifacts/lab3090-deepseek-injecagent-v1/injecagent-shard0-ids.json",
+      "--sdk-python",
+      "/home/moxu/AgentSentry/artifacts/clients/deepseek-harness-0.1.5rc1/bin/python",
+      "--quota-state",
+      "/home/moxu/AgentSentry/artifacts/lab3090-deepseek-annotation-v1/quota-stop.json"
+    ],
+    "planned_cases": 527
+  },
+  "updated_at": "2026-09-13T16:51:58.393360+00:00",
+  "child_pid": 2809913,
+  "child_start_ticks": "756701503"
+}

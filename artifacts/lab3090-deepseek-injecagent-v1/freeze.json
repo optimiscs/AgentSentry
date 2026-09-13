@@ -1,0 +1,6 @@
+{
+  "candidate": "artifacts/development/deepseek-injecagent-v1",
+  "source_sha256": "a75723a2b06bae998f18682948bfb4b82dc4a1ea5f5d8aec638de96994405c77",
+  "source_files": 46,
+  "frozen_after_preflight_format_and_pagination_checks": true
+}

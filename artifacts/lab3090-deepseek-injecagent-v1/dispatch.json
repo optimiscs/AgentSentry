@@ -1,0 +1,13 @@
+{
+  "started_at": "2026-09-13T16:51:58.309625+00:00",
+  "controllers": [
+    {
+      "name": "injecagent-shard0",
+      "pid": 2809910
+    },
+    {
+      "name": "injecagent-shard1",
+      "pid": 2809911
+    }
+  ]
+}

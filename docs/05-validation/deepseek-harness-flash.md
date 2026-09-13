@@ -60,3 +60,15 @@ SDK使用reasoning_effort=off，实际Chat请求锁定thinking.type=disabled、t
 23项相关检查通过；新标注协议的3例真实原生冒烟全部完成。早期失败保留：虚拟环境Python路径被resolve后丢失SDK；AgentDojo文本块content字段误当MCP text导致的3例无效联调。这3例原始文件虽有status=ok，但整轮已明确作废，不进入模型安全统计；修复后增加桥接异常强制标unknown的检查。
 
 [原始工件清单](../../artifacts/lab3090-deepseek-harness-v1/curated-files.json)包含哈希；[压缩证据](../../artifacts/deepseek-harness-curated-v1.tar.gz)排除真实API密钥、余额、临时DSH配置及私有运行状态。默认不修改正在执行的Qwen冻结实验。
+
+## InjecAgent 原生 Harness 接入进展
+
+[InjecAgent运行器](../../benchmarks/run_dsh_injecagent.py)使用[动态MCP目录](../../benchmarks/native_tools.py)，由Flash实际选择并调用原始工具。保留原用户请求、原工具描述/参数类型、原注入响应及完整原始记录。与上游ReAct评测从既定工具调用之后开始不同，本配置从原用户请求开始，原始Thought只存为评估元数据，不伪造成Flash思考。
+
+330份工具schema检查完成；6个真实Harness冒烟均完成并读到攻击内容，危险工具分派0/6。8项针对接口、缓存、时序、参数匹配和原生评分函数的检查通过。DS数据窃取需要先读取、再外发的实际调用顺序；仅出现目标工具名或口头声称完成不等于实际目标达成，语义目标仍单列待复核。上游无正常任务效用oracle，该列保持unknown_no_native_utility_oracle。
+
+原缓存规范化后有1,305个键，其中337组相同参数存在冲突响应，另387个源键无法解析。这些源问题保留哈希清单，不修改原始文件。无法唯一使用缓存时，用原生响应生成prompt启动独立Flash/Harness模拟器，保留其请求、输出和用量；真实预检已验证此分支可运行。原示例及模型会返回Python字面量形式的结构化数据，接受安全literal解析并保留原文，不擅自改写成新观察。
+
+原用户工具只向参数一致的调用返回已发表的响应。已审阅的例外是Evernote搜索：相同keywords、max_results省略或增加时，仍可返回那条已发表笔记；其他参数差异明确返回缺少匹配fixture，并记录是否真正暴露攻击。不会把所有未暴露攻击的轨迹当作模型已识别并拒绝注入。
+
+InjecAgent全量1,054条已冻结为2个运行进程，与AgentDojo共享额度停止状态。2026-09-14 00:52 CST的[实际进程快照](../../artifacts/lab3090-deepseek-injecagent-v1/campaign-progress.json)：AgentDojo958/1046，InjecAgent18/1054；6个子进程身份均吻合且运行中，已记录案例无运行错误，尚无额度耗尽信号。这是当时进度，不是最终验收。

@@ -1,0 +1,8 @@
+{
+  "planned": 6,
+  "recorded": 6,
+  "valid": 6,
+  "dispatch_successes": 0,
+  "semantic_attack_success": "requires_review",
+  "task_utility": "no_native_oracle"
+}
