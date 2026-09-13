@@ -1,0 +1,84 @@
+FF...................................                                    [100%]
+=================================== FAILURES ===================================
+_______________ test_mcp_auth_and_no_operator_or_evaluator_tools _______________
+
+backend = <memory_runtime.MemoryRuntime object at 0x7f7d61224ed0>
+
+    def test_mcp_auth_and_no_operator_or_evaluator_tools(backend):
+        server = memory_mcp(backend)
+        with TestClient(bearer_app(server.streamable_http_app(), TOKEN)) as client:
+            assert client.post("/", json={}).status_code == 401
+>           tools = rpc(client, "tools/list", {}).json()["result"]["tools"]
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_native_memory.py:40: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../miniconda3/envs/agentsentry-bench-lab3090/lib/python3.11/site-packages/httpx2/_models.py:830: in json
+    return jsonlib.loads(self.content, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../miniconda3/envs/agentsentry-bench-lab3090/lib/python3.11/json/__init__.py:346: in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+../miniconda3/envs/agentsentry-bench-lab3090/lib/python3.11/json/decoder.py:337: in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <json.decoder.JSONDecoder object at 0x7f7d65f54390>
+s = 'Invalid Host header', idx = 0
+
+    def raw_decode(self, s, idx=0):
+        """Decode a JSON document from ``s`` (a ``str`` beginning with
+        a JSON document) and return a 2-tuple of the Python
+        representation and the index in ``s`` where the document ended.
+    
+        This can be used to decode a JSON document from a string that may
+        have extraneous data at the end.
+    
+        """
+        try:
+            obj, end = self.scan_once(s, idx)
+        except StopIteration as err:
+>           raise JSONDecodeError("Expecting value", s, err.value) from None
+E           json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+../miniconda3/envs/agentsentry-bench-lab3090/lib/python3.11/json/decoder.py:355: JSONDecodeError
+------------------------------ Captured log call -------------------------------
+WARNING  mcp.server.transport_security:transport_security.py:71 Invalid Host header: testserver
+________ test_pending_write_through_mcp_and_stale_session_cannot_write _________
+
+backend = <memory_runtime.MemoryRuntime object at 0x7f7d612243d0>
+
+    def test_pending_write_through_mcp_and_stale_session_cannot_write(backend):
+        server = memory_mcp(backend)
+        with TestClient(bearer_app(server.streamable_http_app(), TOKEN)) as client:
+            arguments = {"name": "fact", "content": "The project uses Python.", "request_id": "mcp-1"}
+>           result = call(client, "write_memory", arguments)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_native_memory.py:52: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+client = <starlette.testclient.TestClient object at 0x7f7d60776b90>
+tool = 'write_memory'
+arguments = {'name': 'fact', 'content': 'The project uses Python.', 'request_id': 'mcp-1'}
+
+    def call(client, tool, arguments):
+        response = rpc(client, "tools/call", {"name": tool, "arguments": arguments})
+>       assert response.status_code == 200
+E       assert 421 == 200
+E        +  where 421 = <Response [421 Misdirected Request]>.status_code
+
+tests/test_native_memory.py:32: AssertionError
+------------------------------ Captured log call -------------------------------
+WARNING  mcp.server.transport_security:transport_security.py:71 Invalid Host header: testserver
+=============================== warnings summary ===============================
+../miniconda3/envs/agentsentry-bench-lab3090/lib/python3.11/site-packages/starlette/testclient.py:53
+  /home/moxu/miniconda3/envs/agentsentry-bench-lab3090/lib/python3.11/site-packages/starlette/testclient.py:53: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.
+    _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED tests/test_native_memory.py::test_mcp_auth_and_no_operator_or_evaluator_tools
+FAILED tests/test_native_memory.py::test_pending_write_through_mcp_and_stale_session_cannot_write
+2 failed, 35 passed, 1 warning in 7.75s

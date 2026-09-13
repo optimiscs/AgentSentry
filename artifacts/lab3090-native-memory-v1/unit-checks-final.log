@@ -1,0 +1,25 @@
+.F...................................                                    [100%]
+=================================== FAILURES ===================================
+________ test_pending_write_through_mcp_and_stale_session_cannot_write _________
+
+backend = <memory_runtime.MemoryRuntime object at 0x7fdb30b58810>
+
+    def test_pending_write_through_mcp_and_stale_session_cannot_write(backend):
+        server = memory_mcp(backend)
+        with TestClient(bearer_app(server.streamable_http_app(), TOKEN), base_url="http://127.0.0.1:12345") as client:
+            arguments = {"name": "fact", "content": "The project uses Python.", "request_id": "mcp-1"}
+            result = call(client, "write_memory", arguments)
+>           assert result["structuredContent"]["status"] == "pending"
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E           KeyError: 'structuredContent'
+
+tests/test_native_memory.py:53: KeyError
+=============================== warnings summary ===============================
+../miniconda3/envs/agentsentry-bench-lab3090/lib/python3.11/site-packages/starlette/testclient.py:53
+  /home/moxu/miniconda3/envs/agentsentry-bench-lab3090/lib/python3.11/site-packages/starlette/testclient.py:53: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.
+    _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED tests/test_native_memory.py::test_pending_write_through_mcp_and_stale_session_cannot_write
+1 failed, 36 passed, 1 warning in 7.29s

@@ -1,0 +1,41 @@
+[
+  {
+    "label": "native-attempt-3",
+    "args": [
+      "scripts/verify_native_memory.py",
+      "--codex",
+      "/home/moxu/AgentSentry/artifacts/clients/codex-0.154.0/node_modules/.bin/codex",
+      "--output",
+      "artifacts/lab3090-native-memory-v1/attempt-3"
+    ],
+    "returncode": 0
+  },
+  {
+    "label": "unit-checks-final",
+    "args": [
+      "-m",
+      "pytest",
+      "-q",
+      "tests/test_native_memory.py",
+      "tests/test_memory_runtime.py",
+      "tests/test_local_model_transport.py",
+      "tests/test_mcp.py"
+    ],
+    "returncode": 1
+  },
+  {
+    "label": "unit-checks-passed",
+    "command": [
+      "/home/moxu/miniconda3/envs/agentsentry-bench-lab3090/bin/python",
+      "-m",
+      "pytest",
+      "-q",
+      "tests/test_native_memory.py",
+      "tests/test_memory_runtime.py",
+      "tests/test_local_model_transport.py",
+      "tests/test_mcp.py"
+    ],
+    "returncode": 0,
+    "at": "2026-09-13T15:32:45.780962+00:00"
+  }
+]

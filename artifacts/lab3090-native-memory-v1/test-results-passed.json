@@ -1,0 +1,297 @@
+{
+  "exitstatus": 0,
+  "tests": [
+    {
+      "test": "tests/test_native_memory.py::test_mcp_auth_and_no_operator_or_evaluator_tools",
+      "outcome": "passed",
+      "duration_seconds": 0.03988802805542946,
+      "cases": []
+    },
+    {
+      "test": "tests/test_native_memory.py::test_pending_write_through_mcp_and_stale_session_cannot_write",
+      "outcome": "passed",
+      "duration_seconds": 0.12018332909792662,
+      "cases": []
+    },
+    {
+      "test": "tests/test_native_memory.py::test_native_provider_cannot_fall_back_to_remote_or_credential_url[https://api.openai.com/v1]",
+      "outcome": "passed",
+      "duration_seconds": 0.0005348138511180878,
+      "cases": []
+    },
+    {
+      "test": "tests/test_native_memory.py::test_native_provider_cannot_fall_back_to_remote_or_credential_url[http://example.com/v1]",
+      "outcome": "passed",
+      "duration_seconds": 0.0004529189318418503,
+      "cases": []
+    },
+    {
+      "test": "tests/test_native_memory.py::test_native_provider_cannot_fall_back_to_remote_or_credential_url[http://name:secret@localhost/v1]",
+      "outcome": "passed",
+      "duration_seconds": 0.0004374263808131218,
+      "cases": []
+    },
+    {
+      "test": "tests/test_native_memory.py::test_native_provider_cannot_fall_back_to_remote_or_credential_url[http://localhost/v1?key=secret]",
+      "outcome": "passed",
+      "duration_seconds": 0.00042726658284664154,
+      "cases": []
+    },
+    {
+      "test": "tests/test_native_memory.py::test_native_environment_does_not_forward_cloud_credentials",
+      "outcome": "passed",
+      "duration_seconds": 0.0003976263105869293,
+      "cases": []
+    },
+    {
+      "test": "tests/test_memory_runtime.py::test_pending_write_is_not_memory_and_is_not_autoapproved_after_reopen",
+      "outcome": "passed",
+      "duration_seconds": 0.163981594145298,
+      "cases": []
+    },
+    {
+      "test": "tests/test_memory_runtime.py::test_quarantined_write_persists_but_never_enters_retrieval",
+      "outcome": "passed",
+      "duration_seconds": 0.18973416835069656,
+      "cases": []
+    },
+    {
+      "test": "tests/test_memory_runtime.py::test_saved_content_and_source_labels_survive_restart[memory_gate_disabled]",
+      "outcome": "passed",
+      "duration_seconds": 0.2228129543364048,
+      "cases": []
+    },
+    {
+      "test": "tests/test_memory_runtime.py::test_saved_content_and_source_labels_survive_restart[runtime_rules]",
+      "outcome": "passed",
+      "duration_seconds": 0.23723731003701687,
+      "cases": []
+    },
+    {
+      "test": "tests/test_memory_runtime.py::test_baseline_can_store_injection_without_altering_product_policy",
+      "outcome": "passed",
+      "duration_seconds": 0.3027654942125082,
+      "cases": []
+    },
+    {
+      "test": "tests/test_memory_runtime.py::test_baseline_never_exposes_other_product_tools[exec.python]",
+      "outcome": "passed",
+      "duration_seconds": 0.09946251939982176,
+      "cases": []
+    },
+    {
+      "test": "tests/test_memory_runtime.py::test_baseline_never_exposes_other_product_tools[http.request]",
+      "outcome": "passed",
+      "duration_seconds": 0.09060520958155394,
+      "cases": []
+    },
+    {
+      "test": "tests/test_memory_runtime.py::test_baseline_never_exposes_other_product_tools[file.read]",
+      "outcome": "passed",
+      "duration_seconds": 0.09127664659172297,
+      "cases": []
+    },
+    {
+      "test": "tests/test_memory_runtime.py::test_baseline_never_exposes_other_product_tools[agent.delegate]",
+      "outcome": "passed",
+      "duration_seconds": 0.0965763982385397,
+      "cases": []
+    },
+    {
+      "test": "tests/test_memory_runtime.py::test_baseline_never_exposes_other_product_tools[memory.delete]",
+      "outcome": "passed",
+      "duration_seconds": 0.09643641952425241,
+      "cases": []
+    },
+    {
+      "test": "tests/test_memory_runtime.py::test_case_storage_isolation_and_idempotent_write",
+      "outcome": "passed",
+      "duration_seconds": 0.24275153782218695,
+      "cases": []
+    },
+    {
+      "test": "tests/test_memory_runtime.py::test_baseline_preserves_argument_validation[arguments0]",
+      "outcome": "passed",
+      "duration_seconds": 0.10797967948019505,
+      "cases": []
+    },
+    {
+      "test": "tests/test_memory_runtime.py::test_baseline_preserves_argument_validation[arguments1]",
+      "outcome": "passed",
+      "duration_seconds": 0.12742353230714798,
+      "cases": []
+    },
+    {
+      "test": "tests/test_memory_runtime.py::test_other_owner_cannot_retrieve_an_active_memory",
+      "outcome": "passed",
+      "duration_seconds": 0.14909162279218435,
+      "cases": []
+    },
+    {
+      "test": "tests/test_memory_runtime.py::test_secret_label_and_encrypted_storage_survive_followup",
+      "outcome": "passed",
+      "duration_seconds": 0.2109082220122218,
+      "cases": []
+    },
+    {
+      "test": "tests/test_memory_runtime.py::test_existing_directory_and_invalid_phase_are_rejected",
+      "outcome": "passed",
+      "duration_seconds": 0.09689014870673418,
+      "cases": []
+    },
+    {
+      "test": "tests/test_memory_runtime.py::test_independent_python_process_reads_committed_memory",
+      "outcome": "passed",
+      "duration_seconds": 0.8127734223380685,
+      "cases": []
+    },
+    {
+      "test": "tests/test_local_model_transport.py::test_guard_thinking_does_not_enable_actor_thinking_or_mutate_budget",
+      "outcome": "passed",
+      "duration_seconds": 0.001282859593629837,
+      "cases": []
+    },
+    {
+      "test": "tests/test_local_model_transport.py::test_invalid_options_never_reach_the_endpoint[options0]",
+      "outcome": "passed",
+      "duration_seconds": 0.0008675120770931244,
+      "cases": []
+    },
+    {
+      "test": "tests/test_local_model_transport.py::test_invalid_options_never_reach_the_endpoint[options1]",
+      "outcome": "passed",
+      "duration_seconds": 0.0006548278033733368,
+      "cases": []
+    },
+    {
+      "test": "tests/test_local_model_transport.py::test_invalid_options_never_reach_the_endpoint[options2]",
+      "outcome": "passed",
+      "duration_seconds": 0.0006592907011508942,
+      "cases": []
+    },
+    {
+      "test": "tests/test_local_model_transport.py::test_invalid_options_never_reach_the_endpoint[options3]",
+      "outcome": "passed",
+      "duration_seconds": 0.00040949974209070206,
+      "cases": []
+    },
+    {
+      "test": "tests/test_local_model_transport.py::test_invalid_options_never_reach_the_endpoint[options4]",
+      "outcome": "passed",
+      "duration_seconds": 0.00039827730506658554,
+      "cases": []
+    },
+    {
+      "test": "tests/test_local_model_transport.py::test_invalid_options_never_reach_the_endpoint[options5]",
+      "outcome": "passed",
+      "duration_seconds": 0.00040309224277734756,
+      "cases": []
+    },
+    {
+      "test": "tests/test_local_model_transport.py::test_reasoning_budget_truncation_keeps_raw_response_and_remains_error",
+      "outcome": "passed",
+      "duration_seconds": 0.0006062863394618034,
+      "cases": []
+    },
+    {
+      "test": "tests/test_local_model_transport.py::test_new_options_do_not_allow_a_cloud_endpoint",
+      "outcome": "passed",
+      "duration_seconds": 0.0005549285560846329,
+      "cases": []
+    },
+    {
+      "test": "tests/test_mcp.py::test_real_stdio_forwarding_and_metadata_drift",
+      "outcome": "passed",
+      "duration_seconds": 2.8334263963624835,
+      "cases": [
+        "TC-19",
+        "TC-03"
+      ]
+    },
+    {
+      "test": "tests/test_mcp.py::test_streamable_http_jsonrpc",
+      "outcome": "passed",
+      "duration_seconds": 0.06580447591841221,
+      "cases": [
+        "TC-33",
+        "TC-13"
+      ]
+    },
+    {
+      "test": "tests/test_mcp.py::test_schema_remote_refs_cannot_fetch_before_policy",
+      "outcome": "passed",
+      "duration_seconds": 0.0033791903406381607,
+      "cases": [
+        "TC-03"
+      ]
+    },
+    {
+      "test": "tests/test_mcp.py::test_schema_local_refs_remain_usable",
+      "outcome": "passed",
+      "duration_seconds": 0.002780369482934475,
+      "cases": [
+        "TC-03"
+      ]
+    }
+  ],
+  "completed_at": "2026-09-13T15:32:44.969591+00:00",
+  "python": "3.11.14",
+  "platform": "Linux-5.15.0-139-generic-x86_64-with-glibc2.31",
+  "source_files": {
+    "src/agentsentry/__init__.py": "79f5cc2de9ea3cd38e96447556c5ffae91d8ec303cc4de4cde8debbd189a8389",
+    "src/agentsentry/adapters/__init__.py": "b6e8dcdc09772cddd2bb5d802a0a387eb0d106ae6db6ed9d02931fed7bb2edb7",
+    "src/agentsentry/adapters/filesystem.py": "a511c58685888638f4411e4ff4d2f4c8b665db2041d696e95efb3c2aa6fffadc",
+    "src/agentsentry/adapters/mcp_client.py": "96bc6946241856bc5397c8f5fe95b22dc3359291579f9efbb051fef554bcdee3",
+    "src/agentsentry/adapters/network.py": "1b9b2585c14aa9966e1da844f4eb196c4238e32394541b88bb473d13e6d34308",
+    "src/agentsentry/adapters/registry.py": "c7100afa83733b324b02184761d3af67d994f563d366605b5a1c4fd09abb5405",
+    "src/agentsentry/adapters/sandbox.py": "ccb17d44b0cda9eb248c67b78517915c809fb759aa8ce9eac1380ce9a6987d49",
+    "src/agentsentry/adapters/sandbox_worker.py": "9ea7ed8cddf3f077eb8638df839fdf2af5d8691c92744692bafea4a5f121daea",
+    "src/agentsentry/api/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "src/agentsentry/api/app.py": "9f9db245430d4d7c562c97967ef119e2229cfbfba61a3b28529348a76876e39e",
+    "src/agentsentry/cli.py": "022341edac697e4b444a80c1f4a4af603e6b70eb9e94c6de5aa3cbfebb2402a2",
+    "src/agentsentry/config.py": "30936a5f905b0779c6a9b2e5b7d82eecb3967ca28584f5a6d9a1246dda25a161",
+    "src/agentsentry/context/__init__.py": "403cc454fa75fe7937d3bb1664b750f09c7f68efd99778a858aecb3de419c365",
+    "src/agentsentry/context/scanner.py": "741b11ed9e19db202b04ae2b13264432372d9df68e5c609f5358dbf1ccff87e5",
+    "src/agentsentry/demo.py": "1cc08dd8a573e1689e8f6b8783bee3cb45c7c53a5f68b53fa84000a6e3afea0b",
+    "src/agentsentry/evaluation.py": "e712020379b782ba87beb456492dd5a7ef4477b08a4067db7fac6f3fbeb4b9fc",
+    "src/agentsentry/gateway/__init__.py": "1c3d16ef06e300d11b2e72ea2a8274ba02d45aa8659c1c7a1de9e4066e762271",
+    "src/agentsentry/gateway/mcp_server.py": "a3cedd8b7aa2a8c8094e9cf34ea509f9fdb46fb8e2e883f13b66c7d44985a58e",
+    "src/agentsentry/gateway/native_hooks.py": "b6f92308bb848ad158dd9b0085410d30f1eb7ca204c92a2bf24f1d31f0578993",
+    "src/agentsentry/gateway/runtime.py": "5e22ac5ec782880bcc9145c66b19dbe00ea96f5be801372a64f0c999b2ded1f8",
+    "src/agentsentry/intent/__init__.py": "0c86f21107929e4106a3b6021a9f94b1c2bc4caa8111be0792547fabd2341911",
+    "src/agentsentry/intent/contracts.py": "3b0a5e623c5b4bd6d70d8cab2b36a21d3cd90ccc7dd6f94723c6c6e8047538cd",
+    "src/agentsentry/policy/__init__.py": "5c784be0354e02f4a797c514b59abbab19ab30ea3728f17515cf89cd62686657",
+    "src/agentsentry/policy/dsl.py": "878e8dfc94c611419bf36c12d897cbe8a56d00418b64007ef0937b1fd1f471bc",
+    "src/agentsentry/policy/engine.py": "2c85edce55e62514833e50e94a0f7862e329b76203235a2dc863c85e511dddd4",
+    "src/agentsentry/schemas/__init__.py": "c7a5746ac4519ef52c85b62f9346a0537f39db8604ee732237f08cd2055bc8f1",
+    "src/agentsentry/schemas/models.py": "4c8ec2e2fb7e41f462e1083223758c3b6833311219c24b9e3ba8bcc973714a57",
+    "src/agentsentry/trace/__init__.py": "995831b7a03eded1df23b87dbc7516ea050e2651fa7b2ada26c33b296ace0d67",
+    "src/agentsentry/trace/logging.py": "e12031dfa9399a06485e21df4d6ec6a8284bb285844e330d09fd7b684d550c99",
+    "src/agentsentry/trace/store.py": "2feb670734980d1ac8ca0e62c772c654f348735a196eadf3c43ff08672f0734f",
+    "policies/default.aspolicy": "122869e0d6eca6a660f32861386d8a96bae4e46329215fd8d3d695aa6572d5d7",
+    "tests/conftest.py": "d1ae4f2a1e13a59d180486e94c1e891b8aaf57df973e35c50a6fc2ac468aa662",
+    "tests/mcp_fixture_server.py": "25f12cdf2c1828287f9291cbd09d3c84fb2c8c47f12a12e68d67c0401abb82a2",
+    "tests/test_api_sandbox.py": "a7c0399e5b11e827379855c21e5742196b9547a419bd251ceab5fc3364188264",
+    "tests/test_benchmark_acceptance.py": "bdf1b2cf65ea0a6bca4b407dd618917f86bcc011aeb4f9265b23b87a80293af8",
+    "tests/test_benchmark_protocol.py": "7187d2749a56fffa5664b39b845b30da72f720055e7037899368cd4a083d00e0",
+    "tests/test_causal_proxy_budget.py": "bf357e44ed370a03498f7d47af978541e8b4146bebd91b7043ce791cb8f9a051",
+    "tests/test_components.py": "08eb7cec9a8289694865dbd795b977506103aa327c9b354fc71b31ea8f751d51",
+    "tests/test_detector_data_audit.py": "f47495d503ad7625ebd1b0285ae2c3f6f7f76f06fa3a9909b1a99c7a8437f1c6",
+    "tests/test_evaluation.py": "9b15695041e3349071935880bfa6b4416f481b21511d1aea57b1b9629ea7560d",
+    "tests/test_gateway.py": "1c54d0a53631d9698f87f3f77fc5d0d64ca65eb3e605fc77ececbbd05ef8c7a6",
+    "tests/test_local_model_messages.py": "b2fef779aaf6fb6f5f460f1f579726cd873b09562c1d6b3a60ecd51f65099862",
+    "tests/test_local_model_transport.py": "92b040df0f0a50e3289c75291aeb4fb2bbbb716a236081c101f9920415c6777e",
+    "tests/test_mcp.py": "ed4459b72f4d9d23c5d3790697591ac61a98e25bfc6a3bd4ce4e39ed4ebe1797",
+    "tests/test_memory_runtime.py": "d01b85d74d42ee80ca8bd6c6a8ad37da5166275f0d8423e3080f5401fd705afa",
+    "tests/test_mpbench_input_scoring.py": "9cd4f7b1969ec5e7b2603696298e34966e012844054550c267310cc090e18ccf",
+    "tests/test_mpbench_lifecycle.py": "ed318d1a8ef24325dc9da6f33ed023d622c108a3bd7a342a295de5f8817e1c9b",
+    "tests/test_native_hooks.py": "f977e2ed85296f9156084b2e3679b109cfb6169ac8392ff8c6f7ed5357eaca61",
+    "tests/test_native_memory.py": "c5354d92d0f2d1745b05723bc1dda59c1b4ad71e2d8d4e41a30ced63a3c0fb36",
+    "tests/test_piguard_full_context.py": "d907856667b65de9a7a46a69e73d47bc2b5465662f58f2af896380d3056b027f",
+    "tests/test_snapshot.py": "100be3d5c33bf2ee55ae2b8a22dcb342e7d24df438ed568dd0171a8bf920336d",
+    "tests/test_task_destinations.py": "e7961995cdf8cad636ec436df598d3a4b7096ac3e8a1469bb5b14a2a62de035b",
+    "tests/test_vllm_tuning_v2.py": "f7673b28f8b09deec478e7f95d53aafa6f301edb3f379200c0b70a1a88dc9ea4",
+    "dashboard/src/main.tsx": "ec86b91c802c61eabab3677096f6e2d820e2ba735e38a1dc2c65316a08edb087",
+    "dashboard/src/style.css": "efbccaabe84f7d08ae6c2b52dcf35be051653628616a525bd509d96cdecf75b8"
+  }
+}

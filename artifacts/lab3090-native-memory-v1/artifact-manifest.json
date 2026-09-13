@@ -1,0 +1,321 @@
+{
+  "scope": "NATIVE_CODEX_SCRIPTED_PROTOCOL_NOT_BENCHMARK",
+  "files": {
+    "artifacts/lab3090-native-memory-v1/attempt-1/normal-stored/write/command.json": {
+      "sha256": "8b0a2cfa52b35da10cb92e8b85ce321f99739fc179f6668b2d9396ff0aa76fb8",
+      "bytes": 2791
+    },
+    "artifacts/lab3090-native-memory-v1/attempt-1/normal-stored/write/events.jsonl": {
+      "sha256": "54f29e552825e5473f0ea1700ea6d0e4ce5f7ceaa972463dcd6b85bb59877a7d",
+      "bytes": 1162
+    },
+    "artifacts/lab3090-native-memory-v1/attempt-1/normal-stored/write/result.json": {
+      "sha256": "9d8bc83ee12e4e87770b3b7f86e7187bcfef1cf734d965a07f15edeef8562902",
+      "bytes": 188
+    },
+    "artifacts/lab3090-native-memory-v1/attempt-1/normal-stored/write/stderr.log": {
+      "sha256": "1aa26269eb1cc57f86b235a03cda53c004edb5b1e9fc99d4da4f00843293d721",
+      "bytes": 39
+    },
+    "artifacts/lab3090-native-memory-v1/attempt-1/normal-stored/write/syscall-audit.json": {
+      "sha256": "4f7db9f322f1aa41de894217e91dcb1f9b95e04b6a4b48b8a0d00adfdb0dd5ba",
+      "bytes": 176
+    },
+    "artifacts/lab3090-native-memory-v1/attempt-1/normal-stored/write/wire-evidence.json": {
+      "sha256": "fc3178e9306431b2f22c0bed36a2babf08230ec2136b52f913de2e955b6becc4",
+      "bytes": 6745
+    },
+    "artifacts/lab3090-native-memory-v1/attempt-1/report.json": {
+      "sha256": "33e3a29a70dcd3168dd44f38c90bebee80ccbf7e3128eea44ebf60c2d5fa3aa0",
+      "bytes": 788
+    },
+    "artifacts/lab3090-native-memory-v1/attempt-1/source/benchmarks/native_memory.py": {
+      "sha256": "b301ffeab2ae293a1bec286dc508b4369df9b8c0f8afa0846d55a28b1e6890f8",
+      "bytes": 5954
+    },
+    "artifacts/lab3090-native-memory-v1/attempt-1/source/scripts/verify_native_memory.py": {
+      "sha256": "25e590dbdbb7fc5c26750c9ffef32b041e342b78c947f44e062a4bfc718f7e42",
+      "bytes": 9960
+    },
+    "artifacts/lab3090-native-memory-v1/attempt-2/normal-stored/write/command.json": {
+      "sha256": "3cf55851655d21284886ca47751820e6cb17efcf78b44c7b65a5373b8a6df71c",
+      "bytes": 2791
+    },
+    "artifacts/lab3090-native-memory-v1/attempt-2/normal-stored/write/events.jsonl": {
+      "sha256": "0f75432887487b6f64cb4a3b27e7c6a630367246e116bdec2c282b87ff520ec9",
+      "bytes": 2202
+    },
+    "artifacts/lab3090-native-memory-v1/attempt-2/normal-stored/write/result.json": {
+      "sha256": "8f2146ccfafaf479e908e6a5b7fe50158b5a0c16901b5f85a5d813964dc7df82",
+      "bytes": 260
+    },
+    "artifacts/lab3090-native-memory-v1/attempt-2/normal-stored/write/stderr.log": {
+      "sha256": "1aa26269eb1cc57f86b235a03cda53c004edb5b1e9fc99d4da4f00843293d721",
+      "bytes": 39
+    },
+    "artifacts/lab3090-native-memory-v1/attempt-2/normal-stored/write/syscall-audit.json": {
+      "sha256": "8a7e41898dae94fdb41412b0436f29bdd6d722a30570e112b7ddf2d2134152e2",
+      "bytes": 176
+    },
+    "artifacts/lab3090-native-memory-v1/attempt-2/normal-stored/write/wire-evidence.json": {
+      "sha256": "397c818fe693b7104f2b0695fe30ffc448eb498438154c6efc59d21c752e693c",
+      "bytes": 22236
+    },
+    "artifacts/lab3090-native-memory-v1/attempt-2/report.json": {
+      "sha256": "ad8c609d430b5484d53ed95a7c08c52d9f6c17d078ab459b47f46112cdb960de",
+      "bytes": 641
+    },
+    "artifacts/lab3090-native-memory-v1/attempt-2/source/benchmarks/native_memory.py": {
+      "sha256": "a5796e53f7e423bdbb458b5377a7b47e75b61180f0d6bc72b656127a4ef0135c",
+      "bytes": 6248
+    },
+    "artifacts/lab3090-native-memory-v1/attempt-2/source/scripts/verify_native_memory.py": {
+      "sha256": "0fbe8d988e1b5b2b0b44d1cd11516192bc813e1ac0911036fb84f4fe052e2764",
+      "bytes": 10094
+    },
+    "artifacts/lab3090-native-memory-v1/attempt-2/source/tests/test_native_memory.py": {
+      "sha256": "49ac55898d740e0b228e0157960f6afc76e769d62ba22a27392522ff55221753",
+      "bytes": 3852
+    },
+    "artifacts/lab3090-native-memory-v1/attempt-3/injection-quarantined/recall/command.json": {
+      "sha256": "7893f5197fa8e0a2f29ca8ef6dce48eb5e1f734259ea3cc7c15425ae1f72bd5b",
+      "bytes": 2832
+    },
+    "artifacts/lab3090-native-memory-v1/attempt-3/injection-quarantined/recall/events.jsonl": {
+      "sha256": "87af0cca5bc171a37e9f23bb5175b44454e10ec0a7482a25218d2a84ccfe998b",
+      "bytes": 1619
+    },
+    "artifacts/lab3090-native-memory-v1/attempt-3/injection-quarantined/recall/result.json": {
+      "sha256": "d0efcda085fc996f1a8377afb79d55ac3b0fb69ac30c36ea118137dfe4e37680",
+      "bytes": 224
+    },
+    "artifacts/lab3090-native-memory-v1/attempt-3/injection-quarantined/recall/stderr.log": {
+      "sha256": "1aa26269eb1cc57f86b235a03cda53c004edb5b1e9fc99d4da4f00843293d721",
+      "bytes": 39
+    },
+    "artifacts/lab3090-native-memory-v1/attempt-3/injection-quarantined/recall/syscall-audit.json": {
+      "sha256": "1cfbab85365e9916f97cb2d389328f9185d4fc8702d3837ce7a1a61020d4b4d9",
+      "bytes": 176
+    },
+    "artifacts/lab3090-native-memory-v1/attempt-3/injection-quarantined/recall/wire-evidence.json": {
+      "sha256": "9bea4feca92765f2e02f31ad3af6140baa19e1353d0a542bee12262e01cc6372",
+      "bytes": 12680
+    },
+    "artifacts/lab3090-native-memory-v1/attempt-3/injection-quarantined/write/command.json": {
+      "sha256": "076882bad411a0ac9276c1256ceceb5f51ac5a3fc7bcb8aac0eb47d27dbee837",
+      "bytes": 2871
+    },
+    "artifacts/lab3090-native-memory-v1/attempt-3/injection-quarantined/write/events.jsonl": {
+      "sha256": "8c8ccd4e691fe916abb1e1f26dcb65b3799e61d2c936a5da807389fde8e8f8d1",
+      "bytes": 4678
+    },
+    "artifacts/lab3090-native-memory-v1/attempt-3/injection-quarantined/write/result.json": {
+      "sha256": "8f2146ccfafaf479e908e6a5b7fe50158b5a0c16901b5f85a5d813964dc7df82",
+      "bytes": 260
+    },
+    "artifacts/lab3090-native-memory-v1/attempt-3/injection-quarantined/write/stderr.log": {
+      "sha256": "1aa26269eb1cc57f86b235a03cda53c004edb5b1e9fc99d4da4f00843293d721",
+      "bytes": 39
+    },
+    "artifacts/lab3090-native-memory-v1/attempt-3/injection-quarantined/write/syscall-audit.json": {
+      "sha256": "4b8bda2ef184b6c41e25e676d36cf1eb4675182c6a6ffb6f81c4974736ce4a3f",
+      "bytes": 176
+    },
+    "artifacts/lab3090-native-memory-v1/attempt-3/injection-quarantined/write/wire-evidence.json": {
+      "sha256": "a31ca81f021b426eaa55524263b394b86985ab56d7ebf289b2fc705e99e7467b",
+      "bytes": 24747
+    },
+    "artifacts/lab3090-native-memory-v1/attempt-3/normal-pending/recall/command.json": {
+      "sha256": "0d5e115b1ff1ff653298a115604326a281c1382f67fecbe1b7377e00273af298",
+      "bytes": 2825
+    },
+    "artifacts/lab3090-native-memory-v1/attempt-3/normal-pending/recall/events.jsonl": {
+      "sha256": "bc49d367e1e5031936023e4ae6822e084995be373c6bf3dfefd8d2911e680817",
+      "bytes": 1619
+    },
+    "artifacts/lab3090-native-memory-v1/attempt-3/normal-pending/recall/result.json": {
+      "sha256": "d0efcda085fc996f1a8377afb79d55ac3b0fb69ac30c36ea118137dfe4e37680",
+      "bytes": 224
+    },
+    "artifacts/lab3090-native-memory-v1/attempt-3/normal-pending/recall/stderr.log": {
+      "sha256": "1aa26269eb1cc57f86b235a03cda53c004edb5b1e9fc99d4da4f00843293d721",
+      "bytes": 39
+    },
+    "artifacts/lab3090-native-memory-v1/attempt-3/normal-pending/recall/syscall-audit.json": {
+      "sha256": "9a029431550c063e05905d2f78fb9b7bffccf53ec5d2879f5cb918b846be259a",
+      "bytes": 176
+    },
+    "artifacts/lab3090-native-memory-v1/attempt-3/normal-pending/recall/wire-evidence.json": {
+      "sha256": "539f4a97e8f21de7a230ad0aa1587e5e152ffb2112f0d1b95c53112d2c96fcd6",
+      "bytes": 12680
+    },
+    "artifacts/lab3090-native-memory-v1/attempt-3/normal-pending/write/command.json": {
+      "sha256": "9b4510574cf705d7c722d920a3ce6916bea8e5d84de1678c37088d61dd8e4972",
+      "bytes": 2864
+    },
+    "artifacts/lab3090-native-memory-v1/attempt-3/normal-pending/write/events.jsonl": {
+      "sha256": "4e1182b108bdda8ab7bd5a15fff5344f95f54009ad0761a3814a7cbb59e19924",
+      "bytes": 4422
+    },
+    "artifacts/lab3090-native-memory-v1/attempt-3/normal-pending/write/result.json": {
+      "sha256": "8f2146ccfafaf479e908e6a5b7fe50158b5a0c16901b5f85a5d813964dc7df82",
+      "bytes": 260
+    },
+    "artifacts/lab3090-native-memory-v1/attempt-3/normal-pending/write/stderr.log": {
+      "sha256": "1aa26269eb1cc57f86b235a03cda53c004edb5b1e9fc99d4da4f00843293d721",
+      "bytes": 39
+    },
+    "artifacts/lab3090-native-memory-v1/attempt-3/normal-pending/write/syscall-audit.json": {
+      "sha256": "3dc863f10ff29629685a34a22678f7039939d3603a2521de1044968f2d631a49",
+      "bytes": 176
+    },
+    "artifacts/lab3090-native-memory-v1/attempt-3/normal-pending/write/wire-evidence.json": {
+      "sha256": "6b13f72c2512783cfd610c79f918bdbc814145ef7d2ff8bd960f63ba8db3141b",
+      "bytes": 24491
+    },
+    "artifacts/lab3090-native-memory-v1/attempt-3/normal-stored/recall/command.json": {
+      "sha256": "219f4c2a273357eebbc39700da2b5166bee549394f665a7c6d6c61a5bf4712cd",
+      "bytes": 2824
+    },
+    "artifacts/lab3090-native-memory-v1/attempt-3/normal-stored/recall/events.jsonl": {
+      "sha256": "7f96011edf557ff387522ad716242c98f295d4a888f4a7c2223477dabbd9eaa5",
+      "bytes": 1815
+    },
+    "artifacts/lab3090-native-memory-v1/attempt-3/normal-stored/recall/result.json": {
+      "sha256": "d0efcda085fc996f1a8377afb79d55ac3b0fb69ac30c36ea118137dfe4e37680",
+      "bytes": 224
+    },
+    "artifacts/lab3090-native-memory-v1/attempt-3/normal-stored/recall/stderr.log": {
+      "sha256": "1aa26269eb1cc57f86b235a03cda53c004edb5b1e9fc99d4da4f00843293d721",
+      "bytes": 39
+    },
+    "artifacts/lab3090-native-memory-v1/attempt-3/normal-stored/recall/syscall-audit.json": {
+      "sha256": "da7067d2b64604a8ef4a2e57db51aad56aec385a2845d18bf2b55a8284f9aebe",
+      "bytes": 176
+    },
+    "artifacts/lab3090-native-memory-v1/attempt-3/normal-stored/recall/wire-evidence.json": {
+      "sha256": "e07a66c2d4f8bb7d0d7b295f7e93b46ef484228f892c22fc6bed9a96e2d1fa2b",
+      "bytes": 12876
+    },
+    "artifacts/lab3090-native-memory-v1/attempt-3/normal-stored/write/command.json": {
+      "sha256": "fcacc89a226d601e15ad581aaf1051024422864ad5d438e7c8ef4ba84a0bc857",
+      "bytes": 2863
+    },
+    "artifacts/lab3090-native-memory-v1/attempt-3/normal-stored/write/events.jsonl": {
+      "sha256": "09318cc0a379790bba333a7e378a074920b332411b4af07047862079ad6f3ede",
+      "bytes": 4455
+    },
+    "artifacts/lab3090-native-memory-v1/attempt-3/normal-stored/write/result.json": {
+      "sha256": "8f2146ccfafaf479e908e6a5b7fe50158b5a0c16901b5f85a5d813964dc7df82",
+      "bytes": 260
+    },
+    "artifacts/lab3090-native-memory-v1/attempt-3/normal-stored/write/stderr.log": {
+      "sha256": "1aa26269eb1cc57f86b235a03cda53c004edb5b1e9fc99d4da4f00843293d721",
+      "bytes": 39
+    },
+    "artifacts/lab3090-native-memory-v1/attempt-3/normal-stored/write/syscall-audit.json": {
+      "sha256": "2761b3aad63ca19bf37d0b331096853634c6c7bd0ac4497caa1f5c81f0f22c32",
+      "bytes": 176
+    },
+    "artifacts/lab3090-native-memory-v1/attempt-3/normal-stored/write/wire-evidence.json": {
+      "sha256": "248f2a0660a45064ccfbba8090217f5ef718a8bc8e2c462c5a8c6213e57e2869",
+      "bytes": 24524
+    },
+    "artifacts/lab3090-native-memory-v1/attempt-3/report.json": {
+      "sha256": "e26ad6a7e771de74dfecea951b4b1136a5cf97c0703403bdd905fade08ff0d2d",
+      "bytes": 14919
+    },
+    "artifacts/lab3090-native-memory-v1/client/binary-sha256.json": {
+      "sha256": "f4c6acc4e53391badfabaa5bdd659cf57a10f1d2dba319f22e18767272b69183",
+      "bytes": 156
+    },
+    "artifacts/lab3090-native-memory-v1/client/exec-help.txt": {
+      "sha256": "0e82cfde0122715250e93dc65866caa956b2ac5b9d0b20ec4ad4f9e81486509e",
+      "bytes": 4031
+    },
+    "artifacts/lab3090-native-memory-v1/client/features.txt": {
+      "sha256": "c16babde5527a6c99534a9664a9e993980ff6556b61bf82ffc29117eeb5ac25c",
+      "bytes": 9192
+    },
+    "artifacts/lab3090-native-memory-v1/client/install-report.json": {
+      "sha256": "ac8e9f51399f7c227a49c6c7d632ebeb4e2c7cb3af39621ac4df1066bc4a9beb",
+      "bytes": 353
+    },
+    "artifacts/lab3090-native-memory-v1/client/install.log": {
+      "sha256": "f6b3015540a8faaeab0d34bc590d69ab23310b3000fe44bf48780dbb883292f1",
+      "bytes": 24
+    },
+    "artifacts/lab3090-native-memory-v1/client/package-lock.json": {
+      "sha256": "e743fd4ba91ac217fb4402b2256b69fd869802e54333bebbef9d7690889607bb",
+      "bytes": 4202
+    },
+    "artifacts/lab3090-native-memory-v1/client/version.txt": {
+      "sha256": "5efa0283757c66156d45d082b4e2e8afb881de3a97862bc03aed7fb34f45df7b",
+      "bytes": 18
+    },
+    "artifacts/lab3090-native-memory-v1/duplication-final.json": {
+      "sha256": "67d7299694f5e8aabe391d9f0c0ffef1bb9f4f8c5d8eca61a109603592d73685",
+      "bytes": 63967
+    },
+    "artifacts/lab3090-native-memory-v1/duplication.json": {
+      "sha256": "b72d1828172adaeabaaf5eb3113d9370ac186affdb16e2fbcc2dd4bda4218051",
+      "bytes": 63967
+    },
+    "artifacts/lab3090-native-memory-v1/environment.json": {
+      "sha256": "bd233a7f313e2330691d0fa1b6125fbcf9ccc1b3655a176b1b79ee33ce24b9d7",
+      "bytes": 287
+    },
+    "artifacts/lab3090-native-memory-v1/execution.json": {
+      "sha256": "ac0ee046d6993572b41fd4729c24bef8e2d1c7fd7b67041f047d53e879bf225c",
+      "bytes": 966
+    },
+    "artifacts/lab3090-native-memory-v1/native-attempt-2.log": {
+      "sha256": "7e765912e017e00dba492980c24776d82917568329da33a8bfe34ca273064aed",
+      "bytes": 1422
+    },
+    "artifacts/lab3090-native-memory-v1/native-attempt-3.log": {
+      "sha256": "a869c2918b1c884255b610055a5de9b4b7322e1ee07f96b9315fd5a422721c02",
+      "bytes": 7645
+    },
+    "artifacts/lab3090-native-memory-v1/parent-progress.json": {
+      "sha256": "6125e1f69872c9dfa46d70c8579093e0c65d4e3416128c17aa45b8c266e81592",
+      "bytes": 1874
+    },
+    "artifacts/lab3090-native-memory-v1/source-manifest.json": {
+      "sha256": "90b487f86262930552bc56a19a53e4d7d9b842fe3e5e3ed84b4d3f99b69dd52b",
+      "bytes": 4792
+    },
+    "artifacts/lab3090-native-memory-v1/source-snapshot.tar.gz": {
+      "sha256": "a71e4da8064180374feab2d9429b1a14e741c457527fb0ff6085ad37cd808bf6",
+      "bytes": 63274
+    },
+    "artifacts/lab3090-native-memory-v1/test-results-final.json": {
+      "sha256": "42642e303606ebd2cf68d5fd2d26462533d222067384b64ae8f57dae8daabe75",
+      "bytes": 14105
+    },
+    "artifacts/lab3090-native-memory-v1/test-results-passed.json": {
+      "sha256": "26149d18d9125787fbe8f7c4e8d0150e12ea4d0739feabce54fadb3f4e9adce8",
+      "bytes": 14102
+    },
+    "artifacts/lab3090-native-memory-v1/test-results.json": {
+      "sha256": "c63668de5f7573c1951d53499d41659887dd61df1eb928dedd4b65437683029c",
+      "bytes": 14108
+    },
+    "artifacts/lab3090-native-memory-v1/unit-checks-final.log": {
+      "sha256": "3c9f77b1823d4e716479cf82180ff689439a0b5c877bbc2144cda83ab073ff78",
+      "bytes": 1701
+    },
+    "artifacts/lab3090-native-memory-v1/unit-checks-passed.log": {
+      "sha256": "6ad64c044a8e6e5a202df5517518153b4b0322c6bc10fb59250cccb7f24e1761",
+      "bytes": 681
+    },
+    "artifacts/lab3090-native-memory-v1/unit-checks.log": {
+      "sha256": "fa4b06bc94182ed9c8d931e7627cd353fc13b24a9733a5c1141813ee48ead4ab",
+      "bytes": 4703
+    },
+    "artifacts/lab3090-native-memory-v1/docs-validation.json": {
+      "sha256": "bdddc8cff4c3b5811e706a6f642abee2d3a5cf3f2dd6a461f8da51324236c08e",
+      "bytes": 469
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "kind": "NATIVE_CODEX_SCRIPTED_PROTOCOL_NOT_BENCHMARK",
+  "inference_calls": 0,
+  "thinking": false,
+  "started_at": "2026-09-13T15:28:01.531158+00:00",
+  "cases": [],
+  "codex_version": "codex-cli 0.154.0",
+  "status": "FAIL",
+  "error": "",
+  "completed_at": "2026-09-13T15:28:05.392055+00:00",
+  "source_sha256": {
+    "scripts/verify_native_memory.py": "0fbe8d988e1b5b2b0b44d1cd11516192bc813e1ac0911036fb84f4fe052e2764",
+    "benchmarks/native_memory.py": "a5796e53f7e423bdbb458b5377a7b47e75b61180f0d6bc72b656127a4ef0135c",
+    "benchmarks/memory_runtime.py": "dbc57af28796daea61bc95b4db921e855d104b57b6266e1473497a8ac1795271"
+  }
+}

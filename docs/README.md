@@ -10,6 +10,8 @@
 
 后续 [产品记忆存储适配](05-validation/memory-runtime-adapter.md)已通过103项检查，包含独立进程读取、隔离和来源保留；原生 Agent 与语义效果评估仍待完成。
 
+[原生 Codex 记忆接入](05-validation/native-codex-memory.md)已通过6个真实 CLI 进程的 MCP/存储验证及37项检查；模型回复为预设数据，没有新 benchmark 分数。后续按用户要求接入 DeepSeek Harness 与关闭思考的 deepseek-flash。
+
 ## 30类文档
 
 | 编号 | 文档 | Owner | 状态 |

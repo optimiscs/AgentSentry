@@ -1,0 +1,340 @@
+[
+  {
+    "model": "agentsentry-native-protocol-fixture",
+    "reasoning": {
+      "effort": "none"
+    },
+    "tools": [
+      {
+        "type": "function",
+        "name": "list_mcp_resources",
+        "description": "Lists resources provided by MCP servers. Resources allow servers to share data that provides context to language models, such as files, database schemas, or application-specific information. Prefer resources over web search when possible.",
+        "strict": false,
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "cursor": {
+              "type": "string",
+              "description": "Opaque cursor from a previous list_mcp_resources call; omit for the first page."
+            },
+            "server": {
+              "type": "string",
+              "description": "MCP server name. Omit to list resources from every configured server."
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      {
+        "type": "function",
+        "name": "list_mcp_resource_templates",
+        "description": "Lists resource templates provided by MCP servers. Parameterized resource templates allow servers to share data that takes parameters and provides context to language models, such as files, database schemas, or application-specific information. Prefer resource templates over web search when possible.",
+        "strict": false,
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "cursor": {
+              "type": "string",
+              "description": "Opaque cursor from a previous list_mcp_resource_templates call; omit for the first page."
+            },
+            "server": {
+              "type": "string",
+              "description": "MCP server name. Omit to list resource templates from every configured server."
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      {
+        "type": "function",
+        "name": "read_mcp_resource",
+        "description": "Read a specific resource from an MCP server given the server name and resource URI.",
+        "strict": false,
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "server": {
+              "type": "string",
+              "description": "MCP server name exactly as configured. Must match the 'server' field returned by list_mcp_resources."
+            },
+            "uri": {
+              "type": "string",
+              "description": "Resource URI to read. Must be one of the URIs returned by list_mcp_resources."
+            }
+          },
+          "required": [
+            "server",
+            "uri"
+          ],
+          "additionalProperties": false
+        }
+      },
+      {
+        "type": "function",
+        "name": "request_user_input",
+        "description": "Request user input for one to three short questions and wait for the response. This tool is only available in Plan mode.",
+        "strict": false,
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "questions": {
+              "type": "array",
+              "description": "Questions to show the user. Prefer 1 and do not exceed 3",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "header": {
+                    "type": "string",
+                    "description": "Short header label shown in the UI (12 or fewer chars)."
+                  },
+                  "id": {
+                    "type": "string",
+                    "description": "Stable identifier for mapping answers (snake_case)."
+                  },
+                  "options": {
+                    "type": "array",
+                    "description": "Provide 2-3 mutually exclusive choices. Put the recommended option first and suffix its label with \"(Recommended)\". Do not include an \"Other\" option in this list; the client will add a free-form \"Other\" option automatically.",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "description": {
+                          "type": "string",
+                          "description": "One short sentence explaining impact/tradeoff if selected."
+                        },
+                        "label": {
+                          "type": "string",
+                          "description": "User-facing label (1-5 words)."
+                        }
+                      },
+                      "required": [
+                        "label",
+                        "description"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
+                  "question": {
+                    "type": "string",
+                    "description": "Single-sentence prompt shown to the user."
+                  }
+                },
+                "required": [
+                  "id",
+                  "header",
+                  "question",
+                  "options"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          "required": [
+            "questions"
+          ],
+          "additionalProperties": false
+        }
+      },
+      {
+        "type": "namespace",
+        "name": "mcp__memory",
+        "description": "Use the memory tools for persistent facts. A pending write has not been stored. Only the operator can approve it.",
+        "tools": [
+          {
+            "type": "function",
+            "name": "recall_memory",
+            "description": "Read all active memories through the AgentSentry read policy.",
+            "strict": false,
+            "parameters": {
+              "type": "object",
+              "properties": {}
+            }
+          }
+        ]
+      }
+    ],
+    "request_sha256": "e56191525d682b0f9263241e05783509f303f3177bc5d19b46efe8ef3e7ddcec",
+    "instruction_chars": 16979,
+    "tool_items": []
+  },
+  {
+    "model": "agentsentry-native-protocol-fixture",
+    "reasoning": {
+      "effort": "none"
+    },
+    "tools": [
+      {
+        "type": "function",
+        "name": "list_mcp_resources",
+        "description": "Lists resources provided by MCP servers. Resources allow servers to share data that provides context to language models, such as files, database schemas, or application-specific information. Prefer resources over web search when possible.",
+        "strict": false,
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "cursor": {
+              "type": "string",
+              "description": "Opaque cursor from a previous list_mcp_resources call; omit for the first page."
+            },
+            "server": {
+              "type": "string",
+              "description": "MCP server name. Omit to list resources from every configured server."
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      {
+        "type": "function",
+        "name": "list_mcp_resource_templates",
+        "description": "Lists resource templates provided by MCP servers. Parameterized resource templates allow servers to share data that takes parameters and provides context to language models, such as files, database schemas, or application-specific information. Prefer resource templates over web search when possible.",
+        "strict": false,
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "cursor": {
+              "type": "string",
+              "description": "Opaque cursor from a previous list_mcp_resource_templates call; omit for the first page."
+            },
+            "server": {
+              "type": "string",
+              "description": "MCP server name. Omit to list resource templates from every configured server."
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      {
+        "type": "function",
+        "name": "read_mcp_resource",
+        "description": "Read a specific resource from an MCP server given the server name and resource URI.",
+        "strict": false,
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "server": {
+              "type": "string",
+              "description": "MCP server name exactly as configured. Must match the 'server' field returned by list_mcp_resources."
+            },
+            "uri": {
+              "type": "string",
+              "description": "Resource URI to read. Must be one of the URIs returned by list_mcp_resources."
+            }
+          },
+          "required": [
+            "server",
+            "uri"
+          ],
+          "additionalProperties": false
+        }
+      },
+      {
+        "type": "function",
+        "name": "request_user_input",
+        "description": "Request user input for one to three short questions and wait for the response. This tool is only available in Plan mode.",
+        "strict": false,
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "questions": {
+              "type": "array",
+              "description": "Questions to show the user. Prefer 1 and do not exceed 3",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "header": {
+                    "type": "string",
+                    "description": "Short header label shown in the UI (12 or fewer chars)."
+                  },
+                  "id": {
+                    "type": "string",
+                    "description": "Stable identifier for mapping answers (snake_case)."
+                  },
+                  "options": {
+                    "type": "array",
+                    "description": "Provide 2-3 mutually exclusive choices. Put the recommended option first and suffix its label with \"(Recommended)\". Do not include an \"Other\" option in this list; the client will add a free-form \"Other\" option automatically.",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "description": {
+                          "type": "string",
+                          "description": "One short sentence explaining impact/tradeoff if selected."
+                        },
+                        "label": {
+                          "type": "string",
+                          "description": "User-facing label (1-5 words)."
+                        }
+                      },
+                      "required": [
+                        "label",
+                        "description"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
+                  "question": {
+                    "type": "string",
+                    "description": "Single-sentence prompt shown to the user."
+                  }
+                },
+                "required": [
+                  "id",
+                  "header",
+                  "question",
+                  "options"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          "required": [
+            "questions"
+          ],
+          "additionalProperties": false
+        }
+      },
+      {
+        "type": "namespace",
+        "name": "mcp__memory",
+        "description": "Use the memory tools for persistent facts. A pending write has not been stored. Only the operator can approve it.",
+        "tools": [
+          {
+            "type": "function",
+            "name": "recall_memory",
+            "description": "Read all active memories through the AgentSentry read policy.",
+            "strict": false,
+            "parameters": {
+              "type": "object",
+              "properties": {}
+            }
+          }
+        ]
+      }
+    ],
+    "request_sha256": "1380902eda70ff72422b4143fdedb1b253886045265927732b9d2db51ff9deb3",
+    "instruction_chars": 16979,
+    "tool_items": [
+      {
+        "type": "function_call",
+        "id": "fc_0",
+        "name": "recall_memory",
+        "namespace": "mcp__memory",
+        "arguments": "{}",
+        "call_id": "call_0"
+      },
+      {
+        "type": "function_call_output",
+        "id": "fco_01a09b64-2fbe-76a1-8edd-10574c409058",
+        "call_id": "call_0",
+        "output": [
+          {
+            "type": "input_text",
+            "text": "Wall time: 0.5811 seconds\nOutput:"
+          },
+          {
+            "type": "input_text",
+            "text": "{\n  \"memories\": [\n    {\n      \"memory_id\": \"mem_e389de409d234e7da79991d365239e19\",\n      \"status\": \"succeeded\",\n      \"decision\": \"ALLOW\",\n      \"output\": \"The project uses Python.\"\n    }\n  ]\n}"
+          }
+        ]
+      }
+    ]
+  }
+]

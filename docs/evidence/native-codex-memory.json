@@ -1,0 +1,13 @@
+{
+  "status": "NATIVE_CODEX_SCRIPTED_PROTOCOL_PASS",
+  "model_inference_calls": 0,
+  "native_processes": 6,
+  "scripted_requests": 15,
+  "tests_passed": 37,
+  "test_seconds": 7.84,
+  "source_files": 44,
+  "actor_thinking": false,
+  "benchmark_accepted": false,
+  "report": "artifacts/lab3090-native-memory-v1/attempt-3/report.json",
+  "artifacts": "artifacts/lab3090-native-memory-v1/artifact-manifest.json"
+}

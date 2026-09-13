@@ -1,0 +1,13 @@
+{
+  "returncode": 1,
+  "scripted_requests": 1,
+  "auth_file_open_attempts": 0,
+  "ipv4_connect_addresses": [
+    "127.0.0.1"
+  ],
+  "reasoning": [
+    {
+      "effort": "none"
+    }
+  ]
+}

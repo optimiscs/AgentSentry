@@ -1,0 +1,19 @@
+[09/13/26 23:28:02] INFO     StreamableHTTP       streamable_http_manager.py:164
+                             session manager                                    
+                             started                                            
+[09/13/26 23:28:04] INFO     Terminating session: None    streamable_http.py:831
+                    INFO     Terminating session: None    streamable_http.py:831
+                    INFO     Processing request of type            server.py:733
+                             ListToolsRequest                                   
+                    INFO     Terminating session: None    streamable_http.py:831
+[09/13/26 23:28:05] INFO     StreamableHTTP       streamable_http_manager.py:168
+                             session manager                                    
+                             shutting down                                      
+{"status": "FAIL", "kind": "NATIVE_CODEX_SCRIPTED_PROTOCOL_NOT_BENCHMARK", "error": "", "inference_calls": 0}
+Traceback (most recent call last):
+  File "/home/moxu/AgentSentry/scripts/verify_native_memory.py", line 178, in <module>
+    main()
+  File "/home/moxu/AgentSentry/scripts/verify_native_memory.py", line 143, in main
+    assert len(backend.calls) == 1 and backend.calls[0]["result"]["status"] == expected_status
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

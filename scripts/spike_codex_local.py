@@ -114,7 +114,8 @@ def main():
             "project_doc_max_bytes": 0,
             "model_context_window": 32768,
             "model_auto_compact_token_limit": 28000,
-            "model_reasoning_effort": "low",
+            "model_reasoning_effort": "none",
+            "model_supports_reasoning_summaries": False,
             "hooks": hooks,
         }
         for key, value in overrides.items():

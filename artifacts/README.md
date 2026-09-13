@@ -8,6 +8,8 @@
 
 新增 [记忆存储适配批次](lab3090-memory-runtime-v1/artifact-manifest.json)：40文件源码快照、103项检查及前期失败记录、环境和重复审计。只包含固定样本的产品存储测试证据，不含状态数据库、私钥或模型评测分数。[范围说明](../docs/05-validation/memory-runtime-adapter.md)
 
+新增 [原生 Codex MCP 记忆验证](lab3090-native-memory-v1/artifact-manifest.json)：6个真实 CLI 进程、15次预设响应、37项检查、44文件源码包及前期失败。模型端没有推理，不作为防护分数。[范围说明](../docs/05-validation/native-codex-memory.md)
+
 - `benchmarks/*/*/{manifest,metrics}.json`：本地已回收的场景清单、配置、统计和状态。包含历史及小样，须按各自scope解读。
 - `benchmarks/frozen-*/source.tar.gz`及environment.json：相应运行使用的第一方源码和环境记录。
 - `development/*/source-candidate.tar.gz`、候选清单和补丁：隔离研究版本的源码。`asb-protocol-v2`只通过部分工程检查，没有新模型结果。

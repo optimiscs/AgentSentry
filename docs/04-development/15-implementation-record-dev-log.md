@@ -348,3 +348,11 @@ Lab3090 实际通过 149 项相关单测、2 个 subtest、16 项 AgentDojo 与 
 从组合候选原样导入共享模型传输及测试，主树也显式默认关闭思考；运行中的冻结代码未变。71 个首方 Python 文件的精确/规范化重复覆盖仍为796/1845，40文件复现包核对通过。本轮没有实际模型或 MPBench 语义裁判调用，未获得新的 ASR/RSR。22:59 full1046 实查为469/395条已记录，全部有效、零错误，两个原有子进程身份匹配。[机器证据](../evidence/memory-runtime-adapter.json)
 
 23:09 后续观察：baseline476条中有2条步数耗尽错误，输入参考423条仍无错误。两条失败均用满15次模型调用，轨迹含重复查询不存在的联系人；保留为未知并保存逐行哈希，没有修改预算、重启服务或覆盖结果。两个原进程继续运行。[全量运行诊断](../05-validation/context-filter-v5-review.md)
+
+## DL-046：原生 Codex MCP 记忆验证及 DeepSeek 接入准备
+
+2026-09-13。Lab3090 独立安装 Codex CLI 0.154.0，新增会话绑定的 MCP 记忆适配与原生验证程序。6个真实 CLI 进程执行了正常持久化、ASK 未写入、恶意内容隔离三个场景；两阶段重建 Runtime，原文不进入后续会话。模型回复为预设数据，共15次响应，不能作为 ASR/RSR 或模型效用。37项检查通过，命名空间、客户端调用审批及测试协议预期的失败均保留。[完整记录](../05-validation/native-codex-memory.md)
+
+原生请求全部 reasoning.effort=none；主树旧 Codex 冒烟脚本也关闭思考。冻结的 v5/组合候选源码及活动 Qwen 服务未修改。23:38全量原进程仍运行，baseline541条含3个错误、输入参考473条含4个错误，均保留为未知。
+
+用户新增官方 DeepSeek Harness / deepseek-flash 真实评估要求。密钥写入 Lab3090 项目 .env，权限600且 Git 忽略。官方 models 接口确认 deepseek-flash；一次12-token连通性请求成功且无 reasoning 内容。官方 SDK 0.1.5rc1 已在独立环境安装，固定上游源码 c291e7961a515f6d7af9304e7fd1d257929aef26 用于接口核验；尚未完成真实 Harness 数据集评估。后续先运行无 AgentSentry 的 Flash 筛选成功攻击，冻结挑战集，分别保留开发和独立测试，以及原始集和正常任务分母。

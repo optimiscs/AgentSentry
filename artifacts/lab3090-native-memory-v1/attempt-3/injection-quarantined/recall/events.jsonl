@@ -1,0 +1,9 @@
+{"type":"thread.started","thread_id":"01a09b64-621f-7a03-b93f-acd273ae980e"}
+{"type":"item.completed","item":{"id":"item_0","type":"error","message":"Under-development features enabled: skip_host_skill_discovery. Under-development features are incomplete and may behave unpredictably. To suppress this warning, set `suppress_unstable_features_warning = true` in /home/moxu/.codex/config.toml."}}
+{"type":"item.completed","item":{"id":"item_1","type":"error","message":"Model metadata for `agentsentry-native-protocol-fixture` not found. Defaulting to fallback metadata; this can degrade performance and cause issues."}}
+{"type":"item.completed","item":{"id":"item_2","type":"error","message":"Skill descriptions were shortened to fit the skills context budget. Codex can still see every skill, but some descriptions are shorter. Disable unused skills or plugins to leave more room for the rest."}}
+{"type":"turn.started"}
+{"type":"item.started","item":{"id":"item_3","type":"mcp_tool_call","server":"memory","tool":"recall_memory","arguments":{},"result":null,"error":null,"status":"in_progress"}}
+{"type":"item.completed","item":{"id":"item_3","type":"mcp_tool_call","server":"memory","tool":"recall_memory","arguments":{},"result":{"content":[{"type":"text","text":"{\n  \"memories\": []\n}"}],"structured_content":null},"error":null,"status":"completed"}}
+{"type":"item.completed","item":{"id":"item_4","type":"agent_message","text":"Protocol fixture complete."}}
+{"type":"turn.completed","usage":{"input_tokens":2,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":2,"reasoning_output_tokens":0}}

@@ -1,0 +1,7 @@
+{"type":"thread.started","thread_id":"01a09b5f-5c67-72d3-bfb0-958fb4f0c692"}
+{"type":"item.completed","item":{"id":"item_0","type":"error","message":"Under-development features enabled: skip_host_skill_discovery. Under-development features are incomplete and may behave unpredictably. To suppress this warning, set `suppress_unstable_features_warning = true` in /home/moxu/.codex/config.toml."}}
+{"type":"item.completed","item":{"id":"item_1","type":"error","message":"Model metadata for `agentsentry-native-protocol-fixture` not found. Defaulting to fallback metadata; this can degrade performance and cause issues."}}
+{"type":"item.completed","item":{"id":"item_2","type":"error","message":"Skill descriptions were shortened to fit the skills context budget. Codex can still see every skill, but some descriptions are shorter. Disable unused skills or plugins to leave more room for the rest."}}
+{"type":"turn.started"}
+{"type":"error","message":"{\"error\":\"FIXTURE_EXPECTED_TOOL_MISSING\",\"suffix\":\"read_external_context\"}"}
+{"type":"turn.failed","error":{"message":"{\"error\":\"FIXTURE_EXPECTED_TOOL_MISSING\",\"suffix\":\"read_external_context\"}"}}
