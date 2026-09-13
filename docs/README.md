@@ -97,7 +97,7 @@
 
 [清洗模式与单次调用候选对照](05-validation/context-filter-mode-comparison.md)：同一批选定输入的正常误删 8/16→0/16，32 条无处理错误；不能据片段删除声明 ASR 为零。两组各 97 个正常任务复测已结束，均完成 89/97；仍有错误和验证码误删，未验收。
 
-[历次评估、代码修改与前后变化](05-validation/evaluation-history-and-code-changes.md)：汇总 22 组真实模型 benchmark 配对，以及固定输入诊断、离线协议回放、CPU/模型速度测试；按版本区分收益、退化与未运行项。
+[历次评估、代码修改与前后变化](05-validation/evaluation-history-and-code-changes.md)：汇总 24 组真实模型 benchmark 配对，并附效果/延迟折线图和可重建数据，以及固定输入诊断、离线协议回放、CPU/模型速度测试；按版本区分收益、退化与未运行项。
 
 [v5 清洗与全量运行](05-validation/context-filter-v5-review.md)：新增邮件固定输入全部保留；35 条/组原生小样均有效，正常完成均 19/19、攻击成功 3/16→0/16。全量 1046 条/组已启动，未填写最终分数；任务与防护默认关闭思考，仍为参考模式。
 

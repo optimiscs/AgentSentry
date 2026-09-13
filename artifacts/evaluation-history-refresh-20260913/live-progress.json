@@ -1,0 +1,54 @@
+{
+  "observed_at_utc": "2026-09-13T15:46:56.031763+00:00",
+  "scope": "IN_PROGRESS_NOT_FINAL_SCORE",
+  "arms": {
+    "baseline": {
+      "progress": {
+        "updated_at": "2026-09-13T15:46:50.747979+00:00",
+        "overall": "NOT_ACCEPTED",
+        "batch_stopped": false,
+        "runs": [
+          {
+            "run": "artifacts/benchmarks/agentdojo/agentdojo-lab3090-qwen35-9b-context-filter-v5-full1046-baseline-s0",
+            "status": "RUNNING",
+            "planned": 1046,
+            "recorded": 565,
+            "valid": 562,
+            "invalid_or_error": 3,
+            "partial_line_pending": false
+          }
+        ]
+      },
+      "controller_status": "RUNNING",
+      "pid": 2668533,
+      "live_identity_matches": true,
+      "actor_thinking": false,
+      "guard_thinking": false,
+      "final_metrics_exists": false
+    },
+    "reference": {
+      "progress": {
+        "updated_at": "2026-09-13T15:46:50.684783+00:00",
+        "overall": "NOT_ACCEPTED",
+        "batch_stopped": false,
+        "runs": [
+          {
+            "run": "artifacts/benchmarks/agentdojo/agentdojo-lab3090-qwen35-9b-context-filter-v5-full1046-promptarmor_adapted-s0",
+            "status": "RUNNING",
+            "planned": 1046,
+            "recorded": 481,
+            "valid": 475,
+            "invalid_or_error": 6,
+            "partial_line_pending": false
+          }
+        ]
+      },
+      "controller_status": "RUNNING",
+      "pid": 2668532,
+      "live_identity_matches": true,
+      "actor_thinking": false,
+      "guard_thinking": false,
+      "final_metrics_exists": false
+    }
+  }
+}
