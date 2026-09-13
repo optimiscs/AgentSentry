@@ -1,0 +1,194 @@
+{
+  "commit": "28d07cf6a62b6d32eab824bb5ab9863d160a1e89",
+  "counting": "Tracked first-party source; physical and nonblank lines, both include comments/docstrings. Generated bundles, dependencies, docs, data, historical artifacts and deployment/config excluded.",
+  "groups": {
+    "backend": {
+      "files": 30,
+      "lines": 4517,
+      "nonblank_lines": 4168
+    },
+    "frontend": {
+      "files": 4,
+      "lines": 47,
+      "nonblank_lines": 46
+    },
+    "benchmarks": {
+      "files": 7,
+      "lines": 1538,
+      "nonblank_lines": 1440
+    },
+    "scripts": {
+      "files": 33,
+      "lines": 4379,
+      "nonblank_lines": 4081
+    },
+    "tests": {
+      "files": 17,
+      "lines": 2465,
+      "nonblank_lines": 2162
+    }
+  },
+  "total": {
+    "files": 91,
+    "lines": 12946,
+    "nonblank_lines": 11897
+  },
+  "backend_by_folder": {
+    "__init__.py": {
+      "files": 1,
+      "lines": 3,
+      "nonblank_lines": 2
+    },
+    "adapters": {
+      "files": 7,
+      "lines": 826,
+      "nonblank_lines": 757
+    },
+    "api": {
+      "files": 2,
+      "lines": 396,
+      "nonblank_lines": 348
+    },
+    "cli.py": {
+      "files": 1,
+      "lines": 64,
+      "nonblank_lines": 55
+    },
+    "config.py": {
+      "files": 1,
+      "lines": 89,
+      "nonblank_lines": 82
+    },
+    "context": {
+      "files": 2,
+      "lines": 242,
+      "nonblank_lines": 228
+    },
+    "demo.py": {
+      "files": 1,
+      "lines": 94,
+      "nonblank_lines": 87
+    },
+    "evaluation.py": {
+      "files": 1,
+      "lines": 100,
+      "nonblank_lines": 92
+    },
+    "gateway": {
+      "files": 4,
+      "lines": 1605,
+      "nonblank_lines": 1547
+    },
+    "intent": {
+      "files": 2,
+      "lines": 186,
+      "nonblank_lines": 169
+    },
+    "policy": {
+      "files": 3,
+      "lines": 357,
+      "nonblank_lines": 325
+    },
+    "schemas": {
+      "files": 2,
+      "lines": 207,
+      "nonblank_lines": 165
+    },
+    "trace": {
+      "files": 3,
+      "lines": 348,
+      "nonblank_lines": 311
+    }
+  },
+  "candidate_only_files": [
+    {
+      "path": "benchmarks/agentdojo_catalog.py",
+      "files": 1,
+      "lines": 89,
+      "nonblank_lines": 80
+    },
+    {
+      "path": "benchmarks/asb_memory.py",
+      "files": 1,
+      "lines": 79,
+      "nonblank_lines": 66
+    },
+    {
+      "path": "benchmarks/asb_native.py",
+      "files": 1,
+      "lines": 211,
+      "nonblank_lines": 188
+    },
+    {
+      "path": "benchmarks/asb_pipeline.py",
+      "files": 1,
+      "lines": 338,
+      "nonblank_lines": 313
+    },
+    {
+      "path": "benchmarks/check_asb_pipeline.py",
+      "files": 1,
+      "lines": 296,
+      "nonblank_lines": 270
+    },
+    {
+      "path": "benchmarks/check_task_plan_pipeline.py",
+      "files": 1,
+      "lines": 223,
+      "nonblank_lines": 202
+    },
+    {
+      "path": "benchmarks/prepare_asb_memory.py",
+      "files": 1,
+      "lines": 218,
+      "nonblank_lines": 208
+    },
+    {
+      "path": "benchmarks/probe_asb_planning.py",
+      "files": 1,
+      "lines": 81,
+      "nonblank_lines": 73
+    },
+    {
+      "path": "benchmarks/run_asb.py",
+      "files": 1,
+      "lines": 311,
+      "nonblank_lines": 296
+    },
+    {
+      "path": "src/agentsentry/intent/literal_plan.py",
+      "files": 1,
+      "lines": 199,
+      "nonblank_lines": 177
+    },
+    {
+      "path": "src/agentsentry/intent/task_plan.py",
+      "files": 1,
+      "lines": 742,
+      "nonblank_lines": 686
+    },
+    {
+      "path": "tests/test_literal_plan.py",
+      "files": 1,
+      "lines": 301,
+      "nonblank_lines": 265
+    },
+    {
+      "path": "tests/test_task_plan.py",
+      "files": 1,
+      "lines": 587,
+      "nonblank_lines": 514
+    }
+  ],
+  "candidate_task_planner": {
+    "files": 1,
+    "lines": 742,
+    "nonblank_lines": 686
+  },
+  "frozen_experimental_tree": {
+    "files": 85,
+    "lines": 14456,
+    "nonblank_lines": 13273,
+    "note": "Alternative frozen tree, shares most code with main; do not add to main total."
+  }
+}

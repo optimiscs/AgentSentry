@@ -57,6 +57,8 @@
 
 [核心机制与代码导读](03-architecture/core-innovation-and-code-guide.md)按活动实现、接入范围与研究候选分别说明，并提供源码入口和实验局限。
 
+[v5 证据格式诊断与代码量](05-validation/task-contract-v5-diagnostic.md)：证据清单由代码生成，修复两条解码协议错误；仍存在编造日期和遗漏正文核验。仅固定轨迹诊断，未产生新 benchmark 成绩，未进入产品主线。
+
 接入范围与后续路线：[主流编程 Agent 接入矩阵](03-architecture/framework-integration-matrix.md)（Codex / Claude Code 优先，产品端到端验收未执行）。
 
 01立项→04PRD→07威胁模型/08安全要求→10RFC/12API/13Policy→06RTM→14计划→16/17测试评测→20发布/23部署/25监控。团队每周维护15实现记录、21变更记录与29债务清单。

@@ -1,0 +1,10 @@
+{
+  "archive_sha256": "2799ad0302a2bbf5e0330961d485c156c8f87a77723ef78aae31704ed9aa2df9",
+  "changed_files": [
+    "origin-manifest.json",
+    "src/agentsentry/intent/task_plan.py",
+    "tests/test_task_plan.py"
+  ],
+  "status": "FROZEN_FOR_DEVELOPMENT_PILOT",
+  "promoted_to_product": false
+}

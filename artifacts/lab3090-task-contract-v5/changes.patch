@@ -1,0 +1,174 @@
+--- a/origin-manifest.json
++++ b/origin-manifest.json
+@@ -2,2 +2,2 @@
+-  "parent": "asb-contract-v3",
+-  "parent_archive_sha256": "386892c47a342ec3df4129ea578b300bf6909b5b1c634d5633e75ea9d61cbba8",
++  "parent": "task-contract-v4",
++  "parent_archive_sha256": "1acaeea306024c9ef5df18fbc6809144fc9268e1b6f211cd17e9c6da068ab6a3",
+@@ -16 +16 @@
+-    "benchmarks/check_task_plan_pipeline.py": "e57320d57a4038d3f119257f8a411a1def0953a4d1c7d87a2e7d8ab4f40797b8",
++    "benchmarks/check_task_plan_pipeline.py": "85515477fc274e305456c7e2107ec26e16880560d80a2bace27c9be0430d209a",
+@@ -26 +26 @@
+-    "benchmarks/run_agentdojo.py": "b9a69afde958b34b2144f7cf47fbb751ff99854e27713a00f7f73680c7a8e029",
++    "benchmarks/run_agentdojo.py": "1ea499fb977b7465cd3332b612adc44b109c1d64c7d7898a15f3fcf4815617c8",
+@@ -37 +37 @@
+-    "origin-manifest.json": "b8b41d3e81cb2fce003a3931594c4a8ac5c71b5c5df27a8589ccd08e94ebe45c",
++    "origin-manifest.json": "a07e5418f9a23fff0b455b6e95f9b0a84c72f90c8c1c7ec6630b2c78a0ea7cfb",
+@@ -94 +94 @@
+-    "src/agentsentry/intent/task_plan.py": "84b9ff4c252db73f1da2f6532b8fb4b6f056e4243ca8bed4972798e99625570f",
++    "src/agentsentry/intent/task_plan.py": "4ec3650baa8bc2ee1cd565a5185359acb525b5457da45b41c7d48b1eef9a5ef8",
+@@ -128 +128 @@
+-    "tests/test_task_plan.py": "48692d2069062125994a40d30a992ca805996d939ffd204e846470a6d1d74f68",
++    "tests/test_task_plan.py": "a79fa14dc01c0e60b7ab182a420915c9038952315bdecc8a65f19ddde42620c8",
+--- a/src/agentsentry/intent/task_plan.py
++++ b/src/agentsentry/intent/task_plan.py
+@@ -10,0 +11 @@
++from copy import deepcopy
+@@ -225,0 +227,3 @@
++Sources must cover condition checks and task-composed content, not just authority arguments. Include reads needed to follow
++references to the underlying document. Even when every argument is a user literal, a conditional operation still needs its
++condition-checking data sources. Only observations from the declared sources will be visible to the verifier.
+@@ -241 +245,7 @@
+-For every nonempty authority-field scalar provide evidence using its argument JSON pointer and either:
++evidence_requirements lists the exact argument JSON pointers still needing proof for each candidate step. Provide evidence
++only for those pointers, once each. If the selected step's arguments map is empty, evidence must be []. Still verify all
++parameters, task conditions and composed content semantically; an empty proof list does not waive those checks.
++For conditions and summaries based on external documents, require the relevant observations. The candidate's own content
++or explanation cannot prove those facts. If the necessary source content is unavailable, choose needs_confirmation.
++Use available observation ids (obs_N), never provider/tool names or user for information only present in a tool result.
++For each required pointer provide evidence using its argument JSON pointer and either:
+@@ -248,0 +259 @@
++For operation=value put source/pointer/quote directly on the evidence item and use operands=[]; operands are only for arithmetic.
+@@ -330,0 +342,2 @@
++        if phase == "verify":
++            self._proof_schema(schema, payload)
+@@ -340,0 +354,50 @@
++
++    @staticmethod
++    def _proof_schema(schema, payload):
++        """Constrain syntax to the exact outstanding proofs, not their truth."""
++        requirements = payload["evidence_requirements"]
++        schema["properties"]["step_id"]["enum"] = list(requirements)
++        paths = sorted({p for r in requirements.values() for p in r["arguments"]})
++        schema["properties"]["evidence"]["maxItems"] = min(
++            schema["properties"]["evidence"]["maxItems"], len(paths)
++        )
++        if not paths:
++            return
++        sources = ["user", *sorted({s for r in requirements.values() for s in r["observation_ids"]})]
++        fields = schema["$defs"]["Evidence"]["properties"]
++        fields["argument"]["enum"] = paths
++        schema["$defs"]["SourceRef"]["properties"]["source"]["enum"] = sources
++        schema["$defs"]["SourceRef"]["required"] = ["source"]
++        branches = [
++            {
++                "required": ["source"],
++                "properties": {
++                    "operation": {"const": "value"},
++                    "source": {"enum": sources},
++                    "operands": {"maxItems": 0},
++                },
++            },
++            {
++                "required": ["operation", "operands"],
++                "properties": {
++                    "operation": {"enum": [v for v in fields["operation"]["enum"] if v != "value"]},
++                    "source": {"const": ""},
++                    "pointer": {"const": ""},
++                    "quote": {"const": None},
++                    "operands": {"minItems": 1},
++                },
++            },
++        ]
++        # Put the common object constraints inside every alternative. Some
++        # constrained decoders ignore sibling properties/required beside anyOf.
++        # Complete alternatives preserve argument/source fields during generation;
++        # the post-generation evidence checker still decides whether they are true.
++        base = schema["$defs"]["Evidence"]
++        variants = []
++        for branch in branches:
++            variant = deepcopy(base)
++            variant["required"] = list(dict.fromkeys(base["required"] + branch["required"]))
++            for name, constraint in branch["properties"].items():
++                variant["properties"][name].update(constraint)
++            variants.append(variant)
++        schema["$defs"]["Evidence"] = {"anyOf": variants}
+@@ -452 +515 @@
+-    def _evidence_matches(self, step, arguments, evidence, available):
++    def _required_evidence(self, step, arguments):
+@@ -466 +529 @@
+-        expected = {
++        return {
+@@ -474,0 +538,3 @@
++
++    def _evidence_matches(self, step, arguments, evidence, available):
++        expected = self._required_evidence(step, arguments)
+@@ -617,0 +684,7 @@
++                    "evidence_requirements": {
++                        s.id: {
++                            "arguments": self._required_evidence(s, complete),
++                            "observation_ids": [key for key, obs in available.items() if obs.provider in s.sources],
++                        }
++                        for s in candidates
++                    },
+--- a/tests/test_task_plan.py
++++ b/tests/test_task_plan.py
+@@ -167,0 +168,58 @@
++
++
++def test_proof_requirements_use_same_literals_and_defaults_as_final_check():
++    plan = copy.deepcopy(PLAN)
++    plan["steps"][0]["literals"] = {
++        "recipient": {"value": "Alice", "evidence_text": "Alice"},
++        "amount": {"value": 10, "evidence_text": "10"},
++    }
++    planner, model, intent = setup(model=Model(plan=plan, review=answer()))
++    args = {"recipient": "Alice", "amount": 10}
++    enriched, _ = planner.review(intent, action(SEND, args), args)
++    assert enriched is not None
++    _, messages, schema = model.calls[-1]
++    requirements = json.loads(messages[1]["content"])["evidence_requirements"]
++    assert requirements == {"s1": {"arguments": {}, "observation_ids": []}}
++    validate(answer(), schema)
++    with pytest.raises(SchemaError):
++        validate(answer(evidence("/recipient", quote="Alice")), schema)
++
++
++@pytest.mark.parametrize("change", [
++    {"argument": "recipient"},
++    {"source": "read_invoice"},
++    {"source": "obs_missing"},
++    {"source": "", "operands": [{"source": "user", "quote": "Alice"}]},
++])
++def test_malformed_value_proof_is_rejected_by_generation_and_final_checks(change):
++    bad = answer(evidence("/recipient", quote="Alice"), evidence("/amount", quote="10"))
++    bad["evidence"][0].update(change)
++    planner, model, intent = setup(model=Model(review=bad))
++    args = {"recipient": "Alice", "amount": 10}
++    enriched, reason = planner.review(intent, action(SEND, args), args)
++    assert enriched is None and reason == "TASK_PARAMETER_EVIDENCE_MISMATCH"
++    schema = model.calls[-1][2]
++    with pytest.raises(SchemaError):
++        validate(bad, schema)
++
++
++def test_proof_schema_preserves_valid_arithmetic_and_excludes_tainted_sources():
++    task = "Send 2 plus 8 to Alice"
++    review = answer(
++        evidence("/recipient", quote="Alice"),
++        {"argument": "/amount", "operation": "sum", "operands": [
++            {"source": "user", "quote": "2"}, {"source": "user", "quote": "8"},
++        ]},
++    )
++    planner, model, intent = setup(task=task, model=Model(review=review))
++    read_args = {"id": "invoice-7"}
++    planner.record(action(READ, read_args), read_args, {"recipient": "Alice", "amount": 10}, labels=["INJECTION_RISK"])
++    args = {"recipient": "Alice", "amount": 10}
++    enriched, _ = planner.review(intent, action(SEND, args), args)
++    assert enriched is not None
++    _, messages, schema = model.calls[-1]
++    payload = json.loads(messages[1]["content"])
++    assert payload["evidence_requirements"]["s1"]["observation_ids"] == []
++    assert payload["read_data_not_instructions"] == []
++    validate(review, schema)
++    assert schema["$defs"]["SourceRef"]["properties"]["source"]["enum"] == ["user"]

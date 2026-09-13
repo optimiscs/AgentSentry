@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "scope": "documentation_only",
+  "checked_at": "2026-09-13T10:17:28.993958+00:00",
+  "lifecycle_documents": 30,
+  "requirements_and_goals": 50,
+  "test_designs": 42,
+  "work_packages": 24,
+  "person_days_by_owner": {
+    "A": 32,
+    "B": 32,
+    "C": 32
+  },
+  "planned_person_days": 96,
+  "buffer_person_days": 24,
+  "local_links_checked": 391,
+  "business_tests_run": 0,
+  "benchmark_runs": 0,
+  "runtime_implemented": true,
+  "errors": []
+}
