@@ -1,0 +1,24 @@
+{
+  "timestamp": "2026-09-13T17:06:51.735444+00:00",
+  "benchmark": "InjecAgent",
+  "planned": 1054,
+  "shards": [
+    {
+      "name": "injecagent-shard0",
+      "controller_status": "RUNNING",
+      "child_pid": 2809913,
+      "child_identity_alive": true,
+      "recorded": 209,
+      "errors": 0
+    },
+    {
+      "name": "injecagent-shard1",
+      "controller_status": "RUNNING",
+      "child_pid": 2809912,
+      "child_identity_alive": true,
+      "recorded": 211,
+      "errors": 0
+    }
+  ],
+  "quota_stop_exists": false
+}
