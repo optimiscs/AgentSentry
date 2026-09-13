@@ -363,3 +363,5 @@ A02 的首批产品目标明确为 **Codex 与 Claude Code**。顺序为：固�
 A02 已完成 decision-only Hook API、单次 claim、独立审批与客户端结果关联、stdlib 命令桥接和配置包生成器；25 条桥接测试通过。Codex/Claude 实际安装、完整终端语义、MCP 组合、宿主旁路尚未验收。
 
 C04 已接入固定提交的 AgentDojo 与 InjecAgent 原生数据/判定器，在已有 Qwen2.5-7B-Instruct 上运行。初次小样暴露原生格式无效和良性效用显著下降；先保留全量首轮证据，再按开发集改进 Intent/资源授权与长上下文/输出预算。ASB、独立标注 test 和完整消融仍是阻断验收的工作，不能因低 ASR 提前签收。
+
+2026-09-14用户更新目标：[五基准Flash/Harness评估与详细标注](../05-validation/deepseek-harness-flash.md)优先于继续修改防护模块。完成各基准协议、实际行为与原生/复核双结果，保留错误及缺失，持续到授权API额度耗尽。

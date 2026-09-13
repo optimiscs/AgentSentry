@@ -1,0 +1,86 @@
+{
+  "agentdojo-shard0": {
+    "candidate": "artifacts/development/deepseek-annotation-v1",
+    "output": "artifacts/lab3090-deepseek-annotation-v1/agentdojo-shard0",
+    "command": [
+      "/home/moxu/miniconda3/envs/agentsentry-bench-lab3090/bin/python",
+      "/home/moxu/AgentSentry/artifacts/development/deepseek-annotation-v1/benchmarks/run_dsh_agentdojo.py",
+      "--source",
+      "/home/moxu/AgentSentry/artifacts/upstream/agentdojo-089ed468cf3e",
+      "--output",
+      "/home/moxu/AgentSentry/artifacts/lab3090-deepseek-annotation-v1/agentdojo-shard0",
+      "--cases",
+      "/home/moxu/AgentSentry/artifacts/lab3090-deepseek-annotation-v1/agentdojo-shard0-ids.json",
+      "--sdk-python",
+      "/home/moxu/AgentSentry/artifacts/clients/deepseek-harness-0.1.5rc1/bin/python",
+      "--configuration",
+      "baseline",
+      "--quota-state",
+      "/home/moxu/AgentSentry/artifacts/lab3090-deepseek-annotation-v1/quota-stop.json"
+    ],
+    "planned_cases": 262
+  },
+  "agentdojo-shard1": {
+    "candidate": "artifacts/development/deepseek-annotation-v1",
+    "output": "artifacts/lab3090-deepseek-annotation-v1/agentdojo-shard1",
+    "command": [
+      "/home/moxu/miniconda3/envs/agentsentry-bench-lab3090/bin/python",
+      "/home/moxu/AgentSentry/artifacts/development/deepseek-annotation-v1/benchmarks/run_dsh_agentdojo.py",
+      "--source",
+      "/home/moxu/AgentSentry/artifacts/upstream/agentdojo-089ed468cf3e",
+      "--output",
+      "/home/moxu/AgentSentry/artifacts/lab3090-deepseek-annotation-v1/agentdojo-shard1",
+      "--cases",
+      "/home/moxu/AgentSentry/artifacts/lab3090-deepseek-annotation-v1/agentdojo-shard1-ids.json",
+      "--sdk-python",
+      "/home/moxu/AgentSentry/artifacts/clients/deepseek-harness-0.1.5rc1/bin/python",
+      "--configuration",
+      "baseline",
+      "--quota-state",
+      "/home/moxu/AgentSentry/artifacts/lab3090-deepseek-annotation-v1/quota-stop.json"
+    ],
+    "planned_cases": 262
+  },
+  "agentdojo-shard2": {
+    "candidate": "artifacts/development/deepseek-annotation-v1",
+    "output": "artifacts/lab3090-deepseek-annotation-v1/agentdojo-shard2",
+    "command": [
+      "/home/moxu/miniconda3/envs/agentsentry-bench-lab3090/bin/python",
+      "/home/moxu/AgentSentry/artifacts/development/deepseek-annotation-v1/benchmarks/run_dsh_agentdojo.py",
+      "--source",
+      "/home/moxu/AgentSentry/artifacts/upstream/agentdojo-089ed468cf3e",
+      "--output",
+      "/home/moxu/AgentSentry/artifacts/lab3090-deepseek-annotation-v1/agentdojo-shard2",
+      "--cases",
+      "/home/moxu/AgentSentry/artifacts/lab3090-deepseek-annotation-v1/agentdojo-shard2-ids.json",
+      "--sdk-python",
+      "/home/moxu/AgentSentry/artifacts/clients/deepseek-harness-0.1.5rc1/bin/python",
+      "--configuration",
+      "baseline",
+      "--quota-state",
+      "/home/moxu/AgentSentry/artifacts/lab3090-deepseek-annotation-v1/quota-stop.json"
+    ],
+    "planned_cases": 261
+  },
+  "agentdojo-shard3": {
+    "candidate": "artifacts/development/deepseek-annotation-v1",
+    "output": "artifacts/lab3090-deepseek-annotation-v1/agentdojo-shard3",
+    "command": [
+      "/home/moxu/miniconda3/envs/agentsentry-bench-lab3090/bin/python",
+      "/home/moxu/AgentSentry/artifacts/development/deepseek-annotation-v1/benchmarks/run_dsh_agentdojo.py",
+      "--source",
+      "/home/moxu/AgentSentry/artifacts/upstream/agentdojo-089ed468cf3e",
+      "--output",
+      "/home/moxu/AgentSentry/artifacts/lab3090-deepseek-annotation-v1/agentdojo-shard3",
+      "--cases",
+      "/home/moxu/AgentSentry/artifacts/lab3090-deepseek-annotation-v1/agentdojo-shard3-ids.json",
+      "--sdk-python",
+      "/home/moxu/AgentSentry/artifacts/clients/deepseek-harness-0.1.5rc1/bin/python",
+      "--configuration",
+      "baseline",
+      "--quota-state",
+      "/home/moxu/AgentSentry/artifacts/lab3090-deepseek-annotation-v1/quota-stop.json"
+    ],
+    "planned_cases": 261
+  }
+}

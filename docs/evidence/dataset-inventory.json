@@ -1,0 +1,50 @@
+{
+  "updated": "2026-09-14",
+  "benchmarks": [
+    {
+      "name": "AgentDojo",
+      "count": 1046,
+      "unit": "native scenarios",
+      "attacks": 949,
+      "normal": 97,
+      "version": "v1.2.2",
+      "source": "docs/05-validation/17-evaluation-benchmark-plan.md"
+    },
+    {
+      "name": "InjecAgent",
+      "count": 1054,
+      "unit": "base records",
+      "direct_harm": 510,
+      "data_stealing": 544,
+      "source": "docs/05-validation/17-evaluation-benchmark-plan.md"
+    },
+    {
+      "name": "ASB",
+      "count": 1600,
+      "unit": "four configuration scenarios",
+      "base_attack_rows": 400,
+      "source": "docs/evidence/asb-protocol-inventory.json"
+    },
+    {
+      "name": "MSB",
+      "count": 2000,
+      "unit": "configuration scenarios",
+      "base_user_tasks": 64,
+      "source": "docs/evidence/msb-protocol-inventory.json"
+    },
+    {
+      "name": "MPBench",
+      "count": 6240,
+      "unit": "records",
+      "attacks": 3241,
+      "normal": 2999,
+      "unique_contexts": 5940,
+      "source": "docs/evidence/mpbench-protocol-inventory.json"
+    }
+  ],
+  "benchmark_count": 5,
+  "total_scenarios_or_records": 11940,
+  "not_a_unique_sample_count": true,
+  "not_a_completed_evaluation_count": true,
+  "auxiliary_tool_excluded": "AI-Infra-Guard"
+}

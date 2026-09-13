@@ -137,6 +137,53 @@ class LocalPipeline(BasePipelineElement):
         decision = self.engine.decide(intent, action).model_dump(mode="json")
         return decision
 
+    def execute_call(self, query, runtime, env, call):
+        """Execute one simulated tool through the shared policy and observation path."""
+        for key, value in call.args.items():
+            if isinstance(value, str) and is_string_list(value):
+                call.args[key] = literal_eval(value)
+        decision = self.decision(query, call.function, call.args)
+        entry = {
+            "tool": call.function,
+            "arguments": call.args,
+            "decision": decision["decision"],
+            "reason_codes": decision["reason_codes"],
+            "simulated_dispatch": False,
+        }
+        self.calls.append(entry)
+        if decision["decision"] == "ALLOW":
+            result, error = runtime.run_function(env, call.function, call.args)
+            entry["simulated_dispatch"] = True
+            raw = error or tool_result_to_str(result)
+        else:
+            error = (
+                "AgentSentry "
+                + decision["decision"]
+                + ": "
+                + ",".join(decision["reason_codes"])
+            )
+            raw = error
+        entry["tool_error"] = error
+        _, signal = self.scanner.scan(
+            "agentdojo-observation", raw, SourceType.MCP_RESPONSE
+        )
+        self.context_labels.update(signal.labels)
+        entry["context_labels"] = signal.labels
+        filtered = raw
+        if (
+            self.config.configuration not in {"baseline", "no_context"}
+            and "INJECTION_RISK" in signal.labels
+        ):
+            filtered = "[AgentSentry quarantined untrusted instructions in this tool response.]"
+            error = None
+        return {
+            "role": "tool",
+            "content": [block(filtered)],
+            "tool_call_id": call.id,
+            "tool_call": call,
+            "error": error,
+        }
+
     def query(self, query, runtime, env, messages=None, extra_args=None):
         messages = [
             {"role": "system", "content": [block(load_system_message(None))]},
@@ -176,52 +223,7 @@ class LocalPipeline(BasePipelineElement):
                     raise ValueError("EMPTY_FINAL_RESPONSE")
                 return query, runtime, env, messages, extra_args or {}
             for call in calls:
-                for key, value in call.args.items():
-                    if isinstance(value, str) and is_string_list(value):
-                        call.args[key] = literal_eval(value)
-                decision = self.decision(query, call.function, call.args)
-                entry = {
-                    "tool": call.function,
-                    "arguments": call.args,
-                    "decision": decision["decision"],
-                    "reason_codes": decision["reason_codes"],
-                    "simulated_dispatch": False,
-                }
-                self.calls.append(entry)
-                if decision["decision"] == "ALLOW":
-                    result, error = runtime.run_function(env, call.function, call.args)
-                    entry["simulated_dispatch"] = True
-                    raw = error or tool_result_to_str(result)
-                else:
-                    error = (
-                        "AgentSentry "
-                        + decision["decision"]
-                        + ": "
-                        + ",".join(decision["reason_codes"])
-                    )
-                    raw = error
-                entry["tool_error"] = error
-                _, signal = self.scanner.scan(
-                    "agentdojo-observation", raw, SourceType.MCP_RESPONSE
-                )
-                self.context_labels.update(signal.labels)
-                entry["context_labels"] = signal.labels
-                filtered = raw
-                if (
-                    self.config.configuration not in {"baseline", "no_context"}
-                    and "INJECTION_RISK" in signal.labels
-                ):
-                    filtered = "[AgentSentry quarantined untrusted instructions in this tool response.]"
-                    error = None
-                messages.append(
-                    {
-                        "role": "tool",
-                        "content": [block(filtered)],
-                        "tool_call_id": call.id,
-                        "tool_call": call,
-                        "error": error,
-                    }
-                )
+                messages.append(self.execute_call(query, runtime, env, call))
         raise ValueError("MODEL_STEP_BUDGET_EXHAUSTED")
 
 

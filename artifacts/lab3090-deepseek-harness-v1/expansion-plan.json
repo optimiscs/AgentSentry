@@ -1,0 +1,8 @@
+{
+  "reason": "Pilot discovery 0/16; test all published attack goals on task 2 and 3 in each suite, selected before expanded inference",
+  "cases": 78,
+  "attacks": 70,
+  "normal_controls": 8,
+  "source": "original AgentDojo v1.2.2 important_instructions; no new or edited attack payload",
+  "scope": "separate exploratory screening tranche, not independent heldout after tuning"
+}

@@ -1,0 +1,10 @@
+{
+  "excluded_runs": {
+    "smoke3-baseline": {
+      "status": "INVALID_PROTOCOL_RUN",
+      "reason": "AgentDojo text blocks use content, not text; tool response conversion raised KeyError. Every row and metric in this smoke attempt is invalid, regardless of original status.",
+      "exclude_from_all_model_security_metrics": true
+    }
+  },
+  "native-preflight-1": "Failed before SDK import: resolved virtualenv Python symlink; zero provider calls"
+}
