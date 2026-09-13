@@ -1,0 +1,126 @@
+{
+  "status": "SELECTED_REPRODUCIBLE_CODE_AND_EVIDENCE",
+  "excluded": "Model weights, Conda environment, full raw benchmark traces, datasets, and the invalid first reachability probe remain local/server.",
+  "files": [
+    {
+      "path": "artifacts/asb-contract-v3-run/source-candidate.tar.gz",
+      "bytes": 235311,
+      "sha256": "386892c47a342ec3df4129ea578b300bf6909b5b1c634d5633e75ea9d61cbba8"
+    },
+    {
+      "path": "artifacts/asb-contract-v3-run/candidate-manifest.json",
+      "bytes": 13309,
+      "sha256": "d81c75095d0fe1248036c7eec5d9190c1c839348e6922032fa2b9688a1c423d7"
+    },
+    {
+      "path": "artifacts/asb-contract-v3-run/origin-manifest.json",
+      "bytes": 8738,
+      "sha256": "b8b41d3e81cb2fce003a3931594c4a8ac5c71b5c5df27a8589ccd08e94ebe45c"
+    },
+    {
+      "path": "artifacts/asb-contract-v3-run/changes.patch",
+      "bytes": 17557,
+      "sha256": "166548ce9e33fc9f1321e5d5ef8010c48747c347c97f0e6504648f69e9617746"
+    },
+    {
+      "path": "artifacts/asb-contract-v3-run/run_pair.py",
+      "bytes": 3473,
+      "sha256": "5fde91880a375ce8228f103bf62a1d994d7e4c5bf92177ff709ac67694088d73"
+    },
+    {
+      "path": "artifacts/asb-contract-v3-run/probe_reachable_grants.py",
+      "bytes": 4394,
+      "sha256": "e7b00cff86d607da1521680e644665d9b57b2afb1ad7ef875cbddc6ee8958347"
+    },
+    {
+      "path": "artifacts/asb-contract-v3-run/reachable-grants-v2.json",
+      "bytes": 20864,
+      "sha256": "19e75e169fbc62d8a9d4d908ad5f0ce92c8a6dc91d0ead435fbc0063126532f9"
+    },
+    {
+      "path": "artifacts/asb-contract-v3-run/engineering-checks.json",
+      "bytes": 1292,
+      "sha256": "9db7a1c333ea7706f0f8b6f0ba9941914d3d2fa12aa7742fafdd163b6ee1c7d9"
+    },
+    {
+      "path": "artifacts/asb-contract-v3-run/duplication.json",
+      "bytes": 40605,
+      "sha256": "b6440498bfc31ced9f78a58b716f0f6593d70fe148879a2df0fda8d35bd9e70f"
+    },
+    {
+      "path": "artifacts/asb-contract-v3-run/agentdojo-source-preflight.json",
+      "bytes": 14765,
+      "sha256": "ecebaf262c0d11bf37948238debf175bcdff3b85283797599ebf8c19bfed2baa"
+    },
+    {
+      "path": "artifacts/asb-contract-v3-run/asb-baseline-process.json",
+      "bytes": 1523,
+      "sha256": "6a1614613c1629914439de217f8c87c72090678837cd95e2580f6207f9a40ea4"
+    },
+    {
+      "path": "artifacts/asb-contract-v3-run/asb-full-process.json",
+      "bytes": 1511,
+      "sha256": "17137f49bfbf42cd892f6a3c24696f9a8fb492073fecc60d78ec686a89b59f96"
+    },
+    {
+      "path": "artifacts/asb-contract-v3-run/asb-baseline.log",
+      "bytes": 783,
+      "sha256": "ab3c9e8900ab2709d7ce85e20f2f4ebfe844d970738acf9d15b660bb2361d53d"
+    },
+    {
+      "path": "artifacts/asb-contract-v3-run/asb-full.log",
+      "bytes": 778,
+      "sha256": "767bb837e6eea3e852e01d25a84be576742448f532519721223d1b4fa4a9118f"
+    },
+    {
+      "path": "artifacts/benchmarks/asb/asb-lab3090-qwen35-9b-contract-v3-baseline-s0/manifest.json",
+      "bytes": 15483,
+      "sha256": "743fec4eed7acbc27d0c843a3a7a3698d8edf6b2cbd581a9e9ce9dd1207fb1cc"
+    },
+    {
+      "path": "artifacts/benchmarks/asb/asb-lab3090-qwen35-9b-contract-v3-baseline-s0/metrics.json",
+      "bytes": 633,
+      "sha256": "f3d6b230e763bd7f879d172693a487f06b93d628c730b52d200ab7a53260fbbc"
+    },
+    {
+      "path": "artifacts/benchmarks/asb/asb-lab3090-qwen35-9b-contract-v3-full-s0/manifest.json",
+      "bytes": 15479,
+      "sha256": "9eecba3dd88539d5af23ca12e36155c007500fa75676d6d27a8ca2cb924e7299"
+    },
+    {
+      "path": "artifacts/benchmarks/asb/asb-lab3090-qwen35-9b-contract-v3-full-s0/metrics.json",
+      "bytes": 628,
+      "sha256": "ccd285a9050d0da029ad59cc4ad986eba2f08e78fc7c51a1b8f45d63864118ac"
+    },
+    {
+      "path": "artifacts/asb-planning-diagnostic-v3/manifest.json",
+      "bytes": 3863,
+      "sha256": "e193d991646d0e30b68a0ebe9fe810d6710e7b69c2995017db576ff3de2cded9"
+    },
+    {
+      "path": "artifacts/asb-planning-diagnostic-v3/complete.json",
+      "bytes": 51,
+      "sha256": "10fbc173d771876e85e0d8fea7343a9d4473e9e0384753ed94d917680810b9a4"
+    },
+    {
+      "path": "artifacts/asb-planning-diagnostic-simulated-v3/manifest.json",
+      "bytes": 3863,
+      "sha256": "30d81131f9c58d0158e91324444454551d5bebe4e7aa2aefeaf26150cddac8d7"
+    },
+    {
+      "path": "artifacts/asb-planning-diagnostic-simulated-v3/complete.json",
+      "bytes": 51,
+      "sha256": "09f2af18414819e60935018f941f4d6bb524e1b7a5f235591c6e36a61c0782e0"
+    },
+    {
+      "path": "artifacts/asb-planning-diagnostic-schema-v3/manifest.json",
+      "bytes": 4018,
+      "sha256": "48c420287730f5994a2b26da06cfe4f50eba4097e8c218d7301b143fb8edcde7"
+    },
+    {
+      "path": "artifacts/asb-planning-diagnostic-schema-v3/complete.json",
+      "bytes": 50,
+      "sha256": "4b96dea06e6905cef10d8dd167e5541581b4986780b8c066de794ea221d3a343"
+    }
+  ]
+}

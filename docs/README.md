@@ -2,7 +2,7 @@
 
 本目录按用户要求组织30类生命周期文档。当前已有在 5090 运行的开发版服务、控制台及自动化测试；实际结果见 [测试报告](05-validation/18-test-benchmark-report.md)。工程回归通过不等于公开基准或发布验收完成。新设计没有人工签字批准，历史快照与当前规范分开。
 
-最新服务器实测为25CPU配额、90GiB内存、RTX5090 32607MiB显存；已有本地 Qwen2.5-7B / vLLM 推理实测，Docker 部署待验证。[环境证据](evidence/environment-current.json) / [当前开发计划](04-development/14-implementation-plan.md)。
+2026-09-13 实验已迁移到双卡 Lab3090，使用新 Conda 环境与 Qwen/Qwen3.5-9B；本轮 ASB 小样和 PIGuard 输入诊断已完成，综合 benchmark 仍未验收。[迁移与结果](04-development/lab3090-migration-and-resume.md) / [恢复证据](evidence/lab3090-recovery.json) / [当前开发计划](04-development/14-implementation-plan.md)。5090 的旧环境记录保留为[历史环境证据](evidence/environment-current.json)，不能视为 Lab3090 配置或当前在线状态。
 
 ## 30类文档
 
@@ -48,6 +48,10 @@
 [Benchmark 实时进度](05-validation/live-benchmark-progress.md)在 5090 每15秒更新，本地镜像随证据回收刷新；进度工件由服务器写入，常规源码同步不会覆盖它。
 
 ## 当前推荐阅读顺序
+
+[当前完整防护流程与真实 bad cases](05-validation/defense-flow-and-bad-cases-lab3090.md)按真实 ASB 运行记录说明触发的防护步骤、产品主线未覆盖的分支，以及过度拦截、记忆漏检和协议失败。
+
+[ASB v3 优化实测](05-validation/asb-contract-v3-review.md)：两组各40条均有效，防护组放行8次正常调用，已知攻击执行9→0；完整任务效用仍未成立，综合验收未通过。
 
 [核心机制与代码导读](03-architecture/core-innovation-and-code-guide.md)按活动实现、接入范围与研究候选分别说明，并提供源码入口和实验局限。
 
