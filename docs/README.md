@@ -8,6 +8,8 @@
 
 新增 [MPBench 跨会话评测准备](05-validation/mpbench-lifecycle-preparation.md)：全量字段隔离、正常记忆写入期望和未知结果计分已实现；真实记忆及裁判运行尚待完成。
 
+后续 [产品记忆存储适配](05-validation/memory-runtime-adapter.md)已通过103项检查，包含独立进程读取、隔离和来源保留；原生 Agent 与语义效果评估仍待完成。
+
 ## 30类文档
 
 | 编号 | 文档 | Owner | 状态 |

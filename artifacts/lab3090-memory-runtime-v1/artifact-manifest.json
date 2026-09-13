@@ -1,0 +1,74 @@
+{
+  "generated_at": "2026-09-13T15:01:03.990313+00:00",
+  "scope": "PRODUCT_MEMORY_STORAGE_TESTS_NOT_AGENT_BENCHMARK",
+  "files": {
+    "artifacts/lab3090-memory-runtime-v1/baseline-firstparty-source.tar.gz": {
+      "sha256": "2c57dc8939fa726290d21bf091a02b36255120f381409688a4889f7681b03ff6",
+      "bytes": 118519
+    },
+    "artifacts/lab3090-memory-runtime-v1/duplication-final.json": {
+      "sha256": "fa17467d6308bdc5e9009ffd3fd2d28305908a5ffa05500f55511f9c7d07d3b9",
+      "bytes": 254324
+    },
+    "artifacts/lab3090-memory-runtime-v1/duplication.json": {
+      "sha256": "351744b75b2a6fab6d8c6c1ae92b9fb7470a9f0c60a5abd5127875d11e2cf892",
+      "bytes": 254324
+    },
+    "artifacts/lab3090-memory-runtime-v1/environment.json": {
+      "sha256": "e544d3880d4fadcadf7dc63285782b011148c2d8e8b504af0d2dea1e0a3dc55e",
+      "bytes": 486
+    },
+    "artifacts/lab3090-memory-runtime-v1/execution.json": {
+      "sha256": "30e5bff863b0a44585b42d2eff6b0fbea9ff6963afc726a34323f2d294189a0b",
+      "bytes": 1616
+    },
+    "artifacts/lab3090-memory-runtime-v1/import-provenance.json": {
+      "sha256": "2fedeed09dbff071c7d0b692b34d8f18942dec4a2e77de4af7301b43b13d0115",
+      "bytes": 623
+    },
+    "artifacts/lab3090-memory-runtime-v1/initial-memory-runtime.py": {
+      "sha256": "9a7a2695c022aac024f2245ee421bb68c0ee9640e587b49c5f31c37719834e7a",
+      "bytes": 7227
+    },
+    "artifacts/lab3090-memory-runtime-v1/parent-progress.json": {
+      "sha256": "dd4700d3b87e0e37297116127f00c993589174e8846c965e948f6639320a5bbd",
+      "bytes": 1052
+    },
+    "artifacts/lab3090-memory-runtime-v1/pre-profile-memory_runtime.py": {
+      "sha256": "6f9b466733f76d24add943ebca1958656c855ae1b9516fd8f13ebf7c245aca5d",
+      "bytes": 7272
+    },
+    "artifacts/lab3090-memory-runtime-v1/pre-profile-test_memory_runtime.py": {
+      "sha256": "a7bca2e3648fb06dddfb3c49864a193afe4531e7a12edd698897d6ca8c5e10d2",
+      "bytes": 8333
+    },
+    "artifacts/lab3090-memory-runtime-v1/source-manifest.json": {
+      "sha256": "e36c0339c130b47a22d55ddd5b9246c2b355f10104b75c1f1d223b5be19e65ee",
+      "bytes": 4516
+    },
+    "artifacts/lab3090-memory-runtime-v1/source-snapshot.tar.gz": {
+      "sha256": "6a78886e920ee4cfffe7dfa4d1124871fb0fdb55ffd7c04469a3206fb8ea3ba6",
+      "bytes": 59448
+    },
+    "artifacts/lab3090-memory-runtime-v1/test-results.json": {
+      "sha256": "f00bcdb55523b6d79d67213c3e39cb3fb6690e85f7c5ec8efe1fc02827eae9ca",
+      "bytes": 29245
+    },
+    "artifacts/lab3090-memory-runtime-v1/unit-checks-final-profile.log": {
+      "sha256": "bb8f6ad2ab90c992bd694107bf726350e0591a8a3c48e93b648cdb602e27e6da",
+      "bytes": 181
+    },
+    "artifacts/lab3090-memory-runtime-v1/unit-checks-final.log": {
+      "sha256": "dfa14c9ebafe404ae52d859f2e3712e679b81862c9e9610238614f07c7684106",
+      "bytes": 180
+    },
+    "artifacts/lab3090-memory-runtime-v1/unit-checks-with-provenance.log": {
+      "sha256": "b5f4071558cc437ce403852fa191395ea832ed2831484c41a31f079cfa5c20d4",
+      "bytes": 1176
+    },
+    "artifacts/lab3090-memory-runtime-v1/unit-checks.log": {
+      "sha256": "7acc7336af59d01dd27bd4c744ba8b1bda762223b6d1d2cddf62ca9deb143469",
+      "bytes": 4502
+    }
+  }
+}

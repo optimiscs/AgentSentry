@@ -1,0 +1,22 @@
+..............F......................................................... [ 69%]
+...............................                                          [100%]
+=================================== FAILURES ===================================
+___________ test_secret_label_and_encrypted_storage_survive_followup ___________
+
+backend = <function backend.<locals>.create at 0x7f4f8224d440>
+
+    def test_secret_label_and_encrypted_storage_survive_followup(backend):
+        b = backend("baseline")
+        text = "CANARY_SECRET_MEMORY_RESTART_FIXTURE"
+        assert b.call("memory.write", {"name": "canary", "content": text}).status == "succeeded"
+        b.followup("Recall the saved value.")
+>       assert b.recall_active()[0]["output"] == text
+E       AssertionError: assert '[REDACTED:SECRET]' == 'CANARY_SECRE...START_FIXTURE'
+E         
+E         - CANARY_SECRET_MEMORY_RESTART_FIXTURE
+E         + [REDACTED:SECRET]
+
+tests/test_memory_runtime.py:135: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_memory_runtime.py::test_secret_label_and_encrypted_storage_survive_followup
+1 failed, 102 passed in 10.80s

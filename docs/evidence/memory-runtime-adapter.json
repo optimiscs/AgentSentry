@@ -1,0 +1,121 @@
+{
+  "generated_at": "2026-09-13T15:01:03.994004+00:00",
+  "status": "PRODUCT_MEMORY_STORAGE_TESTS_NOT_AGENT_BENCHMARK",
+  "tests_by_file": {
+    "tests/test_memory_runtime.py": 17,
+    "tests/test_local_model_transport.py": 9,
+    "tests/test_gateway.py": 31,
+    "tests/test_components.py": 46
+  },
+  "tests_passed": 103,
+  "source_files": 40,
+  "source_archive_sha256": "6a78886e920ee4cfffe7dfa4d1124871fb0fdb55ffd7c04469a3206fb8ea3ba6",
+  "artifact_manifest_sha256": "56a7b716d0bc3f7f8475aff9c8d5251e99b58c7072bcaf10b4b7d54676e6f03d",
+  "source_archive_verified": true,
+  "source_hashes_match_test_log_where_recorded": true,
+  "profiles": {
+    "runtime_rules": "Actual product Runtime with existing scanner, intent parser and policy. ASK is never auto-approved by the adapter.",
+    "memory_gate_disabled": "Memory-policy ablation only. Owner/schema checks, encrypted storage and output redaction remain; not a fully undefended native agent baseline."
+  },
+  "duplication": {
+    "scope": "First-party Python src, benchmarks and scripts. Tests, generated JS, dependencies and upstream artifacts excluded explicitly.",
+    "baseline_files": 70,
+    "current_files": 71,
+    "measurements": [
+      {
+        "minimum_tokens": 50,
+        "mode": "exact",
+        "total_tokens": 69105,
+        "clone_covered_tokens": 796,
+        "clone_coverage": 0.01151870342232834
+      },
+      {
+        "minimum_tokens": 100,
+        "mode": "exact",
+        "total_tokens": 69105,
+        "clone_covered_tokens": 0,
+        "clone_coverage": 0.0
+      },
+      {
+        "minimum_tokens": 200,
+        "mode": "exact",
+        "total_tokens": 69105,
+        "clone_covered_tokens": 0,
+        "clone_coverage": 0.0
+      },
+      {
+        "minimum_tokens": 50,
+        "mode": "identifier_normalized",
+        "total_tokens": 69105,
+        "clone_covered_tokens": 1845,
+        "clone_coverage": 0.02669850227914044
+      },
+      {
+        "minimum_tokens": 100,
+        "mode": "identifier_normalized",
+        "total_tokens": 69105,
+        "clone_covered_tokens": 224,
+        "clone_coverage": 0.0032414441791476737
+      },
+      {
+        "minimum_tokens": 200,
+        "mode": "identifier_normalized",
+        "total_tokens": 69105,
+        "clone_covered_tokens": 0,
+        "clone_coverage": 0.0
+      }
+    ]
+  },
+  "parent_progress": {
+    "observed_at_utc": "2026-09-13T14:59:01.132626+00:00",
+    "runs": {
+      "baseline": {
+        "controller_status": "RUNNING",
+        "pid": 2668533,
+        "start_ticks": "755411078",
+        "expected_start_ticks": "755411078",
+        "live_identity_verified": true,
+        "recorded": 469,
+        "valid": 469,
+        "errors": 0,
+        "partial": 0,
+        "planned": 1046,
+        "actor_thinking": false,
+        "guard_thinking": false,
+        "metrics_exists": false
+      },
+      "reference": {
+        "controller_status": "RUNNING",
+        "pid": 2668532,
+        "start_ticks": "755411078",
+        "expected_start_ticks": "755411078",
+        "live_identity_verified": true,
+        "recorded": 395,
+        "valid": 395,
+        "errors": 0,
+        "partial": 0,
+        "planned": 1046,
+        "actor_thinking": false,
+        "guard_thinking": false,
+        "metrics_exists": false
+      }
+    },
+    "frozen_source": {
+      "context-filter-v5": {
+        "files": 129,
+        "unchanged": true
+      },
+      "composed-guard-v1": {
+        "files": 132,
+        "unchanged": true
+      }
+    }
+  },
+  "limitations": [
+    "No actor, semantic judge, MPBench ASR/RSR, native C1-C4 or task utility result.",
+    "Positive runtime_rules storage fixture uses explicit operator approval; it is not automatic benchmark success.",
+    "All-active retrieval is an explicit adapter profile, not native vector retrieval.",
+    "Not an OS isolation claim for an external client. Only two memory tools are exposed by this trusted adapter.",
+    "Frozen full1046 and composed candidate remain unchanged. Full goal remains incomplete."
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "created_at": "2026-09-13T14:59:01.128870+00:00",
+  "python": "3.11.14",
+  "packages": {
+    "pydantic": "2.13.5",
+    "cryptography": "50.0.1",
+    "httpx": "0.28.1",
+    "pytest": "9.1.1"
+  },
+  "tests_by_file": {
+    "tests/test_memory_runtime.py": 17,
+    "tests/test_local_model_transport.py": 9,
+    "tests/test_gateway.py": 31,
+    "tests/test_components.py": 46
+  },
+  "scope": "CPU product-memory, local transport mocks and existing component tests. No model inference."
+}

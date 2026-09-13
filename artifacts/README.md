@@ -6,6 +6,8 @@
 
 新增 [MPBench 阶段准备批次](lab3090-mpbench-lifecycle-v1/artifact-manifest.json)：六文件源码快照、6240 条阶段输入的哈希清单、41 项检查、四条公开数据字段示例与重复审计。完整数据留在 Lab3090；本批次没有 Agent、持久记忆或语义裁判预测。[范围说明](../docs/05-validation/mpbench-lifecycle-preparation.md)
 
+新增 [记忆存储适配批次](lab3090-memory-runtime-v1/artifact-manifest.json)：40文件源码快照、103项检查及前期失败记录、环境和重复审计。只包含固定样本的产品存储测试证据，不含状态数据库、私钥或模型评测分数。[范围说明](../docs/05-validation/memory-runtime-adapter.md)
+
 - `benchmarks/*/*/{manifest,metrics}.json`：本地已回收的场景清单、配置、统计和状态。包含历史及小样，须按各自scope解读。
 - `benchmarks/frozen-*/source.tar.gz`及environment.json：相应运行使用的第一方源码和环境记录。
 - `development/*/source-candidate.tar.gz`、候选清单和补丁：隔离研究版本的源码。`asb-protocol-v2`只通过部分工程检查，没有新模型结果。

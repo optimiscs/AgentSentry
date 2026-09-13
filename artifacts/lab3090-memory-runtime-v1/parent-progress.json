@@ -1,0 +1,45 @@
+{
+  "observed_at_utc": "2026-09-13T14:59:01.132626+00:00",
+  "runs": {
+    "baseline": {
+      "controller_status": "RUNNING",
+      "pid": 2668533,
+      "start_ticks": "755411078",
+      "expected_start_ticks": "755411078",
+      "live_identity_verified": true,
+      "recorded": 469,
+      "valid": 469,
+      "errors": 0,
+      "partial": 0,
+      "planned": 1046,
+      "actor_thinking": false,
+      "guard_thinking": false,
+      "metrics_exists": false
+    },
+    "reference": {
+      "controller_status": "RUNNING",
+      "pid": 2668532,
+      "start_ticks": "755411078",
+      "expected_start_ticks": "755411078",
+      "live_identity_verified": true,
+      "recorded": 395,
+      "valid": 395,
+      "errors": 0,
+      "partial": 0,
+      "planned": 1046,
+      "actor_thinking": false,
+      "guard_thinking": false,
+      "metrics_exists": false
+    }
+  },
+  "frozen_source": {
+    "context-filter-v5": {
+      "files": 129,
+      "unchanged": true
+    },
+    "composed-guard-v1": {
+      "files": 132,
+      "unchanged": true
+    }
+  }
+}

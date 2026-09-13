@@ -1,0 +1,11 @@
+{
+  "base_commit": "ff68d4a7b5ca71e307ef4855986953d10d4f84f6",
+  "baseline_python_files": 70,
+  "baseline_archive_sha256": "2c57dc8939fa726290d21bf091a02b36255120f381409688a4889f7681b03ff6",
+  "import_source": "artifacts/development/composed-guard-v1",
+  "imported_files": {
+    "benchmarks/local_model.py": "74cef01982ebf43ac9bd48928f2e9ab20c1444326e939696f5004a31d2625044",
+    "tests/test_local_model_transport.py": "92b040df0f0a50e3289c75291aeb4fb2bbbb716a236081c101f9920415c6777e"
+  },
+  "reason": "Reuse the tested explicit nonthinking defaults and shared structured transport; no active frozen source is changed."
+}

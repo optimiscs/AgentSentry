@@ -1,0 +1,50 @@
+{
+  "status": "PRODUCT_MEMORY_STORAGE_TESTS_NOT_AGENT_BENCHMARK",
+  "working_directory": "/home/moxu/AgentSentry",
+  "python": "/home/moxu/miniconda3/envs/agentsentry-bench-lab3090/bin/python",
+  "environment": {
+    "PYTHONPATH": "src:benchmarks"
+  },
+  "test_argv": [
+    "-m",
+    "pytest",
+    "-q",
+    "tests/test_memory_runtime.py",
+    "tests/test_local_model_transport.py",
+    "tests/test_gateway.py",
+    "tests/test_components.py"
+  ],
+  "attempts": [
+    {
+      "log": "unit-checks.log",
+      "returncode": 1,
+      "passed": 95,
+      "failed": 4,
+      "cause": "Gate-disabled Decision omitted required matched_policies; product failed closed."
+    },
+    {
+      "log": "unit-checks-final.log",
+      "returncode": 0,
+      "passed": 99,
+      "failed": 0,
+      "change": "Populate the required Decision field."
+    },
+    {
+      "log": "unit-checks-with-provenance.log",
+      "returncode": 1,
+      "passed": 102,
+      "failed": 1,
+      "cause": "New synthetic canary test incorrectly expected raw actor output; product read API redacts secrets."
+    },
+    {
+      "log": "unit-checks-final-profile.log",
+      "returncode": 0,
+      "passed": 103,
+      "failed": 0,
+      "change": "Name the profile memory_gate_disabled, retain redaction, distinguish private snapshot from actor output."
+    }
+  ],
+  "model_inference_requests": 0,
+  "frozen_candidates_modified": false,
+  "reproduction_note": "Restore the 40-file source snapshot in a new directory and use the recorded Python/package environment. Tests create isolated temporary stores; raw state databases and keys are not curated."
+}
