@@ -1,0 +1,4 @@
+{
+  "benchmarks/acceptance.py": "26c3572cd2c1cbaa828fae86ae38ebd97a609038c6ff339ca9e86ee743ab22b7",
+  "tests/test_benchmark_acceptance.py": "382653a412af4550455f895cf6c07e5abe7079c9c80b60127873cb347b73bb9d"
+}

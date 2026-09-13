@@ -1,0 +1,12 @@
+{
+  "status": "FROZEN_DEVELOPMENT_REFERENCE",
+  "archive_sha256": "1a0b09566f6a808c94c30f40eb5d8a5a2ee1a3d383d0c3d2d112ab2f0a83a1e2",
+  "changed_files": [
+    "benchmarks/check_task_plan_pipeline.py",
+    "benchmarks/run_agentdojo.py",
+    "origin-manifest.json",
+    "src/agentsentry/context/sanitizer.py",
+    "tests/test_context_sanitizer.py"
+  ],
+  "promoted": false
+}

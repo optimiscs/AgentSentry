@@ -59,6 +59,8 @@
 
 [v5 证据格式诊断与代码量](05-validation/task-contract-v5-diagnostic.md)：证据清单由代码生成，修复两条解码协议错误；仍存在编造日期和遗漏正文核验。仅固定轨迹诊断，未产生新 benchmark 成绩，未进入产品主线。
 
+[输入清洗同模型参考对照](05-validation/context-filter-reference.md)：修复版两组各24条全部有效，正常完成均8/8，攻击成功3/16→0/16；存在误删，统计显著性及完整系统验收尚未成立。已扩大到两组各97条正常任务。
+
 接入范围与后续路线：[主流编程 Agent 接入矩阵](03-architecture/framework-integration-matrix.md)（Codex / Claude Code 优先，产品端到端验收未执行）。
 
 01立项→04PRD→07威胁模型/08安全要求→10RFC/12API/13Policy→06RTM→14计划→16/17测试评测→20发布/23部署/25监控。团队每周维护15实现记录、21变更记录与29债务清单。

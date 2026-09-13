@@ -1,0 +1,11 @@
+{
+  "status": "FROZEN_DEVELOPMENT_REFERENCE",
+  "archive_sha256": "7a826ec45f173b4f49f83079a19bd93ea4c6481a31c38b01b334c51ce93e764b",
+  "changed_files": [
+    "benchmarks/run_agentdojo.py",
+    "origin-manifest.json",
+    "src/agentsentry/context/sanitizer.py",
+    "tests/test_context_sanitizer.py"
+  ],
+  "promoted": false
+}

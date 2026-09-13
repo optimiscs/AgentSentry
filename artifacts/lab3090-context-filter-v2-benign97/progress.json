@@ -1,0 +1,26 @@
+{
+  "updated_at": "2026-09-13T10:43:21.362242+00:00",
+  "scope": "full 97 benign tasks per configuration; reference only; no acceptance claim",
+  "jobs": {
+    "baseline": {
+      "status": "RUNNING",
+      "verified_live": true,
+      "child_pid": 2580620,
+      "child_start_ticks": "754473659",
+      "output": "artifacts/benchmarks/agentdojo/agentdojo-lab3090-qwen35-9b-context-filter-v2-benign97-baseline-s0",
+      "recorded": 18,
+      "errors": 0,
+      "utility_success": 16
+    },
+    "reference": {
+      "status": "RUNNING",
+      "verified_live": true,
+      "child_pid": 2580619,
+      "child_start_ticks": "754473657",
+      "output": "artifacts/benchmarks/agentdojo/agentdojo-lab3090-qwen35-9b-context-filter-v2-benign97-promptarmor_adapted-s0",
+      "recorded": 18,
+      "errors": 0,
+      "utility_success": 16
+    }
+  }
+}
