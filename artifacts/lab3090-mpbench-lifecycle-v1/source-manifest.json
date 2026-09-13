@@ -1,0 +1,13 @@
+{
+  "status": "FROZEN_EVALUATION_PREPARATION_CODE_NOT_DEFENSE_CANDIDATE",
+  "base_commit": "6b96b442cffad1613ee783465010034755aaeb41",
+  "files": {
+    "scripts/mpbench_lifecycle.py": "333fa4899ab02ecc27827bcb0526a445d6078ebf8bfbbb5d8c638ef1e577f5c9",
+    "scripts/prepare_mpbench.py": "6e154a40caa190624a8985ebc1658f51648b90ef14bd4d4532e7aea4f4bc9c7f",
+    "scripts/score_mpbench_checkpoint.py": "11620b9c7d921c6d4d32ffa0904fa164d145f7647693f943b759b4da33ff83b6",
+    "scripts/input_screen_metrics.py": "51e58776508038f3e587923a3b3c37a46650986fdedb23d7d008e5fbf7811471",
+    "tests/test_mpbench_lifecycle.py": "ed318d1a8ef24325dc9da6f33ed023d622c108a3bd7a342a295de5f8817e1c9b",
+    "tests/test_mpbench_input_scoring.py": "9cd4f7b1969ec5e7b2603696298e34966e012844054550c267310cc090e18ccf"
+  },
+  "archive_sha256": "bce25e7abebe6531e25e17aa93aec147f59ac738d85ae81fa2380fb6ccad13e9"
+}

@@ -4,6 +4,8 @@
 
 2026-09-13 新增 [归因成本审计批次](lab3090-causal-budget-v1/artifact-manifest.json)：脚本运行记录、token 统计、环境来源、重复审计，以及已完成的 35 条 AgentDojo 模拟开发轨迹压缩包（附许可）。原始输入哈希与旧运行一致，包含模拟任务内容及模型回答，便于复核；不包含真实用户邮件或生产凭证。[范围与复现说明](../docs/05-validation/causal-proxy-budget-and-baseline-review.md)
 
+新增 [MPBench 阶段准备批次](lab3090-mpbench-lifecycle-v1/artifact-manifest.json)：六文件源码快照、6240 条阶段输入的哈希清单、41 项检查、四条公开数据字段示例与重复审计。完整数据留在 Lab3090；本批次没有 Agent、持久记忆或语义裁判预测。[范围说明](../docs/05-validation/mpbench-lifecycle-preparation.md)
+
 - `benchmarks/*/*/{manifest,metrics}.json`：本地已回收的场景清单、配置、统计和状态。包含历史及小样，须按各自scope解读。
 - `benchmarks/frozen-*/source.tar.gz`及environment.json：相应运行使用的第一方源码和环境记录。
 - `development/*/source-candidate.tar.gz`、候选清单和补丁：隔离研究版本的源码。`asb-protocol-v2`只通过部分工程检查，没有新模型结果。

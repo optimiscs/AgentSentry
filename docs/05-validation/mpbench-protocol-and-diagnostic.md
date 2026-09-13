@@ -4,6 +4,8 @@
 
 最新完整字段结果已在 Lab3090 取得：6240/6240 有效、零未知，TP983/FN2258/FP409/TN2590，TPR **30.33%**、FPR **13.64%**、二分类 Macro-F1 **0.5422**。采用固定 PIGuard 权重、FP32、0.5 阈值及 2048-token 完整字段输入，不截断；它仍是第三方输入诊断，尚不能签收检测 F1 或记忆全流程。[完整评分证据](../evidence/lab3090-piguard-mpbench.json)、[迁移与执行记录](../04-development/lab3090-migration-and-resume.md)
 
+后续 [跨会话评测准备](mpbench-lifecycle-preparation.md)已完成：6240 条第一会话、后续问题与裁判字段分离；区分正常样本中应写入的 249 条与不应写入的 2750 条，并保留缺失数据及条件分母的不确定性。41 项检查通过，尚无新的记忆写入、Agent 或裁判运行。
+
 ## 来源与完整性
 
 [作者数据仓库](https://github.com/Digital-Trust-Lab/mp-bench)固定提交 `6886880a7c29625e0109e0ad91d0e095029f1577`，Apache-2.0，源码包SHA `63d6f551f39de46647a02064927e553a5c510ff223261e9f96b6290410ad5b69`。快照提供数据、说明和许可，没有可直接运行的Agent配置、裁判实现或官方训练/测试划分。

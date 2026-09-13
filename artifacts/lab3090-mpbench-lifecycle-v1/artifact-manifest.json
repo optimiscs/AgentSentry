@@ -1,0 +1,58 @@
+{
+  "generated_at": "2026-09-13T14:41:51.009678+00:00",
+  "scope": "MPBench lifecycle preparation, unit evidence and conditional metric arithmetic; no model or memory run.",
+  "files": {
+    "artifacts/lab3090-mpbench-lifecycle-v1/LICENSE-MPBench": {
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "bytes": 11357
+    },
+    "artifacts/lab3090-mpbench-lifecycle-v1/artifact-validation.json": {
+      "sha256": "73ac625565eeaf0495bfd39157a4f82a965b8adf5d108799ede3e7c4c8ea9cf4",
+      "bytes": 416
+    },
+    "artifacts/lab3090-mpbench-lifecycle-v1/baseline-firstparty-source.tar.gz": {
+      "sha256": "705b7ca6d7ca9afa4328992198b20b4422905126af86628bdc38520ce2084bae",
+      "bytes": 115894
+    },
+    "artifacts/lab3090-mpbench-lifecycle-v1/baseline-provenance.json": {
+      "sha256": "296728123b59c6603b84817945ec114ccb8a3e64ccbf50cb303d53e22b4ed904",
+      "bytes": 171
+    },
+    "artifacts/lab3090-mpbench-lifecycle-v1/duplication.json": {
+      "sha256": "0c6e9ec357ed22389c1ae9680367ce732e8bee27f5d9c69524beb3c2b7413d27",
+      "bytes": 250098
+    },
+    "artifacts/lab3090-mpbench-lifecycle-v1/execution.json": {
+      "sha256": "b301e4a125d51ae4b4392dce91905b093226ff5ace3986eea4ae1b3976d9f4b3",
+      "bytes": 1018
+    },
+    "artifacts/lab3090-mpbench-lifecycle-v1/parent-progress.json": {
+      "sha256": "5c5d8c23abe7c9a4327a525ecd2691f6a92d13a0dd28b630c785b0a2d11d1859",
+      "bytes": 1136
+    },
+    "artifacts/lab3090-mpbench-lifecycle-v1/prepare.log": {
+      "sha256": "3ccbb8bc8978ecebcb898d3d0b361411af3516c7a4ac08ac7e53e86ed663458b",
+      "bytes": 417
+    },
+    "artifacts/lab3090-mpbench-lifecycle-v1/protocol-manifest.json": {
+      "sha256": "6089962f1356b4d97838493510e53387cfefeabd0d91fa43c6f8e148477ad6b7",
+      "bytes": 1852
+    },
+    "artifacts/lab3090-mpbench-lifecycle-v1/published-examples.json": {
+      "sha256": "fc1e977a21a04c44dd496f10c314fb21730f678b255434315cf83dbbfe73e26f",
+      "bytes": 4435
+    },
+    "artifacts/lab3090-mpbench-lifecycle-v1/source-manifest.json": {
+      "sha256": "0aa7a05c9794626b9408a69dd07dff84df4d683d33b632e3495a7532009708fa",
+      "bytes": 883
+    },
+    "artifacts/lab3090-mpbench-lifecycle-v1/source-snapshot.tar.gz": {
+      "sha256": "bce25e7abebe6531e25e17aa93aec147f59ac738d85ae81fa2380fb6ccad13e9",
+      "bytes": 12971
+    },
+    "artifacts/lab3090-mpbench-lifecycle-v1/unit-checks.log": {
+      "sha256": "7df0bf23affbde15c2f7110510884a056f2fc959e5e78bd015c1d4d9180844b4",
+      "bytes": 99
+    }
+  }
+}

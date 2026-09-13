@@ -1,0 +1,142 @@
+{
+  "generated_at": "2026-09-13T14:36:55.436966+00:00",
+  "status": "LIFECYCLE_INPUTS_PREPARED_NO_AGENT_OR_JUDGE_RUN",
+  "data_preparation": {
+    "input_records": 6240,
+    "write_objectives": {
+      "ATTACK_TARGET_PERSISTENCE": 3241,
+      "NO_MEMORY_WRITE": 2750,
+      "LEGITIMATE_MEMORY_RETENTION": 249
+    },
+    "boolean_adaptations": 7,
+    "issues_by_partition": {
+      "adversarial": {
+        "MISSING_MEMORY_TARGET": 2,
+        "MISSING_FOLLOWUP_QUERY": 242
+      },
+      "benign": {
+        "MISSING_FOLLOWUP_QUERY": 2
+      }
+    },
+    "benign_no_write_with_nonempty_target": 2607
+  },
+  "tests": {
+    "argv": [
+      "-m",
+      "pytest",
+      "-q",
+      "tests/test_mpbench_lifecycle.py",
+      "tests/test_mpbench_input_scoring.py"
+    ],
+    "passed": 41,
+    "new_checks": 17,
+    "previous_input_scoring_checks": 24,
+    "returncode": 0,
+    "log": "unit-checks.log"
+  },
+  "source_archive_sha256": "bce25e7abebe6531e25e17aa93aec147f59ac738d85ae81fa2380fb6ccad13e9",
+  "implementation_sha256": "333fa4899ab02ecc27827bcb0526a445d6078ebf8bfbbb5d8c638ef1e577f5c9",
+  "artifact_manifest_sha256": "fb79ddbf550df35575ea224d76c37c920f1e2db95d6bdf451bf8c76e6ec75e78",
+  "duplication": {
+    "scope": "First-party Python src, benchmarks and scripts. Tests, generated JS, dependencies and upstream artifacts excluded explicitly.",
+    "baseline_files": 69,
+    "current_files": 70,
+    "measurements": [
+      {
+        "minimum_tokens": 50,
+        "mode": "exact",
+        "total_tokens": 67680,
+        "clone_covered_tokens": 796,
+        "clone_coverage": 0.011761229314420803
+      },
+      {
+        "minimum_tokens": 100,
+        "mode": "exact",
+        "total_tokens": 67680,
+        "clone_covered_tokens": 0,
+        "clone_coverage": 0.0
+      },
+      {
+        "minimum_tokens": 200,
+        "mode": "exact",
+        "total_tokens": 67680,
+        "clone_covered_tokens": 0,
+        "clone_coverage": 0.0
+      },
+      {
+        "minimum_tokens": 50,
+        "mode": "identifier_normalized",
+        "total_tokens": 67680,
+        "clone_covered_tokens": 1845,
+        "clone_coverage": 0.02726063829787234
+      },
+      {
+        "minimum_tokens": 100,
+        "mode": "identifier_normalized",
+        "total_tokens": 67680,
+        "clone_covered_tokens": 224,
+        "clone_coverage": 0.003309692671394799
+      },
+      {
+        "minimum_tokens": 200,
+        "mode": "identifier_normalized",
+        "total_tokens": 67680,
+        "clone_covered_tokens": 0,
+        "clone_coverage": 0.0
+      }
+    ]
+  },
+  "limitations": [
+    "No actual persistent memory, new session, actor or semantic judge execution.",
+    "No missing follow-up is replaced by agent_question; all rows remain in the protocol.",
+    "Agent runtime, write channels C1-C4, semantic judge validation and human agreement remain required.",
+    "No metric or acceptance claim follows from data readiness. Published cases are not independent hidden test data."
+  ],
+  "parent_progress": {
+    "observed_at_utc": "2026-09-13T14:34:44.074392+00:00",
+    "runs": {
+      "baseline": {
+        "controller_status": "RUNNING",
+        "pid": 2668533,
+        "state": "S",
+        "live_identity_verified": true,
+        "start_ticks": "755411078",
+        "expected_start_ticks": "755411078",
+        "planned": 1046,
+        "recorded": 410,
+        "valid": 410,
+        "errors": 0,
+        "partial_lines": 0,
+        "actor_thinking": false,
+        "guard_thinking": false,
+        "final_metrics_exists": false
+      },
+      "reference": {
+        "controller_status": "RUNNING",
+        "pid": 2668532,
+        "state": "S",
+        "live_identity_verified": true,
+        "start_ticks": "755411078",
+        "expected_start_ticks": "755411078",
+        "planned": 1046,
+        "recorded": 324,
+        "valid": 324,
+        "errors": 0,
+        "partial_lines": 0,
+        "actor_thinking": false,
+        "guard_thinking": false,
+        "final_metrics_exists": false
+      }
+    },
+    "source_verification": {
+      "context-filter-v5": {
+        "verified_files": 129,
+        "matches": true
+      },
+      "composed-guard-v1": {
+        "verified_files": 132,
+        "matches": true
+      }
+    }
+  }
+}

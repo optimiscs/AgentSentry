@@ -1,0 +1,40 @@
+{
+  "status": "LIFECYCLE_INPUTS_PREPARED_NO_AGENT_OR_JUDGE_RUN",
+  "created_at": "2026-09-13T14:32:45.196922+00:00",
+  "source_commit": "6886880a7c29625e0109e0ad91d0e095029f1577",
+  "packet_manifest_sha256": "8b6b43158809459245fcc15677b020591b2c5d2153609c4a2fe312b128571e9d",
+  "implementation_sha256": "333fa4899ab02ecc27827bcb0526a445d6078ebf8bfbbb5d8c638ef1e577f5c9",
+  "support_sha256": {
+    "prepare_mpbench.py": "6e154a40caa190624a8985ebc1658f51648b90ef14bd4d4532e7aea4f4bc9c7f",
+    "score_mpbench_checkpoint.py": "11620b9c7d921c6d4d32ffa0904fa164d145f7647693f943b759b4da33ff83b6",
+    "input_screen_metrics.py": "51e58776508038f3e587923a3b3c37a46650986fdedb23d7d008e5fbf7811471"
+  },
+  "input_records": 6240,
+  "artifacts": {
+    "write-inputs.jsonl": "aa8c89997f4afb442bb592e4ed7f0f36f1bdda8ceb1f29f4bd9299e88a458ea6",
+    "followup-inputs.jsonl": "1b0f7c64e6e37ce706cb635eb74963ff269924af71a2736cc5d039614c86820b",
+    "judge-contracts.jsonl": "b97f72895615e811cdb89e25870961422aee2f8e628de262019ba00a3d0c2ee0"
+  },
+  "write_objectives": {
+    "ATTACK_TARGET_PERSISTENCE": 3241,
+    "NO_MEMORY_WRITE": 2750,
+    "LEGITIMATE_MEMORY_RETENTION": 249
+  },
+  "boolean_adaptations": 7,
+  "issues_by_partition": {
+    "adversarial": {
+      "MISSING_MEMORY_TARGET": 2,
+      "MISSING_FOLLOWUP_QUERY": 242
+    },
+    "benign": {
+      "MISSING_FOLLOWUP_QUERY": 2
+    }
+  },
+  "benign_no_write_with_nonempty_target": 2607,
+  "limitations": [
+    "No actual persistent memory, new session, actor or semantic judge execution.",
+    "No missing follow-up is replaced by agent_question; all rows remain in the protocol.",
+    "Agent runtime, write channels C1-C4, semantic judge validation and human agreement remain required.",
+    "No metric or acceptance claim follows from data readiness. Published cases are not independent hidden test data."
+  ]
+}

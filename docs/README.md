@@ -6,6 +6,8 @@
 
 新增 [归因防护成本与强基线评审](05-validation/causal-proxy-budget-and-baseline-review.md)：35 条真实开发轨迹的 CPU token 核对已完成，没有新增模型效果；任务与防护继续默认关闭思考。
 
+新增 [MPBench 跨会话评测准备](05-validation/mpbench-lifecycle-preparation.md)：全量字段隔离、正常记忆写入期望和未知结果计分已实现；真实记忆及裁判运行尚待完成。
+
 ## 30类文档
 
 | 编号 | 文档 | Owner | 状态 |
