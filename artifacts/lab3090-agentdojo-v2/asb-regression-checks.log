@@ -1,0 +1,19 @@
+test_failed_case_is_unknown_not_successful_defense (__main__.NativeAdapterTests.test_failed_case_is_unknown_not_successful_defense) ... ok
+test_gate_has_no_attack_name_blacklist (__main__.NativeAdapterTests.test_gate_has_no_attack_name_blacklist) ... ok
+test_invalid_generated_parameter_constraints_remain_rejected (__main__.NativeAdapterTests.test_invalid_generated_parameter_constraints_remain_rejected) ... ok
+test_memory_uses_native_query_including_runtime_task_and_tools (__main__.NativeAdapterTests.test_memory_uses_native_query_including_runtime_task_and_tools) ... ok
+test_native_baseline_executes_selected_attack_in_simulation (__main__.NativeAdapterTests.test_native_baseline_executes_selected_attack_in_simulation) ... ok
+test_native_source_hash_is_checked_before_execution (__main__.NativeAdapterTests.test_native_source_hash_is_checked_before_execution) ... ok
+test_no_ask_ablation_blocks_instead_of_approving (__main__.NativeAdapterTests.test_no_ask_ablation_blocks_instead_of_approving) ... ok
+test_normal_steps_complete_under_full_policy (__main__.NativeAdapterTests.test_normal_steps_complete_under_full_policy) ... ok
+test_raw_opi_is_recorded_with_taint_after_native_append (__main__.NativeAdapterTests.test_raw_opi_is_recorded_with_taint_after_native_append) ... ok
+test_scene_selection_preserves_full_and_pilot_counts (__main__.NativeAdapterTests.test_scene_selection_preserves_full_and_pilot_counts) ... ok
+test_unknown_native_tool_is_not_executed (__main__.NativeAdapterTests.test_unknown_native_tool_is_not_executed) ... ok
+test_unplanned_attack_has_no_simulated_dispatch (__main__.NativeAdapterTests.test_unplanned_attack_has_no_simulated_dispatch) ... ok
+test_workflow_schema_does_not_authorize_attack (__main__.NativeAdapterTests.test_workflow_schema_does_not_authorize_attack) ... ok
+test_workflow_schema_preserves_unknown_tool_failure (__main__.NativeAdapterTests.test_workflow_schema_preserves_unknown_tool_failure) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.986s
+
+OK

@@ -1,0 +1,225 @@
+{
+  "files": {
+    "benchmarks/acceptance.py": {
+      "sha256": "7c7a21ed62954a921e82709452c1dbf4cf0295fb0cef6eb26df9acbf4ff6d652",
+      "bytes": 12625
+    },
+    "tests/test_benchmark_acceptance.py": {
+      "sha256": "fe1331f9a6a7f5f963ff7c50964eb15b8b46323b4001a4793ce2cec1721704b1",
+      "bytes": 3693
+    },
+    "deploy/lab3090/benchmark-environment.md": {
+      "sha256": "89c162075278a5d53ec9f5b5b04598bb6c9911ec8cc821c2a448953a844a4e63",
+      "bytes": 1618
+    },
+    "deploy/lab3090/benchmark-lock.txt": {
+      "sha256": "be786185abf34f632feb8269b12470b4a6cb20709efcd77f3254b3197b353d39",
+      "bytes": 1816
+    },
+    "docs/05-validation/agentdojo-lab3090-contract-v4-review.md": {
+      "sha256": "01b122ceee10e1a62ee09bd55c8f23f56a8e060b6318b2b15989993da8b64129",
+      "bytes": 9269
+    },
+    "docs/evidence/agentdojo-lab3090-contract-v4.json": {
+      "sha256": "fdf272ff5d60697fab831e1af9d43c417001bc36fe5363883c1d02747181ebb4",
+      "bytes": 175933
+    },
+    "docs/README.md": {
+      "sha256": "c59e19fea26e7acce0ea86a096848b13b316ec5ce67651cd2f33f314d76d4dd5",
+      "bytes": 8025
+    },
+    "docs/04-development/15-implementation-record-dev-log.md": {
+      "sha256": "ac19eae08b1b2177f84e73daccb833a0771007d99c36995ecc29c24d6958020e",
+      "bytes": 36917
+    },
+    "docs/04-development/lab3090-migration-and-resume.md": {
+      "sha256": "aba57147ee9372955f5b313a7321b6b91c33b6a21cbbfe8866f51251ee3bb00b",
+      "bytes": 8353
+    },
+    "docs/evidence/documentation-check.json": {
+      "sha256": "6d2f168775314babef6614318eb8139b40de16e5a7003e354e23e8d61b6931ef",
+      "bytes": 469
+    },
+    "docs/evidence/lab3090-live-benchmark-progress.json": {
+      "sha256": "fb969ab3a51774960fed5519228fd9e3f2811e6d8465ea410cc944daa79df343",
+      "bytes": 1831
+    },
+    "docs/05-validation/lab3090-live-benchmark-progress.md": {
+      "sha256": "f0f171ae92660c6b219afd33a44a0578589b23cbe0a848e90ef78c5ef8a961e6",
+      "bytes": 1273
+    },
+    "artifacts/lab3090-agentdojo-v1/benchmark-requirements.txt": {
+      "sha256": "ccfd5e37252880c093cbe10dc5987e3992d3e826436b43212e3e67a51791fd85",
+      "bytes": 453
+    },
+    "artifacts/lab3090-agentdojo-v1/benchmark-constraints.txt": {
+      "sha256": "0054b682235db277832ce93a990f16a898da671a76cf592cdd42488b21716f71",
+      "bytes": 1728
+    },
+    "artifacts/lab3090-agentdojo-v1/benchmark-packages.json": {
+      "sha256": "ede7ba5fc12445879378527208b79417874a3af08daefec302c51b5e77f37896",
+      "bytes": 4447
+    },
+    "artifacts/lab3090-agentdojo-v1/conda-explicit.txt": {
+      "sha256": "bf1f8db9b3689eef98e6f3c3d1e5b2863428d55b97e8682b25c776624a704614",
+      "bytes": 2719
+    },
+    "artifacts/lab3090-agentdojo-v1/jobs.json": {
+      "sha256": "91556b65367297253bfd1e951f47fac92cef3e8e9841ebd736365c168918c57b",
+      "bytes": 2385
+    },
+    "artifacts/lab3090-agentdojo-v1/preflight.json": {
+      "sha256": "187a11c17170819db8a05e817608ca2c58416aed0c45d7d990301f8948a3b187",
+      "bytes": 1127
+    },
+    "artifacts/lab3090-agentdojo-v1/run_job.py": {
+      "sha256": "27faead2967244d39f9c2837669338e5922549f2cf99e8a576ac4577ec440085",
+      "bytes": 2119
+    },
+    "artifacts/lab3090-agentdojo-v1/native-pipeline-checks.log": {
+      "sha256": "c6b3ef881c0f3ae251d9d407e03522cb99af38b666e41324c16b70ab99ded723",
+      "bytes": 844
+    },
+    "artifacts/lab3090-agentdojo-v1/v4-unit-checks.log": {
+      "sha256": "aea75fba5f84fb6f91325ebd27af06f944ec889b435d56cf850983687cfcf610",
+      "bytes": 179
+    },
+    "artifacts/lab3090-agentdojo-v1/v4-native-pipeline-checks.log": {
+      "sha256": "68f38d0caa1af77d55b900e14f0d672215eac53f992957818061a8ff09e3643a",
+      "bytes": 1010
+    },
+    "artifacts/lab3090-agentdojo-v1/pip-check.log": {
+      "sha256": "9261363b733079a641c2e4cc9bc46ffa1d8336945a87f807b6cf68847dbc9b09",
+      "bytes": 30
+    },
+    "artifacts/lab3090-agentdojo-v1/before-packages.json": {
+      "sha256": "5224a8ce2f60cfec4f865295ae68d85a44b8d50ed5a8394db974843b83c85441",
+      "bytes": 11528
+    },
+    "artifacts/lab3090-agentdojo-v1/model-packages-after.json": {
+      "sha256": "cc09ece5dd6dfd2a17045ff229e3e43b412972e70f932b340efe4947af690947",
+      "bytes": 8876
+    },
+    "artifacts/lab3090-agentdojo-v2/source-candidate.tar.gz": {
+      "sha256": "1acaeea306024c9ef5df18fbc6809144fc9268e1b6f211cd17e9c6da068ab6a3",
+      "bytes": 232742
+    },
+    "artifacts/lab3090-agentdojo-v2/candidate-manifest.json": {
+      "sha256": "357566c0b53c2d18d658abf492138d7233af35b24447be6db39804a252a82eb3",
+      "bytes": 13199
+    },
+    "artifacts/lab3090-agentdojo-v2/origin-manifest.json": {
+      "sha256": "a07e5418f9a23fff0b455b6e95f9b0a84c72f90c8c1c7ec6630b2c78a0ea7cfb",
+      "bytes": 13259
+    },
+    "artifacts/lab3090-agentdojo-v2/changes.patch": {
+      "sha256": "fce113377e29bb2c02d094df89754899497ed6a3ffe8f29baad67e0adaab1416",
+      "bytes": 8549
+    },
+    "artifacts/lab3090-agentdojo-v2/duplication.json": {
+      "sha256": "e2eadf61de320dd847f320902931e74dd030e518d39843c04c8a09e01fbee685",
+      "bytes": 115427
+    },
+    "artifacts/lab3090-agentdojo-v2/main-duplication.json": {
+      "sha256": "262f8cfc594c0eec308678f13aecbba96fcc783c948f7435ea2e432533ed6df5",
+      "bytes": 118595
+    },
+    "artifacts/lab3090-agentdojo-v2/engineering-checks.json": {
+      "sha256": "9b870c4cac5c5e1c41389c4cbcfbe596c3f0dfb84db4e223a88613a67cd89b87",
+      "bytes": 1608
+    },
+    "artifacts/lab3090-agentdojo-v2/jobs.json": {
+      "sha256": "b77c2cec96c51c65ea9afd87c68cb97b0be91fff597e9ece1a91fc58b6b7eb25",
+      "bytes": 2679
+    },
+    "artifacts/lab3090-agentdojo-v2/run_job.py": {
+      "sha256": "27faead2967244d39f9c2837669338e5922549f2cf99e8a576ac4577ec440085",
+      "bytes": 2119
+    },
+    "artifacts/lab3090-agentdojo-v2/asb-regression-checks.log": {
+      "sha256": "5a57945523a48893347d43eff927b4f2babbdd848e3913d9540a729f4d1af33e",
+      "bytes": 2051
+    },
+    "artifacts/lab3090-agentdojo-v2/acceptance-checks.log": {
+      "sha256": "9ced990d8fab992bbeefe1ee84883e6d85413bb4afebf59610594a1aa1e15689",
+      "bytes": 99
+    },
+    "artifacts/lab3090-agentdojo-v2/paired-acceptance.json": {
+      "sha256": "5a8a63a2e133e2e3c53d498af88bf6be1db9af6ab9e6e427203d6be6795dbeb3",
+      "bytes": 12923
+    },
+    "artifacts/lab3090-agentdojo-v2/paired-acceptance.md": {
+      "sha256": "bd4bb017545f1f5d05ecf24df1ec1c4df9f1f46e593acf3c800dfa1ed3464288",
+      "bytes": 2791
+    },
+    "artifacts/lab3090-agentdojo-v4-attacks/jobs.json": {
+      "sha256": "8d359b94bb56c99aac049652ce1e411749bd10505b057a046dc3103efada036b",
+      "bytes": 2851
+    },
+    "artifacts/lab3090-agentdojo-v4-attacks/run_job.py": {
+      "sha256": "27faead2967244d39f9c2837669338e5922549f2cf99e8a576ac4577ec440085",
+      "bytes": 2119
+    },
+    "artifacts/lab3090-agentdojo-v4-attacks/baseline-process.json": {
+      "sha256": "1779819a8f511e10170e4872ef4a01da548cdb388fd79b2ca5e2dd4313651a91",
+      "bytes": 1650
+    },
+    "artifacts/lab3090-agentdojo-v4-attacks/full-process.json": {
+      "sha256": "ba68d3c0fe3145b47fdd598587c7eacfac7f7f616b2c6bc28621e6588db37651",
+      "bytes": 1635
+    },
+    "artifacts/lab3090-agentdojo-v4-attacks/progress-controller.json": {
+      "sha256": "2d2e1cef7d2f1fdfbb34c774b823bf948c3781e8617cde8a34b187a54d97651b",
+      "bytes": 1062
+    },
+    "artifacts/benchmarks/agentdojo/agentdojo-lab3090-qwen35-9b-contract-v3-benign8-baseline-s0/manifest.json": {
+      "sha256": "bcab9db953361823334f31fd6703897972ab1d67eb6ece03de93619c5cd1467c",
+      "bytes": 7319
+    },
+    "artifacts/benchmarks/agentdojo/agentdojo-lab3090-qwen35-9b-contract-v3-benign8-baseline-s0/metrics.json": {
+      "sha256": "92e14a80ae6127053172a44cd1e4a5eef699ea5a4f5fe22b203feaa01c1c30d7",
+      "bytes": 579
+    },
+    "artifacts/benchmarks/agentdojo/agentdojo-lab3090-qwen35-9b-contract-v3-benign8-full-s0/manifest.json": {
+      "sha256": "31f9155ef8d3ef513dfdd2c103670fd83409f5f8ee969e92e2293317ea44b49f",
+      "bytes": 7315
+    },
+    "artifacts/benchmarks/agentdojo/agentdojo-lab3090-qwen35-9b-contract-v3-benign8-full-s0/metrics.json": {
+      "sha256": "829dcce005b3ab059ae80cdb0b8d9d113166e8cd96f649fc459c250055de5266",
+      "bytes": 580
+    },
+    "artifacts/benchmarks/agentdojo/agentdojo-lab3090-qwen35-9b-contract-v4-benign8-baseline-s0/manifest.json": {
+      "sha256": "1b3db51de4ee42907a3ebebe084f09550edd6896962083de0bf1e1de27cc0736",
+      "bytes": 7319
+    },
+    "artifacts/benchmarks/agentdojo/agentdojo-lab3090-qwen35-9b-contract-v4-benign8-baseline-s0/metrics.json": {
+      "sha256": "92e14a80ae6127053172a44cd1e4a5eef699ea5a4f5fe22b203feaa01c1c30d7",
+      "bytes": 579
+    },
+    "artifacts/benchmarks/agentdojo/agentdojo-lab3090-qwen35-9b-contract-v4-benign8-full-s0/manifest.json": {
+      "sha256": "b9a9801c61f557c0b9ffb6f72d6f505e86bdbb8f23daf6e8dd250a0653a72a7d",
+      "bytes": 7315
+    },
+    "artifacts/benchmarks/agentdojo/agentdojo-lab3090-qwen35-9b-contract-v4-benign8-full-s0/metrics.json": {
+      "sha256": "577d385d0ef78e27a7b585b384ab4b62039ba0c1a7090d6675511287383f0645",
+      "bytes": 580
+    },
+    "artifacts/benchmarks/agentdojo/agentdojo-lab3090-qwen35-9b-contract-v4-attack16-baseline-s0/manifest.json": {
+      "sha256": "1ce2d0a21b32b21d3730bb26cd83c62ca783cff1c79febfdcfd54df0acf2e9d6",
+      "bytes": 7749
+    },
+    "artifacts/benchmarks/agentdojo/agentdojo-lab3090-qwen35-9b-contract-v4-attack16-baseline-s0/metrics.json": {
+      "sha256": "870cbf4d4d907e9bfeea51c52082fd5fc68ee2fb55ceb885b266674a6178c147",
+      "bytes": 593
+    },
+    "artifacts/benchmarks/agentdojo/agentdojo-lab3090-qwen35-9b-contract-v4-attack16-full-s0/manifest.json": {
+      "sha256": "ef92cb75be2a87708d3d12028eb41f2bbd4bedf896323eb9630ca4912856db0c",
+      "bytes": 7745
+    },
+    "artifacts/benchmarks/agentdojo/agentdojo-lab3090-qwen35-9b-contract-v4-attack16-full-s0/metrics.json": {
+      "sha256": "bd1925e96475a7a84f19618ca418b8ef8a3875152dfa643585279d77f6171dae",
+      "bytes": 589
+    }
+  },
+  "note": "Selected source, environment metadata, simulated-case evidence and metrics; raw full model traces remain local and on Lab3090."
+}

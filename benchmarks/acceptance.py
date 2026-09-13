@@ -77,6 +77,10 @@ def compare(baseline, full):
         "setting",
         "attack",
         "max_steps",
+        "intent_mode",
+        "guard_max_tokens",
+        "guard_response_format",
+        "workers",
         "mode",
         "planned_ids",
         "source_files",
@@ -200,6 +204,10 @@ def compare(baseline, full):
             for k in [
                 "max_tokens",
                 "max_steps",
+                "intent_mode",
+                "guard_max_tokens",
+                "guard_response_format",
+                "workers",
                 "serving_model",
                 "runner_sha256",
                 "protocol_sha256",
@@ -262,7 +270,7 @@ def main():
     text = (
         "# 公开 Benchmark 实测与验收\n\n更新："
         + report["generated_at"]
-        + "。总判定：**NOT_ACCEPTED（未通过）**。\n\n使用 5090 上已有本地权重，具体模型与预算在每组配置中列出，无付费模型 API。结果来自原生任务/攻击数据与判定器；不等同于 Codex / Claude Code 产品端到端验收。\n\n"
+        + "。总判定：**NOT_ACCEPTED（未通过）**。\n\n使用本地模型服务，具体模型与预算在每组配置中列出。结果来自原生任务/攻击数据与判定器；不等同于 Codex / Claude Code 产品端到端验收。\n\n"
     )
     for c in comparisons:
         text += f"## {c['benchmark']} / {c['mode']} / {c['scope']}\n\n"
@@ -294,7 +302,7 @@ def main():
     text += (
         "## 未满足的验收证据\n\n"
         + "\n".join("- " + s for s in missing)
-        + "\n\n原始逐例轨迹保存在 5090 工程 artifacts/benchmarks；机器报告保存配对清单、工件 SHA-256 和指标分母。没有修改阈值或删除失败样例来取得 PASS。\n"
+        + "\n\n原始逐例轨迹保存在各运行目录的 per_case.jsonl；机器报告保存配对清单、工件 SHA-256 和指标分母。没有修改阈值或删除失败样例来取得 PASS。\n"
     )
     args.markdown.parent.mkdir(parents=True, exist_ok=True)
     args.markdown.write_text(text)

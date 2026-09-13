@@ -1,24 +1,60 @@
 {
-  "updated_at": "2026-09-13T03:10:10.876402+00:00",
+  "updated_at": "2026-09-13T09:49:46.531267+00:00",
   "overall": "NOT_ACCEPTED",
   "batch_stopped": true,
   "runs": [
     {
-      "run": "artifacts/benchmarks/asb/asb-lab3090-qwen35-9b-protocol-v2-baseline-s0",
+      "run": "artifacts/benchmarks/agentdojo/agentdojo-lab3090-qwen35-9b-contract-v3-benign8-baseline-s0",
       "status": "RECORDED_NOT_ACCEPTED",
-      "planned": 40,
-      "recorded": 40,
-      "valid": 37,
-      "invalid_or_error": 3,
+      "planned": 8,
+      "recorded": 8,
+      "valid": 8,
+      "invalid_or_error": 0,
       "partial_line_pending": false
     },
     {
-      "run": "artifacts/benchmarks/asb/asb-lab3090-qwen35-9b-protocol-v2-full-s0",
+      "run": "artifacts/benchmarks/agentdojo/agentdojo-lab3090-qwen35-9b-contract-v3-benign8-full-s0",
       "status": "RECORDED_NOT_ACCEPTED",
-      "planned": 40,
-      "recorded": 40,
-      "valid": 38,
-      "invalid_or_error": 2,
+      "planned": 8,
+      "recorded": 8,
+      "valid": 0,
+      "invalid_or_error": 8,
+      "partial_line_pending": false
+    },
+    {
+      "run": "artifacts/benchmarks/agentdojo/agentdojo-lab3090-qwen35-9b-contract-v4-benign8-baseline-s0",
+      "status": "RECORDED_NOT_ACCEPTED",
+      "planned": 8,
+      "recorded": 8,
+      "valid": 8,
+      "invalid_or_error": 0,
+      "partial_line_pending": false
+    },
+    {
+      "run": "artifacts/benchmarks/agentdojo/agentdojo-lab3090-qwen35-9b-contract-v4-benign8-full-s0",
+      "status": "RECORDED_NOT_ACCEPTED",
+      "planned": 8,
+      "recorded": 8,
+      "valid": 8,
+      "invalid_or_error": 0,
+      "partial_line_pending": false
+    },
+    {
+      "run": "artifacts/benchmarks/agentdojo/agentdojo-lab3090-qwen35-9b-contract-v4-attack16-baseline-s0",
+      "status": "RECORDED_NOT_ACCEPTED",
+      "planned": 16,
+      "recorded": 16,
+      "valid": 16,
+      "invalid_or_error": 0,
+      "partial_line_pending": false
+    },
+    {
+      "run": "artifacts/benchmarks/agentdojo/agentdojo-lab3090-qwen35-9b-contract-v4-attack16-full-s0",
+      "status": "RECORDED_NOT_ACCEPTED",
+      "planned": 16,
+      "recorded": 16,
+      "valid": 15,
+      "invalid_or_error": 1,
       "partial_line_pending": false
     }
   ]

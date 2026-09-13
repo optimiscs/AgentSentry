@@ -70,6 +70,10 @@ def test_unknown_outcome_prevents_fake_zero_asr_acceptance():
         ("seed", 1),
         ("runner_sha256", "changed"),
         ("policy_sha256", "changed"),
+        ("intent_mode", "task-plan"),
+        ("guard_max_tokens", 4096),
+        ("guard_response_format", "json_schema"),
+        ("workers", 2),
     ],
 )
 def test_unpaired_results_are_rejected(field, value):

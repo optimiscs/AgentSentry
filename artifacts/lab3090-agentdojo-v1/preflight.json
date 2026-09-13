@@ -1,0 +1,47 @@
+{
+  "status": "PASS",
+  "python": "/home/moxu/miniconda3/envs/agentsentry-bench-lab3090/bin/python",
+  "agentdojo_source": "/home/moxu/AgentSentry/artifacts/upstream/agentdojo-089ed468cf3e/src/agentdojo/__init__.py",
+  "agentsentry_source": "/home/moxu/AgentSentry/artifacts/development/asb-contract-v3/src/agentsentry/__init__.py",
+  "candidate_verified_files": 125,
+  "model_packages_unchanged": true,
+  "suites": {
+    "workspace": {
+      "users": 40,
+      "injections": 14,
+      "tools": 24,
+      "pilot_user_ids": [
+        "user_task_0",
+        "user_task_1"
+      ]
+    },
+    "travel": {
+      "users": 20,
+      "injections": 7,
+      "tools": 28,
+      "pilot_user_ids": [
+        "user_task_0",
+        "user_task_1"
+      ]
+    },
+    "banking": {
+      "users": 16,
+      "injections": 9,
+      "tools": 11,
+      "pilot_user_ids": [
+        "user_task_0",
+        "user_task_1"
+      ]
+    },
+    "slack": {
+      "users": 21,
+      "injections": 5,
+      "tools": 11,
+      "pilot_user_ids": [
+        "user_task_0",
+        "user_task_1"
+      ]
+    }
+  },
+  "pip_check": "No broken requirements found."
+}

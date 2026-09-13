@@ -4,6 +4,8 @@
 
 首轮恢复后已完成 [ASB v3 优化对照](../05-validation/asb-contract-v3-review.md)：两组各40条均有效，防护组开始放行8次正常工具调用；任务完整效用仍未成立。本文“首轮恢复结果”保留 v2 历史数值。
 
+随后建立独立 AgentDojo 评测环境并完成 [v4 正常任务复测](../05-validation/agentdojo-lab3090-contract-v4-review.md)：计划协议错误8→0，正常完成仍为防护4/8、基线8/8。环境锁定和复建步骤见[评测环境说明](../../deploy/lab3090/benchmark-environment.md)，推理服务继续使用原环境。
+
 ## 环境与模型
 
 - 主机：Lab3090 / B505-Server-09，用户 moxu，工程 `/home/moxu/AgentSentry`。

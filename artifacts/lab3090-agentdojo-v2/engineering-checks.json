@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "candidate_archive_sha256": "1acaeea306024c9ef5df18fbc6809144fc9268e1b6f211cd17e9c6da068ab6a3",
+  "archive_files_verified": 125,
+  "patch_files_verified": 4,
+  "tests": [
+    {
+      "name": "task_and_literal_contracts",
+      "count": 82,
+      "path": "artifacts/lab3090-agentdojo-v1/v4-unit-checks.log",
+      "sha256": "aea75fba5f84fb6f91325ebd27af06f944ec889b435d56cf850983687cfcf610",
+      "type": "scripted/unit; not real-model benchmark scores"
+    },
+    {
+      "name": "native_agentdojo_pipeline",
+      "count": 7,
+      "path": "artifacts/lab3090-agentdojo-v1/v4-native-pipeline-checks.log",
+      "sha256": "68f38d0caa1af77d55b900e14f0d672215eac53f992957818061a8ff09e3643a",
+      "type": "scripted/unit; not real-model benchmark scores"
+    },
+    {
+      "name": "asb_pipeline",
+      "count": 14,
+      "path": "artifacts/lab3090-agentdojo-v2/asb-regression-checks.log",
+      "sha256": "5a57945523a48893347d43eff927b4f2babbdd848e3913d9540a729f4d1af33e",
+      "type": "scripted/unit; not real-model benchmark scores"
+    },
+    {
+      "name": "paired_acceptance_integrity",
+      "count": 13,
+      "path": "artifacts/lab3090-agentdojo-v2/acceptance-checks.log",
+      "sha256": "9ced990d8fab992bbeefe1ee84883e6d85413bb4afebf59610594a1aa1e15689",
+      "source_sha256": {
+        "benchmarks/acceptance.py": "7c7a21ed62954a921e82709452c1dbf4cf0295fb0cef6eb26df9acbf4ff6d652",
+        "tests/test_benchmark_acceptance.py": "fe1331f9a6a7f5f963ff7c50964eb15b8b46323b4001a4793ce2cec1721704b1"
+      },
+      "type": "unit; not real-model benchmark scores"
+    }
+  ]
+}

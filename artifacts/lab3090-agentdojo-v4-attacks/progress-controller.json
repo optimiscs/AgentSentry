@@ -1,0 +1,26 @@
+{
+  "pid": 2547034,
+  "start_ticks": "754162286",
+  "command": [
+    "/home/moxu/miniconda3/envs/agentsentry-bench-lab3090/bin/python",
+    "/home/moxu/AgentSentry/scripts/watch_benchmark_progress.py",
+    "--json-output",
+    "docs/evidence/lab3090-live-benchmark-progress.json",
+    "--markdown-output",
+    "docs/05-validation/lab3090-live-benchmark-progress.md",
+    "--run",
+    "artifacts/benchmarks/agentdojo/agentdojo-lab3090-qwen35-9b-contract-v3-benign8-baseline-s0",
+    "--run",
+    "artifacts/benchmarks/agentdojo/agentdojo-lab3090-qwen35-9b-contract-v3-benign8-full-s0",
+    "--run",
+    "artifacts/benchmarks/agentdojo/agentdojo-lab3090-qwen35-9b-contract-v4-benign8-baseline-s0",
+    "--run",
+    "artifacts/benchmarks/agentdojo/agentdojo-lab3090-qwen35-9b-contract-v4-benign8-full-s0",
+    "--run",
+    "artifacts/benchmarks/agentdojo/agentdojo-lab3090-qwen35-9b-contract-v4-attack16-baseline-s0",
+    "--run",
+    "artifacts/benchmarks/agentdojo/agentdojo-lab3090-qwen35-9b-contract-v4-attack16-full-s0",
+    "--batch-pid",
+    "2541773"
+  ]
+}

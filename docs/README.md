@@ -53,6 +53,8 @@
 
 [ASB v3 优化实测](05-validation/asb-contract-v3-review.md)：两组各40条均有效，防护组放行8次正常调用，已知攻击执行9→0；完整任务效用仍未成立，综合验收未通过。
 
+[AgentDojo v4 正常任务及攻击复测](05-validation/agentdojo-lab3090-contract-v4-review.md)：计划协议错误8→0；正常完成基线8/8、防护4/8。16条/组攻击对照已结束，已判定攻击成功3→0，但防护有1条未知；完整验收仍未通过。
+
 [核心机制与代码导读](03-architecture/core-innovation-and-code-guide.md)按活动实现、接入范围与研究候选分别说明，并提供源码入口和实验局限。
 
 接入范围与后续路线：[主流编程 Agent 接入矩阵](03-architecture/framework-integration-matrix.md)（Codex / Claude Code 优先，产品端到端验收未执行）。
