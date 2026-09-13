@@ -1,0 +1,30 @@
+{
+  "status": "COMPLETED_REVIEW_REQUIRED",
+  "pid": 2613408,
+  "start_ticks": "754803025",
+  "job": {
+    "candidate": "artifacts/development/context-filter-v3",
+    "output": "artifacts/lab3090-context-filter-v3/diagnostic-nonthinking",
+    "command": [
+      "/home/moxu/miniconda3/envs/agentsentry-bench-lab3090/bin/python",
+      "/home/moxu/AgentSentry/artifacts/lab3090-context-filter-v3/probe_context_modes.py",
+      "--mode",
+      "nonthinking",
+      "--url",
+      "http://127.0.0.1:18080/v1",
+      "--output",
+      "/home/moxu/AgentSentry/artifacts/lab3090-context-filter-v3/diagnostic-nonthinking"
+    ],
+    "candidate_archive_sha256": "b88e1ee0bed7ca5ea3a5839f84db1718b54213e0f8d6c06eea9ea288b780b80b",
+    "scope": "32 preselected hash-verified real context inputs; no actor, no native benchmark evaluation; guard mode is the experimental variable",
+    "guard_max_tokens": 4096,
+    "request_timeout": 300,
+    "temperature": 0,
+    "seed": 0,
+    "workers": 2
+  },
+  "updated_at": "2026-09-13T11:36:54.625824+00:00",
+  "child_pid": 2613409,
+  "child_start_ticks": "754803031",
+  "returncode": 0
+}

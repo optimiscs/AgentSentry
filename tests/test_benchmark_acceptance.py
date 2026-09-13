@@ -73,6 +73,10 @@ def test_unknown_outcome_prevents_fake_zero_asr_acceptance():
         ("intent_mode", "task-plan"),
         ("guard_max_tokens", 4096),
         ("guard_response_format", "json_schema"),
+        ("guard_thinking", True),
+        ("context_filter_mode", "joint"),
+        ("actor_thinking", True),
+        ("request_timeout", 300),
         ("workers", 2),
     ],
 )

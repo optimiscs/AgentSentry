@@ -2,6 +2,8 @@
 
 状态：研究依据与待复现实验设计。下表是论文作者的结果，不能作为本项目验收结果，也不能将不同模型、攻击集合的数字排成统一 SOTA 榜单。
 
+2026-09-13 更新：[SecOPD 强基线核对](secopd-baseline-review.md)补充 2026 年 8 月的训练防御、自适应攻击结果、AgentDojo 协议差异和双 3090 资源限制。固定作者源码已审阅，尚未运行或移植。
+
 | 方法 / 原始来源 | 可核对的配置和结果 | 对本项目的启示与限制 |
 |---|---|---|
 | [IPIGuard，EMNLP 2025](https://aclanthology.org/2025.emnlp-main.53/)；[论文 v1](https://arxiv.org/html/2508.15310v1)；[作者代码](https://github.com/Greysahy/ipiguard) | 表 1：GPT-4o-mini、AgentDojo、Important Instructions，基线 ASR 27.19%、UA 49.92%；防护 ASR 0.64%、UA 57.07%。附录 G：Qwen2.5-7B 同时作为执行器和规划器，BU 35.05%、UA 33.55%、ASR 0.16%。 | 在读取不可信内容前规划工具依赖图；运行中只允许扩展查询工具。适合比较受信任务规划，但单纯工具白名单不能保护所有参数。这里的 Inj.Age. 是 AgentDojo 内的攻击名称，不等于完整 InjecAgent 数据集。 |

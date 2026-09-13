@@ -1,0 +1,30 @@
+{
+  "observed_at": "2026-09-13T12:15:22.250766+00:00",
+  "status": "NOT_ACCEPTED",
+  "runs": {
+    "baseline": {
+      "state": "RUNNING",
+      "pid": 2632067,
+      "start_ticks": "755007734",
+      "identity_live": true,
+      "returncode": null,
+      "recorded": 29,
+      "planned": 97,
+      "valid": 29,
+      "native_utility_true_so_far": 27,
+      "output": "artifacts/benchmarks/agentdojo/agentdojo-lab3090-qwen35-9b-context-filter-v4-benign97-baseline-s0"
+    },
+    "reference": {
+      "state": "RUNNING",
+      "pid": 2632575,
+      "start_ticks": "755012401",
+      "identity_live": true,
+      "returncode": null,
+      "recorded": 24,
+      "planned": 97,
+      "valid": 24,
+      "native_utility_true_so_far": 22,
+      "output": "artifacts/benchmarks/agentdojo/agentdojo-lab3090-qwen35-9b-context-filter-v4-benign97-promptarmor_adapted-s0"
+    }
+  }
+}

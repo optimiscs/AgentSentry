@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "rebuilt_files": 128,
+  "parent": "context-filter-v2",
+  "patch_sha256": "7361e6cbd62edabbbdfea7db290c61e2367f02b0fe5b44d32c32ff5e03ca67ef",
+  "command": "git apply --unidiff-zero changes.patch",
+  "candidate_archive_sha256": "b88e1ee0bed7ca5ea3a5839f84db1718b54213e0f8d6c06eea9ea288b780b80b"
+}

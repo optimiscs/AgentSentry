@@ -1,0 +1,102 @@
+{
+  "kind": "partial_hardware_telemetry_audit",
+  "window_start": "2026-09-13T10:49:44.687040+00:00",
+  "window_end": "2026-09-13T11:49:44.687040+00:00",
+  "timezone_display": "Asia/Shanghai",
+  "full_hour_statistics_available": false,
+  "logs": [
+    {
+      "path": "/home/moxu/AgentSentry/artifacts/lab3090-context-filter-v3/nonthinking-monitor/gpu.jsonl",
+      "snapshot_sha256": "a509e6150f499fec206c26ead199d7035e85511f1b5777812e57c3f29059cda8",
+      "sample_count_in_window": 6,
+      "first": "2026-09-13T11:35:45.446534+00:00",
+      "last": "2026-09-13T11:37:00.765565+00:00",
+      "statistics": {
+        "0": {
+          "n": 6,
+          "sample_mean_percent": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0,
+          "nonzero_samples": 0
+        },
+        "1": {
+          "n": 6,
+          "sample_mean_percent": 56.666666666666664,
+          "minimum": 0.0,
+          "maximum": 90.0,
+          "nonzero_samples": 5
+        }
+      }
+    },
+    {
+      "path": "/home/moxu/AgentSentry/artifacts/lab3090-context-filter-v3/thinking-monitor/gpu.jsonl",
+      "snapshot_sha256": "bf6c617036e0d92d9c1d48863ae1009eda8b53857e24c62912b9ba2e84da2442",
+      "sample_count_in_window": 50,
+      "first": "2026-09-13T11:37:20.323440+00:00",
+      "last": "2026-09-13T11:49:38.190926+00:00",
+      "statistics": {
+        "0": {
+          "n": 50,
+          "sample_mean_percent": 60.84,
+          "minimum": 49.0,
+          "maximum": 64.0,
+          "nonzero_samples": 50
+        },
+        "1": {
+          "n": 50,
+          "sample_mean_percent": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0,
+          "nonzero_samples": 0
+        }
+      }
+    }
+  ],
+  "runs": {
+    "nonthinking": {
+      "planned": 32,
+      "recorded": 32,
+      "errors": 0,
+      "configuration": {
+        "model": "Qwen/Qwen3.5-9B",
+        "url": "http://127.0.0.1:18080/v1",
+        "configuration": "promptarmor_adapted",
+        "intent_mode": "task-plan",
+        "max_steps": 15,
+        "max_tokens": 4096,
+        "guard_max_tokens": 4096,
+        "guard_format": "json_schema",
+        "seed": 0,
+        "guard_thinking": false,
+        "request_timeout": 300
+      },
+      "controller_status": "COMPLETED_REVIEW_REQUIRED",
+      "process_identity_verified_live": false,
+      "returncode": 0,
+      "native_evaluator_run": false
+    },
+    "thinking": {
+      "planned": 32,
+      "recorded": 20,
+      "errors": 5,
+      "configuration": {
+        "model": "Qwen/Qwen3.5-9B",
+        "url": "http://127.0.0.1:18081/v1",
+        "configuration": "promptarmor_adapted",
+        "intent_mode": "task-plan",
+        "max_steps": 15,
+        "max_tokens": 4096,
+        "guard_max_tokens": 4096,
+        "guard_format": "json_schema",
+        "seed": 0,
+        "guard_thinking": true,
+        "request_timeout": 300
+      },
+      "controller_status": "RUNNING",
+      "process_identity_verified_live": true,
+      "returncode": null,
+      "native_evaluator_run": false
+    }
+  },
+  "run_snapshot_after_window_end": true
+}

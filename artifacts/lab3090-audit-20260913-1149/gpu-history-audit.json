@@ -1,0 +1,1449 @@
+{
+  "kind": "partial_hardware_telemetry_audit",
+  "window_start": "2026-09-13T10:49:44.687040+00:00",
+  "window_end": "2026-09-13T11:49:44.687040+00:00",
+  "timezone_display": "Asia/Shanghai",
+  "full_hour_statistics_available": false,
+  "logs": [
+    {
+      "path": "/home/moxu/AgentSentry/artifacts/lab3090-context-filter-v3/nonthinking-monitor/gpu.jsonl",
+      "snapshot_sha256": "a509e6150f499fec206c26ead199d7035e85511f1b5777812e57c3f29059cda8",
+      "sample_count_in_window": 6,
+      "first": "2026-09-13T11:35:45.446534+00:00",
+      "last": "2026-09-13T11:37:00.765565+00:00",
+      "statistics": {
+        "0": {
+          "n": 6,
+          "sample_mean_percent": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0,
+          "nonzero_samples": 0
+        },
+        "1": {
+          "n": 6,
+          "sample_mean_percent": 56.666666666666664,
+          "minimum": 0.0,
+          "maximum": 90.0,
+          "nonzero_samples": 5
+        }
+      },
+      "samples": [
+        {
+          "observed_at": "2026-09-13T11:35:45.446534+00:00",
+          "gpus": [
+            {
+              "index": "0",
+              "uuid": "GPU-e4a68c90-c793-8475-9779-2667888d0a93",
+              "utilization_gpu_percent": "0",
+              "utilization_memory_percent": "0",
+              "memory_used_mib": "22971",
+              "memory_total_mib": "24576",
+              "power_watts": "22.09"
+            },
+            {
+              "index": "1",
+              "uuid": "GPU-89641b57-638a-1b48-d185-b2bc1d5e41c3",
+              "utilization_gpu_percent": "61",
+              "utilization_memory_percent": "62",
+              "memory_used_mib": "22985",
+              "memory_total_mib": "24576",
+              "power_watts": "333.78"
+            }
+          ],
+          "status": "ok"
+        },
+        {
+          "observed_at": "2026-09-13T11:36:00.516100+00:00",
+          "gpus": [
+            {
+              "index": "0",
+              "uuid": "GPU-e4a68c90-c793-8475-9779-2667888d0a93",
+              "utilization_gpu_percent": "0",
+              "utilization_memory_percent": "0",
+              "memory_used_mib": "22971",
+              "memory_total_mib": "24576",
+              "power_watts": "20.98"
+            },
+            {
+              "index": "1",
+              "uuid": "GPU-89641b57-638a-1b48-d185-b2bc1d5e41c3",
+              "utilization_gpu_percent": "90",
+              "utilization_memory_percent": "49",
+              "memory_used_mib": "22985",
+              "memory_total_mib": "24576",
+              "power_watts": "347.26"
+            }
+          ],
+          "status": "ok"
+        },
+        {
+          "observed_at": "2026-09-13T11:36:15.588778+00:00",
+          "gpus": [
+            {
+              "index": "0",
+              "uuid": "GPU-e4a68c90-c793-8475-9779-2667888d0a93",
+              "utilization_gpu_percent": "0",
+              "utilization_memory_percent": "0",
+              "memory_used_mib": "22971",
+              "memory_total_mib": "24576",
+              "power_watts": "21.00"
+            },
+            {
+              "index": "1",
+              "uuid": "GPU-89641b57-638a-1b48-d185-b2bc1d5e41c3",
+              "utilization_gpu_percent": "63",
+              "utilization_memory_percent": "63",
+              "memory_used_mib": "22985",
+              "memory_total_mib": "24576",
+              "power_watts": "347.48"
+            }
+          ],
+          "status": "ok"
+        },
+        {
+          "observed_at": "2026-09-13T11:36:30.641285+00:00",
+          "gpus": [
+            {
+              "index": "0",
+              "uuid": "GPU-e4a68c90-c793-8475-9779-2667888d0a93",
+              "utilization_gpu_percent": "0",
+              "utilization_memory_percent": "0",
+              "memory_used_mib": "22971",
+              "memory_total_mib": "24576",
+              "power_watts": "20.55"
+            },
+            {
+              "index": "1",
+              "uuid": "GPU-89641b57-638a-1b48-d185-b2bc1d5e41c3",
+              "utilization_gpu_percent": "63",
+              "utilization_memory_percent": "63",
+              "memory_used_mib": "22985",
+              "memory_total_mib": "24576",
+              "power_watts": "348.29"
+            }
+          ],
+          "status": "ok"
+        },
+        {
+          "observed_at": "2026-09-13T11:36:45.713507+00:00",
+          "gpus": [
+            {
+              "index": "0",
+              "uuid": "GPU-e4a68c90-c793-8475-9779-2667888d0a93",
+              "utilization_gpu_percent": "0",
+              "utilization_memory_percent": "0",
+              "memory_used_mib": "22971",
+              "memory_total_mib": "24576",
+              "power_watts": "20.05"
+            },
+            {
+              "index": "1",
+              "uuid": "GPU-89641b57-638a-1b48-d185-b2bc1d5e41c3",
+              "utilization_gpu_percent": "63",
+              "utilization_memory_percent": "63",
+              "memory_used_mib": "22985",
+              "memory_total_mib": "24576",
+              "power_watts": "339.16"
+            }
+          ],
+          "status": "ok"
+        },
+        {
+          "observed_at": "2026-09-13T11:37:00.765565+00:00",
+          "gpus": [
+            {
+              "index": "0",
+              "uuid": "GPU-e4a68c90-c793-8475-9779-2667888d0a93",
+              "utilization_gpu_percent": "0",
+              "utilization_memory_percent": "0",
+              "memory_used_mib": "22971",
+              "memory_total_mib": "24576",
+              "power_watts": "18.13"
+            },
+            {
+              "index": "1",
+              "uuid": "GPU-89641b57-638a-1b48-d185-b2bc1d5e41c3",
+              "utilization_gpu_percent": "0",
+              "utilization_memory_percent": "0",
+              "memory_used_mib": "22985",
+              "memory_total_mib": "24576",
+              "power_watts": "144.58"
+            }
+          ],
+          "status": "ok"
+        }
+      ]
+    },
+    {
+      "path": "/home/moxu/AgentSentry/artifacts/lab3090-context-filter-v3/thinking-monitor/gpu.jsonl",
+      "snapshot_sha256": "bf6c617036e0d92d9c1d48863ae1009eda8b53857e24c62912b9ba2e84da2442",
+      "sample_count_in_window": 50,
+      "first": "2026-09-13T11:37:20.323440+00:00",
+      "last": "2026-09-13T11:49:38.190926+00:00",
+      "statistics": {
+        "0": {
+          "n": 50,
+          "sample_mean_percent": 60.84,
+          "minimum": 49.0,
+          "maximum": 64.0,
+          "nonzero_samples": 50
+        },
+        "1": {
+          "n": 50,
+          "sample_mean_percent": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0,
+          "nonzero_samples": 0
+        }
+      },
+      "samples": [
+        {
+          "observed_at": "2026-09-13T11:37:20.323440+00:00",
+          "gpus": [
+            {
+              "index": "0",
+              "uuid": "GPU-e4a68c90-c793-8475-9779-2667888d0a93",
+              "utilization_gpu_percent": "53",
+              "utilization_memory_percent": "53",
+              "memory_used_mib": "22971",
+              "memory_total_mib": "24576",
+              "power_watts": "307.07"
+            },
+            {
+              "index": "1",
+              "uuid": "GPU-89641b57-638a-1b48-d185-b2bc1d5e41c3",
+              "utilization_gpu_percent": "0",
+              "utilization_memory_percent": "0",
+              "memory_used_mib": "22985",
+              "memory_total_mib": "24576",
+              "power_watts": "28.95"
+            }
+          ],
+          "status": "ok"
+        },
+        {
+          "observed_at": "2026-09-13T11:37:35.369493+00:00",
+          "gpus": [
+            {
+              "index": "0",
+              "uuid": "GPU-e4a68c90-c793-8475-9779-2667888d0a93",
+              "utilization_gpu_percent": "58",
+              "utilization_memory_percent": "59",
+              "memory_used_mib": "22971",
+              "memory_total_mib": "24576",
+              "power_watts": "298.36"
+            },
+            {
+              "index": "1",
+              "uuid": "GPU-89641b57-638a-1b48-d185-b2bc1d5e41c3",
+              "utilization_gpu_percent": "0",
+              "utilization_memory_percent": "0",
+              "memory_used_mib": "22985",
+              "memory_total_mib": "24576",
+              "power_watts": "28.65"
+            }
+          ],
+          "status": "ok"
+        },
+        {
+          "observed_at": "2026-09-13T11:37:50.439316+00:00",
+          "gpus": [
+            {
+              "index": "0",
+              "uuid": "GPU-e4a68c90-c793-8475-9779-2667888d0a93",
+              "utilization_gpu_percent": "63",
+              "utilization_memory_percent": "63",
+              "memory_used_mib": "22971",
+              "memory_total_mib": "24576",
+              "power_watts": "328.30"
+            },
+            {
+              "index": "1",
+              "uuid": "GPU-89641b57-638a-1b48-d185-b2bc1d5e41c3",
+              "utilization_gpu_percent": "0",
+              "utilization_memory_percent": "0",
+              "memory_used_mib": "22985",
+              "memory_total_mib": "24576",
+              "power_watts": "31.20"
+            }
+          ],
+          "status": "ok"
+        },
+        {
+          "observed_at": "2026-09-13T11:38:05.492868+00:00",
+          "gpus": [
+            {
+              "index": "0",
+              "uuid": "GPU-e4a68c90-c793-8475-9779-2667888d0a93",
+              "utilization_gpu_percent": "64",
+              "utilization_memory_percent": "64",
+              "memory_used_mib": "22971",
+              "memory_total_mib": "24576",
+              "power_watts": "332.72"
+            },
+            {
+              "index": "1",
+              "uuid": "GPU-89641b57-638a-1b48-d185-b2bc1d5e41c3",
+              "utilization_gpu_percent": "0",
+              "utilization_memory_percent": "0",
+              "memory_used_mib": "22985",
+              "memory_total_mib": "24576",
+              "power_watts": "38.74"
+            }
+          ],
+          "status": "ok"
+        },
+        {
+          "observed_at": "2026-09-13T11:38:20.544279+00:00",
+          "gpus": [
+            {
+              "index": "0",
+              "uuid": "GPU-e4a68c90-c793-8475-9779-2667888d0a93",
+              "utilization_gpu_percent": "63",
+              "utilization_memory_percent": "63",
+              "memory_used_mib": "22971",
+              "memory_total_mib": "24576",
+              "power_watts": "333.51"
+            },
+            {
+              "index": "1",
+              "uuid": "GPU-89641b57-638a-1b48-d185-b2bc1d5e41c3",
+              "utilization_gpu_percent": "0",
+              "utilization_memory_percent": "0",
+              "memory_used_mib": "22985",
+              "memory_total_mib": "24576",
+              "power_watts": "39.04"
+            }
+          ],
+          "status": "ok"
+        },
+        {
+          "observed_at": "2026-09-13T11:38:35.615181+00:00",
+          "gpus": [
+            {
+              "index": "0",
+              "uuid": "GPU-e4a68c90-c793-8475-9779-2667888d0a93",
+              "utilization_gpu_percent": "58",
+              "utilization_memory_percent": "58",
+              "memory_used_mib": "22971",
+              "memory_total_mib": "24576",
+              "power_watts": "320.69"
+            },
+            {
+              "index": "1",
+              "uuid": "GPU-89641b57-638a-1b48-d185-b2bc1d5e41c3",
+              "utilization_gpu_percent": "0",
+              "utilization_memory_percent": "0",
+              "memory_used_mib": "22985",
+              "memory_total_mib": "24576",
+              "power_watts": "28.87"
+            }
+          ],
+          "status": "ok"
+        },
+        {
+          "observed_at": "2026-09-13T11:38:50.687162+00:00",
+          "gpus": [
+            {
+              "index": "0",
+              "uuid": "GPU-e4a68c90-c793-8475-9779-2667888d0a93",
+              "utilization_gpu_percent": "64",
+              "utilization_memory_percent": "64",
+              "memory_used_mib": "22971",
+              "memory_total_mib": "24576",
+              "power_watts": "338.44"
+            },
+            {
+              "index": "1",
+              "uuid": "GPU-89641b57-638a-1b48-d185-b2bc1d5e41c3",
+              "utilization_gpu_percent": "0",
+              "utilization_memory_percent": "0",
+              "memory_used_mib": "22985",
+              "memory_total_mib": "24576",
+              "power_watts": "27.59"
+            }
+          ],
+          "status": "ok"
+        },
+        {
+          "observed_at": "2026-09-13T11:39:05.740248+00:00",
+          "gpus": [
+            {
+              "index": "0",
+              "uuid": "GPU-e4a68c90-c793-8475-9779-2667888d0a93",
+              "utilization_gpu_percent": "63",
+              "utilization_memory_percent": "63",
+              "memory_used_mib": "22971",
+              "memory_total_mib": "24576",
+              "power_watts": "335.79"
+            },
+            {
+              "index": "1",
+              "uuid": "GPU-89641b57-638a-1b48-d185-b2bc1d5e41c3",
+              "utilization_gpu_percent": "0",
+              "utilization_memory_percent": "0",
+              "memory_used_mib": "22985",
+              "memory_total_mib": "24576",
+              "power_watts": "26.82"
+            }
+          ],
+          "status": "ok"
+        },
+        {
+          "observed_at": "2026-09-13T11:39:20.772960+00:00",
+          "gpus": [
+            {
+              "index": "0",
+              "uuid": "GPU-e4a68c90-c793-8475-9779-2667888d0a93",
+              "utilization_gpu_percent": "62",
+              "utilization_memory_percent": "62",
+              "memory_used_mib": "22971",
+              "memory_total_mib": "24576",
+              "power_watts": "335.38"
+            },
+            {
+              "index": "1",
+              "uuid": "GPU-89641b57-638a-1b48-d185-b2bc1d5e41c3",
+              "utilization_gpu_percent": "0",
+              "utilization_memory_percent": "0",
+              "memory_used_mib": "22985",
+              "memory_total_mib": "24576",
+              "power_watts": "27.07"
+            }
+          ],
+          "status": "ok"
+        },
+        {
+          "observed_at": "2026-09-13T11:39:35.824926+00:00",
+          "gpus": [
+            {
+              "index": "0",
+              "uuid": "GPU-e4a68c90-c793-8475-9779-2667888d0a93",
+              "utilization_gpu_percent": "49",
+              "utilization_memory_percent": "49",
+              "memory_used_mib": "22971",
+              "memory_total_mib": "24576",
+              "power_watts": "318.46"
+            },
+            {
+              "index": "1",
+              "uuid": "GPU-89641b57-638a-1b48-d185-b2bc1d5e41c3",
+              "utilization_gpu_percent": "0",
+              "utilization_memory_percent": "0",
+              "memory_used_mib": "22985",
+              "memory_total_mib": "24576",
+              "power_watts": "27.00"
+            }
+          ],
+          "status": "ok"
+        },
+        {
+          "observed_at": "2026-09-13T11:39:50.875978+00:00",
+          "gpus": [
+            {
+              "index": "0",
+              "uuid": "GPU-e4a68c90-c793-8475-9779-2667888d0a93",
+              "utilization_gpu_percent": "64",
+              "utilization_memory_percent": "64",
+              "memory_used_mib": "22971",
+              "memory_total_mib": "24576",
+              "power_watts": "345.62"
+            },
+            {
+              "index": "1",
+              "uuid": "GPU-89641b57-638a-1b48-d185-b2bc1d5e41c3",
+              "utilization_gpu_percent": "0",
+              "utilization_memory_percent": "0",
+              "memory_used_mib": "22985",
+              "memory_total_mib": "24576",
+              "power_watts": "27.13"
+            }
+          ],
+          "status": "ok"
+        },
+        {
+          "observed_at": "2026-09-13T11:40:05.928078+00:00",
+          "gpus": [
+            {
+              "index": "0",
+              "uuid": "GPU-e4a68c90-c793-8475-9779-2667888d0a93",
+              "utilization_gpu_percent": "63",
+              "utilization_memory_percent": "63",
+              "memory_used_mib": "22971",
+              "memory_total_mib": "24576",
+              "power_watts": "345.22"
+            },
+            {
+              "index": "1",
+              "uuid": "GPU-89641b57-638a-1b48-d185-b2bc1d5e41c3",
+              "utilization_gpu_percent": "0",
+              "utilization_memory_percent": "0",
+              "memory_used_mib": "22985",
+              "memory_total_mib": "24576",
+              "power_watts": "26.84"
+            }
+          ],
+          "status": "ok"
+        },
+        {
+          "observed_at": "2026-09-13T11:40:20.979600+00:00",
+          "gpus": [
+            {
+              "index": "0",
+              "uuid": "GPU-e4a68c90-c793-8475-9779-2667888d0a93",
+              "utilization_gpu_percent": "64",
+              "utilization_memory_percent": "64",
+              "memory_used_mib": "22971",
+              "memory_total_mib": "24576",
+              "power_watts": "345.01"
+            },
+            {
+              "index": "1",
+              "uuid": "GPU-89641b57-638a-1b48-d185-b2bc1d5e41c3",
+              "utilization_gpu_percent": "0",
+              "utilization_memory_percent": "0",
+              "memory_used_mib": "22985",
+              "memory_total_mib": "24576",
+              "power_watts": "30.59"
+            }
+          ],
+          "status": "ok"
+        },
+        {
+          "observed_at": "2026-09-13T11:40:36.051623+00:00",
+          "gpus": [
+            {
+              "index": "0",
+              "uuid": "GPU-e4a68c90-c793-8475-9779-2667888d0a93",
+              "utilization_gpu_percent": "59",
+              "utilization_memory_percent": "59",
+              "memory_used_mib": "22971",
+              "memory_total_mib": "24576",
+              "power_watts": "326.06"
+            },
+            {
+              "index": "1",
+              "uuid": "GPU-89641b57-638a-1b48-d185-b2bc1d5e41c3",
+              "utilization_gpu_percent": "0",
+              "utilization_memory_percent": "0",
+              "memory_used_mib": "22985",
+              "memory_total_mib": "24576",
+              "power_watts": "38.25"
+            }
+          ],
+          "status": "ok"
+        },
+        {
+          "observed_at": "2026-09-13T11:40:51.103897+00:00",
+          "gpus": [
+            {
+              "index": "0",
+              "uuid": "GPU-e4a68c90-c793-8475-9779-2667888d0a93",
+              "utilization_gpu_percent": "62",
+              "utilization_memory_percent": "62",
+              "memory_used_mib": "22971",
+              "memory_total_mib": "24576",
+              "power_watts": "339.11"
+            },
+            {
+              "index": "1",
+              "uuid": "GPU-89641b57-638a-1b48-d185-b2bc1d5e41c3",
+              "utilization_gpu_percent": "0",
+              "utilization_memory_percent": "0",
+              "memory_used_mib": "22985",
+              "memory_total_mib": "24576",
+              "power_watts": "38.99"
+            }
+          ],
+          "status": "ok"
+        },
+        {
+          "observed_at": "2026-09-13T11:41:06.155785+00:00",
+          "gpus": [
+            {
+              "index": "0",
+              "uuid": "GPU-e4a68c90-c793-8475-9779-2667888d0a93",
+              "utilization_gpu_percent": "58",
+              "utilization_memory_percent": "58",
+              "memory_used_mib": "22971",
+              "memory_total_mib": "24576",
+              "power_watts": "337.54"
+            },
+            {
+              "index": "1",
+              "uuid": "GPU-89641b57-638a-1b48-d185-b2bc1d5e41c3",
+              "utilization_gpu_percent": "0",
+              "utilization_memory_percent": "0",
+              "memory_used_mib": "22985",
+              "memory_total_mib": "24576",
+              "power_watts": "28.31"
+            }
+          ],
+          "status": "ok"
+        },
+        {
+          "observed_at": "2026-09-13T11:41:21.208490+00:00",
+          "gpus": [
+            {
+              "index": "0",
+              "uuid": "GPU-e4a68c90-c793-8475-9779-2667888d0a93",
+              "utilization_gpu_percent": "64",
+              "utilization_memory_percent": "64",
+              "memory_used_mib": "22971",
+              "memory_total_mib": "24576",
+              "power_watts": "344.78"
+            },
+            {
+              "index": "1",
+              "uuid": "GPU-89641b57-638a-1b48-d185-b2bc1d5e41c3",
+              "utilization_gpu_percent": "0",
+              "utilization_memory_percent": "0",
+              "memory_used_mib": "22985",
+              "memory_total_mib": "24576",
+              "power_watts": "27.21"
+            }
+          ],
+          "status": "ok"
+        },
+        {
+          "observed_at": "2026-09-13T11:41:36.260154+00:00",
+          "gpus": [
+            {
+              "index": "0",
+              "uuid": "GPU-e4a68c90-c793-8475-9779-2667888d0a93",
+              "utilization_gpu_percent": "59",
+              "utilization_memory_percent": "59",
+              "memory_used_mib": "22971",
+              "memory_total_mib": "24576",
+              "power_watts": "328.81"
+            },
+            {
+              "index": "1",
+              "uuid": "GPU-89641b57-638a-1b48-d185-b2bc1d5e41c3",
+              "utilization_gpu_percent": "0",
+              "utilization_memory_percent": "0",
+              "memory_used_mib": "22985",
+              "memory_total_mib": "24576",
+              "power_watts": "26.92"
+            }
+          ],
+          "status": "ok"
+        },
+        {
+          "observed_at": "2026-09-13T11:41:51.328805+00:00",
+          "gpus": [
+            {
+              "index": "0",
+              "uuid": "GPU-e4a68c90-c793-8475-9779-2667888d0a93",
+              "utilization_gpu_percent": "62",
+              "utilization_memory_percent": "62",
+              "memory_used_mib": "22971",
+              "memory_total_mib": "24576",
+              "power_watts": "341.84"
+            },
+            {
+              "index": "1",
+              "uuid": "GPU-89641b57-638a-1b48-d185-b2bc1d5e41c3",
+              "utilization_gpu_percent": "0",
+              "utilization_memory_percent": "0",
+              "memory_used_mib": "22985",
+              "memory_total_mib": "24576",
+              "power_watts": "26.92"
+            }
+          ],
+          "status": "ok"
+        },
+        {
+          "observed_at": "2026-09-13T11:42:06.381171+00:00",
+          "gpus": [
+            {
+              "index": "0",
+              "uuid": "GPU-e4a68c90-c793-8475-9779-2667888d0a93",
+              "utilization_gpu_percent": "59",
+              "utilization_memory_percent": "60",
+              "memory_used_mib": "22971",
+              "memory_total_mib": "24576",
+              "power_watts": "340.16"
+            },
+            {
+              "index": "1",
+              "uuid": "GPU-89641b57-638a-1b48-d185-b2bc1d5e41c3",
+              "utilization_gpu_percent": "0",
+              "utilization_memory_percent": "0",
+              "memory_used_mib": "22985",
+              "memory_total_mib": "24576",
+              "power_watts": "26.74"
+            }
+          ],
+          "status": "ok"
+        },
+        {
+          "observed_at": "2026-09-13T11:42:21.433051+00:00",
+          "gpus": [
+            {
+              "index": "0",
+              "uuid": "GPU-e4a68c90-c793-8475-9779-2667888d0a93",
+              "utilization_gpu_percent": "62",
+              "utilization_memory_percent": "62",
+              "memory_used_mib": "22971",
+              "memory_total_mib": "24576",
+              "power_watts": "339.25"
+            },
+            {
+              "index": "1",
+              "uuid": "GPU-89641b57-638a-1b48-d185-b2bc1d5e41c3",
+              "utilization_gpu_percent": "0",
+              "utilization_memory_percent": "0",
+              "memory_used_mib": "22985",
+              "memory_total_mib": "24576",
+              "power_watts": "26.81"
+            }
+          ],
+          "status": "ok"
+        },
+        {
+          "observed_at": "2026-09-13T11:42:36.484931+00:00",
+          "gpus": [
+            {
+              "index": "0",
+              "uuid": "GPU-e4a68c90-c793-8475-9779-2667888d0a93",
+              "utilization_gpu_percent": "58",
+              "utilization_memory_percent": "58",
+              "memory_used_mib": "22971",
+              "memory_total_mib": "24576",
+              "power_watts": "327.53"
+            },
+            {
+              "index": "1",
+              "uuid": "GPU-89641b57-638a-1b48-d185-b2bc1d5e41c3",
+              "utilization_gpu_percent": "0",
+              "utilization_memory_percent": "0",
+              "memory_used_mib": "22985",
+              "memory_total_mib": "24576",
+              "power_watts": "27.04"
+            }
+          ],
+          "status": "ok"
+        },
+        {
+          "observed_at": "2026-09-13T11:42:51.535606+00:00",
+          "gpus": [
+            {
+              "index": "0",
+              "uuid": "GPU-e4a68c90-c793-8475-9779-2667888d0a93",
+              "utilization_gpu_percent": "57",
+              "utilization_memory_percent": "57",
+              "memory_used_mib": "22971",
+              "memory_total_mib": "24576",
+              "power_watts": "342.83"
+            },
+            {
+              "index": "1",
+              "uuid": "GPU-89641b57-638a-1b48-d185-b2bc1d5e41c3",
+              "utilization_gpu_percent": "0",
+              "utilization_memory_percent": "0",
+              "memory_used_mib": "22985",
+              "memory_total_mib": "24576",
+              "power_watts": "30.70"
+            }
+          ],
+          "status": "ok"
+        },
+        {
+          "observed_at": "2026-09-13T11:43:06.589046+00:00",
+          "gpus": [
+            {
+              "index": "0",
+              "uuid": "GPU-e4a68c90-c793-8475-9779-2667888d0a93",
+              "utilization_gpu_percent": "62",
+              "utilization_memory_percent": "62",
+              "memory_used_mib": "22971",
+              "memory_total_mib": "24576",
+              "power_watts": "339.77"
+            },
+            {
+              "index": "1",
+              "uuid": "GPU-89641b57-638a-1b48-d185-b2bc1d5e41c3",
+              "utilization_gpu_percent": "0",
+              "utilization_memory_percent": "0",
+              "memory_used_mib": "22985",
+              "memory_total_mib": "24576",
+              "power_watts": "38.66"
+            }
+          ],
+          "status": "ok"
+        },
+        {
+          "observed_at": "2026-09-13T11:43:21.660554+00:00",
+          "gpus": [
+            {
+              "index": "0",
+              "uuid": "GPU-e4a68c90-c793-8475-9779-2667888d0a93",
+              "utilization_gpu_percent": "62",
+              "utilization_memory_percent": "62",
+              "memory_used_mib": "22971",
+              "memory_total_mib": "24576",
+              "power_watts": "338.48"
+            },
+            {
+              "index": "1",
+              "uuid": "GPU-89641b57-638a-1b48-d185-b2bc1d5e41c3",
+              "utilization_gpu_percent": "0",
+              "utilization_memory_percent": "0",
+              "memory_used_mib": "22985",
+              "memory_total_mib": "24576",
+              "power_watts": "38.62"
+            }
+          ],
+          "status": "ok"
+        },
+        {
+          "observed_at": "2026-09-13T11:43:36.714030+00:00",
+          "gpus": [
+            {
+              "index": "0",
+              "uuid": "GPU-e4a68c90-c793-8475-9779-2667888d0a93",
+              "utilization_gpu_percent": "58",
+              "utilization_memory_percent": "58",
+              "memory_used_mib": "22971",
+              "memory_total_mib": "24576",
+              "power_watts": "324.02"
+            },
+            {
+              "index": "1",
+              "uuid": "GPU-89641b57-638a-1b48-d185-b2bc1d5e41c3",
+              "utilization_gpu_percent": "0",
+              "utilization_memory_percent": "0",
+              "memory_used_mib": "22985",
+              "memory_total_mib": "24576",
+              "power_watts": "29.59"
+            }
+          ],
+          "status": "ok"
+        },
+        {
+          "observed_at": "2026-09-13T11:43:51.784450+00:00",
+          "gpus": [
+            {
+              "index": "0",
+              "uuid": "GPU-e4a68c90-c793-8475-9779-2667888d0a93",
+              "utilization_gpu_percent": "62",
+              "utilization_memory_percent": "62",
+              "memory_used_mib": "22971",
+              "memory_total_mib": "24576",
+              "power_watts": "336.54"
+            },
+            {
+              "index": "1",
+              "uuid": "GPU-89641b57-638a-1b48-d185-b2bc1d5e41c3",
+              "utilization_gpu_percent": "0",
+              "utilization_memory_percent": "0",
+              "memory_used_mib": "22985",
+              "memory_total_mib": "24576",
+              "power_watts": "27.19"
+            }
+          ],
+          "status": "ok"
+        },
+        {
+          "observed_at": "2026-09-13T11:44:06.837442+00:00",
+          "gpus": [
+            {
+              "index": "0",
+              "uuid": "GPU-e4a68c90-c793-8475-9779-2667888d0a93",
+              "utilization_gpu_percent": "55",
+              "utilization_memory_percent": "55",
+              "memory_used_mib": "22971",
+              "memory_total_mib": "24576",
+              "power_watts": "333.21"
+            },
+            {
+              "index": "1",
+              "uuid": "GPU-89641b57-638a-1b48-d185-b2bc1d5e41c3",
+              "utilization_gpu_percent": "0",
+              "utilization_memory_percent": "0",
+              "memory_used_mib": "22985",
+              "memory_total_mib": "24576",
+              "power_watts": "26.77"
+            }
+          ],
+          "status": "ok"
+        },
+        {
+          "observed_at": "2026-09-13T11:44:21.908537+00:00",
+          "gpus": [
+            {
+              "index": "0",
+              "uuid": "GPU-e4a68c90-c793-8475-9779-2667888d0a93",
+              "utilization_gpu_percent": "61",
+              "utilization_memory_percent": "61",
+              "memory_used_mib": "22971",
+              "memory_total_mib": "24576",
+              "power_watts": "335.08"
+            },
+            {
+              "index": "1",
+              "uuid": "GPU-89641b57-638a-1b48-d185-b2bc1d5e41c3",
+              "utilization_gpu_percent": "0",
+              "utilization_memory_percent": "0",
+              "memory_used_mib": "22985",
+              "memory_total_mib": "24576",
+              "power_watts": "26.92"
+            }
+          ],
+          "status": "ok"
+        },
+        {
+          "observed_at": "2026-09-13T11:44:36.941942+00:00",
+          "gpus": [
+            {
+              "index": "0",
+              "uuid": "GPU-e4a68c90-c793-8475-9779-2667888d0a93",
+              "utilization_gpu_percent": "56",
+              "utilization_memory_percent": "56",
+              "memory_used_mib": "22971",
+              "memory_total_mib": "24576",
+              "power_watts": "326.24"
+            },
+            {
+              "index": "1",
+              "uuid": "GPU-89641b57-638a-1b48-d185-b2bc1d5e41c3",
+              "utilization_gpu_percent": "0",
+              "utilization_memory_percent": "0",
+              "memory_used_mib": "22985",
+              "memory_total_mib": "24576",
+              "power_watts": "27.02"
+            }
+          ],
+          "status": "ok"
+        },
+        {
+          "observed_at": "2026-09-13T11:44:52.011648+00:00",
+          "gpus": [
+            {
+              "index": "0",
+              "uuid": "GPU-e4a68c90-c793-8475-9779-2667888d0a93",
+              "utilization_gpu_percent": "63",
+              "utilization_memory_percent": "63",
+              "memory_used_mib": "22971",
+              "memory_total_mib": "24576",
+              "power_watts": "340.28"
+            },
+            {
+              "index": "1",
+              "uuid": "GPU-89641b57-638a-1b48-d185-b2bc1d5e41c3",
+              "utilization_gpu_percent": "0",
+              "utilization_memory_percent": "0",
+              "memory_used_mib": "22985",
+              "memory_total_mib": "24576",
+              "power_watts": "26.87"
+            }
+          ],
+          "status": "ok"
+        },
+        {
+          "observed_at": "2026-09-13T11:45:07.083450+00:00",
+          "gpus": [
+            {
+              "index": "0",
+              "uuid": "GPU-e4a68c90-c793-8475-9779-2667888d0a93",
+              "utilization_gpu_percent": "62",
+              "utilization_memory_percent": "62",
+              "memory_used_mib": "22971",
+              "memory_total_mib": "24576",
+              "power_watts": "340.93"
+            },
+            {
+              "index": "1",
+              "uuid": "GPU-89641b57-638a-1b48-d185-b2bc1d5e41c3",
+              "utilization_gpu_percent": "0",
+              "utilization_memory_percent": "0",
+              "memory_used_mib": "22985",
+              "memory_total_mib": "24576",
+              "power_watts": "26.64"
+            }
+          ],
+          "status": "ok"
+        },
+        {
+          "observed_at": "2026-09-13T11:45:22.150858+00:00",
+          "gpus": [
+            {
+              "index": "0",
+              "uuid": "GPU-e4a68c90-c793-8475-9779-2667888d0a93",
+              "utilization_gpu_percent": "62",
+              "utilization_memory_percent": "62",
+              "memory_used_mib": "22971",
+              "memory_total_mib": "24576",
+              "power_watts": "341.94"
+            },
+            {
+              "index": "1",
+              "uuid": "GPU-89641b57-638a-1b48-d185-b2bc1d5e41c3",
+              "utilization_gpu_percent": "0",
+              "utilization_memory_percent": "0",
+              "memory_used_mib": "22985",
+              "memory_total_mib": "24576",
+              "power_watts": "31.33"
+            }
+          ],
+          "status": "ok"
+        },
+        {
+          "observed_at": "2026-09-13T11:45:37.218753+00:00",
+          "gpus": [
+            {
+              "index": "0",
+              "uuid": "GPU-e4a68c90-c793-8475-9779-2667888d0a93",
+              "utilization_gpu_percent": "58",
+              "utilization_memory_percent": "58",
+              "memory_used_mib": "22971",
+              "memory_total_mib": "24576",
+              "power_watts": "328.63"
+            },
+            {
+              "index": "1",
+              "uuid": "GPU-89641b57-638a-1b48-d185-b2bc1d5e41c3",
+              "utilization_gpu_percent": "0",
+              "utilization_memory_percent": "0",
+              "memory_used_mib": "22985",
+              "memory_total_mib": "24576",
+              "power_watts": "39.23"
+            }
+          ],
+          "status": "ok"
+        },
+        {
+          "observed_at": "2026-09-13T11:45:52.288004+00:00",
+          "gpus": [
+            {
+              "index": "0",
+              "uuid": "GPU-e4a68c90-c793-8475-9779-2667888d0a93",
+              "utilization_gpu_percent": "62",
+              "utilization_memory_percent": "62",
+              "memory_used_mib": "22971",
+              "memory_total_mib": "24576",
+              "power_watts": "342.26"
+            },
+            {
+              "index": "1",
+              "uuid": "GPU-89641b57-638a-1b48-d185-b2bc1d5e41c3",
+              "utilization_gpu_percent": "0",
+              "utilization_memory_percent": "0",
+              "memory_used_mib": "22985",
+              "memory_total_mib": "24576",
+              "power_watts": "28.33"
+            }
+          ],
+          "status": "ok"
+        },
+        {
+          "observed_at": "2026-09-13T11:46:07.341249+00:00",
+          "gpus": [
+            {
+              "index": "0",
+              "uuid": "GPU-e4a68c90-c793-8475-9779-2667888d0a93",
+              "utilization_gpu_percent": "64",
+              "utilization_memory_percent": "64",
+              "memory_used_mib": "22971",
+              "memory_total_mib": "24576",
+              "power_watts": "338.50"
+            },
+            {
+              "index": "1",
+              "uuid": "GPU-89641b57-638a-1b48-d185-b2bc1d5e41c3",
+              "utilization_gpu_percent": "0",
+              "utilization_memory_percent": "0",
+              "memory_used_mib": "22985",
+              "memory_total_mib": "24576",
+              "power_watts": "29.00"
+            }
+          ],
+          "status": "ok"
+        },
+        {
+          "observed_at": "2026-09-13T11:46:22.392571+00:00",
+          "gpus": [
+            {
+              "index": "0",
+              "uuid": "GPU-e4a68c90-c793-8475-9779-2667888d0a93",
+              "utilization_gpu_percent": "63",
+              "utilization_memory_percent": "63",
+              "memory_used_mib": "22971",
+              "memory_total_mib": "24576",
+              "power_watts": "338.77"
+            },
+            {
+              "index": "1",
+              "uuid": "GPU-89641b57-638a-1b48-d185-b2bc1d5e41c3",
+              "utilization_gpu_percent": "0",
+              "utilization_memory_percent": "0",
+              "memory_used_mib": "22985",
+              "memory_total_mib": "24576",
+              "power_watts": "26.94"
+            }
+          ],
+          "status": "ok"
+        },
+        {
+          "observed_at": "2026-09-13T11:46:37.445435+00:00",
+          "gpus": [
+            {
+              "index": "0",
+              "uuid": "GPU-e4a68c90-c793-8475-9779-2667888d0a93",
+              "utilization_gpu_percent": "59",
+              "utilization_memory_percent": "59",
+              "memory_used_mib": "22971",
+              "memory_total_mib": "24576",
+              "power_watts": "328.78"
+            },
+            {
+              "index": "1",
+              "uuid": "GPU-89641b57-638a-1b48-d185-b2bc1d5e41c3",
+              "utilization_gpu_percent": "0",
+              "utilization_memory_percent": "0",
+              "memory_used_mib": "22985",
+              "memory_total_mib": "24576",
+              "power_watts": "27.06"
+            }
+          ],
+          "status": "ok"
+        },
+        {
+          "observed_at": "2026-09-13T11:46:52.516125+00:00",
+          "gpus": [
+            {
+              "index": "0",
+              "uuid": "GPU-e4a68c90-c793-8475-9779-2667888d0a93",
+              "utilization_gpu_percent": "64",
+              "utilization_memory_percent": "64",
+              "memory_used_mib": "22971",
+              "memory_total_mib": "24576",
+              "power_watts": "342.48"
+            },
+            {
+              "index": "1",
+              "uuid": "GPU-89641b57-638a-1b48-d185-b2bc1d5e41c3",
+              "utilization_gpu_percent": "0",
+              "utilization_memory_percent": "0",
+              "memory_used_mib": "22985",
+              "memory_total_mib": "24576",
+              "power_watts": "26.77"
+            }
+          ],
+          "status": "ok"
+        },
+        {
+          "observed_at": "2026-09-13T11:47:07.569655+00:00",
+          "gpus": [
+            {
+              "index": "0",
+              "uuid": "GPU-e4a68c90-c793-8475-9779-2667888d0a93",
+              "utilization_gpu_percent": "63",
+              "utilization_memory_percent": "63",
+              "memory_used_mib": "22971",
+              "memory_total_mib": "24576",
+              "power_watts": "341.47"
+            },
+            {
+              "index": "1",
+              "uuid": "GPU-89641b57-638a-1b48-d185-b2bc1d5e41c3",
+              "utilization_gpu_percent": "0",
+              "utilization_memory_percent": "0",
+              "memory_used_mib": "22985",
+              "memory_total_mib": "24576",
+              "power_watts": "26.83"
+            }
+          ],
+          "status": "ok"
+        },
+        {
+          "observed_at": "2026-09-13T11:47:22.641916+00:00",
+          "gpus": [
+            {
+              "index": "0",
+              "uuid": "GPU-e4a68c90-c793-8475-9779-2667888d0a93",
+              "utilization_gpu_percent": "63",
+              "utilization_memory_percent": "63",
+              "memory_used_mib": "22971",
+              "memory_total_mib": "24576",
+              "power_watts": "341.24"
+            },
+            {
+              "index": "1",
+              "uuid": "GPU-89641b57-638a-1b48-d185-b2bc1d5e41c3",
+              "utilization_gpu_percent": "0",
+              "utilization_memory_percent": "0",
+              "memory_used_mib": "22985",
+              "memory_total_mib": "24576",
+              "power_watts": "27.14"
+            }
+          ],
+          "status": "ok"
+        },
+        {
+          "observed_at": "2026-09-13T11:47:37.693912+00:00",
+          "gpus": [
+            {
+              "index": "0",
+              "uuid": "GPU-e4a68c90-c793-8475-9779-2667888d0a93",
+              "utilization_gpu_percent": "58",
+              "utilization_memory_percent": "58",
+              "memory_used_mib": "22971",
+              "memory_total_mib": "24576",
+              "power_watts": "327.59"
+            },
+            {
+              "index": "1",
+              "uuid": "GPU-89641b57-638a-1b48-d185-b2bc1d5e41c3",
+              "utilization_gpu_percent": "0",
+              "utilization_memory_percent": "0",
+              "memory_used_mib": "22985",
+              "memory_total_mib": "24576",
+              "power_watts": "27.08"
+            }
+          ],
+          "status": "ok"
+        },
+        {
+          "observed_at": "2026-09-13T11:47:52.759860+00:00",
+          "gpus": [
+            {
+              "index": "0",
+              "uuid": "GPU-e4a68c90-c793-8475-9779-2667888d0a93",
+              "utilization_gpu_percent": "63",
+              "utilization_memory_percent": "63",
+              "memory_used_mib": "22971",
+              "memory_total_mib": "24576",
+              "power_watts": "345.42"
+            },
+            {
+              "index": "1",
+              "uuid": "GPU-89641b57-638a-1b48-d185-b2bc1d5e41c3",
+              "utilization_gpu_percent": "0",
+              "utilization_memory_percent": "0",
+              "memory_used_mib": "22985",
+              "memory_total_mib": "24576",
+              "power_watts": "31.78"
+            }
+          ],
+          "status": "ok"
+        },
+        {
+          "observed_at": "2026-09-13T11:48:07.832596+00:00",
+          "gpus": [
+            {
+              "index": "0",
+              "uuid": "GPU-e4a68c90-c793-8475-9779-2667888d0a93",
+              "utilization_gpu_percent": "63",
+              "utilization_memory_percent": "63",
+              "memory_used_mib": "22971",
+              "memory_total_mib": "24576",
+              "power_watts": "339.96"
+            },
+            {
+              "index": "1",
+              "uuid": "GPU-89641b57-638a-1b48-d185-b2bc1d5e41c3",
+              "utilization_gpu_percent": "0",
+              "utilization_memory_percent": "0",
+              "memory_used_mib": "22985",
+              "memory_total_mib": "24576",
+              "power_watts": "38.53"
+            }
+          ],
+          "status": "ok"
+        },
+        {
+          "observed_at": "2026-09-13T11:48:22.889628+00:00",
+          "gpus": [
+            {
+              "index": "0",
+              "uuid": "GPU-e4a68c90-c793-8475-9779-2667888d0a93",
+              "utilization_gpu_percent": "64",
+              "utilization_memory_percent": "64",
+              "memory_used_mib": "22971",
+              "memory_total_mib": "24576",
+              "power_watts": "339.99"
+            },
+            {
+              "index": "1",
+              "uuid": "GPU-89641b57-638a-1b48-d185-b2bc1d5e41c3",
+              "utilization_gpu_percent": "0",
+              "utilization_memory_percent": "0",
+              "memory_used_mib": "22985",
+              "memory_total_mib": "24576",
+              "power_watts": "29.42"
+            }
+          ],
+          "status": "ok"
+        },
+        {
+          "observed_at": "2026-09-13T11:48:37.942258+00:00",
+          "gpus": [
+            {
+              "index": "0",
+              "uuid": "GPU-e4a68c90-c793-8475-9779-2667888d0a93",
+              "utilization_gpu_percent": "58",
+              "utilization_memory_percent": "58",
+              "memory_used_mib": "22971",
+              "memory_total_mib": "24576",
+              "power_watts": "325.86"
+            },
+            {
+              "index": "1",
+              "uuid": "GPU-89641b57-638a-1b48-d185-b2bc1d5e41c3",
+              "utilization_gpu_percent": "0",
+              "utilization_memory_percent": "0",
+              "memory_used_mib": "22985",
+              "memory_total_mib": "24576",
+              "power_watts": "28.84"
+            }
+          ],
+          "status": "ok"
+        },
+        {
+          "observed_at": "2026-09-13T11:48:53.012740+00:00",
+          "gpus": [
+            {
+              "index": "0",
+              "uuid": "GPU-e4a68c90-c793-8475-9779-2667888d0a93",
+              "utilization_gpu_percent": "64",
+              "utilization_memory_percent": "64",
+              "memory_used_mib": "22971",
+              "memory_total_mib": "24576",
+              "power_watts": "346.35"
+            },
+            {
+              "index": "1",
+              "uuid": "GPU-89641b57-638a-1b48-d185-b2bc1d5e41c3",
+              "utilization_gpu_percent": "0",
+              "utilization_memory_percent": "0",
+              "memory_used_mib": "22985",
+              "memory_total_mib": "24576",
+              "power_watts": "27.35"
+            }
+          ],
+          "status": "ok"
+        },
+        {
+          "observed_at": "2026-09-13T11:49:08.064879+00:00",
+          "gpus": [
+            {
+              "index": "0",
+              "uuid": "GPU-e4a68c90-c793-8475-9779-2667888d0a93",
+              "utilization_gpu_percent": "63",
+              "utilization_memory_percent": "63",
+              "memory_used_mib": "22971",
+              "memory_total_mib": "24576",
+              "power_watts": "341.20"
+            },
+            {
+              "index": "1",
+              "uuid": "GPU-89641b57-638a-1b48-d185-b2bc1d5e41c3",
+              "utilization_gpu_percent": "0",
+              "utilization_memory_percent": "0",
+              "memory_used_mib": "22985",
+              "memory_total_mib": "24576",
+              "power_watts": "26.88"
+            }
+          ],
+          "status": "ok"
+        },
+        {
+          "observed_at": "2026-09-13T11:49:23.137353+00:00",
+          "gpus": [
+            {
+              "index": "0",
+              "uuid": "GPU-e4a68c90-c793-8475-9779-2667888d0a93",
+              "utilization_gpu_percent": "64",
+              "utilization_memory_percent": "64",
+              "memory_used_mib": "22971",
+              "memory_total_mib": "24576",
+              "power_watts": "345.18"
+            },
+            {
+              "index": "1",
+              "uuid": "GPU-89641b57-638a-1b48-d185-b2bc1d5e41c3",
+              "utilization_gpu_percent": "0",
+              "utilization_memory_percent": "0",
+              "memory_used_mib": "22985",
+              "memory_total_mib": "24576",
+              "power_watts": "26.73"
+            }
+          ],
+          "status": "ok"
+        },
+        {
+          "observed_at": "2026-09-13T11:49:38.190926+00:00",
+          "gpus": [
+            {
+              "index": "0",
+              "uuid": "GPU-e4a68c90-c793-8475-9779-2667888d0a93",
+              "utilization_gpu_percent": "58",
+              "utilization_memory_percent": "58",
+              "memory_used_mib": "22971",
+              "memory_total_mib": "24576",
+              "power_watts": "325.84"
+            },
+            {
+              "index": "1",
+              "uuid": "GPU-89641b57-638a-1b48-d185-b2bc1d5e41c3",
+              "utilization_gpu_percent": "0",
+              "utilization_memory_percent": "0",
+              "memory_used_mib": "22985",
+              "memory_total_mib": "24576",
+              "power_watts": "27.03"
+            }
+          ],
+          "status": "ok"
+        }
+      ]
+    }
+  ],
+  "runs": {
+    "nonthinking": {
+      "planned": 32,
+      "recorded": 32,
+      "errors": 0,
+      "configuration": {
+        "model": "Qwen/Qwen3.5-9B",
+        "url": "http://127.0.0.1:18080/v1",
+        "configuration": "promptarmor_adapted",
+        "intent_mode": "task-plan",
+        "max_steps": 15,
+        "max_tokens": 4096,
+        "guard_max_tokens": 4096,
+        "guard_format": "json_schema",
+        "seed": 0,
+        "guard_thinking": false,
+        "request_timeout": 300
+      },
+      "controller_status": "COMPLETED_REVIEW_REQUIRED",
+      "process_identity_verified_live": false,
+      "returncode": 0,
+      "native_evaluator_run": false
+    },
+    "thinking": {
+      "planned": 32,
+      "recorded": 20,
+      "errors": 5,
+      "configuration": {
+        "model": "Qwen/Qwen3.5-9B",
+        "url": "http://127.0.0.1:18081/v1",
+        "configuration": "promptarmor_adapted",
+        "intent_mode": "task-plan",
+        "max_steps": 15,
+        "max_tokens": 4096,
+        "guard_max_tokens": 4096,
+        "guard_format": "json_schema",
+        "seed": 0,
+        "guard_thinking": true,
+        "request_timeout": 300
+      },
+      "controller_status": "RUNNING",
+      "process_identity_verified_live": true,
+      "returncode": null,
+      "native_evaluator_run": false
+    }
+  }
+}

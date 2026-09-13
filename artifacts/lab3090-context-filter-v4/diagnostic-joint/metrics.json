@@ -1,0 +1,24 @@
+{
+  "planned": 32,
+  "recorded": 32,
+  "errors": 0,
+  "native_evaluator_run": false,
+  "acceptance": "NOT_EVALUATED",
+  "cohorts": {
+    "benign_control": {
+      "cases": 8,
+      "valid": 8,
+      "changed": 0
+    },
+    "benign_previous_flag": {
+      "cases": 8,
+      "valid": 8,
+      "changed": 0
+    },
+    "known_injection_present": {
+      "cases": 16,
+      "valid": 16,
+      "changed": 16
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "status": "IMPORT_FAILED_BEFORE_MODEL_OR_OUTPUT_CREATION",
+  "actual_process_exit_code": 1,
+  "error": "ModuleNotFoundError: No module named 'input_screen_metrics'",
+  "cause": "The frozen full-field classifier imports its scorer, which imports the shared metrics module from the main scripts directory.",
+  "fix": "Add the existing scripts directory to module search paths and record the shared dependency hash. No classifier, model, threshold, input or result was changed.",
+  "model_requests": 0,
+  "benchmark_results": 0
+}

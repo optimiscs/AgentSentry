@@ -1,0 +1,33 @@
+{
+  "status": "COMPLETED_REVIEW_REQUIRED",
+  "pid": 2624323,
+  "start_ticks": "754926028",
+  "started_at": "2026-09-13T11:56:07.204003+00:00",
+  "planned": 32,
+  "input_field": "tool_response only",
+  "input_sha256": "a3e2f74bf9bd777c7ded4c071bacde73322e22ab70b4935afdc9219b749d7182",
+  "native_evaluator_run": false,
+  "acceptance": "NOT_EVALUATED",
+  "source_files": {
+    "artifacts/lab3090-context-filter-v3/probe_piguard.py": "3637d8556538f76fa1cf13396b835ecf161f76c5f0ef1f68f2e62d838d5692ab",
+    "artifacts/run_piguard_cpu.py": "4ab6c09955af0fcc10620a1ce9376b4a6532aae592ccb710937ba42cdf4318b2",
+    "artifacts/piguard-mpbench-lab3090-full-context-v1/source-snapshot/scripts/run_piguard_full_context.py": "66117392e30e3ef39d233220abf05a20b628512ce53fba2f432c9c938fd4dcfe",
+    "artifacts/piguard-mpbench-lab3090-full-context-v1/source-snapshot/scripts/score_mpbench_checkpoint.py": "11620b9c7d921c6d4d32ffa0904fa164d145f7647693f943b759b4da33ff83b6",
+    "artifacts/piguard-mpbench-lab3090-full-context-v1/source-snapshot/scripts/prepare_mpbench.py": "6e154a40caa190624a8985ebc1658f51648b90ef14bd4d4532e7aea4f4bc9c7f",
+    "scripts/input_screen_metrics.py": "51e58776508038f3e587923a3b3c37a46650986fdedb23d7d008e5fbf7811471"
+  },
+  "observed_at": "2026-09-13T11:56:17.019198+00:00",
+  "elapsed_seconds": 9.815275574102998,
+  "load_seconds": 2.5353741496801376,
+  "model_revision": "dd78b24e330193a22d2293ac66922dd4f982f563",
+  "dtype": "float32",
+  "device": "cpu",
+  "torch_threads": 2,
+  "torch": "2.10.0+cu128",
+  "transformers": "4.57.6",
+  "threshold": 0.5,
+  "maximum_content_tokens": 2046,
+  "truncation": false,
+  "recorded": 32,
+  "errors": 1
+}

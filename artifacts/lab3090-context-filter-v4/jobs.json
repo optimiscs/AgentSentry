@@ -1,0 +1,28 @@
+{
+  "nonthinking": {
+    "candidate": "artifacts/development/context-filter-v4",
+    "output": "artifacts/lab3090-context-filter-v4/diagnostic-joint",
+    "command": [
+      "/home/moxu/miniconda3/envs/agentsentry-bench-lab3090/bin/python",
+      "/home/moxu/AgentSentry/artifacts/development/context-filter-v4/benchmarks/probe_context_inputs.py",
+      "--inputs",
+      "/home/moxu/AgentSentry/artifacts/lab3090-context-filter-v3/paired-inputs.json",
+      "--mode",
+      "nonthinking",
+      "--context-filter-mode",
+      "joint",
+      "--url",
+      "http://127.0.0.1:18080/v1",
+      "--output",
+      "/home/moxu/AgentSentry/artifacts/lab3090-context-filter-v4/diagnostic-joint"
+    ],
+    "candidate_archive_sha256": "aa8a418d66e17ee56c58029ab4c0f6db643eb49f4330302a40037e457df7c2dd",
+    "scope": "Same 32 preselected development observations as v3; no actor or native evaluator; joint prompt/schema and number of calls differ.",
+    "guard_max_tokens": 4096,
+    "guard_thinking": false,
+    "request_timeout": 300,
+    "temperature": 0,
+    "seed": 0,
+    "workers": 2
+  }
+}

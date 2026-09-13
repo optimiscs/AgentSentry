@@ -1,0 +1,14 @@
+{
+  "status": "FROZEN_DEVELOPMENT_REFERENCE",
+  "archive_sha256": "b88e1ee0bed7ca5ea3a5839f84db1718b54213e0f8d6c06eea9ea288b780b80b",
+  "changed_files": [
+    "benchmarks/acceptance.py",
+    "benchmarks/local_model.py",
+    "benchmarks/run_agentdojo.py",
+    "origin-manifest.json",
+    "scripts/watch_benchmark_progress.py",
+    "tests/test_benchmark_acceptance.py",
+    "tests/test_local_model_transport.py"
+  ],
+  "promoted": false
+}
