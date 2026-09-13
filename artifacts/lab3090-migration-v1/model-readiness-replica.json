@@ -1,0 +1,289 @@
+{
+  "status": "PASS",
+  "kind": "LOCAL_MODEL_READINESS_NOT_BENCHMARK",
+  "tool_executions": 0,
+  "checks": [
+    {
+      "name": "plain",
+      "passed": true,
+      "seconds": 10.690147482790053,
+      "request": {
+        "model": "Qwen/Qwen3.5-9B",
+        "temperature": 0,
+        "seed": 0,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Compute 2+2. Reply with just the integer."
+          }
+        ],
+        "max_tokens": 16
+      },
+      "response": {
+        "id": "chatcmpl-9e4f35c3984eb815",
+        "object": "chat.completion",
+        "created": 1789268730,
+        "model": "Qwen/Qwen3.5-9B",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "4",
+              "refusal": null,
+              "annotations": null,
+              "audio": null,
+              "function_call": null,
+              "tool_calls": [],
+              "reasoning": null
+            },
+            "logprobs": null,
+            "finish_reason": "stop",
+            "stop_reason": null,
+            "token_ids": null
+          }
+        ],
+        "service_tier": null,
+        "system_fingerprint": null,
+        "usage": {
+          "prompt_tokens": 24,
+          "total_tokens": 26,
+          "completion_tokens": 2,
+          "prompt_tokens_details": null
+        },
+        "prompt_logprobs": null,
+        "prompt_token_ids": null,
+        "kv_transfer_params": null
+      }
+    },
+    {
+      "name": "json",
+      "passed": true,
+      "seconds": 1.2653688695281744,
+      "request": {
+        "model": "Qwen/Qwen3.5-9B",
+        "temperature": 0,
+        "seed": 0,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return exactly this JSON object: {\"ready\": true}"
+          }
+        ],
+        "max_tokens": 64,
+        "response_format": {
+          "type": "json_object"
+        }
+      },
+      "response": {
+        "id": "chatcmpl-89aad9f377d2cc9e",
+        "object": "chat.completion",
+        "created": 1789268741,
+        "model": "Qwen/Qwen3.5-9B",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "{\"ready\": true}",
+              "refusal": null,
+              "annotations": null,
+              "audio": null,
+              "function_call": null,
+              "tool_calls": [],
+              "reasoning": null
+            },
+            "logprobs": null,
+            "finish_reason": "stop",
+            "stop_reason": null,
+            "token_ids": null
+          }
+        ],
+        "service_tier": null,
+        "system_fingerprint": null,
+        "usage": {
+          "prompt_tokens": 23,
+          "total_tokens": 29,
+          "completion_tokens": 6,
+          "prompt_tokens_details": null
+        },
+        "prompt_logprobs": null,
+        "prompt_token_ids": null,
+        "kv_transfer_params": null
+      }
+    },
+    {
+      "name": "forced_tool",
+      "passed": true,
+      "seconds": 4.4961369801312685,
+      "request": {
+        "model": "Qwen/Qwen3.5-9B",
+        "temperature": 0,
+        "seed": 0,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Use read_record to read record_id sample-1."
+          }
+        ],
+        "max_tokens": 128,
+        "tools": [
+          {
+            "type": "function",
+            "function": {
+              "name": "read_record",
+              "description": "Read one simulated record.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "record_id": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "record_id"
+                ],
+                "additionalProperties": false
+              }
+            }
+          }
+        ],
+        "tool_choice": {
+          "type": "function",
+          "function": {
+            "name": "read_record"
+          }
+        }
+      },
+      "response": {
+        "id": "chatcmpl-ba61858562281a50",
+        "object": "chat.completion",
+        "created": 1789268742,
+        "model": "Qwen/Qwen3.5-9B",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "",
+              "refusal": null,
+              "annotations": null,
+              "audio": null,
+              "function_call": null,
+              "tool_calls": [
+                {
+                  "id": "chatcmpl-tool-8dbc1f2b944bdd1e",
+                  "type": "function",
+                  "function": {
+                    "name": "read_record",
+                    "arguments": "{\n  \"record_id\": \"sample-1\"\n}"
+                  }
+                }
+              ],
+              "reasoning": null
+            },
+            "logprobs": null,
+            "finish_reason": "stop",
+            "stop_reason": null,
+            "token_ids": null
+          }
+        ],
+        "service_tier": null,
+        "system_fingerprint": null,
+        "usage": {
+          "prompt_tokens": 286,
+          "total_tokens": 301,
+          "completion_tokens": 15,
+          "prompt_tokens_details": null
+        },
+        "prompt_logprobs": null,
+        "prompt_token_ids": null,
+        "kv_transfer_params": null
+      }
+    },
+    {
+      "name": "auto_tool",
+      "passed": true,
+      "seconds": 1.0696520945057273,
+      "request": {
+        "model": "Qwen/Qwen3.5-9B",
+        "temperature": 0,
+        "seed": 0,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Use read_record to read record_id sample-1."
+          }
+        ],
+        "max_tokens": 128,
+        "tools": [
+          {
+            "type": "function",
+            "function": {
+              "name": "read_record",
+              "description": "Read one simulated record.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "record_id": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "record_id"
+                ],
+                "additionalProperties": false
+              }
+            }
+          }
+        ],
+        "tool_choice": "auto"
+      },
+      "response": {
+        "id": "chatcmpl-91bce97c76322b5c",
+        "object": "chat.completion",
+        "created": 1789268746,
+        "model": "Qwen/Qwen3.5-9B",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": null,
+              "refusal": null,
+              "annotations": null,
+              "audio": null,
+              "function_call": null,
+              "tool_calls": [
+                {
+                  "id": "chatcmpl-tool-ae8fd8317bf38db5",
+                  "type": "function",
+                  "function": {
+                    "name": "read_record",
+                    "arguments": "{\"record_id\": \"sample-1\"}"
+                  }
+                }
+              ],
+              "reasoning": null
+            },
+            "logprobs": null,
+            "finish_reason": "tool_calls",
+            "stop_reason": null,
+            "token_ids": null
+          }
+        ],
+        "service_tier": null,
+        "system_fingerprint": null,
+        "usage": {
+          "prompt_tokens": 286,
+          "total_tokens": 315,
+          "completion_tokens": 29,
+          "prompt_tokens_details": null
+        },
+        "prompt_logprobs": null,
+        "prompt_token_ids": null,
+        "kv_transfer_params": null
+      }
+    }
+  ]
+}

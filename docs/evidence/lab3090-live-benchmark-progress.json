@@ -1,0 +1,25 @@
+{
+  "updated_at": "2026-09-13T03:10:10.876402+00:00",
+  "overall": "NOT_ACCEPTED",
+  "batch_stopped": true,
+  "runs": [
+    {
+      "run": "artifacts/benchmarks/asb/asb-lab3090-qwen35-9b-protocol-v2-baseline-s0",
+      "status": "RECORDED_NOT_ACCEPTED",
+      "planned": 40,
+      "recorded": 40,
+      "valid": 37,
+      "invalid_or_error": 3,
+      "partial_line_pending": false
+    },
+    {
+      "run": "artifacts/benchmarks/asb/asb-lab3090-qwen35-9b-protocol-v2-full-s0",
+      "status": "RECORDED_NOT_ACCEPTED",
+      "planned": 40,
+      "recorded": 40,
+      "valid": 38,
+      "invalid_or_error": 2,
+      "partial_line_pending": false
+    }
+  ]
+}

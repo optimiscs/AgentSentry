@@ -1,0 +1,175 @@
+{
+  "status": "PASS",
+  "kind": "CPU_GPU_PARITY_NOT_BENCHMARK",
+  "dtype": "float32",
+  "tf32": false,
+  "model_revision": "dd78b24e330193a22d2293ac66922dd4f982f563",
+  "torch": "2.10.0+cu128",
+  "transformers": "4.57.6",
+  "maximum_absolute_difference": 2.384185791015625e-07,
+  "tolerance": 0.0002,
+  "rows": [
+    {
+      "text_sha256": "1feef056004a6380f72203f6504c86fa01e9b7e5d5d22fee492996c6e3a82cc7",
+      "cpu": {
+        "input_tokens": 6,
+        "injection_probability": 2.2671054466627538e-05,
+        "alert": false,
+        "windows": [
+          {
+            "offset": 0,
+            "content_tokens": 6,
+            "injection_probability": 2.2671054466627538e-05
+          }
+        ]
+      },
+      "gpu": {
+        "input_tokens": 6,
+        "injection_probability": 2.267098898300901e-05,
+        "alert": false,
+        "windows": [
+          {
+            "offset": 0,
+            "content_tokens": 6,
+            "injection_probability": 2.267098898300901e-05
+          }
+        ]
+      }
+    },
+    {
+      "text_sha256": "daf28d106250d828f7d854acb5bbcb803789aebef8b3b8fb9bfb40b4798cd008",
+      "cpu": {
+        "input_tokens": 680,
+        "injection_probability": 0.045224543660879135,
+        "alert": false,
+        "windows": [
+          {
+            "offset": 0,
+            "content_tokens": 680,
+            "injection_probability": 0.045224543660879135
+          }
+        ]
+      },
+      "gpu": {
+        "input_tokens": 680,
+        "injection_probability": 0.045224495232105255,
+        "alert": false,
+        "windows": [
+          {
+            "offset": 0,
+            "content_tokens": 680,
+            "injection_probability": 0.045224495232105255
+          }
+        ]
+      }
+    },
+    {
+      "text_sha256": "a3a0b6405a0f161c3f08756d6ca27ea983365b64a0cefda78d17db6b2c135904",
+      "cpu": {
+        "input_tokens": 346,
+        "injection_probability": 0.04320827126502991,
+        "alert": false,
+        "windows": [
+          {
+            "offset": 0,
+            "content_tokens": 346,
+            "injection_probability": 0.04320827126502991
+          }
+        ]
+      },
+      "gpu": {
+        "input_tokens": 346,
+        "injection_probability": 0.04320813715457916,
+        "alert": false,
+        "windows": [
+          {
+            "offset": 0,
+            "content_tokens": 346,
+            "injection_probability": 0.04320813715457916
+          }
+        ]
+      }
+    },
+    {
+      "text_sha256": "e878e87981a9ce0de61b2c89afbf54bb1492098b7799f9d2e8a4ee87153f8aa9",
+      "cpu": {
+        "input_tokens": 408,
+        "injection_probability": 0.06647633016109467,
+        "alert": false,
+        "windows": [
+          {
+            "offset": 0,
+            "content_tokens": 408,
+            "injection_probability": 0.06647633016109467
+          }
+        ]
+      },
+      "gpu": {
+        "input_tokens": 408,
+        "injection_probability": 0.06647621095180511,
+        "alert": false,
+        "windows": [
+          {
+            "offset": 0,
+            "content_tokens": 408,
+            "injection_probability": 0.06647621095180511
+          }
+        ]
+      }
+    },
+    {
+      "text_sha256": "ba919035d975760838aed28f786fc671f30615a3196e667b3a493f3cc9bb5bc3",
+      "cpu": {
+        "input_tokens": 395,
+        "injection_probability": 0.037107691168785095,
+        "alert": false,
+        "windows": [
+          {
+            "offset": 0,
+            "content_tokens": 395,
+            "injection_probability": 0.037107691168785095
+          }
+        ]
+      },
+      "gpu": {
+        "input_tokens": 395,
+        "injection_probability": 0.037107665091753006,
+        "alert": false,
+        "windows": [
+          {
+            "offset": 0,
+            "content_tokens": 395,
+            "injection_probability": 0.037107665091753006
+          }
+        ]
+      }
+    },
+    {
+      "text_sha256": "4bd61f1e9f6bea3ad43378688f2c0e7dd79ca0a3172170333165a159964f88d4",
+      "cpu": {
+        "input_tokens": 419,
+        "injection_probability": 0.17500802874565125,
+        "alert": false,
+        "windows": [
+          {
+            "offset": 0,
+            "content_tokens": 419,
+            "injection_probability": 0.17500802874565125
+          }
+        ]
+      },
+      "gpu": {
+        "input_tokens": 419,
+        "injection_probability": 0.17500826716423035,
+        "alert": false,
+        "windows": [
+          {
+            "offset": 0,
+            "content_tokens": 419,
+            "injection_probability": 0.17500826716423035
+          }
+        ]
+      }
+    }
+  ]
+}

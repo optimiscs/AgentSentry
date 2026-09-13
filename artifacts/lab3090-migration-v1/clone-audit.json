@@ -1,0 +1,66 @@
+{
+  "cloned_top_level_symlinks": [
+    {
+      "name": "nvidia_cudnn_cu12-9.1.0.70.dist-info",
+      "target": "/home/moxu/miniconda3/lib/python3.13/site-packages/nvidia_cudnn_cu12-9.1.0.70.dist-info"
+    },
+    {
+      "name": "triton-3.2.0.dist-info",
+      "target": "/home/moxu/miniconda3/lib/python3.13/site-packages/triton-3.2.0.dist-info"
+    },
+    {
+      "name": "nvidia_cuda_nvrtc_cu12-12.4.127.dist-info",
+      "target": "/home/moxu/miniconda3/lib/python3.13/site-packages/nvidia_cuda_nvrtc_cu12-12.4.127.dist-info"
+    },
+    {
+      "name": "nvidia_cuda_cupti_cu12-12.4.127.dist-info",
+      "target": "/home/moxu/miniconda3/lib/python3.13/site-packages/nvidia_cuda_cupti_cu12-12.4.127.dist-info"
+    },
+    {
+      "name": "nvidia_cusparse_cu12-12.3.1.170.dist-info",
+      "target": "/home/moxu/miniconda3/lib/python3.13/site-packages/nvidia_cusparse_cu12-12.3.1.170.dist-info"
+    },
+    {
+      "name": "triton",
+      "target": "/home/moxu/miniconda3/lib/python3.13/site-packages/triton"
+    },
+    {
+      "name": "nvidia_cuda_runtime_cu12-12.4.127.dist-info",
+      "target": "/home/moxu/miniconda3/lib/python3.13/site-packages/nvidia_cuda_runtime_cu12-12.4.127.dist-info"
+    },
+    {
+      "name": "nvidia_cusolver_cu12-11.6.1.9.dist-info",
+      "target": "/home/moxu/miniconda3/lib/python3.13/site-packages/nvidia_cusolver_cu12-11.6.1.9.dist-info"
+    },
+    {
+      "name": "nvidia_nvjitlink_cu12-12.4.127.dist-info",
+      "target": "/home/moxu/miniconda3/lib/python3.13/site-packages/nvidia_nvjitlink_cu12-12.4.127.dist-info"
+    },
+    {
+      "name": "nvidia_cufft_cu12-11.2.1.3.dist-info",
+      "target": "/home/moxu/miniconda3/lib/python3.13/site-packages/nvidia_cufft_cu12-11.2.1.3.dist-info"
+    },
+    {
+      "name": "nvidia_cublas_cu12-12.4.5.8.dist-info",
+      "target": "/home/moxu/miniconda3/lib/python3.13/site-packages/nvidia_cublas_cu12-12.4.5.8.dist-info"
+    },
+    {
+      "name": "nvidia_curand_cu12-10.3.5.147.dist-info",
+      "target": "/home/moxu/miniconda3/lib/python3.13/site-packages/nvidia_curand_cu12-10.3.5.147.dist-info"
+    },
+    {
+      "name": "nvidia_nccl_cu12-2.21.5.dist-info",
+      "target": "/home/moxu/miniconda3/lib/python3.13/site-packages/nvidia_nccl_cu12-2.21.5.dist-info"
+    },
+    {
+      "name": "nvidia",
+      "target": "/home/moxu/miniconda3/envs/vidorag/lib/python3.10/site-packages/nvidia"
+    },
+    {
+      "name": "nvidia_nvtx_cu12-12.4.127.dist-info",
+      "target": "/home/moxu/miniconda3/lib/python3.13/site-packages/nvidia_nvtx_cu12-12.4.127.dist-info"
+    }
+  ],
+  "base_triton_record_verified": 322,
+  "base_triton_mismatches": []
+}

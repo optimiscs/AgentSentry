@@ -1,0 +1,134 @@
+{
+  "kind": "LAB3090_RECOVERY_SELECTED_ARTIFACTS",
+  "files": {
+    "deploy/lab3090/fetch_model.py": {
+      "bytes": 2908,
+      "sha256": "2cb2a56b4633d896832aae255a03f0d2f97a0e7c3b0e87f954e1b89ccb7bf176"
+    },
+    "deploy/lab3090/model-lock.json": {
+      "bytes": 2947,
+      "sha256": "bf63040d89ecb054809113bd0964f17ba3525654f693eb9ca514e91f2fd4ed52"
+    },
+    "deploy/lab3090/requirements.txt": {
+      "bytes": 316,
+      "sha256": "4e94baaae03ccf8e07e683fbddc3a70e37a02c59bd25082bff9d38d8b267266a"
+    },
+    "deploy/lab3090/serving-replica.json": {
+      "bytes": 1529,
+      "sha256": "1157abb9ae5b28786fbbacd4d813393762e91c65c573efccde043e6ad5ed7499"
+    },
+    "deploy/lab3090/serving.json": {
+      "bytes": 1521,
+      "sha256": "cc9fd35796c49218681bbaba4bcf3723d4891f094b6cf928186793a66f6bd346"
+    },
+    "deploy/lab3090/start_server.py": {
+      "bytes": 2362,
+      "sha256": "0d220f992a840df261badca117a6bc09a2f3380a3b23d24a79e4557c39b02d33"
+    },
+    "artifacts/lab3090-migration-v1/gpu-smoke.json": {
+      "bytes": 439,
+      "sha256": "9ca27d2a1ffd56b47f81e77a051fd0572f036b434ab400f62657def6fb9da9a5"
+    },
+    "artifacts/lab3090-migration-v1/packages.json": {
+      "bytes": 8876,
+      "sha256": "cc09ece5dd6dfd2a17045ff229e3e43b412972e70f932b340efe4947af690947"
+    },
+    "artifacts/lab3090-migration-v1/clone-audit.json": {
+      "bytes": 2628,
+      "sha256": "27f7152866f9eacc1eee5abaadf28ede7707544809583398ce3328e9c8537727"
+    },
+    "artifacts/lab3090-migration-v1/piguard-parity.json": {
+      "bytes": 4570,
+      "sha256": "3427a7994de9940e9dcea361bf078f4ae90828d844d7a93fab48866799e9afaa"
+    },
+    "artifacts/lab3090-migration-v1/model-readiness.json": {
+      "bytes": 7759,
+      "sha256": "d03dc4e37334ef9b20ba2f8479a312d105165504035e15ca6b32c9d116b9b805"
+    },
+    "artifacts/lab3090-migration-v1/model-readiness-replica.json": {
+      "bytes": 7761,
+      "sha256": "ec0f2c900b4590ed795778abd098bf5d43004874b96288b941117417c2f4cb29"
+    },
+    "artifacts/lab3090-migration-v1/asb-data-preflight.json": {
+      "bytes": 2485,
+      "sha256": "eede9b61e6ed2e2690e419934f7201c7010427aed036e24af84afa1bd1b6e12c"
+    },
+    "artifacts/lab3090-migration-v1/asb-qwen35-template-replay.json": {
+      "bytes": 8638,
+      "sha256": "e2f963c50b5570ed530e24ebdc8e5d3efa0b4043873aa0f1be3c082150cf364e"
+    },
+    "artifacts/lab3090-migration-v1/asb-baseline-process.json": {
+      "bytes": 1435,
+      "sha256": "2eaab4d5436c97632d63a07be87deaf483310cc86f3c23077419ce949b20c732"
+    },
+    "artifacts/lab3090-migration-v1/asb-full-process.json": {
+      "bytes": 1423,
+      "sha256": "3480e58fd79d55d7125d7f27d609b8055d9d4780ed43138b42ed773a93dba537"
+    },
+    "artifacts/lab3090-migration-v1/code-duplication-final.json": {
+      "bytes": 59736,
+      "sha256": "c50bf7cbcc81ec5f2f3280a271dd382258640add93d495136793260a9b568561"
+    },
+    "artifacts/lab3090-migration-v1/check_piguard_gpu_parity.py": {
+      "bytes": 2317,
+      "sha256": "6e8189c1821d53e8a8c7c27cd13dcdba16cd36a0a14a47a1a67d88d1e317e0df"
+    },
+    "artifacts/lab3090-migration-v1/check_model_server.py": {
+      "bytes": 2562,
+      "sha256": "6802c54c4c7d5117416310e3cc6f911094abcc6d006047ef232a05fd6122509e"
+    },
+    "artifacts/lab3090-migration-v1/run_asb_recovery.py": {
+      "bytes": 3149,
+      "sha256": "684bf54822ab296444fe9f7c862c524f3a71c853a3d241c0c536565e9f319c3b"
+    },
+    "artifacts/piguard-mpbench-lab3090-full-context-v1/progress.json": {
+      "bytes": 2241,
+      "sha256": "407ee9e22ef77df5e9bc87054316a3a8e4cac9aa41fef8e7489da25dbdb5b09f"
+    },
+    "artifacts/piguard-mpbench-lab3090-full-context-score-v1/report.json": {
+      "bytes": 23735,
+      "sha256": "f82cb593a9cbb3e2ee2ea9d3fdc403ec6d1bfa5d4802b575d9ac879456d45edf"
+    },
+    "artifacts/piguard-mpbench-lab3090-full-context-v1/source-snapshot/artifacts/run_piguard_cpu.py": {
+      "bytes": 9392,
+      "sha256": "4ab6c09955af0fcc10620a1ce9376b4a6532aae592ccb710937ba42cdf4318b2"
+    },
+    "artifacts/piguard-mpbench-lab3090-full-context-v1/source-snapshot/scripts/prepare_mpbench.py": {
+      "bytes": 7714,
+      "sha256": "6e154a40caa190624a8985ebc1658f51648b90ef14bd4d4532e7aea4f4bc9c7f"
+    },
+    "artifacts/piguard-mpbench-lab3090-full-context-v1/source-snapshot/scripts/run_piguard_full_context.py": {
+      "bytes": 9042,
+      "sha256": "66117392e30e3ef39d233220abf05a20b628512ce53fba2f432c9c938fd4dcfe"
+    },
+    "artifacts/piguard-mpbench-lab3090-full-context-v1/source-snapshot/scripts/score_mpbench_checkpoint.py": {
+      "bytes": 11761,
+      "sha256": "11620b9c7d921c6d4d32ffa0904fa164d145f7647693f943b759b4da33ff83b6"
+    },
+    "artifacts/benchmarks/asb/asb-lab3090-qwen35-9b-protocol-v2-baseline-s0/manifest.json": {
+      "bytes": 15261,
+      "sha256": "5bc391f4a157537f56a99a52fe68477d68f04e76f682dd13e73726fd5e307a31"
+    },
+    "artifacts/benchmarks/asb/asb-lab3090-qwen35-9b-protocol-v2-baseline-s0/metrics.json": {
+      "bytes": 634,
+      "sha256": "391fff5ac0cf2cd5169ecd43a20ed69c1a4b54082c4d2deeeee6fd81ae9fc0fa"
+    },
+    "artifacts/benchmarks/asb/asb-lab3090-qwen35-9b-protocol-v2-full-s0/manifest.json": {
+      "bytes": 15257,
+      "sha256": "191277b6ea1c95345d97efa34815c3bb4431c7f714572a35c4e7f19ad2f63e91"
+    },
+    "artifacts/benchmarks/asb/asb-lab3090-qwen35-9b-protocol-v2-full-s0/metrics.json": {
+      "bytes": 631,
+      "sha256": "cb1f68d580c50a602fe68c9369421b942ee9273ec0b60463be73674fd3a78d71"
+    }
+  },
+  "excluded": [
+    "model weights",
+    "datasets",
+    "Conda environments",
+    "credentials",
+    "raw per-case benchmark transcripts",
+    "raw prediction rows"
+  ],
+  "notes": "Raw outputs remain on Lab3090 and the local workspace; report manifests record their hashes. Runtime controller statuses preserve nonzero native validity exits."
+}

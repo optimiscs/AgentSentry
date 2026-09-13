@@ -1,0 +1,54 @@
+{
+  "status": "GPU_PREDICTIONS_FINISHED_SCORING_PENDING",
+  "pid": 2337495,
+  "process_start_ticks": "751688272",
+  "hostname": "B505-Server-09",
+  "device": "cuda:0",
+  "torch_threads": 2,
+  "script_sha256": "66117392e30e3ef39d233220abf05a20b628512ce53fba2f432c9c938fd4dcfe",
+  "loader_sha256": "4ab6c09955af0fcc10620a1ce9376b4a6532aae592ccb710937ba42cdf4318b2",
+  "records_completed": 6240,
+  "protocol": {
+    "window_content_tokens": 2046,
+    "stride": 2046,
+    "threshold": 0.5,
+    "aggregate": "maximum over all external fields and windows",
+    "input_fields": [
+      "context",
+      "skill_md"
+    ],
+    "excluded": [
+      "user_query",
+      "retrieval_query",
+      "expected_memory",
+      "labels"
+    ],
+    "threshold_selection": "fixed binary argmax; no calibration on these public records",
+    "adaptation": "One complete field per encoding, maximum 2048 tokens including specials; no truncation."
+  },
+  "kind": "PUBLIC_CHECKPOINT_INPUT_DIAGNOSTIC_NOT_MEMORY_ACCEPTANCE",
+  "source_files": {
+    "scripts/run_piguard_full_context.py": "66117392e30e3ef39d233220abf05a20b628512ce53fba2f432c9c938fd4dcfe",
+    "artifacts/run_piguard_cpu.py": "4ab6c09955af0fcc10620a1ce9376b4a6532aae592ccb710937ba42cdf4318b2",
+    "scripts/score_mpbench_checkpoint.py": "11620b9c7d921c6d4d32ffa0904fa164d145f7647693f943b759b4da33ff83b6",
+    "scripts/prepare_mpbench.py": "6e154a40caa190624a8985ebc1658f51648b90ef14bd4d4532e7aea4f4bc9c7f"
+  },
+  "environment": {
+    "torch": "2.10.0+cu128",
+    "transformers": "4.57.6",
+    "cuda_runtime": "12.8",
+    "gpu": "NVIDIA GeForce RTX 3090",
+    "dtype": "float32",
+    "tf32": false,
+    "seed": 0,
+    "tokenizer": "pinned tokenizer.json via standard DebertaV2 fast tokenizer"
+  },
+  "updated_at": "2026-09-13T02:58:43.600687+00:00",
+  "elapsed_seconds": 134.59481029771268,
+  "load_seconds": 1.9959468953311443,
+  "model_revision": "dd78b24e330193a22d2293ac66922dd4f982f563",
+  "model_manifest_sha256": "122702857f23e2e528584559c41c6a6520977fa6feb5ad9150db7f6e45cf393d",
+  "packet_manifest_sha256": "8b6b43158809459245fcc15677b020591b2c5d2153609c4a2fe312b128571e9d",
+  "planned_records": 6240,
+  "predictions_sha256": "2e78c7fc42b58556a60ec6cd79931ef87d8d4f1458013d0a606e28cb3047a471"
+}

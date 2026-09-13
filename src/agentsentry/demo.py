@@ -22,7 +22,8 @@ def seed(settings: Settings):
     (root / ".ssh/id_rsa").chmod(0o600)
     (root / ".gitignore").write_text(".ssh/\n")
     marker.write_text("synthetic-only v1\n")
-    git(root, "init", "-b", "main")
+    git(root, "init")
+    git(root, "symbolic-ref", "HEAD", "refs/heads/main")
     git(root, "add", "--", ".")
     git(
         root,

@@ -1,0 +1,9 @@
+# Qwen/Qwen3.5-9B native support. The actual CUDA smoke/serving checks
+# and resolved package versions are recorded in the migration evidence.
+# Install only in the NEW agentsentry-lab3090 Conda environment.
+vllm==0.17.1
+torch==2.10.0
+transformers==4.57.6
+numpy==2.2.6
+nvidia-cutlass-dsl==4.4.2
+quack-kernels==0.2.7

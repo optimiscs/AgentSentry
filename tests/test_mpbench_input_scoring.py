@@ -181,6 +181,35 @@ class CompletedCheckpointChecks(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "UNREVIEWED_CHECKPOINT_LOADER"):
             self.evaluate()
 
+    def portable_gpu_profile(self):
+        self.full_context_profile()
+        self.state.update(script_sha256=scorer.PORTABLE_FULL_CONTEXT_RUNNER_SHA,
+                          status="GPU_PREDICTIONS_FINISHED_SCORING_PENDING", device="cuda:0",
+                          environment={"dtype": "float32", "tf32": False, "seed": 0})
+
+    def test_portable_gpu_profile_preserves_full_field_scoring(self):
+        self.portable_gpu_profile()
+        report = self.evaluate()
+        self.assertEqual(report["device"], "cuda:0")
+        self.assertEqual(report["profile"], "complete_field_2048_portable_fp32")
+
+    def test_gpu_must_not_claim_cpu_completion(self):
+        self.portable_gpu_profile()
+        self.state["status"] = "CPU_PREDICTIONS_FINISHED_SCORING_PENDING"
+        with self.assertRaisesRegex(ValueError, "DEVICE_OR_PRECISION"):
+            self.evaluate()
+
+    def test_gpu_precision_change_is_not_silently_accepted(self):
+        self.portable_gpu_profile()
+        self.state["environment"]["tf32"] = True
+        with self.assertRaisesRegex(ValueError, "DEVICE_OR_PRECISION"):
+            self.evaluate()
+
+    def test_old_cpu_runner_cannot_claim_gpu_completion(self):
+        self.state["status"] = "GPU_PREDICTIONS_FINISHED_SCORING_PENDING"
+        with self.assertRaisesRegex(ValueError, "LEGACY_CHECKPOINT_DEVICE_CHANGED"):
+            self.evaluate()
+
 
 if __name__ == "__main__":
     unittest.main()

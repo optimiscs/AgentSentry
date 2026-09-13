@@ -1,0 +1,181 @@
+{
+  "status": "PASS",
+  "kind": "TOKENIZER_REPLAY_NOT_MODEL_BENCHMARK",
+  "cases": 20,
+  "original_template_failures": 20,
+  "model_calls": 0,
+  "source_records": {
+    "artifacts/benchmarks/asb/asb-local-v1-pilot-baseline-s0/per_case.jsonl": "2fdf8f7eca16ccdc974647ebf867067cb0814b048586b5c6cf21cf41b4862d64",
+    "artifacts/benchmarks/asb/asb-local-v1-pilot-full-s0/per_case.jsonl": "2095584afcee9ba4a3bfcc7bca8ccd0a4c95b1a53916edb8ac789f4b58630aeb"
+  },
+  "adapter_sha256": "14e40a2178c15443363898e8e1845d5316acbaed81db48888d5dace47504c2c9",
+  "checker_sha256": "d031c5d6c08162116463b579325efb43422c08aafffae2ace1edc615f1453645",
+  "model_path": "/home/moxu/AgentSentry/artifacts/models/qwen3.5-9b-c20223623576",
+  "rows": [
+    {
+      "configuration": "baseline",
+      "case_id": "DPI_OPI/combined_attack/financial_analyst_agent/0/20",
+      "prompt_tokens": 526,
+      "template_rendered": true,
+      "original_messages_sha256": "ccaf747d6a4e02944c594d0e5f99240836fba276769e1c07ea300d9a5a1be62c",
+      "wire_messages_sha256": "d5f5559007c04cc2bc80dc14779661b39f0c9eafeef73133a971eab60100b973"
+    },
+    {
+      "configuration": "baseline",
+      "case_id": "DPI_OPI/combined_attack/legal_consultant_agent/0/40",
+      "prompt_tokens": 512,
+      "template_rendered": true,
+      "original_messages_sha256": "57ceda7c07b1dadf5411ea6fb411122cd7f5d2790ce929d8eef5d3ca616c4b29",
+      "wire_messages_sha256": "c2f4c699836bf3682a522b5a38cd0bfaa436d4e427fd3e4a8f9f3bc679151426"
+    },
+    {
+      "configuration": "baseline",
+      "case_id": "DPI_OPI/combined_attack/medical_advisor_agent/0/60",
+      "prompt_tokens": 517,
+      "template_rendered": true,
+      "original_messages_sha256": "3b0f18dcc9b1aa5306ed598456af6c7a28d1f5dba50f6ebcb43ae3268b5fa16a",
+      "wire_messages_sha256": "163217d80360c91d3a3156ed0b55fbcf2cfbfbb2fd09a48024cc7b0438502760"
+    },
+    {
+      "configuration": "baseline",
+      "case_id": "DPI_OPI/combined_attack/education_consultant_agent/0/80",
+      "prompt_tokens": 485,
+      "template_rendered": true,
+      "original_messages_sha256": "3d9b3b7e8e195acc212a7710811fdae2ca650cf2666bf921b2b60fe8eeaddac0",
+      "wire_messages_sha256": "a0ca566d3f6292d2685c194d804403351df852c42c075c2f95b1a04feb827ce6"
+    },
+    {
+      "configuration": "baseline",
+      "case_id": "DPI_OPI/combined_attack/psychological_counselor_agent/0/100",
+      "prompt_tokens": 504,
+      "template_rendered": true,
+      "original_messages_sha256": "011957e4bd1de7718532480a3650a54cacbdb0655eb07760915a0bf16583defa",
+      "wire_messages_sha256": "29d38121409dc6264ddc547cc2301e414ac0e47262ae273e3a62f7722cbe6771"
+    },
+    {
+      "configuration": "baseline",
+      "case_id": "DPI_OPI/combined_attack/ecommerce_manager_agent/0/120",
+      "prompt_tokens": 505,
+      "template_rendered": true,
+      "original_messages_sha256": "381b83d7a3445867e7c8701f14320687322a8e574de246866758a07c2a3e6027",
+      "wire_messages_sha256": "531d20daac0c9bec51750831a9a0c35163e814e81fae4c63d12d251ca2d4a818"
+    },
+    {
+      "configuration": "baseline",
+      "case_id": "DPI_OPI/combined_attack/aerospace_engineer_agent/0/140",
+      "prompt_tokens": 493,
+      "template_rendered": true,
+      "original_messages_sha256": "8e6883651b8c93b25d0b442c5b6a5339eb87b1f51fb2c34c15f4ed6ef77ae235",
+      "wire_messages_sha256": "bb0d6f64b915473884a260ced353c1fd4329f35a66d40bdb6142e986d14c619d"
+    },
+    {
+      "configuration": "baseline",
+      "case_id": "DPI_OPI/combined_attack/academic_search_agent/0/160",
+      "prompt_tokens": 503,
+      "template_rendered": true,
+      "original_messages_sha256": "96779cff2b55901f3164dd6c6503f4c195575964413829030773d8c57cf1809b",
+      "wire_messages_sha256": "b6bbd4d3703438f4dc79470791444b479050d235e977de4a74f7c343bfdfe908"
+    },
+    {
+      "configuration": "baseline",
+      "case_id": "DPI_OPI/combined_attack/autonomous_driving_agent/0/180",
+      "prompt_tokens": 512,
+      "template_rendered": true,
+      "original_messages_sha256": "7bfb85dbe72844f7aa1699cf3890d5132188c34a6d91ff5a32a5c96419d6c154",
+      "wire_messages_sha256": "026a8689d1b3c5823484a06ee6271ed2cec5b30d67de7a40549228e242bb0bdf"
+    },
+    {
+      "configuration": "baseline",
+      "case_id": "DPI_OPI/combined_attack/system_admin_agent/0/0",
+      "prompt_tokens": 542,
+      "template_rendered": true,
+      "original_messages_sha256": "0c4eb281ca9e6a85da18446d3d45d7d1dca59edb64e2fcf745bf8b7798ee708b",
+      "wire_messages_sha256": "ee01b321bdd0a89fa7660ff7a6bf615fade01f6050b7cd381088f3a631bbb9a5"
+    },
+    {
+      "configuration": "full",
+      "case_id": "DPI_OPI/combined_attack/financial_analyst_agent/0/20",
+      "prompt_tokens": 526,
+      "template_rendered": true,
+      "original_messages_sha256": "ccaf747d6a4e02944c594d0e5f99240836fba276769e1c07ea300d9a5a1be62c",
+      "wire_messages_sha256": "d5f5559007c04cc2bc80dc14779661b39f0c9eafeef73133a971eab60100b973"
+    },
+    {
+      "configuration": "full",
+      "case_id": "DPI_OPI/combined_attack/legal_consultant_agent/0/40",
+      "prompt_tokens": 512,
+      "template_rendered": true,
+      "original_messages_sha256": "57ceda7c07b1dadf5411ea6fb411122cd7f5d2790ce929d8eef5d3ca616c4b29",
+      "wire_messages_sha256": "c2f4c699836bf3682a522b5a38cd0bfaa436d4e427fd3e4a8f9f3bc679151426"
+    },
+    {
+      "configuration": "full",
+      "case_id": "DPI_OPI/combined_attack/medical_advisor_agent/0/60",
+      "prompt_tokens": 517,
+      "template_rendered": true,
+      "original_messages_sha256": "3b0f18dcc9b1aa5306ed598456af6c7a28d1f5dba50f6ebcb43ae3268b5fa16a",
+      "wire_messages_sha256": "163217d80360c91d3a3156ed0b55fbcf2cfbfbb2fd09a48024cc7b0438502760"
+    },
+    {
+      "configuration": "full",
+      "case_id": "DPI_OPI/combined_attack/education_consultant_agent/0/80",
+      "prompt_tokens": 485,
+      "template_rendered": true,
+      "original_messages_sha256": "3d9b3b7e8e195acc212a7710811fdae2ca650cf2666bf921b2b60fe8eeaddac0",
+      "wire_messages_sha256": "a0ca566d3f6292d2685c194d804403351df852c42c075c2f95b1a04feb827ce6"
+    },
+    {
+      "configuration": "full",
+      "case_id": "DPI_OPI/combined_attack/psychological_counselor_agent/0/100",
+      "prompt_tokens": 504,
+      "template_rendered": true,
+      "original_messages_sha256": "011957e4bd1de7718532480a3650a54cacbdb0655eb07760915a0bf16583defa",
+      "wire_messages_sha256": "29d38121409dc6264ddc547cc2301e414ac0e47262ae273e3a62f7722cbe6771"
+    },
+    {
+      "configuration": "full",
+      "case_id": "DPI_OPI/combined_attack/ecommerce_manager_agent/0/120",
+      "prompt_tokens": 505,
+      "template_rendered": true,
+      "original_messages_sha256": "381b83d7a3445867e7c8701f14320687322a8e574de246866758a07c2a3e6027",
+      "wire_messages_sha256": "531d20daac0c9bec51750831a9a0c35163e814e81fae4c63d12d251ca2d4a818"
+    },
+    {
+      "configuration": "full",
+      "case_id": "DPI_OPI/combined_attack/aerospace_engineer_agent/0/140",
+      "prompt_tokens": 493,
+      "template_rendered": true,
+      "original_messages_sha256": "8e6883651b8c93b25d0b442c5b6a5339eb87b1f51fb2c34c15f4ed6ef77ae235",
+      "wire_messages_sha256": "bb0d6f64b915473884a260ced353c1fd4329f35a66d40bdb6142e986d14c619d"
+    },
+    {
+      "configuration": "full",
+      "case_id": "DPI_OPI/combined_attack/academic_search_agent/0/160",
+      "prompt_tokens": 503,
+      "template_rendered": true,
+      "original_messages_sha256": "96779cff2b55901f3164dd6c6503f4c195575964413829030773d8c57cf1809b",
+      "wire_messages_sha256": "b6bbd4d3703438f4dc79470791444b479050d235e977de4a74f7c343bfdfe908"
+    },
+    {
+      "configuration": "full",
+      "case_id": "DPI_OPI/combined_attack/autonomous_driving_agent/0/180",
+      "prompt_tokens": 512,
+      "template_rendered": true,
+      "original_messages_sha256": "7bfb85dbe72844f7aa1699cf3890d5132188c34a6d91ff5a32a5c96419d6c154",
+      "wire_messages_sha256": "026a8689d1b3c5823484a06ee6271ed2cec5b30d67de7a40549228e242bb0bdf"
+    },
+    {
+      "configuration": "full",
+      "case_id": "DPI_OPI/combined_attack/system_admin_agent/0/0",
+      "prompt_tokens": 542,
+      "template_rendered": true,
+      "original_messages_sha256": "0c4eb281ca9e6a85da18446d3d45d7d1dca59edb64e2fcf745bf8b7798ee708b",
+      "wire_messages_sha256": "ee01b321bdd0a89fa7660ff7a6bf615fade01f6050b7cd381088f3a631bbb9a5"
+    }
+  ],
+  "model_tokenizer_files": {
+    "tokenizer.json": "5f9e4d4901a92b997e463c1f46055088b6cca5ca61a6522d1b9f64c4bb81cb42",
+    "tokenizer_config.json": "316230d6a809701f4db5ea8f8fc862bc3a6f3229c937c174e674ff3ca0a64ac8",
+    "chat_template.jinja": "a4aee8afcf2e0711942cf848899be66016f8d14a889ff9ede07bca099c28f715"
+  }
+}

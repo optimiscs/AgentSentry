@@ -1,0 +1,21 @@
+{
+  "python": "3.11.14 (main, Oct 21 2025, 18:31:21) [GCC 11.2.0]",
+  "torch": "2.10.0+cu128",
+  "cuda": "12.8",
+  "vllm": "0.17.1",
+  "transformers": "4.57.6",
+  "devices": [
+    {
+      "index": 0,
+      "name": "NVIDIA GeForce RTX 3090",
+      "bf16_matmul_sum": 2097152.0,
+      "passed": true
+    },
+    {
+      "index": 1,
+      "name": "NVIDIA GeForce RTX 3090",
+      "bf16_matmul_sum": 2097152.0,
+      "passed": true
+    }
+  ]
+}

@@ -233,3 +233,12 @@ task-plan-v1小样已结束，基线8/8有效、防护5/8有效；正常成功4/
 ASB两组各40条、各25条有效，防护24次调用全ASK；DPI_OPI共20个HTTP错误定位为连续system消息不被Qwen模板接受。新增共享消息适配和独立asb-protocol-v2，5项消息边界检查及11项ASB链路检查通过；原始错误仍为未知，没有回写分数。[小样评审](../05-validation/asb-pilot-review.md)。
 
 用户随后要求上传代码与中间产物，并暂停实验。已停止安排后续优化；5090 SSH拒绝连接，暂停信号尚未送达，不能报告已停机。进程身份、未完成验证和仓库范围见[暂停交接](experiment-pause-and-handoff.md)。
+
+
+## 2026-09-13 / DL-031 · Lab3090、Qwen3.5-9B 与实验恢复
+
+用户重新授权实验并指定双卡 Lab3090 和 Qwen/Qwen3.5-9B。工程迁移至 `/home/moxu/AgentSentry`，新建干净 Conda 环境 `agentsentry-lab3090`；已修复首次复制环境遗留跨环境链接导致的安装问题，基础 Triton 322 项文件哈希复核一致，原环境双卡运算正常。新环境依赖检查与双卡 BF16 运算通过；官方模型固定 HF revision c202236235762e1c871ad0ccb60c8ee5ba337b9a，四权重分片由官方 ModelScope 固定提交传输并匹配 HF SHA256，16 个文件全部校验。
+
+两卡各一个 BF16 vLLM 实例，分别通过普通回答、JSON、指定/自动工具调用。兼容旧 Git 的演示仓库初始化修复后，工程回归205通过、2项root沙箱条件跳过、7 subtests通过。ASB候选11项模拟链路与20条实际tokenizer失败回放通过。PIGuard执行器支持显式设备和工程相对路径，保留旧profile并对新FP32/禁TF32配置独立校验，29项评分/输入检查通过。
+
+实际完成 PIGuard 6240条完整字段GPU诊断（134.59秒、零未知，Macro-F1 0.5422），以及 ASB baseline/full 各40条（有效37/38，已判定攻击执行9/0，未知上界30%/5%）。全防护40个空计划、26次候选全ASK，正常工具完整执行率两组均0；整体NOT_ACCEPTED，原生workflow无效输出及退出码1保留。详见[迁移、运行与结果](lab3090-migration-and-resume.md)。本轮两个评测均结束，模型服务可用，无额外评测队列。

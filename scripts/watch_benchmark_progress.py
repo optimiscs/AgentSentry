@@ -69,6 +69,10 @@ def main():
     parser.add_argument("--run", type=Path, action="append", required=True)
     parser.add_argument("--once", action="store_true")
     parser.add_argument("--batch-pid", type=int)
+    parser.add_argument("--json-output", type=Path,
+                        default=Path("docs/evidence/live-benchmark-progress.json"))
+    parser.add_argument("--markdown-output", type=Path,
+                        default=Path("docs/05-validation/live-benchmark-progress.md"))
     args = parser.parse_args()
     identity = process_identity(args.batch_pid) if args.batch_pid else None
     while True:
@@ -99,7 +103,7 @@ def main():
             "runs": rows,
         }
         atomic(
-            Path("docs/evidence/live-benchmark-progress.json"),
+            args.json_output,
             json.dumps(report, indent=2) + "\n",
         )
         text = (
@@ -113,7 +117,7 @@ def main():
             for r in rows
         )
         text += "\n\n空缺结果、错误和无效输出不能算作防护成功。RECORDED_NOT_ACCEPTED 仅表示结果工件已写出；通过门槛、全量攻击、重复/消融及独立标注仍需配对验收报告。若进程停止，更新时间不会继续变化。\n"
-        atomic(Path("docs/05-validation/live-benchmark-progress.md"), text)
+        atomic(args.markdown_output, text)
         if (
             args.once
             or stopped

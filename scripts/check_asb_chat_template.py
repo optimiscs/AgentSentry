@@ -15,6 +15,8 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--candidate", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
+    parser.add_argument("--model-path", type=Path,
+                        help="Explicit local tokenizer for a separately reported hardware/model run")
     args = parser.parse_args()
     root = Path(__file__).resolve().parents[1]
     path = args.candidate / "benchmarks/chat_messages.py"
@@ -22,10 +24,15 @@ def main():
     candidate = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(candidate)
     from jinja2.exceptions import TemplateError
-    from vllm.tokenizers import get_tokenizer
+    if importlib.util.find_spec("vllm.tokenizers") is not None:
+        from vllm.tokenizers import get_tokenizer
+    else:
+        from vllm.transformers_utils.tokenizer import get_tokenizer
 
-    base = json.loads((root / "artifacts/local-model-27b-32k-command.json").read_text())
-    model = Path(base["argv"][base["argv"].index("--model") + 1])
+    model = args.model_path
+    if model is None:
+        base = json.loads((root / "artifacts/local-model-27b-32k-command.json").read_text())
+        model = Path(base["argv"][base["argv"].index("--model") + 1])
     tokenizer = get_tokenizer(str(model))
     rows, sources = [], {}
     for configuration in ("baseline", "full"):
@@ -87,6 +94,7 @@ def main():
         "source_records": sources,
         "adapter_sha256": sha(path),
         "checker_sha256": sha(Path(__file__)),
+        "model_path": str(model.resolve()),
         "rows": rows,
         "model_tokenizer_files": {
             name: sha(model / name)
