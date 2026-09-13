@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "archive_sha256": "d58000f3b2e7a4535dec74ab6aa3cd296fd133ab4d31cf92d8dd2ac8340a0228",
+  "reviewed_files": 6,
+  "source_bytes_preserved": true,
+  "reason": "Keep upstream CRLF and trailing spaces exactly as downloaded. Only the binary archive and manifests are versioned; do not normalize upstream text to satisfy first-party whitespace checks."
+}

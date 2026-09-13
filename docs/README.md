@@ -89,4 +89,8 @@
 
 [历次评估、代码修改与前后变化](05-validation/evaluation-history-and-code-changes.md)：汇总 22 组真实模型 benchmark 配对，以及固定输入诊断、离线协议回放、CPU/模型速度测试；按版本区分收益、退化与未运行项。
 
+[v5 清洗与全量运行](05-validation/context-filter-v5-review.md)：新增邮件固定输入全部保留；35 条/组原生小样均有效，正常完成均 19/19、攻击成功 3/16→0/16。全量 1046 条/组已启动，未填写最终分数；任务与防护默认关闭思考，仍为参考模式。
+
+[AgentArmor / Interbolt 基线核查](05-validation/graph-and-provenance-baseline-review.md)：补充图依赖、来源门控及 OPI/混合攻击口径，作者分数与本项目实测分开。
+
 [SecOPD 强基线与复现条件](05-validation/secopd-baseline-review.md)：补充自适应攻击与训练防御的比较，作者结果与本项目运行分开记录。

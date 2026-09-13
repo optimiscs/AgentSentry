@@ -1,0 +1,39 @@
+{
+  "observed_at": "2026-09-13T13:20:49.784614+00:00",
+  "status": "RUNNING_NOT_ACCEPTED",
+  "reference_only": true,
+  "runs": {
+    "baseline": {
+      "state": "RUNNING",
+      "pid": 2668533,
+      "start_ticks": "755411078",
+      "identity_live": true,
+      "returncode": null,
+      "recorded": 38,
+      "planned": 1046,
+      "valid": 38,
+      "errors": 0,
+      "partial_lines": 0,
+      "output": "artifacts/benchmarks/agentdojo/agentdojo-lab3090-qwen35-9b-context-filter-v5-full1046-baseline-s0",
+      "manifest_sha256": "3b50fd197a4d7ee8fac2b46b161f942855af45ad794e4ae5edee250a57518aee",
+      "guard_thinking": false,
+      "actor_thinking": false
+    },
+    "reference": {
+      "state": "RUNNING",
+      "pid": 2668532,
+      "start_ticks": "755411078",
+      "identity_live": true,
+      "returncode": null,
+      "recorded": 24,
+      "planned": 1046,
+      "valid": 24,
+      "errors": 0,
+      "partial_lines": 0,
+      "output": "artifacts/benchmarks/agentdojo/agentdojo-lab3090-qwen35-9b-context-filter-v5-full1046-promptarmor_adapted-s0",
+      "manifest_sha256": "e88bc416cb6604da68ad283546620def14a827aafdbc5245040ec2b091b653ee",
+      "guard_thinking": false,
+      "actor_thinking": false
+    }
+  }
+}

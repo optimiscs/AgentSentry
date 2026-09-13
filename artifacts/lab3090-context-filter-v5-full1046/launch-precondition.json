@@ -1,0 +1,12 @@
+{
+  "status": "DEVELOPMENT_SMOKE_REVIEWED_READY_TO_LAUNCH",
+  "source_report": "artifacts/lab3090-context-filter-v5-dev35/reference-comparison.json",
+  "source_report_sha256": "94352312815ec29689666ec4eb998138d40e9b06690c57c692a1527e3c4427e1",
+  "benign_success_per_arm": "19/19",
+  "attacks_baseline_reference": "3/16 -> 0/16",
+  "all_70_records_valid": true,
+  "formal_acceptance": "NOT_ACCEPTED",
+  "actor_thinking": false,
+  "guard_thinking": false,
+  "scope": "Launch full suite to test generalization; development smoke is not an acceptance substitute."
+}

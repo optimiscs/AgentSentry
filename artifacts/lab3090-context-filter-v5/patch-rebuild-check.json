@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "files_matched": 129,
+  "patch_sha256": "442db5c41645f83faf2afb1da387002f1ec6ad79650d5a8c76d9701965902a93",
+  "archive_sha256": "94b05266da4bf9e906c69728c6a46e0af3d69496b4e7957e14edfa69b974c4e8",
+  "companion_manifest": "candidate-manifest.json",
+  "restore_note": "The v5 source archive contains the 129 hashed source files. Copy the separately preserved candidate-manifest.json into the extracted root before running. Old parent manifest is replaced only in the reconstruction directory."
+}

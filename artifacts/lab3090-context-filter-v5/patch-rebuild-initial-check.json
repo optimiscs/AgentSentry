@@ -1,0 +1,5 @@
+{
+  "status": "CHECK_ASSERTION_CORRECTED",
+  "reason": "Parent archive also carries candidate-manifest.json, which is companion metadata outside the 129 source-file hash entries. Initial exact file-set assertion wrongly included it. The patch succeeded and all 129 source bytes matched.",
+  "source_or_patch_changed": false
+}

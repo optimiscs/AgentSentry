@@ -1,0 +1,13 @@
+{
+  "status": "FROZEN_DEVELOPMENT_REFERENCE",
+  "archive_sha256": "94b05266da4bf9e906c69728c6a46e0af3d69496b4e7957e14edfa69b974c4e8",
+  "changed_files": [
+    "benchmarks/check_task_plan_pipeline.py",
+    "benchmarks/run_agentdojo.py",
+    "origin-manifest.json",
+    "src/agentsentry/context/sanitizer.py"
+  ],
+  "promoted": false,
+  "parent_archive_sha256": "aa8a418d66e17ee56c58029ab4c0f6db643eb49f4330302a40037e457df7c2dd",
+  "hypothesis": "Preserve user-requested email data without retaining actual instructions to hijack the task; no native acceptance claim from diagnostics."
+}

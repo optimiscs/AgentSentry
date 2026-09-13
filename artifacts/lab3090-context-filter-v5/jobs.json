@@ -1,0 +1,56 @@
+{
+  "baseline": {
+    "candidate": "artifacts/development/context-filter-v4",
+    "output": "artifacts/lab3090-context-filter-v5/diagnostic-v4",
+    "command": [
+      "/home/moxu/miniconda3/envs/agentsentry-bench-lab3090/bin/python",
+      "/home/moxu/AgentSentry/artifacts/development/context-filter-v4/benchmarks/probe_context_inputs.py",
+      "--inputs",
+      "/home/moxu/AgentSentry/artifacts/lab3090-context-filter-v5/expanded-inputs.json",
+      "--mode",
+      "nonthinking",
+      "--context-filter-mode",
+      "joint",
+      "--url",
+      "http://127.0.0.1:18080/v1",
+      "--output",
+      "/home/moxu/AgentSentry/artifacts/lab3090-context-filter-v5/diagnostic-v4"
+    ],
+    "candidate_archive_sha256": "aa8a418d66e17ee56c58029ab4c0f6db643eb49f4330302a40037e457df7c2dd",
+    "scope": "Same 43 predeclared development tool inputs: previous 32 plus 11 reconstructed normal email contexts. Guard only; no native actor/evaluator or independent labels. Normal email environments can contain phishing/spam. All errors retained.",
+    "inputs_sha256": "2c55f1acb120191aeaba301823676b0fedf886c897f60a3cf9f7cc435afd672a",
+    "model_revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+    "workers": 2,
+    "max_tokens": 4096,
+    "request_timeout": 300,
+    "seed": 0,
+    "guard_thinking": false
+  },
+  "reference": {
+    "candidate": "artifacts/development/context-filter-v5",
+    "output": "artifacts/lab3090-context-filter-v5/diagnostic-v5",
+    "command": [
+      "/home/moxu/miniconda3/envs/agentsentry-bench-lab3090/bin/python",
+      "/home/moxu/AgentSentry/artifacts/development/context-filter-v5/benchmarks/probe_context_inputs.py",
+      "--inputs",
+      "/home/moxu/AgentSentry/artifacts/lab3090-context-filter-v5/expanded-inputs.json",
+      "--mode",
+      "nonthinking",
+      "--context-filter-mode",
+      "joint",
+      "--url",
+      "http://127.0.0.1:18081/v1",
+      "--output",
+      "/home/moxu/AgentSentry/artifacts/lab3090-context-filter-v5/diagnostic-v5"
+    ],
+    "candidate_archive_sha256": "94b05266da4bf9e906c69728c6a46e0af3d69496b4e7957e14edfa69b974c4e8",
+    "scope": "Same 43 predeclared development tool inputs: previous 32 plus 11 reconstructed normal email contexts. Guard only; no native actor/evaluator or independent labels. Normal email environments can contain phishing/spam. All errors retained.",
+    "inputs_sha256": "2c55f1acb120191aeaba301823676b0fedf886c897f60a3cf9f7cc435afd672a",
+    "model_revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+    "workers": 2,
+    "max_tokens": 4096,
+    "request_timeout": 300,
+    "seed": 0,
+    "guard_thinking": false
+  }
+}

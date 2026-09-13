@@ -1,0 +1,38 @@
+{
+  "repo": "https://github.com/deconvolute-labs/interbolt-agentdojo",
+  "revision": "43e2b5fa3e7b41b7e26f7c04cc8f371ab98aa875",
+  "files": {
+    "pyproject.toml": {
+      "sha256": "8ed538e37cfc55392664df90935bc3ccb136023aa991bb9526a02d382aa7259c",
+      "bytes": 1493,
+      "url": "https://raw.githubusercontent.com/deconvolute-labs/interbolt-agentdojo/43e2b5fa3e7b41b7e26f7c04cc8f371ab98aa875/pyproject.toml"
+    },
+    "LICENSE": {
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "bytes": 11357,
+      "url": "https://raw.githubusercontent.com/deconvolute-labs/interbolt-agentdojo/43e2b5fa3e7b41b7e26f7c04cc8f371ab98aa875/LICENSE"
+    },
+    "README.md": {
+      "sha256": "eac4df35367b2b790b88638dba20d008fd92e777b81ea0a245babb748f8c816e",
+      "bytes": 9889,
+      "url": "https://raw.githubusercontent.com/deconvolute-labs/interbolt-agentdojo/43e2b5fa3e7b41b7e26f7c04cc8f371ab98aa875/README.md"
+    },
+    "policies/banking/targeted.yaml": {
+      "sha256": "1472bd249ca191f0f921011e8db40125407d3fc5893077e7207fe33c1e17a103",
+      "bytes": 5291,
+      "url": "https://raw.githubusercontent.com/deconvolute-labs/interbolt-agentdojo/43e2b5fa3e7b41b7e26f7c04cc8f371ab98aa875/policies/banking/targeted.yaml"
+    },
+    "runs/published/results.csv": {
+      "sha256": "2c5ada762250b4aa8d7795bf6d3ca6dad7e927cd89ef1a969371430c36688c3c",
+      "bytes": 3081,
+      "url": "https://raw.githubusercontent.com/deconvolute-labs/interbolt-agentdojo/43e2b5fa3e7b41b7e26f7c04cc8f371ab98aa875/runs/published/results.csv"
+    },
+    "policies/travel/targeted.yaml": {
+      "sha256": "44959e69b69c127f28172fe21fb80570747883a297eea130fdaa6bddd7f59f32",
+      "bytes": 15049,
+      "url": "https://raw.githubusercontent.com/deconvolute-labs/interbolt-agentdojo/43e2b5fa3e7b41b7e26f7c04cc8f371ab98aa875/policies/travel/targeted.yaml"
+    }
+  },
+  "errors": {},
+  "scope": "Read-only primary-source review; not installed or executed; not first-party implementation."
+}
