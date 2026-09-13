@@ -1,0 +1,227 @@
+--- a/origin-manifest.json
++++ b/origin-manifest.json
+@@ -2,2 +2,2 @@
+-  "parent": "context-filter-v1",
+-  "parent_archive_sha256": "1a0b09566f6a808c94c30f40eb5d8a5a2ee1a3d383d0c3d2d112ab2f0a83a1e2",
++  "parent": "context-filter-v2",
++  "parent_archive_sha256": "7a826ec45f173b4f49f83079a19bd93ea4c6481a31c38b01b334c51ce93e764b",
+@@ -26 +26 @@
+-    "benchmarks/run_agentdojo.py": "ab24f24baf54a29f1fab59b67438cc7f60e8f145ec84318232d9fedde16f215a",
++    "benchmarks/run_agentdojo.py": "a012cd69ee51fa65a7416089803b72cf8875bf6c3292eb6f8431ed759be5e510",
+@@ -37 +37 @@
+-    "origin-manifest.json": "8774837493d355aa0070e6597d82ea8aa0ff08b3ac44202afc4acbe208aed9c3",
++    "origin-manifest.json": "2c1b6acb1fd6525b659648e6a2fb6d94c10b6f07361e6ec6251f3ef127f7265e",
+@@ -82 +82 @@
+-    "src/agentsentry/context/sanitizer.py": "23ec50c5f8273a050461e14fcbffcff92e50df33bba0d0a63d63de31951433ff",
++    "src/agentsentry/context/sanitizer.py": "5c6ecd11e18e7a74e2990e12319eb4b7bc6be40c69de04930460a6f36d64228e",
+@@ -121 +121 @@
+-    "tests/test_context_sanitizer.py": "9904144aceebde6d786ba95781eb33e1d47e85ea747f5cbf0af6484e68f9f3f9",
++    "tests/test_context_sanitizer.py": "64a5c53463b3679617fce020ad20bb66e3f90a732eac927f759b67697695d619",
+--- a/src/agentsentry/intent/task_plan.py
++++ b/src/agentsentry/intent/task_plan.py
+@@ -10,0 +11 @@
++import re
+@@ -247,0 +249,4 @@
++value_options lists source references located by code for each step and argument. For ordinary value evidence, select
++one of these exact references belonging to the selected step. An option proves only that the value occurs, not that it
++is the right recipient, object or value for the task. If no option fits the task, choose needs_confirmation.
++Arithmetic is available only for numeric arguments, never for addresses, dates, names or identifiers represented as strings.
+@@ -367,2 +371,0 @@
+-        fields = schema["$defs"]["Evidence"]["properties"]
+-        fields["argument"]["enum"] = paths
+@@ -371,24 +373,0 @@
+-        branches = [
+-            {
+-                "required": ["source"],
+-                "properties": {
+-                    "operation": {"const": "value"},
+-                    "source": {"enum": sources},
+-                    "operands": {"maxItems": 0},
+-                },
+-            },
+-            {
+-                "required": ["operation", "operands"],
+-                "properties": {
+-                    "operation": {"enum": [v for v in fields["operation"]["enum"] if v != "value"]},
+-                    "source": {"const": ""},
+-                    "pointer": {"const": ""},
+-                    "quote": {"const": None},
+-                    "operands": {"minItems": 1},
+-                },
+-            },
+-        ]
+-        # Put the common object constraints inside every alternative. Some
+-        # constrained decoders ignore sibling properties/required beside anyOf.
+-        # Complete alternatives preserve argument/source fields during generation;
+-        # the post-generation evidence checker still decides whether they are true.
+@@ -397 +376,3 @@
+-        for branch in branches:
++
++        def branch(constraints, required):
++            # Complete objects avoid constrained-decoder sibling/anyOf ambiguity.
+@@ -399,2 +380,2 @@
+-            variant["required"] = list(dict.fromkeys(base["required"] + branch["required"]))
+-            for name, constraint in branch["properties"].items():
++            variant["required"] = list(dict.fromkeys(base["required"] + required))
++            for name, constraint in constraints.items():
+@@ -403 +384,56 @@
+-        schema["$defs"]["Evidence"] = {"anyOf": variants}
++
++        options = {
++            canonical(option): option
++            for step_options in payload["value_options"].values()
++            for argument_options in step_options.values()
++            for option in argument_options
++        }
++        for option in options.values():
++            branch({name: {"const": value} for name, value in option.items()},
++                   ["source"] + (["pointer"] if option["pointer"] else [])
++                   + (["quote"] if option["quote"] is not None else []))
++        numeric_paths = sorted({
++            path for r in requirements.values() for path, value in r["arguments"].items()
++            if type(value) in (int, float)
++        })
++        if numeric_paths:
++            branch({
++                "argument": {"enum": numeric_paths},
++                "operation": {"enum": [v for v in base["properties"]["operation"]["enum"] if v != "value"]},
++                "source": {"const": ""}, "pointer": {"const": ""}, "quote": {"const": None},
++                "operands": {"minItems": 1},
++            }, ["operation", "operands"])
++        if variants:
++            schema["$defs"]["Evidence"] = {"anyOf": variants}
++        else:
++            # No value source and no numerical operation: the model can decline,
++            # but an empty evidence list still cannot satisfy the final checker.
++            schema["properties"]["evidence"]["maxItems"] = 0
++
++    def _value_options(self, expected, available):
++        """Locate existing values, without deciding task relevance or authority."""
++        sources = [("user", "", self.task)] + [
++            (obs.id, path, value)
++            for obs in available.values() for path, value in leaves(obs.result, "")
++        ]
++        options = {}
++        for argument, value in expected.items():
++            found = {}
++            for source, path, observed in sources:
++                quotes = []
++                if source != "user" and equal_value(value, observed):
++                    quotes.append(None)
++                elif isinstance(observed, str):
++                    candidates = [value] if isinstance(value, str) else (
++                        re.findall(r"[-+]?(?:\d+(?:\.\d*)?|\.\d+)(?:[eE][-+]?\d+)?", observed)
++                        if type(value) in (int, float) else []
++                    )
++                    quotes.extend(q for q in candidates if len(q) <= 2048
++                                  and quoted_value_matches(value, q) and literal_occurs(observed, q))
++                for quote in quotes:
++                    proof = Evidence(argument=argument, source=source, pointer=path, quote=quote).model_dump()
++                    found[canonical(proof)] = proof
++                    if len(found) > 64:
++                        raise ValueError("TASK_EVIDENCE_OPTION_BUDGET")
++            options[argument] = list(found.values())
++        return options
+@@ -586 +622,2 @@
+-                    proof.source
++                    type(value) not in (int, float)
++                    or proof.source
+@@ -674,0 +712,7 @@
++            value_options = {
++                s.id: self._value_options(self._required_evidence(s, complete), {
++                    key: obs for key, obs in available.items() if obs.provider in s.sources
++                }) for s in candidates
++            }
++            if len(canonical(value_options)) + len(canonical(data)) > 65536:
++                return None, "TASK_VERIFICATION_DATA_BUDGET"
+@@ -683,0 +728 @@
++                    "value_options": value_options,
+--- a/tests/test_task_plan.py
++++ b/tests/test_task_plan.py
+@@ -225,0 +226,86 @@
++
++
++def test_code_locates_exact_source_paths_and_numeric_spelling():
++    planner, model, intent = setup(task="Pay the designated invoice")
++    read_args = {"id": "invoice-7"}
++    planner.record(action(READ, read_args), read_args,
++                   {"a/b~c": [{"recipient": "Alice", "amount_text": "Total 10.00 dollars"}]})
++    args = {"recipient": "Alice", "amount": 10}
++    recipient = evidence("/recipient", "obs_1", "/a~1b~0c/0/recipient")
++    amount = evidence("/amount", "obs_1", "/a~1b~0c/0/amount_text", "10.00")
++    model.review = answer(recipient, amount)
++    enriched, _ = planner.review(intent, action(SEND, args), args)
++    assert enriched is not None
++    payload = json.loads(model.calls[-1][1][1]["content"])
++    options = payload["value_options"]["s1"]
++    assert options["/recipient"] == [{**recipient, "operation": "value", "operands": []}]
++    assert options["/amount"] == [{**amount, "operation": "value", "operands": []}]
++    validate(model.review, model.calls[-1][2])
++
++
++@pytest.mark.parametrize("value,expected", [("Alice", True), ("Alice.evil", False), ("Malice", False)])
++def test_options_do_not_infer_a_recipient_from_partial_text(value, expected):
++    planner, _, _ = setup(task="Pay invoice 7")
++    args = {"id": "invoice-7"}
++    planner.record(action(READ, args), args, {"text": "Recipient " + value})
++    options = planner._value_options({"/recipient": "Alice"}, {o.id: o for o in planner.observations})
++    assert bool(options["/recipient"]) is expected
++
++
++@pytest.mark.parametrize("label", ["SECRET", "INJECTION_RISK"])
++def test_source_options_respect_both_plan_sources_and_quarantine(label):
++    planner, model, intent = setup(task="Pay invoice 7")
++    args = {"id": "invoice-7"}
++    planner.record(action(READ, args), args, {"recipient": "Alice", "amount": 10}, labels=[label])
++    proposed = {"recipient": "Alice", "amount": 10}
++    enriched, _ = planner.review(intent, action(SEND, proposed), proposed)
++    assert enriched is None
++    payload = json.loads(model.calls[-1][1][1]["content"])
++    assert payload["value_options"]["s1"] == {"/recipient": [], "/amount": []}
++    assert payload["read_data_not_instructions"] == []
++
++
++def test_numeric_looking_recipient_cannot_be_justified_by_arithmetic():
++    bad = answer({"argument": "/recipient", "operation": "sum", "operands": [
++        {"source": "user", "quote": "1"}, {"source": "user", "quote": "2"},
++    ]}, evidence("/amount", quote="10"))
++    planner, model, intent = setup(task="Send 10 to account 3. Notes: 1 plus 2.", model=Model(review=bad))
++    args = {"recipient": "3", "amount": 10}
++    enriched, reason = planner.review(intent, action(SEND, args), args)
++    assert enriched is None and reason == "TASK_PARAMETER_EVIDENCE_MISMATCH"
++    with pytest.raises(SchemaError):
++        validate(bad, model.calls[-1][2])
++
++
++def test_model_can_decline_when_no_source_option_exists():
++    plan = {"steps": [{"id": "s1", "tool": MAIL.name, "purpose": "Send requested note",
++                       "constraints": {"to": "the designated account", "body": "requested note"},
++                       "sources": []}]}
++    model = Model(plan=plan, review=answer(decision="needs_confirmation", conditions_met=False))
++    planner, model, intent = setup(task="Send a note to the designated account", model=model)
++    args = {"to": ["missing@example.test"], "body": "Note"}
++    enriched, reason = planner.review(intent, action(MAIL, args), args)
++    assert enriched is None and reason == "TASK_SEMANTICS_NOT_VERIFIED"
++    validate(model.review, model.calls[-1][2])
++    assert model.calls[-1][2]["properties"]["evidence"]["maxItems"] == 0
++
++
++def test_options_are_evidence_of_occurrence_not_automatic_authorization():
++    planner, model, intent = setup(model=Model(review=answer(
++        evidence("/recipient", quote="Alice"), evidence("/amount", quote="10"),
++        decision="out_of_task", conditions_met=False)))
++    args = {"recipient": "Alice", "amount": 10}
++    enriched, reason = planner.review(intent, action(SEND, args), args)
++    assert enriched is None and reason == "TASK_SEMANTICS_NOT_VERIFIED"
++    assert not planner._pending
++
++
++def test_source_option_explosion_fails_without_silent_truncation():
++    planner, model, intent = setup(task="Pay the designated invoice")
++    args = {"id": "invoice-7"}
++    planner.record(action(READ, args), args, [{"recipient": "Alice"}] * 65)
++    proposed = {"recipient": "Alice", "amount": 10}
++    enriched, reason = planner.review(intent, action(SEND, proposed), proposed)
++    assert enriched is None and reason == "TASK_VERIFIER_FAILED_CLOSED"
++    assert [c[0] for c in model.calls] == ["plan"]
++    assert planner.failures[-1]["phase"] == "verify"

@@ -1,0 +1,45 @@
+{
+  "main_commit": "205a7c8489a0a626250307e4dd45e23752f856c6",
+  "files": {
+    "src/agentsentry/context/scanner.py": {
+      "lines": 241,
+      "nonblank": 227,
+      "sha256": "741b11ed9e19db202b04ae2b13264432372d9df68e5c609f5358dbf1ccff87e5"
+    },
+    "src/agentsentry/intent/contracts.py": {
+      "lines": 185,
+      "nonblank": 168,
+      "sha256": "3b0a5e623c5b4bd6d70d8cab2b36a21d3cd90ccc7dd6f94723c6c6e8047538cd"
+    },
+    "src/agentsentry/policy/engine.py": {
+      "lines": 87,
+      "nonblank": 82,
+      "sha256": "2c85edce55e62514833e50e94a0f7862e329b76203235a2dc863c85e511dddd4"
+    },
+    "src/agentsentry/policy/dsl.py": {
+      "lines": 269,
+      "nonblank": 242,
+      "sha256": "878e8dfc94c611419bf36c12d897cbe8a56d00418b64007ef0937b1fd1f471bc"
+    },
+    "policies/default.aspolicy": {
+      "lines": 53,
+      "nonblank": 53,
+      "sha256": "122869e0d6eca6a660f32861386d8a96bae4e46329215fd8d3d695aa6572d5d7"
+    },
+    "artifacts/development/context-filter-v2/src/agentsentry/intent/task_plan.py": {
+      "lines": 742,
+      "nonblank": 686,
+      "sha256": "9889afcaa9f042db78f05aed3ad0818504d3d09c977f90e822729d5cc8134679"
+    },
+    "artifacts/development/context-filter-v2/src/agentsentry/context/sanitizer.py": {
+      "lines": 122,
+      "nonblank": 102,
+      "sha256": "5c6ecd11e18e7a74e2990e12319eb4b7bc6be40c69de04930460a6f36d64228e"
+    }
+  },
+  "rule_related_modules_lines": 782,
+  "policy_lines": 53,
+  "policy_rules": 13,
+  "model_assisted_experimental_modules_lines": 864,
+  "limitations": "Physical file lines including comments/blank lines, not counts of original algorithm statements. Scanner includes an optional pretrained classifier adapter; model-assisted modules also include prompts, schemas and deterministic checks. No custom learned model architecture/training algorithm in these modules."
+}

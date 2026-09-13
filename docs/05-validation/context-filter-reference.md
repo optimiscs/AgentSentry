@@ -1,6 +1,6 @@
 # 同模型输入清洗参考方案：开发对照
 
-日期：2026-09-13。当前为 **NOT_ACCEPTED**，参考方案未合入产品防护链。四个开发运行均已结束；另已启动两组各 97 个正常任务的全量对照。
+日期：2026-09-13。当前为 **NOT_ACCEPTED**，参考方案未合入产品防护链。四个开发运行及两组各 97 个正常任务对照均已结束。全量正常任务参考组完成 87/97、基线 89/97，存在误删与未知，见[最新复核](context-filter-benign97-review.md)。
 
 本轮有一个明确进展：Qwen/Qwen3.5-9B 的输入清洗参考方案在开发小样中保留正常完成率 8/8，攻击成功从 3/16 降到 0/16，且没有无效记录。这是参考方法的结果，不是原有完整系统已经达到该成绩，也不是 SOTA 或完整 benchmark 验收。
 
@@ -50,4 +50,4 @@ v2 的第一方源码/评测/脚本 50-token 精确克隆覆盖数量仍为 352�
 
 源码：[v1 固定包](../../artifacts/lab3090-context-filter-v1/source-candidate.tar.gz)、[v2 固定包](../../artifacts/lab3090-context-filter-v2/source-candidate.tar.gz)、[v2 补丁](../../artifacts/lab3090-context-filter-v2/changes.patch)、[v2 源码哈希](../../artifacts/lab3090-context-filter-v2/candidate-manifest.json)。v2 包 SHA256 为 `7a826ec45f173b4f49f83079a19bd93ea4c6481a31c38b01b334c51ce93e764b`。补丁为零上下文，应用时使用 `git apply --unidiff-zero`。
 
-下一步先完成当前 97 个正常任务的同模型参考对照，见 [运行命令](../../artifacts/lab3090-context-filter-v2-benign97/jobs.json)与[带时间戳进度快照](../../artifacts/lab3090-context-filter-v2-benign97/progress.json)。再据误删、完整任务失败及开销决定如何与动作权限层组合，并补齐全攻击范围、完整系统对照、消融/重复、独立标注、真实客户端和 CPU 验收；本轮没有降低任何 PRD 门槛。
+97 个正常任务的同模型参考对照已结束，见[结果与误删复核](context-filter-benign97-review.md)、 [运行命令](../../artifacts/lab3090-context-filter-v2-benign97/jobs.json)与[带时间戳进度快照](../../artifacts/lab3090-context-filter-v2-benign97/progress.json)。再据误删、完整任务失败及开销决定如何与动作权限层组合，并补齐全攻击范围、完整系统对照、消融/重复、独立标注、真实客户端和 CPU 验收；本轮没有降低任何 PRD 门槛。

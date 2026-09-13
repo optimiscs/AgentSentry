@@ -1,0 +1,20 @@
+{
+  "status": "COMPLETED_REVIEW_REQUIRED",
+  "command": [
+    "/home/moxu/miniconda3/envs/agentsentry-bench-lab3090/bin/python",
+    "/home/moxu/AgentSentry/artifacts/lab3090-task-contract-v5/probe_fixed_prefix.py",
+    "--candidate",
+    "/home/moxu/AgentSentry/artifacts/development/task-contract-v6",
+    "--records",
+    "/home/moxu/AgentSentry/artifacts/benchmarks/agentdojo/agentdojo-lab3090-qwen35-9b-contract-v4-benign8-full-s0/per_case.jsonl",
+    "--output",
+    "/home/moxu/AgentSentry/artifacts/lab3090-task-contract-v6/fixed-prefix-v6",
+    "--url",
+    "http://127.0.0.1:18081/v1"
+  ],
+  "pid": 2600330,
+  "start_ticks": "754668483",
+  "child_pid": 2600331,
+  "child_start_ticks": "754668489",
+  "returncode": 0
+}

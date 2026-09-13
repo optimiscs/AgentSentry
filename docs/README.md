@@ -78,3 +78,9 @@
 [来源说明](sources.md)；[原PRD](plans/2026-09-12/AS-PRD-001_v0.9_用户原文.txt)；[历史计划](plans/2026-09-12/AgentSentry_项目开发计划_v1.0.md)；旧工程文档位于archive/2026-09-10，作为历史资料不再作为当前唯一规范。
 
 文档状态：draft=待评审设计；active_record=事实记录或持续清单；template_not_run=执行后填真实结果；template_not_triggered=事件/里程碑触发后填；draft_future=未来迁移流程。最终签收以RTM和实际证据为准。
+
+[全量 97 正常任务清洗复核](05-validation/context-filter-benign97-review.md)：基线完成 89/97、清洗参考完成 87/97，存在错误和真实误删，验收未通过。
+
+[v6 参数来源定位诊断](05-validation/task-contract-v6-diagnostic.md)：137 项代码检查通过，四条真实审核仍 ASK，尚无任务完成率提升证据。
+
+[完整模型提示词](05-validation/model-prompts-2026-09-13.md)与[GPU 历史/真实客户端核查](05-validation/runtime-audit-2026-09-13.md)：没有可信的一小时硬件利用率均值，没有云模型防护测试；Codex 仅部分真实拦截，Claude 为事件夹具。

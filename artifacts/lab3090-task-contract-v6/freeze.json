@@ -1,0 +1,10 @@
+{
+  "status": "FROZEN_DEVELOPMENT_CANDIDATE",
+  "archive_sha256": "33a21fc2e678f7ba9cc3df55ee45bfda09dfff28d24192338395ef26c4683ce1",
+  "changed_files": [
+    "origin-manifest.json",
+    "src/agentsentry/intent/task_plan.py",
+    "tests/test_task_plan.py"
+  ],
+  "promoted": false
+}
