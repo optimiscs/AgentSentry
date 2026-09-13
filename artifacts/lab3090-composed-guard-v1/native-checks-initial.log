@@ -1,0 +1,21 @@
+test_aligned_model_cannot_substitute_recipient (__main__.PipelineContracts.test_aligned_model_cannot_substitute_recipient) ... ok
+test_baseline_uses_no_guard_model (__main__.PipelineContracts.test_baseline_uses_no_guard_model) ... ok
+test_clean_sanitizer_uses_detection_only_without_a_plan (__main__.PipelineContracts.test_clean_sanitizer_uses_detection_only_without_a_plan) ... ok
+test_composed_clean_context_does_not_authorize_an_extra_recipient (__main__.PipelineContracts.test_composed_clean_context_does_not_authorize_an_extra_recipient) ... ok
+test_composed_deletion_does_not_launder_original_observation (__main__.PipelineContracts.test_composed_deletion_does_not_launder_original_observation) ... ok
+test_composed_filter_cannot_override_secret_egress_policy (__main__.PipelineContracts.test_composed_filter_cannot_override_secret_egress_policy) ... ok
+test_composed_normal_task_uses_both_layers_and_executes (__main__.PipelineContracts.test_composed_normal_task_uses_both_layers_and_executes) ... ok
+test_duplicate_case_request_is_rejected (__main__.PipelineContracts.test_duplicate_case_request_is_rejected) ... ok
+test_explicit_case_selection_keeps_native_order_and_exact_attack_pair (__main__.PipelineContracts.test_explicit_case_selection_keeps_native_order_and_exact_attack_pair) ... ok
+test_extra_cc_not_planned_is_not_executed (__main__.PipelineContracts.test_extra_cc_not_planned_is_not_executed) ... ok
+test_input_sanitizer_preserves_native_task_data_and_dispatch (__main__.PipelineContracts.test_input_sanitizer_preserves_native_task_data_and_dispatch) ... ok
+test_malformed_plan_is_failed_closed_and_counted (__main__.PipelineContracts.test_malformed_plan_is_failed_closed_and_counted) ... ok
+test_missing_case_is_rejected_instead_of_silently_shrinking_the_run (__main__.PipelineContracts.test_missing_case_is_rejected_instead_of_silently_shrinking_the_run) ... ok
+test_structured_guard_keeps_native_execution_and_evidence_checks (__main__.PipelineContracts.test_structured_guard_keeps_native_execution_and_evidence_checks) ... ok
+test_tainted_observation_cannot_supply_recipient (__main__.PipelineContracts.test_tainted_observation_cannot_supply_recipient) ... ok
+test_task_plan_native_read_then_bound_email (__main__.PipelineContracts.test_task_plan_native_read_then_bound_email) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 1.817s
+
+OK

@@ -49,6 +49,8 @@
 
 ## 当前推荐阅读顺序
 
+[输入清洗与动作授权组合候选](05-validation/composed-guard-v1-review.md)：两层已接通并通过 149 项单测、16 项 AgentDojo 和 17 项 ASB 模拟检查；没有新增模型成绩。35 条/组对照命令已固定，等待当前全量输入参考结束后核对启动条件。
+
 [当前完整防护流程与真实 bad cases](05-validation/defense-flow-and-bad-cases-lab3090.md)按真实 ASB 运行记录说明触发的防护步骤、产品主线未覆盖的分支，以及过度拦截、记忆漏检和协议失败。
 
 [ASB v3 优化实测](05-validation/asb-contract-v3-review.md)：两组各40条均有效，防护组放行8次正常调用，已知攻击执行9→0；完整任务效用仍未成立，综合验收未通过。

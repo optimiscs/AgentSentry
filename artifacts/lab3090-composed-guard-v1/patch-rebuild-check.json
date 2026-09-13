@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "parent_files_verified": 129,
+  "reconstructed_files_verified": 132,
+  "patch_sha256": "412ad221447c2a96e78c9d36908c127ee619a8d7ee800015a39406f0aed3c909",
+  "candidate_archive_sha256": "bc422e1904b790dd8988b0c0bdbed63b62f6d8e913fbc92c38c010a3ba87548a"
+}

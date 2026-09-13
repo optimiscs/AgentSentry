@@ -1,0 +1,6 @@
+{
+  "status": "PREPARED_NOT_LAUNCHED",
+  "planned_cases_per_arm": 35,
+  "required_before_launch": "Revalidate both v5 full1046 controllers and completed output coverage; wait for their GPU work to finish. Review any service/runtime failure before launching. Do not restart an existing process on observation timeout.",
+  "shared_controller_sha256": "0de4cd0718b39fecc8fea9b23d5eabcf16e6df1d278f30e4817c2904c22272df"
+}

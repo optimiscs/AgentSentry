@@ -1,0 +1,118 @@
+{
+  "status": "OFFLINE_CHECKS_PASSED_MODEL_EVALUATION_PENDING",
+  "candidate": {
+    "status": "FROZEN_DEVELOPMENT_CANDIDATE",
+    "archive_sha256": "bc422e1904b790dd8988b0c0bdbed63b62f6d8e913fbc92c38c010a3ba87548a",
+    "source_files": 132,
+    "changed_files": [
+      "benchmarks/acceptance.py",
+      "benchmarks/asb_pipeline.py",
+      "benchmarks/check_asb_pipeline.py",
+      "benchmarks/check_task_plan_pipeline.py",
+      "benchmarks/context_options.py",
+      "benchmarks/run_agentdojo.py",
+      "benchmarks/run_asb.py",
+      "origin-manifest.json",
+      "src/agentsentry/context/defense.py",
+      "src/agentsentry/intent/task_plan.py",
+      "tests/test_benchmark_acceptance.py",
+      "tests/test_context_defense.py",
+      "tests/test_task_plan.py"
+    ],
+    "promoted": false,
+    "parent_archive_sha256": "94b05266da4bf9e906c69728c6a46e0af3d69496b4e7957e14edfa69b974c4e8",
+    "imports": {
+      "task-contract-v6": {
+        "archive_sha256": "33a21fc2e678f7ba9cc3df55ee45bfda09dfff28d24192338395ef26c4683ce1",
+        "files": {
+          "src/agentsentry/intent/task_plan.py": "dcd8bf733dd97b93acc4accb7fd903abafa998f81299666c0ca05103a0cc4935",
+          "tests/test_task_plan.py": "a147f90bb34dfacde6715bab84f63867087c56c21dac60941e6501656fc26ead"
+        }
+      }
+    },
+    "hypothesis": "Compose source-span input filtering with exact-parameter task authorization under unchanged hard policies. Preserve raw observation taint and never treat sanitized text as evidence of authorization.",
+    "actor_thinking": false,
+    "guard_thinking": false
+  },
+  "checks": {
+    "unit": {
+      "path": "artifacts/lab3090-composed-guard-v1/unit-checks-initial.log",
+      "count": 149,
+      "returncode": 0,
+      "sha256": "966fd142cdd11ab8a3fa4de53f636d11a7e30e3355b5c807503d6f6719e2b0a6",
+      "additional_subtests": 2,
+      "command": "PYTHONPATH=src:benchmarks HF_HUB_OFFLINE=1 /home/moxu/miniconda3/envs/agentsentry-bench-lab3090/bin/python -m pytest -q tests/test_task_plan.py tests/test_context_sanitizer.py tests/test_context_defense.py tests/test_local_model_transport.py tests/test_benchmark_acceptance.py tests/test_local_model_messages.py",
+      "cwd": "/home/moxu/AgentSentry/artifacts/development/composed-guard-v1"
+    },
+    "native": {
+      "path": "artifacts/lab3090-composed-guard-v1/native-checks-final.log",
+      "count": 16,
+      "returncode": 0,
+      "sha256": "0a4de96e202ea0a7e295434d68d18ad13332b32eccf114174801c6b87ce77920",
+      "command": "PYTHONPATH=src:benchmarks HF_HUB_OFFLINE=1 /home/moxu/miniconda3/envs/agentsentry-bench-lab3090/bin/python benchmarks/check_task_plan_pipeline.py",
+      "cwd": "/home/moxu/AgentSentry/artifacts/development/composed-guard-v1"
+    },
+    "asb": {
+      "path": "artifacts/lab3090-composed-guard-v1/asb-checks-final.log",
+      "count": 17,
+      "returncode": 0,
+      "sha256": "ee460e40193e0d601b8efa0fed9d1c4976ea11852e12a6c6267d49b2c0aef168",
+      "command": "PYTHONPATH=src:benchmarks HF_HUB_OFFLINE=1 /home/moxu/miniconda3/envs/agentsentry-bench-lab3090/bin/python benchmarks/check_asb_pipeline.py",
+      "cwd": "/home/moxu/AgentSentry/artifacts/development/composed-guard-v1"
+    }
+  },
+  "duplication_final": {
+    "files": 72,
+    "measurements": [
+      {
+        "minimum_tokens": 50,
+        "mode": "exact",
+        "total_tokens": 72561,
+        "clone_covered_tokens": 352,
+        "clone_coverage": 0.004851090806356031
+      },
+      {
+        "minimum_tokens": 100,
+        "mode": "exact",
+        "total_tokens": 72561,
+        "clone_covered_tokens": 0,
+        "clone_coverage": 0.0
+      },
+      {
+        "minimum_tokens": 200,
+        "mode": "exact",
+        "total_tokens": 72561,
+        "clone_covered_tokens": 0,
+        "clone_coverage": 0.0
+      },
+      {
+        "minimum_tokens": 50,
+        "mode": "identifier_normalized",
+        "total_tokens": 72561,
+        "clone_covered_tokens": 1312,
+        "clone_coverage": 0.0180813384600543
+      },
+      {
+        "minimum_tokens": 100,
+        "mode": "identifier_normalized",
+        "total_tokens": 72561,
+        "clone_covered_tokens": 224,
+        "clone_coverage": 0.0030870577858629292
+      },
+      {
+        "minimum_tokens": 200,
+        "mode": "identifier_normalized",
+        "total_tokens": 72561,
+        "clone_covered_tokens": 0,
+        "clone_coverage": 0.0
+      }
+    ],
+    "report": "artifacts/lab3090-composed-guard-v1/duplication-final.json"
+  },
+  "limitations": [
+    "Scripted native checks are engineering fixtures, not model efficacy or ASR.",
+    "Raw-risky sources remain unavailable to task verification; normal utility may still be lost.",
+    "Production Hook/MCP composition is not integrated or validated.",
+    "Existing full1046 comparison remains an input-only reference."
+  ]
+}

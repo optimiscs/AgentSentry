@@ -316,3 +316,11 @@ context-filter-v4 两组各 97 条正常任务于北京时间 20:40 前均结束
 配对小样终态核对后，启动相同 v5 的全量 1046 条/组（97 正常、949 important_instructions 配对）；两张卡各跑一组，15 步、4096 输出、300 秒超时、非思考，固定源码运行不改动。21:20 实查两个子进程身份仍匹配且存活，已记录 baseline 38、参考 24，均无已记录错误；最终指标尚无。[评审与命令](../05-validation/context-filter-v5-review.md)。这仍是输入清洗参考，完整产品动作门控尚未获得该成绩。
 
 补读 AgentArmor v3 与固定提交的 Interbolt 发布结果/策略；核对 ASB 仅 OPI、工具到达率与整体 ASR、正常效用损失等边界，未运行作者云模型或复制实现到 src。[强基线核查](../05-validation/graph-and-provenance-baseline-review.md)。原 PRD 的全量、消融、重复、独立标签及产品端到端验收继续保留。
+
+## DL-042：输入清洗与动作授权组合候选
+
+2026-09-13。在不修改活动 v5 全量源码的前提下，从 context-filter-v5 导入已核对的 task-contract-v6 规划代码，新增共享 ContextDefense，将 AgentDojo 与 ASB 的清洗、原始标签保留和动作审核连接起来。清洗后的 actor 视图不发放参数授权，风险观察仍被排除；SECRET 硬规则和 ASK 处理不变。ASB 显式记录任务/防护思考关闭，新增配置进入配对检查，清洗失败保留为未知。
+
+Lab3090 实际通过 149 项相关单测、2 个 subtest、16 项 AgentDojo 与 17 项 ASB 原生模拟流程检查。新增断言最初增加 114 个规范化重复 token，合并共同拒绝断言后克隆覆盖回到父版本的 352/1312。冻结 132 文件，补丁重建、远端文件哈希核对通过；源码、命令与日志见[组合评审](../05-validation/composed-guard-v1-review.md)及 [ADR-012](../adr/adr-012.md)。
+
+已准备同源 35 条/组 baseline/full 命令，尚未调用模型，也没有后台自动启动。21:49 北京时间实查当前 full1046 两个子进程身份匹配且存活：baseline 242/1046、输入参考 176/1046，已记录项均有效、零错误；两组思考均关闭。[带时间的进程与源码快照](../../artifacts/lab3090-composed-guard-v1/parent-progress.json)。这是进行中的单一输入参考，不能宣称全量完成或组合性能提高。后续待真实终态及输出覆盖核对后运行组合对照，原 benchmark、独立测试、消融和产品客户端验收要求不变。

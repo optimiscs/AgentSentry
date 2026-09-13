@@ -1,0 +1,34 @@
+{
+  "status": "FROZEN_DEVELOPMENT_CANDIDATE",
+  "archive_sha256": "bc422e1904b790dd8988b0c0bdbed63b62f6d8e913fbc92c38c010a3ba87548a",
+  "source_files": 132,
+  "changed_files": [
+    "benchmarks/acceptance.py",
+    "benchmarks/asb_pipeline.py",
+    "benchmarks/check_asb_pipeline.py",
+    "benchmarks/check_task_plan_pipeline.py",
+    "benchmarks/context_options.py",
+    "benchmarks/run_agentdojo.py",
+    "benchmarks/run_asb.py",
+    "origin-manifest.json",
+    "src/agentsentry/context/defense.py",
+    "src/agentsentry/intent/task_plan.py",
+    "tests/test_benchmark_acceptance.py",
+    "tests/test_context_defense.py",
+    "tests/test_task_plan.py"
+  ],
+  "promoted": false,
+  "parent_archive_sha256": "94b05266da4bf9e906c69728c6a46e0af3d69496b4e7957e14edfa69b974c4e8",
+  "imports": {
+    "task-contract-v6": {
+      "archive_sha256": "33a21fc2e678f7ba9cc3df55ee45bfda09dfff28d24192338395ef26c4683ce1",
+      "files": {
+        "src/agentsentry/intent/task_plan.py": "dcd8bf733dd97b93acc4accb7fd903abafa998f81299666c0ca05103a0cc4935",
+        "tests/test_task_plan.py": "a147f90bb34dfacde6715bab84f63867087c56c21dac60941e6501656fc26ead"
+      }
+    }
+  },
+  "hypothesis": "Compose source-span input filtering with exact-parameter task authorization under unchanged hard policies. Preserve raw observation taint and never treat sanitized text as evidence of authorization.",
+  "actor_thinking": false,
+  "guard_thinking": false
+}
