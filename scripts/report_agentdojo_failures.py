@@ -112,7 +112,9 @@ def report(inputs, runs, output, overrides):
                          "解释：" + item["summary_zh"], "", "原生正常任务评分：" + str(item["native_utility"]), ""])
         for quote in item["evidence"]:
             markdown.extend(["证据 `" + quote["evidence_id"] + "`：", "", *["> " + l for l in quote["quote"].splitlines()], ""])
-    (output / "all-cases.md").write_text("\n".join(markdown) + "\n")
+    # Normalize display-only whitespace; classified-cases.jsonl retains exact quotations.
+    rendered = "\n".join(line.rstrip() for line in "\n".join(markdown).splitlines()).rstrip() + "\n"
+    (output / "all-cases.md").write_text(rendered)
     return summary
 
 
