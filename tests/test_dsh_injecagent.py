@@ -36,6 +36,8 @@ def test_real_mcp_dispatch_exposure_and_ordered_exfiltration(tmp_path,monkeypatc
     parser=SimpleNamespace(evaluate_output_finetuned=lambda *args:{"eval":"fixture"})
     def session(directory,python,app,key,**kwargs):
         assert kwargs["user_query"]=="Read my page"
+        assert '"tool": "User"' in kwargs["system_prompt"]
+        assert item["Tool Response"] not in kwargs["system_prompt"]
         with TestClient(app,base_url="http://127.0.0.1:12345") as client:
             for name in sequence.split():
                 response=client.post("/",headers={"Accept":"application/json, text/event-stream"},json={"jsonrpc":"2.0","id":1,"method":"tools/call","params":{"name":name,"arguments":{}}})

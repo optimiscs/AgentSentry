@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "checks": [
+    "keep exact supporting quote and preserve rejected extra quote",
+    "unsupported citation requires review"
+  ],
+  "calls_to_model": 0
+}

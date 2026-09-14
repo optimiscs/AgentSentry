@@ -1,0 +1,7 @@
+{
+  "archive": "artifacts/deepseek-agentdojo-932-annotations.tar.gz",
+  "files": 560,
+  "bytes": 29951520,
+  "sha256": "6ecd8eda59a6426e802f0ee97e8c949966c036e7f9158441e1d6ea0c48a8fdc1",
+  "member_hashes": "artifacts/lab3090-agentdojo-negative-audit-v2/annotation-evidence-manifest.json"
+}

@@ -1,5 +1,5 @@
 {
-  "status": "RUNNING",
+  "status": "COMPLETED_REVIEW_REQUIRED",
   "pid": 2809910,
   "start_ticks": "756701494",
   "job": {
@@ -21,7 +21,8 @@
     ],
     "planned_cases": 527
   },
-  "updated_at": "2026-09-13T16:51:58.393360+00:00",
+  "updated_at": "2026-09-13T17:30:03.569043+00:00",
   "child_pid": 2809913,
-  "child_start_ticks": "756701503"
+  "child_start_ticks": "756701503",
+  "returncode": 0
 }

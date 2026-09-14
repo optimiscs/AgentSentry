@@ -1,0 +1,2808 @@
+{
+  "scope": "AgentDojo 932 negative exposure inputs and separate Flash annotation evidence",
+  "excluded": [
+    ".env",
+    "balance",
+    "native config",
+    "dsh-home",
+    "temporary profile and tokens"
+  ],
+  "credential_scan": "actual DeepSeek key absent from every selected member",
+  "files": [
+    {
+      "path": "artifacts/development/agentdojo-negative-audit-v2/benchmarks/acceptance.py",
+      "bytes": 13817,
+      "sha256": "3d986bd02d350cf84e30dd21280564936634e25e753f13b4086a9f7442472bff"
+    },
+    {
+      "path": "artifacts/development/agentdojo-negative-audit-v2/benchmarks/chat_messages.py",
+      "bytes": 1206,
+      "sha256": "14e40a2178c15443363898e8e1845d5316acbaed81db48888d5dace47504c2c9"
+    },
+    {
+      "path": "artifacts/development/agentdojo-negative-audit-v2/benchmarks/deepseek_proxy.py",
+      "bytes": 6928,
+      "sha256": "ee2cabbac61999d272ab37d6a106872c91dfd437ca163a827d550730ea5073a8"
+    },
+    {
+      "path": "artifacts/development/agentdojo-negative-audit-v2/benchmarks/dsh_client.py",
+      "bytes": 3096,
+      "sha256": "4422874dc9124452f8986a23a130870e17076ab1ed0929f49a697f096c8212e8"
+    },
+    {
+      "path": "artifacts/development/agentdojo-negative-audit-v2/benchmarks/dsh_memory.py",
+      "bytes": 4960,
+      "sha256": "3dbd537d91bad6c3716f650ca88e55cdbbeeeae92ec2711b4d91c57a28e2b17b"
+    },
+    {
+      "path": "artifacts/development/agentdojo-negative-audit-v2/benchmarks/evidence_judge.py",
+      "bytes": 4368,
+      "sha256": "20524509f0f89a9b0ba0a5fcee42942a4cb45326b66f9a17fb7993eae9a38d0a"
+    },
+    {
+      "path": "artifacts/development/agentdojo-negative-audit-v2/benchmarks/local_model.py",
+      "bytes": 4015,
+      "sha256": "74cef01982ebf43ac9bd48928f2e9ab20c1444326e939696f5004a31d2625044"
+    },
+    {
+      "path": "artifacts/development/agentdojo-negative-audit-v2/benchmarks/memory_runtime.py",
+      "bytes": 7368,
+      "sha256": "dbc57af28796daea61bc95b4db921e855d104b57b6266e1473497a8ac1795271"
+    },
+    {
+      "path": "artifacts/development/agentdojo-negative-audit-v2/benchmarks/native_memory.py",
+      "bytes": 6317,
+      "sha256": "59c819377e8fa29c6ea8f5b30ff88e3dbe5b8a4ddd01fbc8297d13b87f2e29a1"
+    },
+    {
+      "path": "artifacts/development/agentdojo-negative-audit-v2/benchmarks/native_protocol.py",
+      "bytes": 1488,
+      "sha256": "edae8d4b0f034bef14800c893d2cd8fd170a99bdecc61ba3ff5e0174e4d8cc17"
+    },
+    {
+      "path": "artifacts/development/agentdojo-negative-audit-v2/benchmarks/native_tools.py",
+      "bytes": 1123,
+      "sha256": "4dbec135b423902607cb587a7010640a393e0af51ae5bb9c1871f2c7f0fbeea8"
+    },
+    {
+      "path": "artifacts/development/agentdojo-negative-audit-v2/benchmarks/prepare_annotation_packet.py",
+      "bytes": 8737,
+      "sha256": "7c5ecaa950437aa7cee4567a08a7f2683206a2e80f8c9db27179cbe8df5c1322"
+    },
+    {
+      "path": "artifacts/development/agentdojo-negative-audit-v2/benchmarks/run_agentdojo.py",
+      "bytes": 18919,
+      "sha256": "838f272b5b0933a75a660efab71ab4bd16b0507abca4e923ca0b1a3e7c1ee57f"
+    },
+    {
+      "path": "artifacts/development/agentdojo-negative-audit-v2/benchmarks/run_dsh_agentdojo.py",
+      "bytes": 11935,
+      "sha256": "e862204cbd70baa7054f4e0a8c11081379e6a7f34e35b848e2c701baa120cfbb"
+    },
+    {
+      "path": "artifacts/development/agentdojo-negative-audit-v2/benchmarks/run_dsh_injecagent.py",
+      "bytes": 16639,
+      "sha256": "698bbac0927eb46496760535228ef9b71e78d9e49ea08688971d2f3165eb1b6a"
+    },
+    {
+      "path": "artifacts/development/agentdojo-negative-audit-v2/benchmarks/run_dsh_mpbench.py",
+      "bytes": 16153,
+      "sha256": "03bd7c990ec464dcddcad21ec46dcb72c1f385618e715feaa1ccd015134ba0cc"
+    },
+    {
+      "path": "artifacts/development/agentdojo-negative-audit-v2/benchmarks/run_injecagent.py",
+      "bytes": 18298,
+      "sha256": "52d252ba2d2d619265e704712ad92ec9bcaa05f9bb7e091a609afa699416ad73"
+    },
+    {
+      "path": "artifacts/development/agentdojo-negative-audit-v2/scripts/annotate_agentdojo_failures.py",
+      "bytes": 11918,
+      "sha256": "80ad4e4e4dc73f7f65f43236674e884eeb6499ae7b2562fc162d67abaf64b99c"
+    },
+    {
+      "path": "artifacts/development/agentdojo-negative-audit-v2/scripts/dsh_session.py",
+      "bytes": 2976,
+      "sha256": "c58c1ec427cbb61e3fde680f0f8eeea3e8ae8c68b08842e45e0cfbf376024fae"
+    },
+    {
+      "path": "artifacts/development/agentdojo-negative-audit-v2/scripts/run_frozen_job.py",
+      "bytes": 2405,
+      "sha256": "641291653b9b3a4a5f3159b030bb2da45ce13bbfde38ab01a26601f5bd566468"
+    },
+    {
+      "path": "artifacts/development/agentdojo-negative-audit-v2/src/agentsentry/__init__.py",
+      "bytes": 72,
+      "sha256": "79f5cc2de9ea3cd38e96447556c5ffae91d8ec303cc4de4cde8debbd189a8389"
+    },
+    {
+      "path": "artifacts/development/agentdojo-negative-audit-v2/src/agentsentry/adapters/__init__.py",
+      "bytes": 57,
+      "sha256": "b6e8dcdc09772cddd2bb5d802a0a387eb0d106ae6db6ed9d02931fed7bb2edb7"
+    },
+    {
+      "path": "artifacts/development/agentdojo-negative-audit-v2/src/agentsentry/adapters/filesystem.py",
+      "bytes": 3674,
+      "sha256": "a511c58685888638f4411e4ff4d2f4c8b665db2041d696e95efb3c2aa6fffadc"
+    },
+    {
+      "path": "artifacts/development/agentdojo-negative-audit-v2/src/agentsentry/adapters/mcp_client.py",
+      "bytes": 4748,
+      "sha256": "96bc6946241856bc5397c8f5fe95b22dc3359291579f9efbb051fef554bcdee3"
+    },
+    {
+      "path": "artifacts/development/agentdojo-negative-audit-v2/src/agentsentry/adapters/network.py",
+      "bytes": 2881,
+      "sha256": "1b9b2585c14aa9966e1da844f4eb196c4238e32394541b88bb473d13e6d34308"
+    },
+    {
+      "path": "artifacts/development/agentdojo-negative-audit-v2/src/agentsentry/adapters/registry.py",
+      "bytes": 11647,
+      "sha256": "c7100afa83733b324b02184761d3af67d994f563d366605b5a1c4fd09abb5405"
+    },
+    {
+      "path": "artifacts/development/agentdojo-negative-audit-v2/src/agentsentry/adapters/sandbox.py",
+      "bytes": 5057,
+      "sha256": "ccb17d44b0cda9eb248c67b78517915c809fb759aa8ce9eac1380ce9a6987d49"
+    },
+    {
+      "path": "artifacts/development/agentdojo-negative-audit-v2/src/agentsentry/adapters/sandbox_worker.py",
+      "bytes": 2678,
+      "sha256": "9ea7ed8cddf3f077eb8638df839fdf2af5d8691c92744692bafea4a5f121daea"
+    },
+    {
+      "path": "artifacts/development/agentdojo-negative-audit-v2/src/agentsentry/api/__init__.py",
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "artifacts/development/agentdojo-negative-audit-v2/src/agentsentry/api/app.py",
+      "bytes": 14959,
+      "sha256": "9f9db245430d4d7c562c97967ef119e2229cfbfba61a3b28529348a76876e39e"
+    },
+    {
+      "path": "artifacts/development/agentdojo-negative-audit-v2/src/agentsentry/cli.py",
+      "bytes": 1867,
+      "sha256": "022341edac697e4b444a80c1f4a4af603e6b70eb9e94c6de5aa3cbfebb2402a2"
+    },
+    {
+      "path": "artifacts/development/agentdojo-negative-audit-v2/src/agentsentry/config.py",
+      "bytes": 3171,
+      "sha256": "30936a5f905b0779c6a9b2e5b7d82eecb3967ca28584f5a6d9a1246dda25a161"
+    },
+    {
+      "path": "artifacts/development/agentdojo-negative-audit-v2/src/agentsentry/context/__init__.py",
+      "bytes": 51,
+      "sha256": "403cc454fa75fe7937d3bb1664b750f09c7f68efd99778a858aecb3de419c365"
+    },
+    {
+      "path": "artifacts/development/agentdojo-negative-audit-v2/src/agentsentry/context/scanner.py",
+      "bytes": 9035,
+      "sha256": "741b11ed9e19db202b04ae2b13264432372d9df68e5c609f5358dbf1ccff87e5"
+    },
+    {
+      "path": "artifacts/development/agentdojo-negative-audit-v2/src/agentsentry/demo.py",
+      "bytes": 3047,
+      "sha256": "1cc08dd8a573e1689e8f6b8783bee3cb45c7c53a5f68b53fa84000a6e3afea0b"
+    },
+    {
+      "path": "artifacts/development/agentdojo-negative-audit-v2/src/agentsentry/evaluation.py",
+      "bytes": 3649,
+      "sha256": "e712020379b782ba87beb456492dd5a7ef4477b08a4067db7fac6f3fbeb4b9fc"
+    },
+    {
+      "path": "artifacts/development/agentdojo-negative-audit-v2/src/agentsentry/gateway/__init__.py",
+      "bytes": 40,
+      "sha256": "1c3d16ef06e300d11b2e72ea2a8274ba02d45aa8659c1c7a1de9e4066e762271"
+    },
+    {
+      "path": "artifacts/development/agentdojo-negative-audit-v2/src/agentsentry/gateway/mcp_server.py",
+      "bytes": 3350,
+      "sha256": "a3cedd8b7aa2a8c8094e9cf34ea509f9fdb46fb8e2e883f13b66c7d44985a58e"
+    },
+    {
+      "path": "artifacts/development/agentdojo-negative-audit-v2/src/agentsentry/gateway/native_hooks.py",
+      "bytes": 21232,
+      "sha256": "b6f92308bb848ad158dd9b0085410d30f1eb7ca204c92a2bf24f1d31f0578993"
+    },
+    {
+      "path": "artifacts/development/agentdojo-negative-audit-v2/src/agentsentry/gateway/runtime.py",
+      "bytes": 40429,
+      "sha256": "5e22ac5ec782880bcc9145c66b19dbe00ea96f5be801372a64f0c999b2ded1f8"
+    },
+    {
+      "path": "artifacts/development/agentdojo-negative-audit-v2/src/agentsentry/intent/__init__.py",
+      "bytes": 36,
+      "sha256": "0c86f21107929e4106a3b6021a9f94b1c2bc4caa8111be0792547fabd2341911"
+    },
+    {
+      "path": "artifacts/development/agentdojo-negative-audit-v2/src/agentsentry/intent/contracts.py",
+      "bytes": 8130,
+      "sha256": "3b0a5e623c5b4bd6d70d8cab2b36a21d3cd90ccc7dd6f94723c6c6e8047538cd"
+    },
+    {
+      "path": "artifacts/development/agentdojo-negative-audit-v2/src/agentsentry/policy/__init__.py",
+      "bytes": 50,
+      "sha256": "5c784be0354e02f4a797c514b59abbab19ab30ea3728f17515cf89cd62686657"
+    },
+    {
+      "path": "artifacts/development/agentdojo-negative-audit-v2/src/agentsentry/policy/dsl.py",
+      "bytes": 8319,
+      "sha256": "878e8dfc94c611419bf36c12d897cbe8a56d00418b64007ef0937b1fd1f471bc"
+    },
+    {
+      "path": "artifacts/development/agentdojo-negative-audit-v2/src/agentsentry/policy/engine.py",
+      "bytes": 3709,
+      "sha256": "2c85edce55e62514833e50e94a0f7862e329b76203235a2dc863c85e511dddd4"
+    },
+    {
+      "path": "artifacts/development/agentdojo-negative-audit-v2/src/agentsentry/schemas/__init__.py",
+      "bytes": 36,
+      "sha256": "c7a5746ac4519ef52c85b62f9346a0537f39db8604ee732237f08cd2055bc8f1"
+    },
+    {
+      "path": "artifacts/development/agentdojo-negative-audit-v2/src/agentsentry/schemas/models.py",
+      "bytes": 5507,
+      "sha256": "4c8ec2e2fb7e41f462e1083223758c3b6833311219c24b9e3ba8bcc973714a57"
+    },
+    {
+      "path": "artifacts/development/agentdojo-negative-audit-v2/src/agentsentry/trace/__init__.py",
+      "bytes": 59,
+      "sha256": "995831b7a03eded1df23b87dbc7516ea050e2651fa7b2ada26c33b296ace0d67"
+    },
+    {
+      "path": "artifacts/development/agentdojo-negative-audit-v2/src/agentsentry/trace/logging.py",
+      "bytes": 799,
+      "sha256": "e12031dfa9399a06485e21df4d6ec6a8284bb285844e330d09fd7b684d550c99"
+    },
+    {
+      "path": "artifacts/development/agentdojo-negative-audit-v2/src/agentsentry/trace/store.py",
+      "bytes": 12617,
+      "sha256": "2feb670734980d1ac8ca0e62c772c654f348735a196eadf3c43ff08672f0734f"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v1/exposure-audit.json",
+      "bytes": 622,
+      "sha256": "98207908415294940c91918bcd4384e79bcf7056efa09404a02361b2e6e4c491"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v1/inputs-reviewed.jsonl",
+      "bytes": 13899930,
+      "sha256": "e09b720da35d81e03423022590f0ae2a663546d4ca3c9d62f634a3a7f955540f"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v1/pilot8/batch-0000/native/result.json",
+      "bytes": 207791,
+      "sha256": "3e0b7988b2db7575f61a5fc20cb2a9645660d7efe406d80cc7745f75c977f6aa"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v1/pilot8/batch-0000/result.json",
+      "bytes": 207957,
+      "sha256": "35e98347b76514d1805332893a264969fc6a3b5cd4a90e891664478a6d73b2c7"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v1/pilot8/batch-0004/native/result.json",
+      "bytes": 592227,
+      "sha256": "d1af03762f37ee123362ef99ecfc722e3cd56ee09aa90eeb84ce4a2406efe141"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v1/pilot8/batch-0004/result.json",
+      "bytes": 592471,
+      "sha256": "1a356fe9c1790a26db9f857d2565cea80da77b4eeaaa691982ca57e149d04194"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v1/pilot8/manifest.json",
+      "bytes": 3270,
+      "sha256": "4b13ce446000aa31c13149f287d0be06d1d9659a4707cfbea34b6966e00c624d"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v1/pilot8/not_started_ids.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v1/pilot8/per_case.jsonl",
+      "bytes": 7140,
+      "sha256": "353242b4fd9769c9547af9e7cb31065d470089c069c0dfa91a7cb2d8bf49dd80"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/assistant-overrides.jsonl",
+      "bytes": 8144,
+      "sha256": "74983a19167ea849d4291d2dfa7fe207ae66f50737fb2ab831247ddc25f707ae"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/candidate-manifest.json",
+      "bytes": 5409,
+      "sha256": "6cc9cd3a7d9beb1628939f1411de397ff46489f9722faf8658d6a42eb626ca2b"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/freeze.json",
+      "bytes": 174,
+      "sha256": "19c8b7027a4b3e65df3f8797ff002e27bc4cb54b7620981bec0e3c28f57f2098"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/full-jobs.json",
+      "bytes": 3963,
+      "sha256": "7693f743aa995ea95c69f22c60ef9f104c8ffbda9f417aae2cd9ffff034e5408"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-pilot4-process.json",
+      "bytes": 1171,
+      "sha256": "39cf6065d68d6add7fc8a3803eb89e0db0b78ff472f87c2eadf73317055a5209"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0000/native/result.json",
+      "bytes": 217358,
+      "sha256": "8d53bde5da1966140bfd5ee384cc1d228808dd88f9d91ee513292e0298ffcbd3"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0000/result.json",
+      "bytes": 217524,
+      "sha256": "cd33d70a159f5d03cac568da3658daa8437fdabe20746a859ec4d4ac2163cce6"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0004/native/result.json",
+      "bytes": 251811,
+      "sha256": "f3fad016451e658ebcccf74f339ad65c0d206d52896f07db59782dbd85b3cfee"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0004/result.json",
+      "bytes": 251977,
+      "sha256": "da5e8a0613dd0cfa1d44161508e148685fded0dc6296fba7af2fde8c796e9f5a"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0008/native/result.json",
+      "bytes": 237387,
+      "sha256": "a4f1b7f0fa0074f6603e7b5d87da40e731adba4d34d8e3a352d30d043a2aa11f"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0008/result.json",
+      "bytes": 237553,
+      "sha256": "65cf519c18b893c4037ae7c64ce41f63f2fede8d9b777cb43ee82af27ea7e2c8"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0012/native/result.json",
+      "bytes": 229911,
+      "sha256": "daeb5b5f115ca005e1b7b964151bf2c06162f88bb353dc2378cbec2baeec8c71"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0012/result.json",
+      "bytes": 230077,
+      "sha256": "a358b836a444a7a72b7bf4d5a718660fc4ec0b31dc55670319a1bb061f38e4f7"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0016/native/result.json",
+      "bytes": 213714,
+      "sha256": "53d6c24ab21c30574be3e2f9b35993c7d3ad4cffcd28dd0ecf22d6f8ef355146"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0016/result.json",
+      "bytes": 213880,
+      "sha256": "e643c71782c4fc564b86dc558845645a4ee8de5ff19d0778cdd6848f4277f76a"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0020/native/result.json",
+      "bytes": 250086,
+      "sha256": "814beaa47f53ac79a68555a7dbdcd65ad3edbffd981ff0a7420a4e5db5147617"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0020/result.json",
+      "bytes": 250252,
+      "sha256": "2b6c2c97fdb9f487bacf053955019826fa440994e0c1a3847c6abb8b98c4310a"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0024/native/result.json",
+      "bytes": 217457,
+      "sha256": "037aeddd0f7f019254a17a3c668dd7cc23ece3620da0fe3abf6076f999016c8d"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0024/result.json",
+      "bytes": 217623,
+      "sha256": "6720d24f368122508c7e3e8c32950e6356514fcf57c16919f4275e5b252b1b61"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0028/native/result.json",
+      "bytes": 257750,
+      "sha256": "59dcf42225b6d99186ab5b05084e46cede6baccc9f29969cfc5e09e767358c0d"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0028/result.json",
+      "bytes": 257916,
+      "sha256": "f1120f6cb33a4ea87cc7090f2421de97b7b1d918cc4ca2c3b4145a22b9747e9e"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0032/native/result.json",
+      "bytes": 315650,
+      "sha256": "54487f5c9a1bbb0ae20c764d903f11f02b6cd6d35126e17ac5ba12869aa7dc67"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0032/result.json",
+      "bytes": 315816,
+      "sha256": "0be1f34c71bbada173885a37ecbc4f2bd29585ed32a9167d19b0c791d3d5a749"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0036/native/result.json",
+      "bytes": 250300,
+      "sha256": "9a4c346ec20043114b63b524b06daa118f15e1c398fdc8c6d6d1d13193b3101f"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0036/result.json",
+      "bytes": 250466,
+      "sha256": "a00c29f751f0e31b57ffb3a94fcf8a1a61f8bd1dee4b86f4d2ac3195340c2470"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0040/native/result.json",
+      "bytes": 324497,
+      "sha256": "88ef55f2c7d554563c475b9ed6437ede2215e3f2c2be087812dcd1b6749d6b26"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0040/result.json",
+      "bytes": 324663,
+      "sha256": "79a5870fd89f8779af8abb50aeb488f44b34e67e176d685d26de065f62738aef"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0044/native/result.json",
+      "bytes": 355659,
+      "sha256": "23e3260bbfa00626a2d2b019422b5329e9862c84d5a6a43dff6b6c69ce798ecb"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0044/result.json",
+      "bytes": 355825,
+      "sha256": "b41b659d07541df9116f93520ac35168c3fd15f5e5f0c03034fc2e7906b99fc1"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0048/native/result.json",
+      "bytes": 309905,
+      "sha256": "c938ff7db17a6a1e70b8b05260f99ddeefda2ff1930199e05d712c78f2d07a1f"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0048/result.json",
+      "bytes": 310071,
+      "sha256": "0bc71bea24dd9aed61d57eaad866cfca18cd0903b4d4a25da76f76eaa2334fd5"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0052/native/result.json",
+      "bytes": 315035,
+      "sha256": "7cc4b6c15eb05b3e2d3400c73dde17c92cc745f4293e2eef6e2ed0a78e479d50"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0052/result.json",
+      "bytes": 315201,
+      "sha256": "fb99b1598a4bda6ffe490a69d86aaa094c835cadad94180ab23848a92b61a86e"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0056/native/result.json",
+      "bytes": 348776,
+      "sha256": "6c075410b1c86771c0d6e46f9c846ffcdb3448ca3ccb9e4d0605f16c4a73d6fb"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0056/result.json",
+      "bytes": 348942,
+      "sha256": "8cf2c791d0b5eff70d7083f70bb787d737a3e7fe41492044785a18a7ce2af50f"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0060/native/result.json",
+      "bytes": 301026,
+      "sha256": "dee135e7a1a605df7187d8b45e2e1dac98175d8fa40beb1f5f55f8a606aa076f"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0060/result.json",
+      "bytes": 301192,
+      "sha256": "39baf7eb7fa3e2d5459ab4bbc115dda32a70ebaf5a3c02f340fd84db077aaf82"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0064/native/result.json",
+      "bytes": 407609,
+      "sha256": "6cfc27729812765aada1b74702891adbc9e91b2645cd87879f5ffef51d7d0f6e"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0064/result.json",
+      "bytes": 407775,
+      "sha256": "5fa0a95573e9539bbd6ba04162ded59101e18aee2157cd6f734033028c4aa167"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0068/native/result.json",
+      "bytes": 358653,
+      "sha256": "6bb343afd5d87541aefa321676710be14152d74fc883ee2eeb92bceb4b9b1755"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0068/result.json",
+      "bytes": 358819,
+      "sha256": "dc17017c2a8da2e4169c992c3ddf2cc41388a322f3ffdb20ef66a3097dfd3814"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0072/native/result.json",
+      "bytes": 347380,
+      "sha256": "0808b13d3cc779895de3cce931c2c45178d66143978548cea2198c7282712a80"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0072/result.json",
+      "bytes": 347546,
+      "sha256": "d68a9952648f2087b533b84fa33edb8e5ede7bb5286debad9d4835285fdc4fed"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0076/native/result.json",
+      "bytes": 446679,
+      "sha256": "0a8c4d051219d07981e35425b4bbdbed6dc8db5376a6293a799d54b55c533864"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0076/result.json",
+      "bytes": 446845,
+      "sha256": "f8f4d2e19a32b0b19468de427974b18ad4694c64eb7686b7ea5ceb9475112656"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0080/native/result.json",
+      "bytes": 289390,
+      "sha256": "a7b40b1cd361129dfd72f5a229ae0e9760d7fa71a3e01b82e6ddca90ac2dd145"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0080/result.json",
+      "bytes": 289556,
+      "sha256": "8c56b53d6425df48ad0be55719a69c8bcf0cbdb79d29d377f2b173c4f4e6bafa"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0084/native/result.json",
+      "bytes": 421241,
+      "sha256": "de80393d1a7605a20d7dee5a1766302e4b07773df480b587cd9111be0d6c5220"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0084/result.json",
+      "bytes": 421407,
+      "sha256": "3b8ab8d7e2200ec6da033f49a8c3ce58378590afcd084cdb485726adae6030a8"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0088/native/result.json",
+      "bytes": 518392,
+      "sha256": "4b82f796179c9a3710652cdd8bd5072c2d5f3665753c4e93f613e1165d97b8a4"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0088/result.json",
+      "bytes": 518558,
+      "sha256": "dc78b81c574cf576f95cf18daccc01ef4fc0d67c6bb840101ff55066a84ceb8e"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0092/native/result.json",
+      "bytes": 233497,
+      "sha256": "e39cecad93cd4e470f57da4740cd2cd9cf1fa659676b7e82efcd4d5cb1c22927"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0092/result.json",
+      "bytes": 233663,
+      "sha256": "81e3ea557c72956ec33498a64e95e0c87db40f3f31e4bb298d5f65845bda005f"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0096/native/result.json",
+      "bytes": 209997,
+      "sha256": "5aa4dd34e168c2af709615b126d984644166059e6685763715b3b85225cf0060"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0096/result.json",
+      "bytes": 210163,
+      "sha256": "87d7cd607d663d2d936b8356b6e62aa7f73950da2517d6d836307f3d27fd1d3b"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0100/native/result.json",
+      "bytes": 215102,
+      "sha256": "e157e632a4aa2a581f4944bb35afac3b96b0bee2486520fcf63b59ab2d63650a"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0100/result.json",
+      "bytes": 215268,
+      "sha256": "6a48a1ab35ff87f851e376684bd02648bdfc6ea604672bc087be925bac04f1a2"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0104/native/result.json",
+      "bytes": 221569,
+      "sha256": "b8438b2f55dea7c826941f5df1a74537fcfc7f27fb3032c1644d61b2ff57a9e0"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0104/result.json",
+      "bytes": 221735,
+      "sha256": "df00a1973e6b93c345d296bdce1b149df8eeec2eecb23920b734ee53fed3c0c4"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0108/native/result.json",
+      "bytes": 284254,
+      "sha256": "e615299be4afc89ee70089fa6175cb152bde3184599acd56d8807e77fdf1c8c2"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0108/result.json",
+      "bytes": 284420,
+      "sha256": "de20ae1a8cc4f2179e4afaf497dcdb25a96daa08017609cf990a8f56905baa84"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0112/native/result.json",
+      "bytes": 287800,
+      "sha256": "8624056c23ff0a1009cf1f9c933f9b65f88579f51da142c3a06da4d47e4df2c1"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0112/result.json",
+      "bytes": 287966,
+      "sha256": "7eb2df1f39d2d794deba25697e279070f189d48220e19dacec2af3c194c1c105"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0116/native/result.json",
+      "bytes": 326985,
+      "sha256": "dc6a1e0d9161ae3928fa459759c14cdc0ffa0e4627a221f70d44c6fbb3cea654"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0116/result.json",
+      "bytes": 327151,
+      "sha256": "b4220dcc1f47872b1ac80ccaad5476973dbd06ba1c559b46ed3e455290898549"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0120/native/result.json",
+      "bytes": 265146,
+      "sha256": "3f873c55761bc66ee59cb5db9d78b3f2388c00792957d439bb0fd72cb9b161ae"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0120/result.json",
+      "bytes": 265312,
+      "sha256": "6fe9541503243e96d4fd3c616ee4ebca045ebdc01afc4311b4f278294022fae4"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0124/native/result.json",
+      "bytes": 222574,
+      "sha256": "0d815b15ccd84a0c4f62506f1efeeb6df107b152cb70ec79b49587811e4828e5"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0124/result.json",
+      "bytes": 222740,
+      "sha256": "69720a812e9c23526c8199bb61618f4ae5734f7334191466ea234a91835cefcd"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0128/native/result.json",
+      "bytes": 272118,
+      "sha256": "e7b6ec8a0e23c15de8360aad53a06d0c3ed928bab744282e36590028d43986db"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0128/result.json",
+      "bytes": 272284,
+      "sha256": "6cb8baaeff3ecc0c8d323d54d74d35cbf41cb5626b912fffad25253e0fae83f8"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0132/native/result.json",
+      "bytes": 331728,
+      "sha256": "c9d7e766e07d972e21ff5c78902e5ee05465050aadc8d2e931a43c5dab5b6bcd"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0132/result.json",
+      "bytes": 331894,
+      "sha256": "71fa516cca96bf7ec7a2d2248e08da0244a14d75e86992e0c4929e800e624f6c"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0136/native/result.json",
+      "bytes": 250496,
+      "sha256": "e9edd5d7e8cf9a9850dc15c5a3ba1765632024690b1b1fa5b7aefc9843ecd637"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0136/result.json",
+      "bytes": 250662,
+      "sha256": "58cfe3483fcf890b6565136e5acbc9d9a255884da045a07851f15dcdb9d1be83"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0140/native/result.json",
+      "bytes": 207814,
+      "sha256": "0673f5b60c861a4f6b4820b99c63111ae2577a1dfc1cadb515d52b467995f438"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0140/result.json",
+      "bytes": 207980,
+      "sha256": "2d96da5c8b9bd94ecb1b4c023dd76482b650f402cb78697e63802d718bd20b9d"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0144/native/result.json",
+      "bytes": 232798,
+      "sha256": "9c408c2f4104b92a263a3928c428010bee8d3337209da7963de11f7d51359316"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0144/result.json",
+      "bytes": 232964,
+      "sha256": "ee677e9074d0c87f533bc45a3879710de5c154d655982a3ea244e0ab494d26f2"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0148/native/result.json",
+      "bytes": 253248,
+      "sha256": "7d89bb001f89fbf37749b98c1f10bb38a23802ffaec2ebe16444feb9ba1ef46e"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0148/result.json",
+      "bytes": 253414,
+      "sha256": "523381cc4a7e201ee53c2cdc082abe45615d75961eea2f8d8ffd9957cc30079e"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0152/native/result.json",
+      "bytes": 590709,
+      "sha256": "a6c876dcc264bb90a4927dfecb4763f5a857cf54aeb0176632fad5362844c2b7"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0152/result.json",
+      "bytes": 590875,
+      "sha256": "45d518bf1fb97b7fa6fe9f3115b3c1b686cc16699033f963755cd715049ca6d2"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0156/native/result.json",
+      "bytes": 733480,
+      "sha256": "f715bba0a1a1e9621920e6babfd9513beb4dcda8b54d4049e1a9cfa860abf13d"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0156/result.json",
+      "bytes": 733646,
+      "sha256": "c90f5613d3d1e4c5c7bd5986e028a138390c72aa2f9a0c7e5caba63a44d70157"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0160/native/result.json",
+      "bytes": 230626,
+      "sha256": "5435479b3331fec46229b8739b5290c5943963a6b041824d04fd095e792e6fe1"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0160/result.json",
+      "bytes": 230792,
+      "sha256": "648ea36f260b292449cba42ef39825e30901e521b39f9d69d0b6cb1c759f60ce"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0164/native/result.json",
+      "bytes": 759685,
+      "sha256": "e10d922f6e31c8fd8c0faf6ca169734449be340cbf0f52f6d43990f05f4c6398"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0164/result.json",
+      "bytes": 759851,
+      "sha256": "9af3a8203c59766d6da796faeb85c94c067b70da518cf2c02d391d737f6deec7"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0168/native/result.json",
+      "bytes": 557983,
+      "sha256": "7e565258577e0a4b99c6f73c371c948b4788e4ea86086a4699ca69beeeaed3ec"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0168/result.json",
+      "bytes": 558149,
+      "sha256": "605d5e25bdd9b871e3316181ece9c7e7aa8f3937351300e6bf25b2c334f68c79"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0172/native/result.json",
+      "bytes": 633414,
+      "sha256": "d7b54585a7fddf200504d21c35475f6e26443a993e137d68f058f2b5c7f03613"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0172/result.json",
+      "bytes": 633580,
+      "sha256": "781d21f3bf69cb3fab6a17d68ad818884733a3d13e417999207a61745b94d355"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0176/native/result.json",
+      "bytes": 806918,
+      "sha256": "115ca052a0d686438c1d32c6e63ca466e7ba3e13e7996a27ef936bdcf5928dba"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0176/result.json",
+      "bytes": 807084,
+      "sha256": "c73bc614c925c3c7cf0bb895ef1afd33a95a87dad7392980a27fcb1a6f310999"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0180/native/result.json",
+      "bytes": 456832,
+      "sha256": "a782137f34991d17ceb8af6be7033224e587cb3e4a536656f8e7c46c366fd143"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0180/result.json",
+      "bytes": 456998,
+      "sha256": "b2486986525826b73f1e682e99867a612fb11f7040123a354d4270b2e3c14cd4"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0184/native/result.json",
+      "bytes": 352740,
+      "sha256": "466e488e58cab37bc09e9cb0d1c4554e244fd3e2947896457c22ad1e6f964978"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0184/result.json",
+      "bytes": 352906,
+      "sha256": "964072f1ec56e5cb3b3b865e6dd55bce347c430ed87624a8f9eed37c38406289"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0188/native/result.json",
+      "bytes": 892255,
+      "sha256": "846b6ebcc3316d30fe97039775249a8534f0cd4aa3a3758888d69a072167ca57"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0188/result.json",
+      "bytes": 892421,
+      "sha256": "46b7e222b93837bd0663e42277b26bc2f61c777c324f73d56619e85f981bec38"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0192/native/result.json",
+      "bytes": 315490,
+      "sha256": "f40ca6c91d98f78e1e8c8f38509f487fcfbb75031b6da516e769939be0230d64"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0192/result.json",
+      "bytes": 315656,
+      "sha256": "b8be2d07545b188341ab2e0c39d3f47cdc175ece5a6f60c8cdf6c691d8a251be"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0196/native/result.json",
+      "bytes": 646706,
+      "sha256": "d789e04f3eab36e71e5a27858ce35afd38bfb6d73a3ba6040e9c4256a6886aca"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0196/result.json",
+      "bytes": 646872,
+      "sha256": "05645cf8ba2bc702a9a87f591370767b31aa69ab615ca726f51b79ef2a4b0c5e"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0200/native/result.json",
+      "bytes": 893996,
+      "sha256": "1638513b55f134a3ba56c85d9c8c97afd127c4ed53d18471fa6cd13ce53e4661"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0200/result.json",
+      "bytes": 894162,
+      "sha256": "6255120dafdfde5b24ea810960a4662da147135842db21586c3a5937f44ec38a"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0204/native/result.json",
+      "bytes": 399407,
+      "sha256": "e899dbfc43b3b4a8e4d2c51fc63974feebb4888080b682ec0498d4a02618a30d"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0204/result.json",
+      "bytes": 399573,
+      "sha256": "02e2d6c1d32df5df024d4d1f12e8743e5c0a27f5eac68734b2ac06a0f248cc39"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0208/native/result.json",
+      "bytes": 333229,
+      "sha256": "d13564e64e0ed33021c0635439e43e9ca7956e398d07043825c9a67b03675749"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0208/result.json",
+      "bytes": 333395,
+      "sha256": "f0b7ad4f44fa900c5694f703e33119977f5d0d10f7f71eb5620bc13ec3e2e6a7"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0212/native/result.json",
+      "bytes": 516390,
+      "sha256": "5e31d5e7c742c972a1fd57878c3cb1eb649782daab34dc14a932bcd93b83b16a"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0212/result.json",
+      "bytes": 516556,
+      "sha256": "5ee6ed7b0bf02c480955694d94f8e5275a04f3802786503109804de0448d68c1"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0216/native/result.json",
+      "bytes": 789784,
+      "sha256": "a36a3a4b47f0cdf3078eebfd4a685f3d707bed0bfe66d252a3eded0dfbf42195"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0216/result.json",
+      "bytes": 789950,
+      "sha256": "bf207d6b1be4d14cd2d972565394887d14b6894540f6962e9d619d92bb46c566"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0220/native/result.json",
+      "bytes": 819453,
+      "sha256": "359bb48edd647281e562df6a4d48c6b99863ced0902fe8924cd0f26b98a47afb"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0220/result.json",
+      "bytes": 819619,
+      "sha256": "5ea442d91aae0707f23e95e6bebad8668c23af12954715357a8a154a10752a6a"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0224/native/result.json",
+      "bytes": 750083,
+      "sha256": "099cb76dc716ee82dde44ec2798caf52e0f4735c51b92584fcfd2f738f77609e"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0224/result.json",
+      "bytes": 750249,
+      "sha256": "dfd700ab2833735f4e3d564e6bb54ae21875644306825010b4b3fd1679915506"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0228/native/result.json",
+      "bytes": 164785,
+      "sha256": "d2f04bcda798a83800c3f5d8cfe351f67288ea83c986110402caab4cd46c0071"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/batch-0228/result.json",
+      "bytes": 164951,
+      "sha256": "9eea25ce24e14888dd8f294ecb1d6410d50490481f1ff6353f22c7c2a661d9ac"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/manifest.json",
+      "bytes": 13562,
+      "sha256": "3b88a4cb59149d016b1db41bc562ecc04d2f56ed2f2b40594eae401c5d3deaf4"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/not_started_ids.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0/per_case.jsonl",
+      "bytes": 313247,
+      "sha256": "886906409eba263a09ef28792bec0870b948daa9dfbc143f1dfbba66691c6d0f"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0-ids.json",
+      "bytes": 10044,
+      "sha256": "ee91b90a34cf934d7ca0d72d961a3564d23928fb46d4e18765297da278f725a7"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard0-process.json",
+      "bytes": 1201,
+      "sha256": "9ba2313ae06ba8cabf9ab3a756cd650c4b829d4404bdcb1c57c97642a1b83bf5"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0000/native/result.json",
+      "bytes": 226742,
+      "sha256": "7e76d9ddbe3ce465aee4cd9e73cf2d22cc833778e48c4d48cea698f2615e8a84"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0000/result.json",
+      "bytes": 226908,
+      "sha256": "8da5c65f08eb039fd3d25211a4853d49021f8b0c0b7de28502141f6ff15a1da9"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0004/native/result.json",
+      "bytes": 241374,
+      "sha256": "a777284cc6dd355da670a9e1685080047cf405da4070455f186a970e64b52e38"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0004/result.json",
+      "bytes": 241540,
+      "sha256": "c2ac1c00df679ed1ad5899957ef767735539c55194be33c88cd10a80cea59d10"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0008/native/result.json",
+      "bytes": 276096,
+      "sha256": "1fd4c662ec88353d366273721e9965ba1b82a7745de28e86e6ac7e407f75e1bc"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0008/result.json",
+      "bytes": 276262,
+      "sha256": "3b50bd17b8955081c5cb26cacedfcb7c0c10b11eccce66e1011bbc3af68633f3"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0012/native/result.json",
+      "bytes": 241579,
+      "sha256": "f3609c7f9e0e72629c74043b90df0b4bb2c68a32d033c678f8ec7bafa16e737d"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0012/result.json",
+      "bytes": 241745,
+      "sha256": "57bcbee4493e41117c6956b44f95761579b487fc7fca39999fa00fe5d87f0f9b"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0016/native/result.json",
+      "bytes": 235464,
+      "sha256": "c3a52b0800494f132aad53e4a993d15399dd41876cda40c0800021743d36b467"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0016/result.json",
+      "bytes": 235630,
+      "sha256": "6dce7cc5a183707bf268cdab692c513ef7bfde1dd5e6038dc92489d67712d3a1"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0020/native/result.json",
+      "bytes": 225917,
+      "sha256": "991408ac93566378713e8807ff4b22466e8e8ef47f41c19ad8dda2e9f70b5b31"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0020/result.json",
+      "bytes": 226083,
+      "sha256": "138a2db36220531443c416e9e5de711256a14fe9b917a429a022418adbf0c48d"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0024/native/result.json",
+      "bytes": 238410,
+      "sha256": "797f33911ac4b0679e0610cb9941b58f3c6837109a5d3ad8e51621f68fb19f53"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0024/result.json",
+      "bytes": 238576,
+      "sha256": "5c6e0c37f3d91b22da7fa96b8718fe6ad8cfed66f8d1428e803d1dd85d75c916"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0028/native/result.json",
+      "bytes": 237248,
+      "sha256": "8f791383054d4424348535c0e2d19f7a1fb87a48a7f64f7dfec322dc8bb72ddc"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0028/result.json",
+      "bytes": 237414,
+      "sha256": "2eaec57f3c6df0bbe1842d1dfd53b0b506fbf11a62966cffcaa5617a034d3afc"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0032/native/result.json",
+      "bytes": 286551,
+      "sha256": "417bdcb6362b6fbb23df5f0a3844a7b857f917f014680082f6e98bc9b82f1472"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0032/result.json",
+      "bytes": 286717,
+      "sha256": "51524319050d7722ad4432541e2e587cb5cde720ff62d59aef8cb69ce2d8028f"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0036/native/result.json",
+      "bytes": 237632,
+      "sha256": "d397609f5f8d23eea6715998795fb34d9fce7455e6eb8f546311383c50dcf2b6"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0036/result.json",
+      "bytes": 237798,
+      "sha256": "46739bf191175291c341f447361e468e33eb66c519721b26b2467fa40d4b6d7a"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0040/native/result.json",
+      "bytes": 315935,
+      "sha256": "9ec7c6599970d6e5a21dd4df744120de0d4ba76529feabfe3beb0da681a8726c"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0040/result.json",
+      "bytes": 316101,
+      "sha256": "8e990cc504e5abe33c6d12bc615ffcf53b0789b72412d218faeac7eb271d2d02"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0044/native/result.json",
+      "bytes": 370063,
+      "sha256": "743f41334f2debca6b26e6fb44636ac656b7bb2c0cd23d2cb1bdd9d6c2f3ad48"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0044/result.json",
+      "bytes": 370229,
+      "sha256": "3fc9a119356a5e9a7f1de71a2aea09e98ab5b44c2318f2da03befc06a8a0e595"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0048/native/result.json",
+      "bytes": 315760,
+      "sha256": "227b19d4289ef6f12e387cf3b12b23f41a0fd01d51c5ff3259ec0668b1ba7898"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0048/result.json",
+      "bytes": 315926,
+      "sha256": "e89cb0b6fe38985816220de3fd7c70c9521800879aa54214de237978e230138e"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0052/native/result.json",
+      "bytes": 340760,
+      "sha256": "67a4f52294ed6551082f4cb86800397b4f9708f1f38ad915e3718e47e0c5ad44"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0052/result.json",
+      "bytes": 340926,
+      "sha256": "990c64d64907ad35cbdfd79bb02c1d7eb8772d1d8b75ceea0efec71432f5cbe1"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0056/native/result.json",
+      "bytes": 393440,
+      "sha256": "50bb631b8e1482c3635af804e1e345f3f5e92bb585f975f3b21e143aaca9afb9"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0056/result.json",
+      "bytes": 393606,
+      "sha256": "9cd990b132de77b0420d07018381f6361ac482990c368369ee03e4b9f6997e0b"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0060/native/result.json",
+      "bytes": 365701,
+      "sha256": "74515ac2f8453439fb7c9519d1f00dacd59486eb608533b857ada27e4a15744f"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0060/result.json",
+      "bytes": 365867,
+      "sha256": "64b38b469b36d08ee7afc44b38d640b53a4a5ef54f2446288dd8fe899a6a32b3"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0064/native/result.json",
+      "bytes": 344912,
+      "sha256": "4b870c1d6ea9840235f004f9a783fe11ec9ad5e95ba1642ab7862332a195437f"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0064/result.json",
+      "bytes": 345078,
+      "sha256": "a75490555704cd2e9c7c0a0f8ed11967e6bd867b4147026fadc3a33117af832b"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0068/native/result.json",
+      "bytes": 398010,
+      "sha256": "518a36d1f646a62d6ad6af4b9a2f2f0fd6a0f31cfaf08410ce31e7d5c2c04516"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0068/result.json",
+      "bytes": 398176,
+      "sha256": "5d7cf1493eeb6598d2c7f8ea8e7a43f7dfd5f97dd699493f5d0bad686a48445f"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0072/native/result.json",
+      "bytes": 397328,
+      "sha256": "e0634aee4e8a2c2454e842bde135fe76ccadee5881ada08977337642f484fe6e"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0072/result.json",
+      "bytes": 397494,
+      "sha256": "3a3e01289fa301029324f2eb864479d1cb4ab51bfb4f41f5d77c171ecd6d617c"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0076/native/result.json",
+      "bytes": 472193,
+      "sha256": "b752134272ae6cc29e6ff6cf14121f65b7958da2ff0936eddcf79c9ce5d7bbfe"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0076/result.json",
+      "bytes": 472359,
+      "sha256": "a2cbcc83914b9fc49030c97192d664461bbe1dc9970d12670786354e22ad2b2b"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0080/native/result.json",
+      "bytes": 298300,
+      "sha256": "7db98eded12024e38dfcd083a3c2ffb76a82af0590de065eb106441be954aa89"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0080/result.json",
+      "bytes": 298466,
+      "sha256": "48be1b6bb45f0cf2baf351028d5a79af820108e83ab6503ca938f410c411ce23"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0084/native/result.json",
+      "bytes": 374655,
+      "sha256": "1ca81775c14d95c92cd887efea5120cfda8678e237a2fc01d311190a54df78cf"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0084/result.json",
+      "bytes": 374821,
+      "sha256": "95090739e840a5281562aecbdd8216c1f962b7156ad09c2724e4a93ce19b2b29"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0088/native/result.json",
+      "bytes": 397305,
+      "sha256": "6908391d40153efe306447766493526f0062b373a8504815abce493e7bb86734"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0088/result.json",
+      "bytes": 397471,
+      "sha256": "22f35c928ff9c059a5aae89ffb1d1cf2ef9162f37ce25a43efd9f11ae6c4673a"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0092/native/result.json",
+      "bytes": 256106,
+      "sha256": "2e4e83dedd6a5c6413b91fd66aeebe81cdb434e8f168e7716a7010f3a965d18d"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0092/result.json",
+      "bytes": 256272,
+      "sha256": "fa9511cab3439d90326e7ee439e4714e5bf0de8da00a36847180a858d18c9694"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0096/native/result.json",
+      "bytes": 207151,
+      "sha256": "7659a1997b190480990f18dcedeb55b49837ec41865b67c2af2706366035927b"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0096/result.json",
+      "bytes": 207317,
+      "sha256": "dfb9b4a14d3b20c6ef49d9fc1c9244db6e5b8ca7d5a1892a258bf030d53251a3"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0100/native/result.json",
+      "bytes": 233417,
+      "sha256": "c52b836c9fd678e6bf7ce6bd6c8c9178de1329b19aa5d01937e8ac710610f751"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0100/result.json",
+      "bytes": 233583,
+      "sha256": "ace3a21878c19e279b52c04404fd1d3a9fcd11b6bdb9739df72d225e0def5446"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0104/native/result.json",
+      "bytes": 217210,
+      "sha256": "146325aa72b4580495571e9b853fa6a089357e5d6a404a358cf9fac2e6d05e22"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0104/result.json",
+      "bytes": 217376,
+      "sha256": "ed7322dbe0f7c2d9804ac488591d5485b5e0980dabe83d3f2d850d1cb33570f9"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0108/native/result.json",
+      "bytes": 285572,
+      "sha256": "b593aa4e263fbd3ad0f79cbcb8601c62b3b9c8d70cc82bfa4cc6dde705f8c810"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0108/result.json",
+      "bytes": 285738,
+      "sha256": "584dc93b7a59ce72bf5fc343a209b41cc8e6413f20d6e2084f8b4a5d90bc6d4b"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0112/native/result.json",
+      "bytes": 302320,
+      "sha256": "482852018de10c5b1cd542911851263fa57b23343da8911243e411776e5e9692"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0112/result.json",
+      "bytes": 302486,
+      "sha256": "43e60cc342abebc9fa91f712d78ca4aa8c2f01d2fae6f0632165fab1cb471aa3"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0116/native/result.json",
+      "bytes": 336754,
+      "sha256": "f5926bf4747acda76c8d53fded5c666d760ee82a2d4b3472699808b65ce16a20"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0116/result.json",
+      "bytes": 336920,
+      "sha256": "60f8ec6b579f4d10bd6776b9d36b5b5cb11e8c0235f0839eb8598aea8835842a"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0120/native/result.json",
+      "bytes": 264411,
+      "sha256": "6e53f5ca16ee7b4462b983aed69701d3739df0be2707329dc2566dcadf84fbaf"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0120/result.json",
+      "bytes": 264577,
+      "sha256": "d7d65525ed206e293acb43850de42e8cf07500221da903847a30815a2a76d6d2"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0124/native/result.json",
+      "bytes": 225729,
+      "sha256": "1b9b2e0f8dfa6fa673b2502a4c41cae4d7175637051efb1dae07f299b275ddab"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0124/result.json",
+      "bytes": 225895,
+      "sha256": "e7f5faf4ac93bca1dfe867ccffedc03ff90933a219858755c46705414062abcd"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0128/native/result.json",
+      "bytes": 313003,
+      "sha256": "1affbbbef469903b9ea08805528bbbf20db114d078c777905cb856ef78044f93"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0128/result.json",
+      "bytes": 313169,
+      "sha256": "ea41bfd83afb8fc665a6d3f74c25203654e7e0f6b9e6fe7081b5967716a8e2ac"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0132/native/result.json",
+      "bytes": 319658,
+      "sha256": "952f81fd9fef4613e74bcc55cfb9a7782ed67e327351fb09e2cd2ac007b6de87"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0132/result.json",
+      "bytes": 319824,
+      "sha256": "8ff8a4ce833c52bad90c35d3039ac9acba48971cb6494dcb44aeb2a915532b31"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0136/native/result.json",
+      "bytes": 243629,
+      "sha256": "bb60598e651ccee5b6c324ba6a1a6cee452332bc4c5e16311775626f770d6f7a"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0136/result.json",
+      "bytes": 243795,
+      "sha256": "99e505968afe2d1a3b2500bbf088b4eee9742274298af3b7a3c17fd44f94dcbe"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0140/native/result.json",
+      "bytes": 241647,
+      "sha256": "b427237250051fdf80eb6afe9a717e0a41f202b06bf11a0aaca0a04178fbd5dd"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0140/result.json",
+      "bytes": 241813,
+      "sha256": "fbd692b58a5e517551d7a3335e1a7b2ba5742959d6f808cd33b5fe49a595e2db"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0144/native/result.json",
+      "bytes": 234542,
+      "sha256": "81accf73609026b24a13c229c12e385705eaeb101a66b9f7a111122e713a48bf"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0144/result.json",
+      "bytes": 234708,
+      "sha256": "3c39865fd1ca4b0b831db159e9632243debdfad87da3c8777c20f3db92b31920"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0148/native/result.json",
+      "bytes": 253949,
+      "sha256": "c0b6e709e7a1525f6becef02b401e8b808ed0e926ef0a247da9f2ff36cd06b28"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0148/result.json",
+      "bytes": 254115,
+      "sha256": "3658e96e1e80a1f17dd91e5ebe84bfa230afe747f7da656c4b538fe4568011d6"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0152/native/result.json",
+      "bytes": 613446,
+      "sha256": "f055edc3530bb28e6a3d7e62355581d9cd44fc0bc211d2c6ac18dca9dc27f26c"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0152/result.json",
+      "bytes": 613612,
+      "sha256": "bbaf003541f7662a37100fbf13b5dcd0452f6d7775adbf2c0de350a24d280d0f"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0156/native/result.json",
+      "bytes": 721642,
+      "sha256": "098af0b36c947647bde3ed786c804949e33e546d798f27bce03da12fbcebb91e"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0156/result.json",
+      "bytes": 721808,
+      "sha256": "d9b948fb28b32e26ece4ee4369c75298f2a048dd4ae45f7e29fe647ba966b6c1"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0160/native/result.json",
+      "bytes": 390923,
+      "sha256": "b5ca763fd44ab28b4593b24cc744328564e061029302420e6e6dc0a6bca2e33a"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0160/result.json",
+      "bytes": 391089,
+      "sha256": "0e396715b586e76dc78024bafdb3a6d7f2671d34d0bc2b8b91e7afed33b871cb"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0164/native/result.json",
+      "bytes": 766359,
+      "sha256": "653f97d1c95c164119e54cea9d10e215c609ff61044cbf99f95b2ad5d13d3130"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0164/result.json",
+      "bytes": 766525,
+      "sha256": "4e8476f7f36071344da61fd4ae4bcfbdcc8eee8afb140de04167912c3583aa71"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0168/native/result.json",
+      "bytes": 338094,
+      "sha256": "0909c7fa279e3e3aaef03b962c0198a0cb57877e1990fcfbb23ac557b6ece809"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0168/result.json",
+      "bytes": 338260,
+      "sha256": "33287219c50169f3ca09587445708f8c0eb25a7336d24808147b073ede5bbbbb"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0172/native/result.json",
+      "bytes": 811420,
+      "sha256": "e34f78ed109444233f5c818b21722d7cb64c1ee3939e77868b688821f03421f0"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0172/result.json",
+      "bytes": 811586,
+      "sha256": "f5397e978977c8c85166071aa9d72030a4a85b7af086630a9f8d08a4352ec637"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0176/native/result.json",
+      "bytes": 818581,
+      "sha256": "4bfc882de0f4176b0e728e4324b6b1e8c9cc28574b9b0261497a0d1f03688d58"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0176/result.json",
+      "bytes": 818747,
+      "sha256": "606c00a091b3b9a20f3cc8f50f149d653b5d1099345d65918f4c347069334812"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0180/native/result.json",
+      "bytes": 453967,
+      "sha256": "79d9ece71b3edfbfb25f2ace84719a0d1547f6d090ae8fd2ac0df1b5eb3bcdcb"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0180/result.json",
+      "bytes": 454133,
+      "sha256": "b5bd49ec493e95f5bce4cd0534071d725a703950d65b27037579a5fa5ba795a3"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0184/native/result.json",
+      "bytes": 328392,
+      "sha256": "5f254c6409e6041d143bb5c5fdaae6b85ee61d26fcd044c2f9c6545dff8091bf"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0184/result.json",
+      "bytes": 328558,
+      "sha256": "b4836f1fbc99b90c71f547c7b58b3dc89e54e864749706aa4b888d38cebd6d42"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0188/native/result.json",
+      "bytes": 728393,
+      "sha256": "16c8122b976f13166b782235f8bc68ed211e05ffbf5c813f21a85c6c581ca456"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0188/result.json",
+      "bytes": 728559,
+      "sha256": "c944ec96fe0ce0e0bdf0bdf4edd11833172132847a5ed3c0423c286ee8fe5ad8"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0192/native/result.json",
+      "bytes": 302871,
+      "sha256": "f7a24c1743514ad0ce4f12e5ef52559cbe0297e0a9427d2511eed6eddee6590b"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0192/result.json",
+      "bytes": 303037,
+      "sha256": "8084c186dce6f486e224ba4518f5c2aed7ff699cd63823e36d3dfc7b4ab9f14f"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0196/native/result.json",
+      "bytes": 808825,
+      "sha256": "53da5ca70e9d351041abe5437d3b5ee100a26d40d3fe06de4f2384ebe355c383"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0196/result.json",
+      "bytes": 808991,
+      "sha256": "c4b4f1c756c9c5accb965fdaedc7c0bd395ac9369f0e4f920e41b34c8f2ac67d"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0200/native/result.json",
+      "bytes": 961708,
+      "sha256": "d40672fbb006fb12e1329b708af3569db5f1ae365d8e2883c9908410d67e0447"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0200/result.json",
+      "bytes": 961874,
+      "sha256": "fe5d468ef1a734c481f774c8c62ee969ac13dd1d8ba9956975245e69f5f93f53"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0204/native/result.json",
+      "bytes": 340372,
+      "sha256": "d3a270b01372f4c938010e05d85c907b2f1e534e4292781cc3b0a31b75fa8595"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0204/result.json",
+      "bytes": 340538,
+      "sha256": "7dd5b399f69201405d303f22fc95c9acba922887523f7232370594d44dd9b30d"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0208/native/result.json",
+      "bytes": 328969,
+      "sha256": "2e80a3e7b0e0a38bae9ccf0789a6ea1716037722d043993c48a121834412c2e7"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0208/result.json",
+      "bytes": 329135,
+      "sha256": "543ae88f4826a5483e2438cd83c0f4202c7001369d56ddebffced7ba2cf9602c"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0212/native/result.json",
+      "bytes": 553648,
+      "sha256": "c76f5787046ad6b25bea59e061013544ffe37272b9b245f76ec97241ec9b30af"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0212/result.json",
+      "bytes": 553814,
+      "sha256": "3c007d0995e4c419f1c151688f99414fc6f71e65734019be29a1f20de8c03af1"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0216/native/result.json",
+      "bytes": 769251,
+      "sha256": "4f8da61a67bab87324ffc6cea347516e641f037a651625267281a4b562836a42"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0216/result.json",
+      "bytes": 769417,
+      "sha256": "edd3373c13ae3e55c77e122f7edc78c76bca052490047a48cf22363d237197c6"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0220/native/result.json",
+      "bytes": 826048,
+      "sha256": "985aa71278d44100984c05c7cffaa346e19d124321701225e9ef4b88ed444341"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0220/result.json",
+      "bytes": 826214,
+      "sha256": "264a25154fd04356853ce19303d9b987788c4ea0ac943cc9b2657bb730361beb"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0224/native/result.json",
+      "bytes": 552675,
+      "sha256": "cec63dc1ef978a8b3fa3fdfbb18be3b9ed68bfaf79219264ab4c9b4970c5f0b1"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0224/result.json",
+      "bytes": 552841,
+      "sha256": "4144b3f86447857de0a7b649183a059c2441f6f2bc3c18a49bc837339bc997f3"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0228/native/result.json",
+      "bytes": 163496,
+      "sha256": "054ac5f148785965987d2e45b223bf171ba8cdc30cd0aca15b35c5c688095499"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/batch-0228/result.json",
+      "bytes": 163662,
+      "sha256": "af08f8c17e7cc11d42651e8c606820c66619fbe11412116b7927a80bd527a452"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/manifest.json",
+      "bytes": 13568,
+      "sha256": "80143a167f1465b7c02cb6e15bf001a4ddff902089f81cb28018ef002cdf9657"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/not_started_ids.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1/per_case.jsonl",
+      "bytes": 318819,
+      "sha256": "d5888f93cbc725c3dba38d6ba4b94dc6e834fa002c011199a72448f423d46f48"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1-ids.json",
+      "bytes": 10050,
+      "sha256": "e127c55cd1f7915204de926a93be0b71dfb67011242466c6fed4376701d7f991"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard1-process.json",
+      "bytes": 1201,
+      "sha256": "b302c611228f48f01200b2cf134e1ea8a1b072e49378cbef9e99d60112d95e11"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0000/native/result.json",
+      "bytes": 204957,
+      "sha256": "c5d5d2c4297f271ee28277c7f6efd53194e8ba850ba66ac30c84fafdcdd41432"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0000/result.json",
+      "bytes": 205123,
+      "sha256": "2566875952ae3dc206aefe48bb991d413f5c8b32af89e984c5c6837eda69e10e"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0004/native/result.json",
+      "bytes": 261528,
+      "sha256": "86b9ce7c119492ac7f0c1740807e0993790fa458b771a164e15d2e1a959b619d"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0004/result.json",
+      "bytes": 261694,
+      "sha256": "5bd78a07a0c8dd5c5233192fc46f8ea34589c20bacb65b871d0d5d067317a453"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0008/native/result.json",
+      "bytes": 227023,
+      "sha256": "c853b7bfcf7d41935f971e05270bce94b1e30e34d6d5d01ab049b6d21adabd92"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0008/result.json",
+      "bytes": 227189,
+      "sha256": "d2fecd640b062c962ab613b98e140655f82b71659834510c1a2ba0f35f29c87b"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0012/native/result.json",
+      "bytes": 260242,
+      "sha256": "8a80f130ecc64bacb8a07b5ef6de323c0055f9b535f739b73cab21cd707d7be5"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0012/result.json",
+      "bytes": 260408,
+      "sha256": "c9f3bace81eca71cf1942d03a8bbfa5cb1da46e74466939be6361f12fcc3bab8"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0016/native/result.json",
+      "bytes": 225238,
+      "sha256": "6b7606155805e2d12856cd61f0627e6b152aac020e806e4e7e66b3100e72cbe5"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0016/result.json",
+      "bytes": 225404,
+      "sha256": "f7173d52ef334afee2bf21e221093f88d928fd38f416b928341efbf762182256"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0020/native/result.json",
+      "bytes": 223087,
+      "sha256": "e029639fd44f520eb68969de96ddffecf6313393046d163e90c286b0ad97a6a0"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0020/result.json",
+      "bytes": 223253,
+      "sha256": "43df93ec2215b57958cb4f7395a3298fcd42798dc7b422c5282cd992a7ee60d6"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0024/native/result.json",
+      "bytes": 236170,
+      "sha256": "6d0490fc603c3e433fcb5fb7a4feb938e7ec2ca8aafbbc9df695d200a7c7e10f"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0024/result.json",
+      "bytes": 236336,
+      "sha256": "63ea8f03fca1d0b710b54dbdd4ca3deb48a6213151efb016c8556ae3c4d40aa5"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0028/native/result.json",
+      "bytes": 298703,
+      "sha256": "1ff92117e2f34d4ccf81641acb5126fe7b76381434a4473b6929eb777392bf2d"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0028/result.json",
+      "bytes": 298869,
+      "sha256": "f7bfa7d91803227d0f9c8eda0485cfb3d5a361fdb1c63d776cb7523da1179a98"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0032/native/result.json",
+      "bytes": 267918,
+      "sha256": "abbfe4a822443bbb6f227c104fb5815ace3c3c4106bb35ed5a59248e8a2c5a75"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0032/result.json",
+      "bytes": 268084,
+      "sha256": "08a2e662e90a992eb5302abd6b7173ca927e84714ecb89df5fcbcfb20daa5d56"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0036/native/result.json",
+      "bytes": 262695,
+      "sha256": "2275556065a84ba45fe22f79fb6ea6211f9822d5cc73ef330af2fe0171be6457"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0036/result.json",
+      "bytes": 262861,
+      "sha256": "10abfd52000bb2ab02f81718dd9c741021c5af237eb9213f75ce3703a1f0dcc7"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0040/native/result.json",
+      "bytes": 323390,
+      "sha256": "7eaff01d87ee8168d165a0dc0a2cad1e5a17d371b49112fa4443bf2bc43fe783"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0040/result.json",
+      "bytes": 323556,
+      "sha256": "cc92b8e362f38f9651beb012968e994ec378446b9f37f2adbff5adfe68360355"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0044/native/result.json",
+      "bytes": 353681,
+      "sha256": "6cd9def74d202d08554a016392a918a8a4ea03fa1c428c8ef662914aeb060fe9"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0044/result.json",
+      "bytes": 353847,
+      "sha256": "8ce67db4f0486f50b9254bb3f625656d983b541d57eea26a39b23df5a7b9685e"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0048/native/result.json",
+      "bytes": 343735,
+      "sha256": "434e3b83eb5fac518a2add85145748d9aa9116658f079d38e4fd1cb6ef313d93"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0048/result.json",
+      "bytes": 343901,
+      "sha256": "3b481c2d83fbe97724a6849e79bd92782d38d48a3cd933930b968c7e5129133d"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0052/native/result.json",
+      "bytes": 300644,
+      "sha256": "e230eabdf9782055ad06f26fe9d1bb945d79c1d0afe85943bad0c5c4cafbcbc9"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0052/result.json",
+      "bytes": 300810,
+      "sha256": "4ab6a0236668ba1a703cc632064c38d9133d3b9ca74200cbb85e9d923495047d"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0056/native/result.json",
+      "bytes": 379120,
+      "sha256": "4499856b631f9b1cd1fa632f449269980bb8c3718f9b36676cef3b82b839a4b5"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0056/result.json",
+      "bytes": 379286,
+      "sha256": "043afd3c2cd3d706d245d3c4d389740db00c28348cd7b75a42b94a5884402e4c"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0060/native/result.json",
+      "bytes": 294218,
+      "sha256": "60332fc27868a447d7e53397707f400e77d028608dc113afd5d82efc0927c237"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0060/result.json",
+      "bytes": 294384,
+      "sha256": "b0ce576f3cf87f1e4e53e0aedc47459a2bb080660380fc1e6cb83f4841f711e5"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0064/native/result.json",
+      "bytes": 368067,
+      "sha256": "795bbb56502026ad2577e3c8a1bfabad0aecd5c7832ad47c06699b4de15e15a5"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0064/result.json",
+      "bytes": 368233,
+      "sha256": "b9456d21fd179471fc9a75a525dff42df356c414eaa36a082b09c37e7dadf3bd"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0068/native/result.json",
+      "bytes": 371825,
+      "sha256": "674d1ceeab6dc48185168598fb398176e6634874e2ac56490d7cef6d6af17c0d"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0068/result.json",
+      "bytes": 371991,
+      "sha256": "6a9e4afd54560b3e1d9c3f6031343180e48aa8717d9aabedd30b4ca92b889034"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0072/native/result.json",
+      "bytes": 374957,
+      "sha256": "d387e09fb5cc3535f16fa9226d7e7e27a05f147f1d2b65916b7b95b97c71d327"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0072/result.json",
+      "bytes": 375123,
+      "sha256": "4337cd4e31d5ac5d9da2ec0a081b6ee53f26a99b75fc74cfa349d9cb815c0b25"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0076/native/result.json",
+      "bytes": 523802,
+      "sha256": "c76d7bda4cbca0c93b86cb5290abda5563dad7c04b2089fce7424ec4830b0050"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0076/result.json",
+      "bytes": 523968,
+      "sha256": "9b75a1830985ebabb1f4fc5cff3b6aee37471ec52fbae168dd7d0e0c09699290"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0080/native/result.json",
+      "bytes": 320699,
+      "sha256": "0262b2a285abb3338efbe230b1f5e0a158f2ce4c0ab477aff8dd10c255120a7e"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0080/result.json",
+      "bytes": 320865,
+      "sha256": "3dc727507a8c24c69e4d4de762c4678356707e5866dfd8a5dcc779084bbc7d89"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0084/native/result.json",
+      "bytes": 391935,
+      "sha256": "413c2c72b3c1be15dd89aa12ea991029840b9ac674696f418fb78d9ce13f6e74"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0084/result.json",
+      "bytes": 392101,
+      "sha256": "9ef68ef4699ea98b8595e896be9ea904b3d2e85e941b0bd923e161c821f6de91"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0088/native/result.json",
+      "bytes": 405946,
+      "sha256": "a203002b1731c6699ad67a9d40fba52c121bacb325ad63ca87b907eae11b29e0"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0088/result.json",
+      "bytes": 406112,
+      "sha256": "d2404a4dbab9a403cead5e4c4fd0655a424ca51fb2ea80efa3d6986e953dda4f"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0092/native/result.json",
+      "bytes": 220428,
+      "sha256": "d40c2c977fcd3c03deafccd0826252c9da1de0e9d547ac1a90c1630a80a58f3e"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0092/result.json",
+      "bytes": 220594,
+      "sha256": "ecf383c752d2b6ec149ad2976879a087080da1a4e562567213850020eaf15956"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0096/native/result.json",
+      "bytes": 210629,
+      "sha256": "f6b1e1bf1c241fbb23ba340bdf6c0206bffd7a05a323c8b056b69912ed9c4480"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0096/result.json",
+      "bytes": 210795,
+      "sha256": "1e013da3598992fc2dea1cbc78725b1a2bd3067b3789d5665fd280b7680dd4b1"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0100/native/result.json",
+      "bytes": 287990,
+      "sha256": "0ced4a40e54d8c4d5e744b88b8abfef5ff8d00088c6215ceba9757ab58c338a4"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0100/result.json",
+      "bytes": 288156,
+      "sha256": "f359f8b56e6d5a6ae1d40a8b1a5e084ac5d127347b2774e0eedcdd286ca45eca"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0104/native/result.json",
+      "bytes": 229273,
+      "sha256": "102478da567efada8576dc54e1d610c0784dc1aacf52e5706434673cda889a71"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0104/result.json",
+      "bytes": 229439,
+      "sha256": "124799c5bbd0360dec7896fb9c2197261af5627733385ec5d05c83ef8de374fe"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0108/native/result.json",
+      "bytes": 263630,
+      "sha256": "5a6424fb3a8b9714f6edb5dd306ccd6b558ecca8690c1cecc8b5b0099f96d74a"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0108/result.json",
+      "bytes": 263796,
+      "sha256": "7c466a6e39b0dbdd4c82e7e5e490a84fb0be1c25e53b20f8e7b508c11ad5a448"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0112/native/result.json",
+      "bytes": 275092,
+      "sha256": "8f1d3e60b24614c2124304804909772b98dc36000dab856e774a6c9f656672c4"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0112/result.json",
+      "bytes": 275258,
+      "sha256": "94414e9c194ca8902cc1805c3e9cde31627b9d5bd2bb87aee743d8fcaf09356c"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0116/native/result.json",
+      "bytes": 305397,
+      "sha256": "8f9d488247c785add52c1662173fc318b055a46643a8811dc1ec2b68b510c1cc"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0116/result.json",
+      "bytes": 305563,
+      "sha256": "5146ab51804209bfb41cd205df987dcd70313c957a6f9e499e5eec5479264db2"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0120/native/result.json",
+      "bytes": 247913,
+      "sha256": "309ed7cd04edc7803893bed8748047f1c48a1aa2f58736400186b71983f0b2ec"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0120/result.json",
+      "bytes": 248079,
+      "sha256": "6ff5bea1c24f44d83181aac99a58855249c1b0ec3d385cb17f96bc4789ae0ff0"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0124/native/result.json",
+      "bytes": 222542,
+      "sha256": "6d0586f690a254f5064c6bc8c2e592646976b256f1669160e2f517b53ca5cecf"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0124/result.json",
+      "bytes": 222708,
+      "sha256": "7a8fff65a57210f712c20a487ec3f7a7e52a7d8be63a322a015937cc63a01371"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0128/native/result.json",
+      "bytes": 244504,
+      "sha256": "85a8d42019bdc5a3f6e59283593bc1db7ba3fc3db8e845d29bbbe13d2b9e7f4b"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0128/result.json",
+      "bytes": 244670,
+      "sha256": "a81bd90ce5fce03c8233555b2461a69cc67de53d774f7781ab59a0e6b6509ee9"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0132/native/result.json",
+      "bytes": 305300,
+      "sha256": "a8021dcc73d32c8d351b360068a8926123ced7478747497b79e3438d9d5dc34e"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0132/result.json",
+      "bytes": 305466,
+      "sha256": "815403d0e9e7323a6c2a79f1c434209fc9a752b0b1d57fe5f9655c4c23546c73"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0136/native/result.json",
+      "bytes": 244016,
+      "sha256": "baa1233c3da9e1e65162a39d0467ba6f271038d4720858abd2c1b13bd6b3600e"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0136/result.json",
+      "bytes": 244182,
+      "sha256": "2058e52ec867b47f08892f9247ace2fc7778c02027da58b2c9be89b1d2972f89"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0140/native/result.json",
+      "bytes": 242257,
+      "sha256": "9074a5fc34dbbea4b768efcd867d76064154272077342b124ea84fc107c4aada"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0140/result.json",
+      "bytes": 242423,
+      "sha256": "91b3ced0cbf1f9c5eee8b02bf3fc73582b7706650cc7d2a852d5e604c4977272"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0144/native/result.json",
+      "bytes": 254376,
+      "sha256": "754b324d129a3323c9e03ad392d94b26e604611ea9a8bdc3f6e63ba29d6444bf"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0144/result.json",
+      "bytes": 254542,
+      "sha256": "40bf8e78bc98c808b5144e8beefe039c61f54427c8c00aeebf6d1997c0b29042"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0148/native/result.json",
+      "bytes": 246848,
+      "sha256": "a49c901ef9ee97f49c6a31178e9246c8ee7ef0fe0752f76024a7fdd229b6b012"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0148/result.json",
+      "bytes": 247014,
+      "sha256": "bf0275239ded714fd6d9fafe2ff30e415126577d71aed83678a004c74693f929"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0152/native/result.json",
+      "bytes": 607706,
+      "sha256": "1c3df30bbbf74a36a3e16f6df50a1148a0fb63a91b6e4d833ffefee0018e5e9e"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0152/result.json",
+      "bytes": 607872,
+      "sha256": "7c7246dbfab36d47f8669daf0487057d8113b60fd0aeb718cf73e74cbacc56f6"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0156/native/result.json",
+      "bytes": 735071,
+      "sha256": "2e6acc890306238d76e3bfe26e387b711ac02903d2e150f42b1fa2d23e4a2712"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0156/result.json",
+      "bytes": 735237,
+      "sha256": "96e5c3a5cd86175b3be1a64ad713f4f76cbd6f8d26402d67295e78123f2ecd3e"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0160/native/result.json",
+      "bytes": 382690,
+      "sha256": "07dcc33c6c0728a8c051fe60b12fc20031586a8c008cb7955954efac57b5a769"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0160/result.json",
+      "bytes": 382856,
+      "sha256": "4cabcd2b15fbb00e0fdafa12a3abc75594b596edd67d43778066af0f14f6d9c3"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0164/native/result.json",
+      "bytes": 745506,
+      "sha256": "93954f805ac9d374510905533e57063a4a5431e768b1103718212d1eb69d4974"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0164/result.json",
+      "bytes": 745672,
+      "sha256": "bbbd45ad19417f596115b414198c53ba4a639c225a961ff3060633498dfd8411"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0168/native/result.json",
+      "bytes": 351632,
+      "sha256": "c686985fb8afe5e25e3b50b6b9c34a468159e1f8abeddd245bd33dee4653a505"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0168/result.json",
+      "bytes": 351798,
+      "sha256": "b10e451618de26fd7f3ed92c25f7616b8e3346c2c0fcbf228d4198ea227f4b61"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0172/native/result.json",
+      "bytes": 654972,
+      "sha256": "024183411e2dc219fdd52be163926fc9d3a496e4c088669aa9ac39213431fd6d"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0172/result.json",
+      "bytes": 655138,
+      "sha256": "b25c85cae450b2467dfafe3f73a777e567bf16982a211892b17e1e70b9bffa28"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0176/native/result.json",
+      "bytes": 833130,
+      "sha256": "2bff726eb731da75443e73558cd1f19ac975bc5b8a5604bc4cf9c69b6c81195e"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0176/result.json",
+      "bytes": 833296,
+      "sha256": "d588ca547a45eadc4b94a09e9ef6b080b3f897ccdeda10bac0336f9f46d0a2cb"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0180/native/result.json",
+      "bytes": 441628,
+      "sha256": "558767a7f6faab65f65cdc44d9b3734fae43739a98695606fbffd4934c3d06b7"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0180/result.json",
+      "bytes": 441794,
+      "sha256": "d324863f1716ea4d2d4bf9343b5d4949db4c1638d8d5132dabceac4cd07d30a2"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0184/native/result.json",
+      "bytes": 313034,
+      "sha256": "c0dfc851c437eb33b89ed2ed1cf429d19de6bdfafa709651343a95b3b45d7f5f"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0184/result.json",
+      "bytes": 313200,
+      "sha256": "dc186ffcc816ec1cc8ebb7a0b954ed29759d11cc26fdaccac5c032b5281f7987"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0188/native/result.json",
+      "bytes": 737086,
+      "sha256": "69a32dfbc0df3aac1c076a7c2c82e15e8c18a3c6402e21b48d411d556ae8da7c"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0188/result.json",
+      "bytes": 737252,
+      "sha256": "ecb2a7c0abb05ac894590bcc6eb78c0abf3db9fdfd9f3ddfb1cff431bf36c975"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0192/native/result.json",
+      "bytes": 336114,
+      "sha256": "4d4fb1b75db792a2f9ce30f1efce2c35553372f37979dafdea3ecf2c1c7cd4a4"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0192/result.json",
+      "bytes": 336280,
+      "sha256": "de33d978007ce88360ae1f59c3735d912db0ac61455be0dd9fb284ce4186c774"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0196/native/result.json",
+      "bytes": 875670,
+      "sha256": "24096a34a4b7dbb1566d6df4684ebe975121cc538e95431e1baf4921fd3d351c"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0196/result.json",
+      "bytes": 875836,
+      "sha256": "2e0e3ed0e5456c851cdfb6b3131cae17367757c04c6e32f022b5921b1653c349"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0200/native/result.json",
+      "bytes": 893203,
+      "sha256": "ccec53080d46caba601ce71302e8ae93981f5804db2eebe7f44593d357c3854e"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0200/result.json",
+      "bytes": 893369,
+      "sha256": "974c0df9aa0c0095f9d44830dc27fe1ac0b393c86335d5331d99e26df445b8e3"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0204/native/result.json",
+      "bytes": 339392,
+      "sha256": "886770a714d85c01a3362f9dfbf37d81ef75f25514bac15477e104823e27c74b"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0204/result.json",
+      "bytes": 339558,
+      "sha256": "f8672990ea5714f824e831b0049436ecdab10c421a1c3feeb49a37fbf8d98e43"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0208/native/result.json",
+      "bytes": 356932,
+      "sha256": "167e0fcd0c4b9cc996e707e49ba72b61dafa29b32fae9b53f23c25cd12f58639"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0208/result.json",
+      "bytes": 357098,
+      "sha256": "db27935aa077c2d2e3c81a72656d24d296505249c2fea0f2a7eaadb6d9e2f8af"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0212/native/result.json",
+      "bytes": 535651,
+      "sha256": "f4d4078ada0b0baf7de6b121e3e79e839ba29c775fc2ef8c733dff0db5e5982c"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0212/result.json",
+      "bytes": 535817,
+      "sha256": "649f4973b0d13a1ed5125077e980c13bc20e49978a25763fdd74ebf1c2618831"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0216/native/result.json",
+      "bytes": 778069,
+      "sha256": "f3ac6216925e92241c5f5aee72e3c3e4eb83b549ca22b18b3b9922c515d71795"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0216/result.json",
+      "bytes": 778235,
+      "sha256": "c6d8c1b9be68566ce0087a6971aa0f1f09b1c5a52c8057a6c357962faa2c321c"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0220/native/result.json",
+      "bytes": 835788,
+      "sha256": "dd5c8eaf774cbba7d15f4c09f610237ed9dd28105e8317ef0f51003cbc407efe"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0220/result.json",
+      "bytes": 835954,
+      "sha256": "81a0b4459bb8444a186aaf506757c4049de7a11d6da1b5c3e84e6bb1bf82dc44"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0224/native/result.json",
+      "bytes": 580306,
+      "sha256": "ce5d1ff7d6f2195f680afa4ae40990cc8efe8323901e72cd1ecedaad9f06c533"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0224/result.json",
+      "bytes": 580472,
+      "sha256": "a47b8c9f9bb02e43f1fa6bf9b5669d65e10caf7496db94da6f081fa614a125be"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0228/native/result.json",
+      "bytes": 172503,
+      "sha256": "673a1fe8b6e29f439be1c4a80ca6a6445247151891c0981e033300aaaacd7da1"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/batch-0228/result.json",
+      "bytes": 172669,
+      "sha256": "4364291ebca6bbdebd10190e49afb25e6999c23c7acb7a2ceaea13f1d960670f"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/manifest.json",
+      "bytes": 13568,
+      "sha256": "c0c7ad97a4080faa5a85d919b4689dd67c4a47bfbb09f4d5114ffb2bdd9197a5"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/not_started_ids.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2/per_case.jsonl",
+      "bytes": 313762,
+      "sha256": "ab4050cfc80b809a93d27395ca472086795c86878e179e2c1863615d911ed52d"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2-ids.json",
+      "bytes": 10050,
+      "sha256": "6d7c79553dffc8b01d1904cfc62c4061fa025d2ea7c3ca9fd7f14e56b85e5028"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard2-process.json",
+      "bytes": 1201,
+      "sha256": "c5eb583415ca4c2768995f02f7a5a5c9e739414ffe175f7a5be0a8bd266e810c"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0000/native/result.json",
+      "bytes": 238211,
+      "sha256": "16ecafaf7f35e119d3261c28249ae4422eb3cef24d6794881a2359d9c508e750"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0000/result.json",
+      "bytes": 238377,
+      "sha256": "d56657f6b2aa40e33a6c6541c47ee0d7af0cf7c82188c1edf4be84e75dc7e5da"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0004/native/result.json",
+      "bytes": 292580,
+      "sha256": "d1e493a1ec5de83ffa7adaebdb984f2ea13172b63598a41eb2f2f4a0232df425"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0004/result.json",
+      "bytes": 292746,
+      "sha256": "732cb7a9f69a5de445499cfd12856ddc96b81166178b291f2750dde2b44cb1ec"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0008/native/result.json",
+      "bytes": 244898,
+      "sha256": "8478158b695d9fdaf239c64635e94951309cb227903cd22ed5aeb1f403e35123"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0008/result.json",
+      "bytes": 245064,
+      "sha256": "60cce0a808389c82dbf411b92c7278169762d677bb173969860e82395c9b2535"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0012/native/result.json",
+      "bytes": 241412,
+      "sha256": "99b41cb3c2bd0ae6bb6320cce20af462f07c5dbdc76e6229119c242127180e40"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0012/result.json",
+      "bytes": 241578,
+      "sha256": "d67e46f5c1eaa8a23eff2e8bc3d91d87398c2ae7817263f8dc5bac10f22c5241"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0016/native/result.json",
+      "bytes": 231890,
+      "sha256": "dd629d9e98976dcea798aab9803ed9b3b6cf05b7e4cdf50676e4d014e154a3a7"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0016/result.json",
+      "bytes": 232056,
+      "sha256": "723352dea3c0b6ec34873569af0a7b1bf7eefc62636aa43887ae36a3e190f97c"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0020/native/result.json",
+      "bytes": 224243,
+      "sha256": "bca0f795b3366b32ca06aa6e36de40174f48d368f4470f509a7c03a75b7f7c5c"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0020/result.json",
+      "bytes": 224409,
+      "sha256": "8c54e82f5e2cb855779dece854b0c78a87923e7338e34c115d60fdcb855aecc0"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0024/native/result.json",
+      "bytes": 211252,
+      "sha256": "172cf23d3ec313d5bce54a098a078494c442d40f90700c57234869ef03831092"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0024/result.json",
+      "bytes": 211418,
+      "sha256": "0f2956d7f54fd3bff7c0dd663b05d2e68f0c08723c0801563b764c2787ac6152"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0028/native/result.json",
+      "bytes": 238007,
+      "sha256": "b5c0539d4e00f3b93fa4d3b4599869b2f0b2dc4b6308c6cfe22526454315e837"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0028/result.json",
+      "bytes": 238173,
+      "sha256": "a0a5b4e5d3036d9aa76c5246f8362d18b0bb5e3d76395a55ef43219d38a73780"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0032/native/result.json",
+      "bytes": 250678,
+      "sha256": "a5f86ae7af44a9e6db9908a36d5aacfa33be6f9c4571fab32f4af55110b3f861"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0032/result.json",
+      "bytes": 250844,
+      "sha256": "9ddefbc4210990a2316eb2c08f486a597931db88617b878917c6a5ad67258745"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0036/native/result.json",
+      "bytes": 270613,
+      "sha256": "d980f50b980cbe887a470243adf419bfd8347050aa06474680c48aea94f731c5"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0036/result.json",
+      "bytes": 270779,
+      "sha256": "7e5ec4d0d51eb70ba6593972a07661be387c9d2cec7e2539a2815c0bbfd558b6"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0040/native/result.json",
+      "bytes": 285018,
+      "sha256": "5ff8fe5eab1f053cd33980bbc62450c2692b7a84b83ccfc8d490cdcd30654803"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0040/result.json",
+      "bytes": 285184,
+      "sha256": "cbf411dedf68f1d199d9142df97efef226e91687fb69905db9e4055babf83998"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0044/native/result.json",
+      "bytes": 303613,
+      "sha256": "c7c03cb1c2b7a427fcf12cb49760fd3782d3f9709fd3738c8090ae2336c7564a"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0044/result.json",
+      "bytes": 303779,
+      "sha256": "0badc372d2e2b1220b5cc75f2b970159eacb98cc416e60c45ff4527ef2fb1c0a"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0048/native/result.json",
+      "bytes": 341704,
+      "sha256": "e6f4f08c2d0b833c10f7a209c149cea2b09ca725bd55f3a180113cbb54cff745"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0048/result.json",
+      "bytes": 341870,
+      "sha256": "09a0def4db8b5b5966963bd4e8f155777360572e11ef445b9e5b1070cb472e0c"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0052/native/result.json",
+      "bytes": 325827,
+      "sha256": "86822120c2b64a9996dd0a026598714f3f39a0aa1f9d56c47f44f329bc7bdc93"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0052/result.json",
+      "bytes": 325993,
+      "sha256": "bdb6c0ed8d4c94b07b7fdaa5ee0c71d10e91046d538638bf76cf31b0db293f3c"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0056/native/result.json",
+      "bytes": 400318,
+      "sha256": "38046a6a3d6d2c7b3d50079d70c6c4c1737ee5796611469871ae58039d996f97"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0056/result.json",
+      "bytes": 400484,
+      "sha256": "d831da473bdf5a99ff04a721bb7cf6d18762cf8c849ced20b7cd377313a9f0fc"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0060/native/result.json",
+      "bytes": 339316,
+      "sha256": "0de5a38f72e68bfaf3ec80f152f10eaa693d723242ed8c4f5b5c7383ddefd89b"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0060/result.json",
+      "bytes": 339482,
+      "sha256": "b6fc3f9e3fb1bcfa3a3c017d065b40f50ec2d1cbb486f5ee8528533f01954a09"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0064/native/result.json",
+      "bytes": 329166,
+      "sha256": "f7600e58cc1dd36fd1e68b7fb3c1588c654ee37ca779ccee6ece31b56c97265a"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0064/result.json",
+      "bytes": 329332,
+      "sha256": "57204cae735fdb885e30962b347b1958723d9eab43b2506b835a814261598dbf"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0068/native/result.json",
+      "bytes": 398120,
+      "sha256": "047cb5068dd2a49199e81827bd4fbae68fd0d881578c67d586980db543e2cad2"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0068/result.json",
+      "bytes": 398286,
+      "sha256": "509eb21c824c66825e9f51f8657b8f4c712b1abb98ed8065a1bfef74c676c3db"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0072/native/result.json",
+      "bytes": 375455,
+      "sha256": "52c111ed0e4c84284a08bc859156cb420992cfeb1a14e820cea2bb744b16fd9d"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0072/result.json",
+      "bytes": 375621,
+      "sha256": "d664f701aefee87d9baa9b6f315fed66b1d25a903453e8b7182cf76cdb9ce483"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0076/native/result.json",
+      "bytes": 421387,
+      "sha256": "a75e694e3e60890d622e8e8945f2a8c37e89274a8d6ac80b50e77e4341be09bf"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0076/result.json",
+      "bytes": 421553,
+      "sha256": "b8ff62efa44f8dd4d627dd5a59934b91d4f35e7bab59067acb1d3c2f5bbdf1a6"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0080/native/result.json",
+      "bytes": 322678,
+      "sha256": "791c745141fa20cbde520dfa3ffc636f9026ac9d9d5579a2040ab0371e1a88aa"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0080/result.json",
+      "bytes": 322844,
+      "sha256": "ef52a87fa6fcdca59b189d07245abd49edba426eac941cfaa0c5e28b33efdb75"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0084/native/result.json",
+      "bytes": 423040,
+      "sha256": "abfef6486681767ec1dc7286a79e669555c668da1772082780d61e29b3be5935"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0084/result.json",
+      "bytes": 423206,
+      "sha256": "e32b77d6de7af738392029b04a68af9b49c14ee462a1cc8799d9c6111b649a41"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0088/native/result.json",
+      "bytes": 435989,
+      "sha256": "8b0acc255c417c4b9fb242b070ca10871411b5569859331ef6f016357f5d1c4a"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0088/result.json",
+      "bytes": 436155,
+      "sha256": "76271aa3d4a73fe58481cdd87e69b982bd93a2a9cdbfab3daf55b6d23d81502e"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0092/native/result.json",
+      "bytes": 224473,
+      "sha256": "70efede3f259ad2279b642436ea1571f5a3f7931723a8ece31a0467a0e6ed587"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0092/result.json",
+      "bytes": 224639,
+      "sha256": "81e6aeb0cc4ee21967b55abc8ce66583ba45c5955793ba9f6da53c5275c8233d"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0096/native/result.json",
+      "bytes": 209688,
+      "sha256": "c6754b345e75850b0c6a3cd256ac41d725f009da0a25275ad0be4e489d06bf47"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0096/result.json",
+      "bytes": 209854,
+      "sha256": "82f4c5d83da19ca9ead1d30e5b50c8f3829ce0a08566c8a41214558b333739ba"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0100/native/result.json",
+      "bytes": 221450,
+      "sha256": "4eebc7147410090597459a57425350fd4ba1fd0ded36ea4820f2271635bacb9b"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0100/result.json",
+      "bytes": 221616,
+      "sha256": "a51aae5035ed187c526489fcba32043e00edcf039f81ddeb9620c3a030c30212"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0104/native/result.json",
+      "bytes": 219470,
+      "sha256": "61e1a26d19cc6e9b73edeb4328bb32c57afa3d280cd53929a54b13db070d667c"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0104/result.json",
+      "bytes": 219636,
+      "sha256": "b90be30b314cc95eca678c544d72330ea20d0dc31c60565305c6ef1758d64f8f"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0108/native/result.json",
+      "bytes": 261386,
+      "sha256": "93564bdd193dfd51caabbbee52f6d7a1d3eb9fbfff6947ddb0b660e1ada55315"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0108/result.json",
+      "bytes": 261552,
+      "sha256": "42a289fa44ac310547f8b6337a30537a39f8a2bdabda8258efc423548f870021"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0112/native/result.json",
+      "bytes": 301228,
+      "sha256": "007ba5c1175ca78324ef693296a5bd7a9ce8e197a82117f2e3b2cc908c2a77ee"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0112/result.json",
+      "bytes": 301394,
+      "sha256": "a26d5b84c612b2f32d64a4ac23996f4b919b0e62733e12520d18ba58235a6974"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0116/native/result.json",
+      "bytes": 280897,
+      "sha256": "aceae9b8480da6c9df6ccbf6cbea0d3ccf5c04672ab35273875948d8826d740b"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0116/result.json",
+      "bytes": 281063,
+      "sha256": "c1f63db5c0f793274efb14564bc3cf948fe779db105852cc0413d9b9b533a8ae"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0120/native/result.json",
+      "bytes": 650835,
+      "sha256": "825edd3d516293312ac8702361402528b4c21baa3968c3df35667adda4b3212e"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0120/result.json",
+      "bytes": 651079,
+      "sha256": "c90bca206d1c6a901d40ac16c455379c3e9e1f316a6c63ed8a0914d5ae75425a"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0124/native/result.json",
+      "bytes": 221917,
+      "sha256": "494a47998e80305d9c8d8a912998b6cb9f75b32a0321619d516e429639cdfcfd"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0124/result.json",
+      "bytes": 222083,
+      "sha256": "e9060e1fa89831b86e267bba62b7772055227274e3195cbda760b68a4fc1f145"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0128/native/result.json",
+      "bytes": 260570,
+      "sha256": "6e23ac774bb2e01c700b948e0ad84669a513189ad733bd3e3977f060ca1ae379"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0128/result.json",
+      "bytes": 260736,
+      "sha256": "e026cf6d41e085eb584b44f455cbc21911439d2ac403c3bd7dc8377551fffa59"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0132/native/result.json",
+      "bytes": 287986,
+      "sha256": "93406f24de673b5101a3f3dfe8f7ec9a83f182eb780a686897b2274e5c608d24"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0132/result.json",
+      "bytes": 288152,
+      "sha256": "d736753235b14eea592f72eb73ec2c41dd333892a124680f44dbbc6ea4e0d64c"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0136/native/result.json",
+      "bytes": 235446,
+      "sha256": "94d691a82542eb1f3fe75d763b608ed6169a0a9d6c0e159460b4fa03b4212469"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0136/result.json",
+      "bytes": 235612,
+      "sha256": "0cca796cb2bde2cd44ea05d3a336bca9c4f4b263d2cbb65bd016c1953acb80fb"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0140/native/result.json",
+      "bytes": 205090,
+      "sha256": "3b39649a2061391999b8420a99c3bbbd47f9ff3831ca3fe6f81c39eb8c268ffd"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0140/result.json",
+      "bytes": 205256,
+      "sha256": "1502d3b87f87010cd0189b0ccfe77e32a8a2534844fdd9e027584b5a8acecd70"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0144/native/result.json",
+      "bytes": 247888,
+      "sha256": "d80b663308ebc3643c9057d9955f5f4ce3e85bc46f116dd09987eda52599aece"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0144/result.json",
+      "bytes": 248054,
+      "sha256": "33db189a8f611b5f993f39e221011b930437b0f6ac55ceabc7513a06b856e157"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0148/native/result.json",
+      "bytes": 251659,
+      "sha256": "6892cd05dc6f1d681d24207d1fb0000ef60ec67964208b43effa116d97729c2b"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0148/result.json",
+      "bytes": 251825,
+      "sha256": "a59dec9d90aeb3ce84b057c2e93dd0384da1d6e02128df7e0ce581ed7fb8cf29"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0152/native/result.json",
+      "bytes": 733501,
+      "sha256": "0d877e8b8fe9ea9d3119cbcc5c4b7362d31b06665070ac48c609e56220969df9"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0152/result.json",
+      "bytes": 733667,
+      "sha256": "864edd13d050505329b57bf7af65b58aa1917c4a902bfb84c117379df49bf415"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0156/native/result.json",
+      "bytes": 605497,
+      "sha256": "68b9207576d034f27fbb9b9312e70d594b3ac4b3908892443a862e178c6bb5a4"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0156/result.json",
+      "bytes": 605663,
+      "sha256": "fa535111d372754566585fe7a3dc3e7dde1a9b967fa2caa6b7584926daf60867"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0160/native/result.json",
+      "bytes": 375048,
+      "sha256": "705ae825272f98a7f9fb075f84e066baa8f431cd2ab2655a8123e6febd81afc6"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0160/result.json",
+      "bytes": 375214,
+      "sha256": "208adc4cee9f5f0f16f23ede6a64e619868ba4c4866c095ab75b66abac2645a0"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0164/native/result.json",
+      "bytes": 633126,
+      "sha256": "c4b3431853d4bfa4e75d1b7a627843f61b614356927ad18bfcf8aaf1c85be6a6"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0164/result.json",
+      "bytes": 633292,
+      "sha256": "bbdabb86e84416e9e2d63028b74b7b72a6bcf1fd5542d74724c6d3fb0b356b23"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0168/native/result.json",
+      "bytes": 501206,
+      "sha256": "afa169b8f5ed747600b58e4b5e6ae6a1dbfef5d3e510c8150a371c69c25273f6"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0168/result.json",
+      "bytes": 501372,
+      "sha256": "9752bcd0e2c60bcc8b9e06808d012e78c488a54a71c2c88d2f9dd07a3bb0023c"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0172/native/result.json",
+      "bytes": 763998,
+      "sha256": "82317217ba281200a9a31e05367e3fea170f2ffeab448cf5e89f0b2798312e94"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0172/result.json",
+      "bytes": 764164,
+      "sha256": "22ac6730144806423b0e538495c38d2c12ce820b4d3c6395d0b6b9ac9b6fb937"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0176/native/result.json",
+      "bytes": 780442,
+      "sha256": "979120818da63ab781109c4b38d38003f793fff71ff3ca94f259aa7038acc0ba"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0176/result.json",
+      "bytes": 780608,
+      "sha256": "26a5903bcff4205f36e20b86e7883e2cc2955143ace8e21a43888f8fdc083e2a"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0180/native/result.json",
+      "bytes": 299132,
+      "sha256": "f7fcafeb1fefa601c99c27350edacd6a2517f75c394d27fa8331455ffd55e2d2"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0180/result.json",
+      "bytes": 299298,
+      "sha256": "06fc1d0eaf090616035e7d8ef9cef40078a3d4412318274c469b14b40cc8d94b"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0184/native/result.json",
+      "bytes": 488218,
+      "sha256": "e89761c660fbba39ca70f431700838ef5ebed198a3cab3e11c1fd3013da5d734"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0184/result.json",
+      "bytes": 488384,
+      "sha256": "db274d9c6bc37349374a28e4d2d73adf6316a11c08684a2d9c7bb4fc860b67f4"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0188/native/result.json",
+      "bytes": 769123,
+      "sha256": "29793b8a3e89b2fe32883b3da5fc99c74fdfdb937dc888c533f6d33bdb5db6d3"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0188/result.json",
+      "bytes": 769289,
+      "sha256": "7c6a45699a49da87640e0447a7505faeeeaa08f43a8ffc7b02336af5ef2deae4"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0192/native/result.json",
+      "bytes": 339514,
+      "sha256": "979372df42e77f425bbacc6bbdb4e370c97e17c161158a7c1417662c8ad818f2"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0192/result.json",
+      "bytes": 339680,
+      "sha256": "40f1bfb78c76727b520c43cc10c63f952dd7a9666546d7bc7079f2bffebd6669"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0196/native/result.json",
+      "bytes": 867757,
+      "sha256": "93c12b973886a07f8128d4988c2c4b3d64304263ea3b9a52bec1751e1a0e1e9a"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0196/result.json",
+      "bytes": 867923,
+      "sha256": "15ff281000cffe4b6b5afa6cba06f42290f278a28430fcb763ac90a8541a8737"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0200/native/result.json",
+      "bytes": 709270,
+      "sha256": "56cb2c2429c9fbad05794a39706e4a8d32cf8dfd9baa264c73058519d356b494"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0200/result.json",
+      "bytes": 709436,
+      "sha256": "96b4d54d5379e4cd6fa62bf969ddbc7cd430cacca299c0acaeea1c91f7b881c4"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0204/native/result.json",
+      "bytes": 345046,
+      "sha256": "511bf0475839ee482699e2097f1683c94067389afe808e8a13ad821bb7cfceec"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0204/result.json",
+      "bytes": 345212,
+      "sha256": "670e105bc94e5a26876bd12723fcb437eb5ac3769c4ef5938df165df7313408e"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0208/native/result.json",
+      "bytes": 323396,
+      "sha256": "a5f0d91c3e56b84fa204a7bd7f806648978d681cffdf6d6a70ac7813551e5902"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0208/result.json",
+      "bytes": 323562,
+      "sha256": "4b31656b9c0970ae983cce2452681d405c86bc938b5773bde92cf233c767aa21"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0212/native/result.json",
+      "bytes": 577969,
+      "sha256": "06c95930399e7d3749c76b75cba9a46a31234d0701f62efcc91e6c9216f9abcb"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0212/result.json",
+      "bytes": 578135,
+      "sha256": "066d367b02542709f52409f165a167bef8a4d9fff44af9f4a8d49e872f2454b3"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0216/native/result.json",
+      "bytes": 789349,
+      "sha256": "37d0c323e183f38c272cfbd292da9997c46ed4d690f35fc53c48bded46e2a786"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0216/result.json",
+      "bytes": 789515,
+      "sha256": "519080e4478f4f60bdd5f5812fa2b218f3c77a246176aa34e91c1a482f07ae88"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0220/native/result.json",
+      "bytes": 837936,
+      "sha256": "62b0a85f617e8e26fbe0c5c0b836a3bb77a97f5c05a7a307f8a254cd7912aff4"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0220/result.json",
+      "bytes": 838102,
+      "sha256": "2f84d4425f0735f3a965f6bbbac3cfa50f4541d0b523840fd9042dde16e30b1a"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0224/native/result.json",
+      "bytes": 588748,
+      "sha256": "2650874466bad2c55898ce483557492198e3ecdecf285230efc2d1d843597fb7"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0224/result.json",
+      "bytes": 588914,
+      "sha256": "a236ec0f0e4412ca2f7618d11b1542951e3fc63d4d4c29aaef1dce417cbdce93"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0228/native/result.json",
+      "bytes": 118135,
+      "sha256": "73e54d9b16a66b0d353a59d36f85e6a43cf3572f93b48234212018aa2f3e5970"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/batch-0228/result.json",
+      "bytes": 118301,
+      "sha256": "372def239802f4e62be06cde08b266233afd50ea3a5aae5d8952f57484bc5d5a"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/manifest.json",
+      "bytes": 13517,
+      "sha256": "5a6916532c19737166fa97ca6e25bc29181c1d90ab5bce6fa9b2c9fe719cdaef"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/not_started_ids.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3/per_case.jsonl",
+      "bytes": 302477,
+      "sha256": "a464ef83220cb1ca8caa783dce4ebbb1304cfa2b3e64521f69dba08ae3acf5f0"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3-ids.json",
+      "bytes": 10001,
+      "sha256": "6ddc7157bbde4b96884dbbb2b06e82e750ed5a62d89a4aa08deba70b0377e721"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/negative-shard3-process.json",
+      "bytes": 1201,
+      "sha256": "69c8ba0f79cae11dbdbeb0d783ab9f651c854e6e2d34df27dccef92954b699a9"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/pilot-ids.json",
+      "bytes": 173,
+      "sha256": "ae9081b16b562a7823c03c8f045058394ea5f2a9c4a7d6cd9345218563596e40"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/pilot-jobs.json",
+      "bytes": 963,
+      "sha256": "9108027d63fad57149e14a8c8d931ff8a207c86f85b4e58bbed60264d28b8404"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/pilot4/batch-0000/native/result.json",
+      "bytes": 257463,
+      "sha256": "6e37f8ac56826f9e4cd32ebb7da43658a48584fd00882fb3570955809b3ab02a"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/pilot4/batch-0000/result.json",
+      "bytes": 257629,
+      "sha256": "4fbffc8893cdc357434714a82d7b88edadf3efdf642b17f9b4847c7e40be7e90"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/pilot4/manifest.json",
+      "bytes": 3239,
+      "sha256": "d65f5098052c8a74e34583a36c896387596bc5d338fca124014143c5b18adb55"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/pilot4/not_started_ids.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/pilot4/per_case.jsonl",
+      "bytes": 4920,
+      "sha256": "08dceb76a36a7ce20165428d359204b20c65976d35c0694a3ad709a6ca6bbe74"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/report-reviewed/all-cases.md",
+      "bytes": 1033081,
+      "sha256": "531985da4a13c6db0d897a1101b59cbda74055b00029c5b466c00fb8ee75ed5d"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/report-reviewed/classified-cases.jsonl",
+      "bytes": 1695179,
+      "sha256": "bbb31155a0fbf0bdc4b2478d073f1fd84f6a33d8ebc4d356beca810825b655d8"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/report-reviewed/summary.json",
+      "bytes": 1395,
+      "sha256": "a47358090f5ea0adfe295680066552eff4b0fb2e41115e4120a315a84b37385f"
+    },
+    {
+      "path": "artifacts/lab3090-agentdojo-negative-audit-v2/validator-check.json",
+      "bytes": 177,
+      "sha256": "b5502dad32760d1fd589ca89f12c59bb36553779c9d5bd7673a7ac9570f601f5"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "created_at": "2026-09-14T03:00:27.467455+00:00",
+  "scope": "932 original native-negative AgentDojo scenarios",
+  "total": 932,
+  "categories": {
+    "EXPLICIT_REFUSAL": 923,
+    "NOT_EXPOSED": 9
+  },
+  "category_utility": {
+    "EXPLICIT_REFUSAL": {
+      "native_utility_true": 813,
+      "native_utility_false": 110
+    },
+    "NOT_EXPOSED": {
+      "native_utility_true": 9,
+      "native_utility_false": 0
+    }
+  },
+  "by_suite": {
+    "banking": 144,
+    "slack": 105,
+    "travel": 123,
+    "workspace": 560
+  },
+  "native_utility_true": 822,
+  "native_utility_false": 110,
+  "exposed": 923,
+  "cases_with_any_tool_error": 118,
+  "all_cases_classified": true,
+  "inputs_sha256": "e09b720da35d81e03423022590f0ae2a663546d4ca3c9d62f634a3a7f955540f",
+  "classified_sha256": "bbb31155a0fbf0bdc4b2478d073f1fd84f6a33d8ebc4d356beca810825b655d8",
+  "assistant_overrides": 12,
+  "limitations": [
+    "Categories are mutually exclusive primary observations, not proven internal causal mechanisms",
+    "Native task-success labels retained; they are not independently validated utility truth",
+    "Model annotations are not independent human adjudication; assistant review and overrides are recorded separately",
+    "One important_instructions attack template, no defense-module effect claim",
+    "17 original native positives reviewed elsewhere are outside this 932-case denominator"
+  ]
+}
