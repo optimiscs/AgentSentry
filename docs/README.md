@@ -1,5 +1,7 @@
 # AgentSentry 工程文档导航
 
+产品入口：[项目首页](../README.md) · [使用指南](getting-started.md)。首页编辑依据见 [六个万星 Agent 项目 README 分析](00-discovery/readme-benchmark-analysis.md)。
+
 本目录按用户要求组织30类生命周期文档。当前已有在 5090 运行的开发版服务、控制台及自动化测试；实际结果见 [测试报告](05-validation/18-test-benchmark-report.md)。工程回归通过不等于公开基准或发布验收完成。新设计没有人工签字批准，历史快照与当前规范分开。
 
 2026-09-13 实验已迁移到双卡 Lab3090，使用新 Conda 环境与 Qwen/Qwen3.5-9B；本轮 ASB 小样和 PIGuard 输入诊断已完成，综合 benchmark 仍未验收。[迁移与结果](04-development/lab3090-migration-and-resume.md) / [恢复证据](evidence/lab3090-recovery.json) / [当前开发计划](04-development/14-implementation-plan.md)。5090 的旧环境记录保留为[历史环境证据](evidence/environment-current.json)，不能视为 Lab3090 配置或当前在线状态。

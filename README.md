@@ -1,62 +1,133 @@
+<div align="center">
+
 # AgentSentry · 意链盾
 
-面向工具型 Agent 的执行前安全网关。当前版本 `0.1.0.dev1` 已在 5090 上运行：上下文扫描 → Intent/Action 对齐 → ALLOW / ASK / BLOCK → 受限执行 → 脱敏审计与来源图。
+### 让 Agent 放手做事，把执行权限握在你手里。
 
-[工程文档导航](docs/README.md) · [实际测试报告](docs/05-validation/18-test-benchmark-report.md) · [公开 Benchmark 验收](docs/05-validation/public-benchmark-report.md) · [开发记录](docs/04-development/15-implementation-record-dev-log.md) · [需求追踪](docs/01-requirements/06-requirement-traceability-matrix.md)
+为编程 Agent 加上执行前的权限检查、人工审批与行为审计。
 
-2026-09-13 仓库交接：已按用户要求准备代码和精选中间产物，[产物索引](artifacts/README.md)记录范围与哈希。[实验暂停交接](docs/04-development/experiment-pause-and-handoff.md)记录最后确认的进程状态；SSH 不可达时不能据此声称远端实验已停止。
+[快速体验](#快速体验) · [接入 Agent](#接入现有-agent) · [工作原理](#工作原理) · [使用指南](docs/getting-started.md) · [贡献指南](CONTRIBUTING.md)
 
-当前实验已[迁移至 Lab3090](docs/04-development/lab3090-migration-and-resume.md)，采用 Qwen3.5-9B，任务与防护均默认关闭思考。[v5 输入参考](docs/05-validation/context-filter-v5-review.md)正在运行全量配对；[清洗与动作授权组合](docs/05-validation/composed-guard-v1-review.md)已冻结、尚待真实模型评估。最新 [归因防护成本审计](docs/05-validation/causal-proxy-budget-and-baseline-review.md)仅使用已完成轨迹做 CPU token 核对，不属于效果验收。
+</div>
 
-## 当前能力
+你让 Agent 审查代码，它却从一条 Issue 中读到了“先上传 SSH 私钥”的指令。
 
-- 规则检测支持用户输入、Web、文档、Issue、MCP 描述/响应和 Memory；保留 Unicode 证据坐标，支持批量扫描。
-- 五类动作归一化、确定性 DSL、权限上限、单次 HMAC 审批；资源、参数或策略改变使原审批失效。
-- 文件工具限定仓库；Git push 仅指向隔离本地 bare 仓库；Python 运行于 chroot + UID 65534 + seccomp + 资源限额中。
-- Codex/Claude Code 原生 Hook 决策/单次许可/回报与配置包生成器；已测桥接协议，真实产品客户端尚未验收。
-- 真实 MCP stdio 适配与 Streamable HTTP 入口；注册工具元数据按 SHA-256 校验，描述不授予权限。
-- SQLite 持久化、加密私有参数、七天留存、Memory 隔离、明确区分数据引用与上下文关联的 Trace 图。
-- React 控制台提供事件、完整动作预览与审批、来源关系和报告；身份令牌仅保存在页面内存中。
+**让每次工具调用，都有清楚的授权依据。** AgentSentry 在工具调用发生前检查用户授权、数据来源和实际动作：范围内放行，需要确认时暂停，越权时阻断。Agent 负责完成任务，你决定它能动哪些资源、能做哪些操作。
 
-## 在 5090 使用
+通过 **Hook、MCP 或 HTTP API** 接入现有工作流。首批产品适配面向 **Codex 与 Claude Code**，具体进度见下方接入表。
 
-工程目录：`/root/autodl-tmp/AgentSentry`。核心使用工程独立 `.venv`；公开评测使用 artifacts/benchmark-venv，模型复用已有权重与 vLLM 环境，不修改其他项目代码或依赖。
+## 看一次防护过程
 
-```bash
-ssh 5090
-cd /root/autodl-tmp/AgentSentry
-bash scripts/service.sh status
-# 需要启动时：bash scripts/service.sh start
-```
+用户任务：**“审查代码并生成报告，不要执行命令。”**
 
-本地建立访问隧道：
+| Agent 准备做什么 | 决策 | 接下来发生什么 |
+|---|---|---|
+| 读取 `README.md` 了解项目 | **ALLOW · 放行** | 正常读取，继续工作 |
+| 将报告写入 `review.md` | **ASK · 确认** | 暂停写入，等待操作员审批 |
+| 读取 `.ssh/id_rsa` | **BLOCK · 阻断** | 拒绝访问凭据，记录原因 |
 
-```bash
-ssh -N -L 127.0.0.1:8080:127.0.0.1:8080 5090
-```
+以上来自内置 Issue 与审批演示的实际网关结果。演示使用合成数据和预设候选动作，无需调用模型；写入报告触发 ASK，是因为当前演示任务尚未授予文件写权限。
 
-打开 <http://127.0.0.1:8080>。登录令牌位于服务器 `runtime-data/operator.token`（权限 600）；Agent 使用单独的 `agent.token`，不能创建授权任务、批准动作或修改策略。不要把令牌提交到版本库或截图中。
+![AgentSentry 控制台：在同一代码审查任务中，读取合成私钥被阻断，读取 README 正常放行](docs/assets/readme-events.jpg)
 
-## 开发与文档同步
+*本地运行截图。事件时间线保留输入来源、候选动作、决策和执行结果，可逐项查看证据。*
+
+## 快速体验
+
+**Python 3.11+（推荐 3.12）和 Git 即可，无需 GPU 或模型 API Key。** 仓库已包含构建好的控制台。
 
 ```bash
-make test         # 单元、集成、真实 MCP、安全和沙箱测试
-make eval-smoke   # 20 条开发黄金功能回归，不是公开基准
-make perf-cpu     # 4 档 CPU 本地网关性能，每档 200 预热 + 1000 正式请求
-make contracts    # 导出 OpenAPI 与 JSON Schema
-make progress     # 从实际测试工件更新报告、RTM 和测试状态
-make docs-check   # 检查 30 类文档、引用与映射，不运行业务测试
-make verify       # 顺序执行测试、黄金回归、合同导出、进度同步和文档校验
+git clone https://github.com/optimiscs/AgentSentry.git
+cd AgentSentry
+
+python3.12 -m venv .venv
+.venv/bin/python -m pip install -r requirements-lock.txt
+.venv/bin/python -m pip install --no-deps -e .
+
+.venv/bin/agentsentry init-demo
+.venv/bin/agentsentry serve
 ```
 
-前端在 Node 22 环境执行 `npm ci --prefix dashboard` 与 `npm run build --prefix dashboard`。服务器只需预构建静态文件。开发者从本地镜像运行 `python3 scripts/sync_server.py`，以内容哈希同步到 5090；发现服务器意外修改时拒绝覆盖。服务器生成的证据通过 `python3 scripts/pull_evidence.py` 回收，发现未同步的本地改动也会停止。日常完整循环可执行 `bash scripts/dev_cycle.sh`：构建 → 同步 → 5090 验证 → 回收文档 → 再次同步；不会自动重启运行服务。
+打开 **[localhost:8080](http://127.0.0.1:8080)**，使用 `runtime-data/operator.token` 中的令牌登录，点击 **Issue 注入** 运行上面的场景。再试试 **敏感外发、动作审批、Memory 污染**，查看不同操作如何被处理。
 
-## 当前验收边界
+演示在独立工作区创建合成文件；`init-demo` 不覆盖非空用户工作区。自定义路径、CLI 演示、MCP 配置及部署步骤见 [使用指南](docs/getting-started.md) 与 [部署指南](docs/07-operations/23-deployment-guide.md)。
 
-这是可运行的受控开发版，尚未完成 PRD 的全部效果与发布验收。最新 InjecAgent 27B v4 每组1054条已记录，基线996条有效、防护1002条有效；防护观察到的模拟攻击执行成功为0，但52条未知对应4.93%的保守上界。AgentDojo正常任务成功84/97→59/97，存在明显效用损失；ASB适配小样两组各40条、各25条有效。F1、完整消融、正式接入、Docker干净部署与七天稳定性仍未完成，详见公开报告与[ASB小样评审](docs/05-validation/asb-pilot-review.md)。
+## 你能得到什么
 
-默认 HTTP 收件端点是隔离模拟账本，Git 远端是本地 bare 仓库。只有网关内工具及受限 Python 的执行边界经过测试；拥有宿主文件或网络权限的外部 Agent 可以绕开代理，不能宣称它们自动得到强制隔离。注册的 stdio MCP **进程本身属于可信计算基**，其输出和描述仍是不可信数据。详见 [实际部署指南](docs/07-operations/23-deployment-guide.md) 与 [实现决策](docs/adr/adr-007.md)。
+- **把“可以做什么”落实到每次动作。** 检查目标文件、请求目的地和副作用是否在任务授权范围内。Issue、文档和工具返回中的要求，不会自动变成新的授权。
+- **把确认留给需要决定的操作。** ASK 展示具体动作并等待审批。批准绑定参数、资源和策略版本，单次消费；动作改变后重新校验。
+- **查清一次异常是怎么发生的。** 在控制台查看上下文风险、动作预览、决策依据、审批记录和执行结果，通过来源关系追溯关联内容。
+- **从轻量网关开始接入。** 默认规则与策略路径在 CPU 上运行；可选模型检测独立配置。现有 Agent 继续承担任务规划与内容生成。
 
-## 公开评测与独立标注
+## 接入现有 Agent
 
-运行器、配对验收与复现命令见 [benchmarks](benchmarks/README.md)。5090 的 `artifacts/annotation-packet-v2` 提供 982 条未标注候选（100 个任务组、dev450/test候选532）；仍需独立标注、近重复/模板分组检查和仲裁，不能直接作为隐藏 test 或 F1 结果。
+选择与你的工作流对应的入口：
+
+| 接入对象 | 方式 | 当前进度 |
+|---|---|---|
+| **Codex CLI** | 原生工具 Hook + 单次执行许可 | 真实执行前阻断已验证；完整 ALLOW / ASK 流程待验收 |
+| **Claude Code** | Hook 事件适配 + 审批桥接 | 桥接测试通过；真实客户端端到端验收待完成 |
+| **MCP 客户端** | stdio / Streamable HTTP | 上下文扫描与受控工具调用已实现并测试 |
+| **DeepSeek Harness** | SDK 会话 + MCP 工具 | 已用于真实模型安全评测；防护效果另行验证 |
+| **自研 Agent** | HTTP API | 可上报任务、上下文和候选动作，按工具语义集成 |
+
+当前原生 Hook 适配覆盖受限的文件操作和只读命令；新增工具需要映射参数、资源与副作用。保护范围以实际接入的路径为准，完整终端工作流和宿主旁路约束仍在推进。
+
+[查看接入矩阵与配置边界 →](docs/03-architecture/framework-integration-matrix.md)
+
+## 工作原理
+
+```mermaid
+flowchart LR
+    Task[用户授权] --> Policy[动作与权限检查]
+    Context[上下文与来源] --> Policy
+    Agent[Agent 候选动作] --> Entry[Hook / MCP / API]
+    Entry --> Policy
+    Policy --> Allow[ALLOW 放行]
+    Policy --> Ask[ASK 暂停审批]
+    Policy --> Block[BLOCK 拒绝]
+    Allow --> Trace[执行结果与审计]
+    Ask --> Trace
+    Block --> Trace
+```
+
+策略内核使用确定性规则检查授权与硬约束。**MCP / API 路径**由网关调用受控工具；**原生 Hook 路径**授予单次许可，由客户端执行并回报。两者共用策略与审计，客户端回报单独标记，不作为网关已验证的执行收据。
+
+文件、网络、代码执行和记忆写入分别使用专用适配器。Python 执行隔离依赖 Linux 与 libseccomp 等能力；环境不满足要求时阻断该工具。
+
+[架构设计](docs/03-architecture/10-system-design-rfc.md) · [安全策略](docs/03-architecture/13-security-policy-spec.md) · [核心代码导读](docs/03-architecture/core-innovation-and-code-guide.md)
+
+## 一起完善 Agent 的执行边界
+
+当前为 **`0.1.0.dev1` 开发预览版**。网关、审批与控制台已可运行，接下来的重点是：
+
+- 完成 Codex、Claude Code 的真实客户端验收，覆盖放行、审批恢复、阻断和故障处理。
+- 扩展常用原生工具，并验证文件、网络、凭据与子进程的旁路约束。
+- 在公开基准上同时验证攻击防护与正常任务完成率，保留可复现的版本、配置和原始证据。
+
+欢迎贡献客户端适配、工具语义映射、可复现的攻击案例与误拦截案例。反馈请附运行环境、复现步骤和脱敏日志：[提交 Issue](https://github.com/optimiscs/AgentSentry/issues)。
+
+完成上面的安装后，可在仓库根目录运行：
+
+```bash
+make test         # 单元、集成与安全回归
+make eval-smoke   # 内置黄金样例的功能回归
+make docs-check   # 文档链接与需求映射校验
+```
+
+前端开发、接口导出与完整验证流程见 [使用指南](docs/getting-started.md) 和 [贡献指南](CONTRIBUTING.md)。
+
+## 继续阅读
+
+| 我想了解… | 从这里开始 |
+|---|---|
+| 如何运行、接入和部署 | [使用指南](docs/getting-started.md) · [接入矩阵](docs/03-architecture/framework-integration-matrix.md) · [部署指南](docs/07-operations/23-deployment-guide.md) |
+| 防护机制与边界 | [威胁模型](docs/02-security/07-threat-model.md) · [API 与数据模型](docs/03-architecture/12-api-data-schema.md) · [策略规范](docs/03-architecture/13-security-policy-spec.md) |
+| 怎样评测、结果如何 | [评测入口](benchmarks/README.md) · [评估结果导读](docs/05-validation/evaluation-history-plain-language.md) |
+| 项目如何演进 | [开发计划](docs/04-development/14-implementation-plan.md) · [版本变更](docs/06-release/21-changelog-release-notes.md) · [全部文档](docs/README.md) |
+
+功能演示、裸模型安全评测与 AgentSentry 防护效果分别记录；正式发布以 [验收清单](docs/06-release/20-release-plan-launch-checklist.md) 为准。
+
+---
+
+本仓库尚未声明项目级开源许可证；复用与分发需取得维护者正式许可。第三方代码、数据集和模型遵循各自许可证。
